@@ -1,0 +1,385 @@
+{
+  "Models": [
+    {
+      "P3dModel": "TFN_Helmets\\Models\\MT_C3_1_U_On.p3d",
+      "ClassRoot": "CfgWeapons",
+      "Name": "TFN_MT",
+      "FirstConfigClassName": "TFN_MT1_C3_H5_FDE_1_U_On",
+      "Action": 0,
+      "ModelName": "TFN_MT",
+      "HiddenSelections": {
+        "_comtac": {
+          "Action": null,
+          "OptionName": null,
+          "OptionValue": null,
+          "Priority": null,
+          "Values": [
+            {
+              "Value": "TFN_Helmets\\Data\\Comtac\\Comtac3_low_CO_fde.paa",
+              "ValueName": "FDE",
+              "FirstConfigClassName": "TFN_MT1_C3_H5_FDE_1_U_On"
+            },
+            {
+              "Value": "TFN_Helmets\\Data\\Comtac\\Comtac3_low_CO_green.paa",
+              "ValueName": "Green",
+              "FirstConfigClassName": "TFN_MT1_C3_H5_OD_1_U_On"
+            }
+          ]
+        },
+        "_cover": {
+          "Action": 0,
+          "OptionName": "_cover",
+          "OptionValue": "",
+          "Priority": 0,
+          "Values": [
+            {
+              "Value": "TFN_Helmets\\Data\\Cover\\helmet_cover_1_co.paa",
+              "ValueName": "CL",
+              "FirstConfigClassName": "TFN_MT1_C3_H5_FDE_1_U_On"
+            },
+            {
+              "Value": "TFN_Helmets\\Data\\Cover\\helmet_cover_2_co.paa",
+              "ValueName": "CL2",
+              "FirstConfigClassName": "TFN_MT2_C3_H5_FDE_1_U_On"
+            }
+          ]
+        },
+        "_scrim": {
+          "Action": 0,
+          "OptionName": "_scrim",
+          "OptionValue": "",
+          "Priority": 0,
+          "Values": [
+            {
+              "Value": null,
+              "ValueName": "Scrim",
+              "FirstConfigClassName": "TFN_MT2_C3_H5_Scrim_C3_FDE_1_U_On"
+            },
+            {
+              "Value": "",
+              "ValueName": "",
+              "FirstConfigClassName": "TFN_MT1_C3_H5_FDE_1_U_On"
+            }
+          ]
+        }
+      },
+      "GapOptions": {
+        "_h6": "",
+        "_manta": "",
+        "_teccharge": ""
+      },
+      "ExplicitOptions": {}
+    },
+    {
+      "P3dModel": "TFN_Helmets\\Models\\MT_C3_2_U_On.p3d",
+      "ClassRoot": "CfgWeapons",
+      "Name": "TFN_MT",
+      "FirstConfigClassName": "TFN_MT1_C3_FDE_1_U_On",
+      "Action": 0,
+      "ModelName": "TFN_MT",
+      "HiddenSelections": {
+        "_comtac": {
+          "Action": null,
+          "OptionName": null,
+          "OptionValue": null,
+          "Priority": null,
+          "Values": [
+            {
+              "Value": "TFN_Helmets\\Data\\Comtac\\Comtac3_low_CO_fde.paa",
+              "ValueName": "FDE",
+              "FirstConfigClassName": "TFN_MT1_C3_FDE_1_U_On"
+            },
+            {
+              "Value": "TFN_Helmets\\Data\\Comtac\\Comtac3_low_CO_green.paa",
+              "ValueName": "Green",
+              "FirstConfigClassName": "TFN_MT1_C3_OD_1_U_On"
+            }
+          ]
+        },
+        "_cover": {
+          "Action": null,
+          "OptionName": null,
+          "OptionValue": null,
+          "Priority": null,
+          "Values": [
+            {
+              "Value": "TFN_Helmets\\Data\\Cover\\helmet_cover_1_co.paa",
+              "ValueName": "C1",
+              "FirstConfigClassName": "TFN_MT1_C3_FDE_1_U_On"
+            },
+            {
+              "Value": "TFN_Helmets\\Data\\Cover\\helmet_cover_2_co.paa",
+              "ValueName": "C2",
+              "FirstConfigClassName": "TFN_MT2_C3_FDE_1_U_On"
+            }
+          ]
+        },
+        "_h6": {
+          "Action": null,
+          "OptionName": null,
+          "OptionValue": null,
+          "Priority": null,
+          "Values": [
+            {
+              "Value": null,
+              "ValueName": "Helstar Strobe",
+              "FirstConfigClassName": "TFN_MT1_C3_H6_FDE_1_U_On"
+            },
+            {
+              "Value": "",
+              "ValueName": "Off",
+              "FirstConfigClassName": "TFN_MT1_C3_FDE_1_U_On"
+            }
+          ]
+        },
+        "_manta": {
+          "Action": null,
+          "OptionName": null,
+          "OptionValue": null,
+          "Priority": null,
+          "Values": [
+            {
+              "Value": null,
+              "ValueName": "Manta Strobe",
+              "FirstConfigClassName": "TFN_MT1_C3_Manta_FDE_1_U_On"
+            },
+            {
+              "Value": "",
+              "ValueName": "Off",
+              "FirstConfigClassName": "TFN_MT1_C3_FDE_1_U_On"
+            }
+          ]
+        },
+        "_scrim": {
+          "Action": null,
+          "OptionName": null,
+          "OptionValue": null,
+          "Priority": null,
+          "Values": [
+            {
+              "Value": null,
+              "ValueName": "Scrim 2",
+              "FirstConfigClassName": "TFN_MT2_C3_Scrim_FDE_1_U_On"
+            },
+            {
+              "Value": "",
+              "ValueName": "",
+              "FirstConfigClassName": "TFN_MT1_C3_FDE_1_U_On"
+            }
+          ]
+        }
+      },
+      "GapOptions": {
+        "_teccharge": ""
+      },
+      "ExplicitOptions": {}
+    },
+    {
+      "P3dModel": "TFN_Helmets\\Models\\MT_AMP_1_U_On.p3d",
+      "ClassRoot": "CfgWeapons",
+      "Name": "TFN_MT",
+      "FirstConfigClassName": "TFN_MT1_AMP_H5_Light_1_U_On",
+      "Action": 0,
+      "ModelName": "TFN_MT",
+      "HiddenSelections": {
+        "_comtac": {
+          "Action": null,
+          "OptionName": null,
+          "OptionValue": null,
+          "Priority": null,
+          "Values": [
+            {
+              "Value": "TFN_Helmets\\Data\\Comtac\\Comtac3_low_CO_fde.paa",
+              "ValueName": "AMPs",
+              "FirstConfigClassName": "TFN_MT1_AMP_H5_Light_1_U_On"
+            },
+            {
+              "Value": "TFN_Helmets\\Data\\Comtac\\Comtac3_low_CO_green.paa",
+              "ValueName": "AMPs",
+              "FirstConfigClassName": "TFN_MT1_AMP_H5_1_U_On"
+            }
+          ]
+        },
+        "_cover": {
+          "Action": null,
+          "OptionName": null,
+          "OptionValue": null,
+          "Priority": null,
+          "Values": [
+            {
+              "Value": "TFN_Helmets\\Data\\Cover\\helmet_cover_1_co.paa",
+              "ValueName": "ACL1",
+              "FirstConfigClassName": "TFN_MT1_AMP_H5_Light_1_U_On"
+            },
+            {
+              "Value": "TFN_Helmets\\Data\\Cover\\helmet_cover_2_co.paa",
+              "ValueName": "ACL2",
+              "FirstConfigClassName": "TFN_MT2_AMP_H5_Light_1_U_On"
+            }
+          ]
+        },
+        "_scrim": {
+          "Action": null,
+          "OptionName": null,
+          "OptionValue": null,
+          "Priority": null,
+          "Values": [
+            {
+              "Value": null,
+              "ValueName": "AMP Scrim",
+              "FirstConfigClassName": "TFN_MT2_AMP_H5_Scrim_AMP_Light_1_U_On"
+            },
+            {
+              "Value": "",
+              "ValueName": "",
+              "FirstConfigClassName": "TFN_MT1_AMP_H5_Light_1_U_On"
+            }
+          ]
+        },
+        "_teccharge": {
+          "Action": null,
+          "OptionName": null,
+          "OptionValue": null,
+          "Priority": null,
+          "Values": [
+            {
+              "Value": null,
+              "ValueName": "Amp Light On",
+              "FirstConfigClassName": "TFN_MT1_AMP_H5_Light_1_U_On"
+            },
+            {
+              "Value": "",
+              "ValueName": "",
+              "FirstConfigClassName": "TFN_MT1_AMP_H5_1_U_On"
+            }
+          ]
+        }
+      },
+      "GapOptions": {
+        "_h6": "",
+        "_manta": ""
+      },
+      "ExplicitOptions": {}
+    },
+    {
+      "P3dModel": "TFN_Helmets\\Models\\MT_AMP_2_U_On.p3d",
+      "ClassRoot": "CfgWeapons",
+      "Name": "TFN_MT",
+      "FirstConfigClassName": "TFN_MT1_AMP_Light_1_U_On",
+      "Action": 0,
+      "ModelName": "TFN_MT",
+      "HiddenSelections": {
+        "_comtac": {
+          "Action": null,
+          "OptionName": null,
+          "OptionValue": null,
+          "Priority": null,
+          "Values": [
+            {
+              "Value": "TFN_Helmets\\Data\\Comtac\\Comtac3_low_CO_fde.paa",
+              "ValueName": "AMPs",
+              "FirstConfigClassName": "TFN_MT1_AMP_Light_1_U_On"
+            },
+            {
+              "Value": "TFN_Helmets\\Data\\Comtac\\Comtac3_low_CO_green.paa",
+              "ValueName": "",
+              "FirstConfigClassName": "TFN_MT1_AMP_1_U_On"
+            }
+          ]
+        },
+        "_cover": {
+          "Action": null,
+          "OptionName": null,
+          "OptionValue": null,
+          "Priority": null,
+          "Values": [
+            {
+              "Value": "TFN_Helmets\\Data\\Cover\\helmet_cover_1_co.paa",
+              "ValueName": "AC1",
+              "FirstConfigClassName": "TFN_MT1_AMP_Light_1_U_On"
+            },
+            {
+              "Value": "TFN_Helmets\\Data\\Cover\\helmet_cover_2_co.paa",
+              "ValueName": "AC2",
+              "FirstConfigClassName": "TFN_MT2_AMP_Light_1_U_On"
+            }
+          ]
+        },
+        "_h6": {
+          "Action": null,
+          "OptionName": null,
+          "OptionValue": null,
+          "Priority": null,
+          "Values": [
+            {
+              "Value": null,
+              "ValueName": "Helstar Strobe",
+              "FirstConfigClassName": "TFN_MT1_AMP_H6_Light_1_U_On"
+            },
+            {
+              "Value": "",
+              "ValueName": "Off",
+              "FirstConfigClassName": "TFN_MT1_AMP_Light_1_U_On"
+            }
+          ]
+        },
+        "_manta": {
+          "Action": null,
+          "OptionName": null,
+          "OptionValue": null,
+          "Priority": null,
+          "Values": [
+            {
+              "Value": null,
+              "ValueName": "Amp Manta",
+              "FirstConfigClassName": "TFN_MT1_AMP_Manta_Light_1_U_On"
+            },
+            {
+              "Value": "",
+              "ValueName": "Off",
+              "FirstConfigClassName": "TFN_MT1_AMP_Light_1_U_On"
+            }
+          ]
+        },
+        "_scrim": {
+          "Action": null,
+          "OptionName": null,
+          "OptionValue": null,
+          "Priority": null,
+          "Values": [
+            {
+              "Value": null,
+              "ValueName": "Amp Scrim 2",
+              "FirstConfigClassName": "TFN_MT2_AMP_Scrim_Light_1_U_On"
+            },
+            {
+              "Value": "",
+              "ValueName": "",
+              "FirstConfigClassName": "TFN_MT1_AMP_Light_1_U_On"
+            }
+          ]
+        },
+        "_teccharge": {
+          "Action": 0,
+          "OptionName": "_teccharge",
+          "OptionValue": "",
+          "Priority": 0,
+          "Values": [
+            {
+              "Value": null,
+              "ValueName": "Amp Light On",
+              "FirstConfigClassName": "TFN_MT2_AMP_Light_1_U_On"
+            },
+            {
+              "Value": "",
+              "ValueName": "none",
+              "FirstConfigClassName": "TFN_MT1_AMP_Light_1_U_On"
+            }
+          ]
+        }
+      },
+      "GapOptions": {},
+      "ExplicitOptions": {}
+    }
+  ]
+}

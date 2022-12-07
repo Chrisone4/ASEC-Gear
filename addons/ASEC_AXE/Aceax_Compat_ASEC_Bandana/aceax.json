@@ -1,0 +1,62 @@
+{
+  "Models": [
+    {
+      "P3dModel": "ball_cap\\Bandanna_Comtac.p3d",
+      "ClassRoot": "CfgWeapons",
+      "Name": "ASEC_cringe_matty",
+      "FirstConfigClassName": "ASEC_cringe_matty_us",
+      "Action": null,
+      "ModelName": null,
+      "HiddenSelections": {
+        "camo": {
+          "Action": null,
+          "OptionName": null,
+          "OptionValue": null,
+          "Priority": null,
+          "Values": [
+            {
+              "Value": "ball_cap\\data\\bandanna_blk_co.paa",
+              "ValueName": null,
+              "FirstConfigClassName": "ASEC_cringe_matty_blk"
+            },
+            {
+              "Value": "ball_cap\\data\\bandanna_blue_co.paa",
+              "ValueName": null,
+              "FirstConfigClassName": "ASEC_cringe_matty_blue"
+            },
+            {
+              "Value": "ball_cap\\data\\bandanna_red_co.paa",
+              "ValueName": null,
+              "FirstConfigClassName": "ASEC_cringe_matty_red"
+            },
+            {
+              "Value": "ball_cap\\data\\bandanna_us_co.paa",
+              "ValueName": "nz",
+              "FirstConfigClassName": "ASEC_cringe_matty_us"
+            }
+          ]
+        },
+        "camo2": {
+          "Action": 2,
+          "OptionName": "camo2",
+          "OptionValue": "",
+          "Priority": 0,
+          "Values": [
+            {
+              "Value": null,
+              "ValueName": null,
+              "FirstConfigClassName": "ASEC_cringe_matty_blue"
+            },
+            {
+              "Value": "ball_cap\\data\\wrap_mc_co.paa",
+              "ValueName": null,
+              "FirstConfigClassName": "ASEC_cringe_matty_us"
+            }
+          ]
+        }
+      },
+      "GapOptions": {},
+      "ExplicitOptions": {}
+    }
+  ]
+}

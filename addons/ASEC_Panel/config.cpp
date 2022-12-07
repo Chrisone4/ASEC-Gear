@@ -1,0 +1,2214 @@
+class CfgPatches
+{
+	class ASEC_Panel
+	{
+		magazines[]={};
+		ammo[]={};
+		units[]={};
+		weapons[]={};
+		requiredVersion=0.1;
+		requiredAddons[]=
+		{
+			"A3_Data_F",
+			"A3_Weapons_F",
+			"A3_Characters_F",
+			"A3_Characters_F_BLUFOR",
+			"Extended_EventHandlers"
+		};
+	};
+};
+class CfgVehicles
+{
+	class Bag_Base;
+	class Backpack_Base: Bag_Base
+	{
+		scope=1;
+		scopeCurator=0;
+		author="ASEC";
+		DLC="SOCOM";
+		displayName="";
+		picture="";
+		isbackpack=1;
+		model="";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[]={};
+		maximumLoad=500;
+		mass=30;
+	};
+	class ASEC_Panel1_jpc_mc: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] JPC Back Panel 1 MC";
+		model="ASEC_Panel\panel1.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\flash_mc.paa",
+			"ASEC_Panel\data\medpouch_mc.paa",
+			"ASEC_Panel\data\pouch_mc.paa"
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_Panel2_jpc_mc: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] JPC Back Panel 2 MC";
+		model="ASEC_Panel\panel2.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\flash_mc.paa",
+			"ASEC_Panel\data\medpouch_mc.paa",
+			"ASEC_Panel\data\pouch_mc.paa"
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_Panel3_jpc_mc: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] JPC Back Panel 3 MC";
+		model="ASEC_Panel\panel3.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\flash_mc.paa",
+			"ASEC_Panel\data\medpouch_mc.paa",
+			"ASEC_Panel\data\pouch_mc.paa"
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_Panel4_jpc_mc: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] JPC Back Panel 4 MC";
+		model="ASEC_Panel\panel4.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\flash_mc.paa",
+			"ASEC_Panel\data\medpouch_mc.paa",
+			"ASEC_Panel\data\pouch_mc.paa"
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_Panel1_jpc_AOR1: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] JPC Back Panel 1 AOR1";
+		model="ASEC_Panel\panel1.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\flash_AOR1.paa",
+			"ASEC_Panel\data\medpouch_AOR1.paa",
+			"ASEC_Panel\data\pouch_AOR1.paa"
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_Panel2_jpc_AOR1: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] JPC Back Panel 2 AOR1";
+		model="ASEC_Panel\panel2.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\flash_AOR1.paa",
+			"ASEC_Panel\data\medpouch_AOR1.paa",
+			"ASEC_Panel\data\pouch_AOR1.paa"
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_Panel3_jpc_AOR1: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] JPC Back Panel 3 AOR1";
+		model="ASEC_Panel\panel3.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\flash_AOR1.paa",
+			"ASEC_Panel\data\medpouch_AOR1.paa",
+			"ASEC_Panel\data\pouch_AOR1.paa"
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_Panel4_jpc_AOR1: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] JPC Back Panel 4 AOR1";
+		model="ASEC_Panel\panel4.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\flash_AOR1.paa",
+			"ASEC_Panel\data\medpouch_AOR1.paa",
+			"ASEC_Panel\data\pouch_AOR1.paa"
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_hydro_panel_jpc: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] JPC Hydation Panel MC";
+		model="ASEC_Panel\hydration.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\camelback_mc.paa"
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_hydro_panel_jpc_aor1: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] JPC Hydation Panel AOR1";
+		model="ASEC_Panel\hydration.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\camelback_aor1.paa"
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_lbx_panel_jpc: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] JPC LBX Panel MC";
+		model="ASEC_Panel\lbx.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\backpanel_mc.paa"
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_lbx_panel_jpc_aor1: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] JPC LBX Panel AOR1";
+		model="ASEC_Panel\lbx.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\backpanel_aor1.paa"
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_Panel1_jpc_cb: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] JPC Back Panel 1 CB";
+		model="ASEC_Panel\panel1.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\flash_cb.paa",
+			"ASEC_Panel\data\medpouch_cb.paa",
+			"ASEC_Panel\data\pouch_cb.paa"
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_Panel2_jpc_cb: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] JPC Back Panel 2 CB";
+		model="ASEC_Panel\panel2.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\flash_cb.paa",
+			"ASEC_Panel\data\medpouch_cb.paa",
+			"ASEC_Panel\data\pouch_cb.paa"
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_Panel3_jpc_cb: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] JPC Back Panel 3 CB";
+		model="ASEC_Panel\panel3.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\flash_cb.paa",
+			"ASEC_Panel\data\medpouch_cb.paa",
+			"ASEC_Panel\data\pouch_cb.paa"
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_Panel4_jpc_cb: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] JPC Back Panel 4 CB";
+		model="ASEC_Panel\panel4.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\flash_cb.paa",
+			"ASEC_Panel\data\medpouch_cb.paa",
+			"ASEC_Panel\data\pouch_cb.paa"
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_hydro_panel_jpc_cb: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] JPC Hydation Panel CB";
+		model="ASEC_Panel\hydration.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\camelback_cb.paa"
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_lbx_panel_jpc_cb: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] JPC LBX Panel CB";
+		model="ASEC_Panel\lbx.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\backpanel_cb.paa"
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_radio_panel_jpc_cb: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] JPC LBX Panel (Radio) CB";
+		model="ASEC_Panel\lbx.p3d";
+		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
+		tf_hasLRradio=1;
+		tf_range=250000;
+		tf_encryptionCode="tf_west_radio_code";
+		tf_dialog="rt1523g_radio_dialog";
+		tf_subtype="digital_lr";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\backpanel_cb.paa"
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_radio_panel_jpc: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] JPC LBX Panel (Radio) MC";
+		model="ASEC_Panel\lbx.p3d";
+		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
+		tf_hasLRradio=1;
+		tf_range=250000;
+		tf_encryptionCode="tf_west_radio_code";
+		tf_dialog="rt1523g_radio_dialog";
+		tf_subtype="digital_lr";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\backpanel_mc.paa"
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_radio_panel_jpc_aor1: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] JPC LBX Panel (Radio) AOR1";
+		model="ASEC_Panel\lbx.p3d";
+		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
+		tf_hasLRradio=1;
+		tf_range=250000;
+		tf_encryptionCode="tf_west_radio_code";
+		tf_dialog="rt1523g_radio_dialog";
+		tf_subtype="digital_lr";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\backpanel_aor1.paa"
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_LBT_day_mc: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] LBT 14L Daybag MC";
+		model="ASEC_Panel\LBT_Bag.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\lbt_day_mc_co.paa"
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_LBT_day_RG: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] LBT 14L Daybag RG";
+		model="ASEC_Panel\LBT_Bag.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\lbt_day_rg_co.paa"
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_LBT_day_MCB: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] LBT 14L Daybag MCB";
+		model="ASEC_Panel\LBT_Bag.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\lbt_day_mcb_co.paa"
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_LBT_day_gry: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] LBT 14L Daybag Gry";
+		model="ASEC_Panel\LBT_Bag.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\lbt_day_gray_co.paa"
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_avs_pack_mc_flag: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] AVS Crye Pack Zip On (Flag) MC";
+		model="ASEC_Panel\avs_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"bolt",
+			"halligan",
+			"halligan2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_mc.paa"
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_avs_pack_aor_flag: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] AVS Crye Pack Zip On (Flag) AOR1";
+		model="ASEC_Panel\avs_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"bolt",
+			"halligan",
+			"halligan2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_aor.paa"
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_avs_pack_rg_flag: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] AVS Crye Pack Zip On (Flag) RG";
+		model="ASEC_Panel\avs_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"bolt",
+			"halligan",
+			"halligan2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_rg.paa"
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_avs_pack_blk_flag: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] AVS Crye Pack Zip On (Flag) Blk";
+		model="ASEC_Panel\avs_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"bolt",
+			"halligan",
+			"halligan2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_blk.paa"
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_avs_pack_cb_flag: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] AVS Crye Pack Zip On (Flag) CB";
+		model="ASEC_Panel\avs_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"bolt",
+			"halligan",
+			"halligan2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_cb.paa"
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_avs_pack_mc: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] AVS Crye Pack Zip On MC";
+		model="ASEC_Panel\avs_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"patch",
+			"bolt",
+			"halligan",
+			"halligan2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_mc.paa",
+			""
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_avs_pack_aor: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] AVS Crye Pack Zip On AOR1";
+		model="ASEC_Panel\avs_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"patch",
+			"bolt",
+			"halligan",
+			"halligan2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_aor.paa",
+			""
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_avs_pack_rg: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] AVS Crye Pack Zip On RG";
+		model="ASEC_Panel\avs_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"patch",
+			"bolt",
+			"halligan",
+			"halligan2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_rg.paa",
+			""
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_avs_pack_blk: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] AVS Crye Pack Zip On Blk";
+		model="ASEC_Panel\avs_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"patch",
+			"bolt",
+			"halligan",
+			"halligan2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_blk.paa",
+			""
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_avs_pack_cb: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] AVS Crye Pack Zip On CB";
+		model="ASEC_Panel\avs_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"patch",
+			"bolt",
+			"halligan",
+			"halligan2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_cb.paa",
+			""
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_avs_pack_mc_bolt_flag: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] AVS Crye Pack Zip On Bolt (Flag) MC";
+		model="ASEC_Panel\avs_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"halligan",
+			"halligan2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_mc.paa"
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_avs_pack_aor_bolt_flag: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] AVS Crye Pack Zip On Bolt (Flag) AOR1";
+		model="ASEC_Panel\avs_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"halligan",
+			"halligan2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_aor.paa"
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_avs_pack_rg_bolt_flag: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] AVS Crye Pack Zip On Bolt (Flag) RG";
+		model="ASEC_Panel\avs_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"halligan",
+			"halligan2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_rg.paa"
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_avs_pack_blk_bolt_flag: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] AVS Crye Pack Zip On Bolt (Flag) Blk";
+		model="ASEC_Panel\avs_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"halligan",
+			"halligan2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_blk.paa"
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_avs_pack_cb_bolt_flag: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] AVS Crye Pack Zip On Bolt (Flag) CB";
+		model="ASEC_Panel\avs_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"halligan",
+			"halligan2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_cb.paa"
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_avs_pack_bolt_mc: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] AVS Crye Pack Zip On Bolt MC";
+		model="ASEC_Panel\avs_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"patch",
+			"halligan",
+			"halligan2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_mc.paa",
+			""
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_avs_pack_bolt_aor: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] AVS Crye Pack Zip On Bolt AOR1";
+		model="ASEC_Panel\avs_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"patch",
+			"halligan",
+			"halligan2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_aor.paa",
+			""
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_avs_pack_bolt_rg: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] AVS Crye Pack Zip On Bolt RG";
+		model="ASEC_Panel\avs_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"patch",
+			"halligan",
+			"halligan2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_rg.paa",
+			""
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_avs_pack_bolt_blk: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] AVS Crye Pack Zip On Bolt Blk";
+		model="ASEC_Panel\avs_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"patch",
+			"halligan",
+			"halligan2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_blk.paa",
+			""
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_avs_pack_bolt_cb: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] AVS Crye Pack Zip On Bolt CB";
+		model="ASEC_Panel\avs_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"patch",
+			"halligan",
+			"halligan2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_cb.paa",
+			""
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_avs_pack_mc_halligan_flag: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] AVS Crye Pack Zip On Halligan (Flag) MC";
+		model="ASEC_Panel\avs_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"bolt",
+			"halligan2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_mc.paa"
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_avs_pack_aor_halligan_flag: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] AVS Crye Pack Zip On Halligan (Flag) AOR1";
+		model="ASEC_Panel\avs_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"bolt",
+			"halligan2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_aor.paa"
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_avs_pack_rg_halligan_flag: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] AVS Crye Pack Zip On Halligan (Flag) RG";
+		model="ASEC_Panel\avs_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"bolt",
+			"halligan2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_rg.paa"
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_avs_pack_blk_halligan_flag: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] AVS Crye Pack Zip On Halligan (Flag) Blk";
+		model="ASEC_Panel\avs_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"bolt",
+			"halligan2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_blk.paa"
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_avs_pack_cb_halligan_flag: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] AVS Crye Pack Zip On Halligan (Flag) CB";
+		model="ASEC_Panel\avs_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"bolt",
+			"halligan2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_cb.paa"
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_avs_pack_mc_halligan: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] AVS Crye Pack Zip On Halligan MC";
+		model="ASEC_Panel\avs_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"patch",
+			"bolt",
+			"halligan2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_mc.paa",
+			""
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_avs_pack_aor_halligan: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] AVS Crye Pack Zip On Halligan AOR1";
+		model="ASEC_Panel\avs_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"patch",
+			"bolt",
+			"halligan2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_aor.paa",
+			""
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_avs_pack_rg_halligan: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] AVS Crye Pack Zip On Halligan RG";
+		model="ASEC_Panel\avs_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"patch",
+			"bolt",
+			"halligan2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_rg.paa",
+			""
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_avs_pack_blk_halligan: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] AVS Crye Pack Zip On Halligan Blk";
+		model="ASEC_Panel\avs_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"patch",
+			"bolt",
+			"halligan2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_blk.paa",
+			""
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_avs_pack_cb_halligan: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] AVS Crye Pack Zip On Halligan CB";
+		model="ASEC_Panel\avs_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"patch",
+			"bolt",
+			"halligan2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_cb.paa",
+			""
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_avs_pack_breacher_mc_flag: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] AVS Crye Pack Zip On Breacher (Flag) MC";
+		model="ASEC_Panel\avs_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"halligan"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_mc.paa"
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_avs_pack_breacher_aor_flag: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] AVS Crye Pack Zip On Breacher (Flag) AOR1";
+		model="ASEC_Panel\avs_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"halligan"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_aor.paa"
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_avs_pack_breacher_rg_flag: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] AVS Crye Pack Zip On Breacher (Flag) RG";
+		model="ASEC_Panel\avs_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"halligan"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_rg.paa"
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_avs_pack_breacher_blk_flag: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] AVS Crye Pack Zip On Breacher (Flag) Blk";
+		model="ASEC_Panel\avs_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"halligan"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_blk.paa"
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_avs_pack_breacher_cb_flag: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] AVS Crye Pack Zip On Breacher (Flag) CB";
+		model="ASEC_Panel\avs_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"halligan"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_cb.paa"
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_avs_pack_breacher_mc: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] AVS Crye Pack Zip On Breacher MC";
+		model="ASEC_Panel\avs_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"patch",
+			"halligan"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_mc.paa",
+			""
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_avs_pack_breacher_aor: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] AVS Crye Pack Zip On Breacher AOR1";
+		model="ASEC_Panel\avs_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"patch",
+			"halligan"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_aor.paa",
+			""
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_avs_pack_breacher_rg: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] AVS Crye Pack Zip On Breacher RG";
+		model="ASEC_Panel\avs_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"patch",
+			"halligan"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_rg.paa",
+			""
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_avs_pack_breacher_blk: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] AVS Crye Pack Zip On Breacher Blk";
+		model="ASEC_Panel\avs_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"patch",
+			"halligan"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_blk.paa",
+			""
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_avs_pack_breacher_cb: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] AVS Crye Pack Zip On Breacher CB";
+		model="ASEC_Panel\avs_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"patch",
+			"halligan"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_cb.paa",
+			""
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_jpc_pack_mc_flag: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] JPC Crye Pack Zip On (Flag) MC";
+		model="ASEC_Panel\jpc_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"bolt",
+			"halligan",
+			"halligan2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_mc.paa"
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_jpc_pack_aor_flag: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] JPC Crye Pack Zip On (Flag) AOR1";
+		model="ASEC_Panel\jpc_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"bolt",
+			"halligan",
+			"halligan2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_aor.paa"
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_jpc_pack_rg_flag: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] JPC Crye Pack Zip On (Flag) RG";
+		model="ASEC_Panel\jpc_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"bolt",
+			"halligan",
+			"halligan2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_rg.paa"
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_jpc_pack_blk_flag: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] JPC Crye Pack Zip On (Flag) Blk";
+		model="ASEC_Panel\jpc_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"bolt",
+			"halligan",
+			"halligan2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_blk.paa"
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_jpc_pack_cb_flag: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] JPC Crye Pack Zip On (Flag) CB";
+		model="ASEC_Panel\jpc_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"bolt",
+			"halligan",
+			"halligan2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_cb.paa"
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_jpc_pack_mc: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] JPC Crye Pack Zip On MC";
+		model="ASEC_Panel\jpc_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"patch",
+			"bolt",
+			"halligan",
+			"halligan2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_mc.paa",
+			""
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_jpc_pack_aor: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] JPC Crye Pack Zip On AOR1";
+		model="ASEC_Panel\jpc_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"patch",
+			"bolt",
+			"halligan",
+			"halligan2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_aor.paa",
+			""
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_jpc_pack_rg: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] JPC Crye Pack Zip On RG";
+		model="ASEC_Panel\jpc_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"patch",
+			"bolt",
+			"halligan",
+			"halligan2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_rg.paa",
+			""
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_jpc_pack_blk: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] JPC Crye Pack Zip On Blk";
+		model="ASEC_Panel\jpc_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"patch",
+			"bolt",
+			"halligan",
+			"halligan2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_blk.paa",
+			""
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_jpc_pack_cb: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] JPC Crye Pack Zip On CB";
+		model="ASEC_Panel\jpc_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"patch",
+			"bolt",
+			"halligan",
+			"halligan2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_cb.paa",
+			""
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_jpc_pack_mc_bolt_flag: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] JPC Crye Pack Zip On Bolt (Flag) MC";
+		model="ASEC_Panel\jpc_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"halligan",
+			"halligan2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_mc.paa"
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_jpc_pack_aor_bolt_flag: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] JPC Crye Pack Zip On Bolt (Flag) AOR1";
+		model="ASEC_Panel\jpc_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"halligan",
+			"halligan2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_aor.paa"
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_jpc_pack_rg_bolt_flag: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] JPC Crye Pack Zip On Bolt (Flag) RG";
+		model="ASEC_Panel\jpc_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"halligan",
+			"halligan2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_rg.paa"
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_jpc_pack_blk_bolt_flag: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] JPC Crye Pack Zip On Bolt (Flag) Blk";
+		model="ASEC_Panel\jpc_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"halligan",
+			"halligan2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_blk.paa"
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_jpc_pack_cb_bolt_flag: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] JPC Crye Pack Zip On Bolt (Flag) CB";
+		model="ASEC_Panel\jpc_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"halligan",
+			"halligan2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_cb.paa"
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_jpc_pack_bolt_mc: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] JPC Crye Pack Zip On Bolt MC";
+		model="ASEC_Panel\jpc_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"patch",
+			"halligan",
+			"halligan2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_mc.paa",
+			""
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_jpc_pack_bolt_aor: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] JPC Crye Pack Zip On Bolt AOR1";
+		model="ASEC_Panel\jpc_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"patch",
+			"halligan",
+			"halligan2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_aor.paa",
+			""
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_jpc_pack_bolt_rg: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] JPC Crye Pack Zip On Bolt RG";
+		model="ASEC_Panel\jpc_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"patch",
+			"halligan",
+			"halligan2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_rg.paa",
+			""
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_jpc_pack_bolt_blk: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] JPC Crye Pack Zip On Bolt Blk";
+		model="ASEC_Panel\jpc_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"patch",
+			"halligan",
+			"halligan2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_blk.paa",
+			""
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_jpc_pack_bolt_cb: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] JPC Crye Pack Zip On Bolt CB";
+		model="ASEC_Panel\jpc_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"patch",
+			"halligan",
+			"halligan2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_cb.paa",
+			""
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_jpc_pack_mc_halligan_flag: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] JPC Crye Pack Zip On Halligan (Flag) MC";
+		model="ASEC_Panel\jpc_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"bolt",
+			"halligan2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_mc.paa"
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_jpc_pack_aor_halligan_flag: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] JPC Crye Pack Zip On Halligan (Flag) AOR1";
+		model="ASEC_Panel\jpc_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"bolt",
+			"halligan2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_aor.paa"
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_jpc_pack_rg_halligan_flag: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] JPC Crye Pack Zip On Halligan (Flag) RG";
+		model="ASEC_Panel\jpc_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"bolt",
+			"halligan2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_rg.paa"
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_jpc_pack_blk_halligan_flag: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] JPC Crye Pack Zip On Halligan (Flag) Blk";
+		model="ASEC_Panel\jpc_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"bolt",
+			"halligan2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_blk.paa"
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_jpc_pack_cb_halligan_flag: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] JPC Crye Pack Zip On Halligan (Flag) CB";
+		model="ASEC_Panel\jpc_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"bolt",
+			"halligan2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_cb.paa"
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_jpc_pack_mc_halligan: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] JPC Crye Pack Zip On Halligan MC";
+		model="ASEC_Panel\jpc_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"patch",
+			"bolt",
+			"halligan2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_mc.paa",
+			""
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_jpc_pack_aor_halligan: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] JPC Crye Pack Zip On Halligan AOR1";
+		model="ASEC_Panel\jpc_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"patch",
+			"bolt",
+			"halligan2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_aor.paa",
+			""
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_jpc_pack_rg_halligan: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] JPC Crye Pack Zip On Halligan RG";
+		model="ASEC_Panel\jpc_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"patch",
+			"bolt",
+			"halligan2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_rg.paa",
+			""
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_jpc_pack_blk_halligan: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] JPC Crye Pack Zip On Halligan Blk";
+		model="ASEC_Panel\jpc_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"patch",
+			"bolt",
+			"halligan2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_blk.paa",
+			""
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_jpc_pack_cb_halligan: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] JPC Crye Pack Zip On Halligan CB";
+		model="ASEC_Panel\jpc_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"patch",
+			"bolt",
+			"halligan2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_cb.paa",
+			""
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_jpc_pack_breacher_mc_flag: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] JPC Crye Pack Zip On Breacher (Flag) MC";
+		model="ASEC_Panel\jpc_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"halligan"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_mc.paa"
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_jpc_pack_breacher_aor_flag: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] JPC Crye Pack Zip On Breacher (Flag) AOR1";
+		model="ASEC_Panel\jpc_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"halligan"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_aor.paa"
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_jpc_pack_breacher_rg_flag: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] JPC Crye Pack Zip On Breacher (Flag) RG";
+		model="ASEC_Panel\jpc_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"halligan"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_rg.paa"
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_jpc_pack_breacher_blk_flag: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] JPC Crye Pack Zip On Breacher (Flag) Blk";
+		model="ASEC_Panel\jpc_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"halligan"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_blk.paa"
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_jpc_pack_breacher_cb_flag: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] JPC Crye Pack Zip On Breacher (Flag) CB";
+		model="ASEC_Panel\jpc_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"halligan"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_cb.paa"
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_jpc_pack_breacher_mc: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] JPC Crye Pack Zip On Breacher MC";
+		model="ASEC_Panel\jpc_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"patch",
+			"halligan"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_mc.paa",
+			""
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_jpc_pack_breacher_aor: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] JPC Crye Pack Zip On Breacher AOR1";
+		model="ASEC_Panel\jpc_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"patch",
+			"halligan"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_aor.paa",
+			""
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_jpc_pack_breacher_rg: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] JPC Crye Pack Zip On Breacher RG";
+		model="ASEC_Panel\jpc_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"patch",
+			"halligan"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_rg.paa",
+			""
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_jpc_pack_breacher_blk: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] JPC Crye Pack Zip On Breacher Blk";
+		model="ASEC_Panel\jpc_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"patch",
+			"halligan"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_blk.paa",
+			""
+		};
+		DLC="SOCOM";
+	};
+	class ASEC_jpc_pack_breacher_cb: Backpack_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		eden=2;
+		displayName="[ASEC] JPC Crye Pack Zip On Breacher CB";
+		model="ASEC_Panel\jpc_pack.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"patch",
+			"halligan"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Panel\data\ack_avs_cb.paa",
+			""
+		};
+		DLC="SOCOM";
+	};
+};

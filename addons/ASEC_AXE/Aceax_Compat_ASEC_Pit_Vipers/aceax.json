@@ -1,0 +1,324 @@
+{
+  "Models": [
+    {
+      "P3dModel": "agls\\agls_pitvipers\\agls_pitvipers.p3d",
+      "ClassRoot": "CfgGlasses",
+      "Name": "agls_pitvipers",
+      "FirstConfigClassName": "agls_pitvipers_test",
+      "Action": null,
+      "ModelName": null,
+      "HiddenSelections": {
+        "frame": {
+          "Action": 2,
+          "OptionName": "Frame",
+          "OptionValue": "",
+          "Priority": 0,
+          "Values": [
+            {
+              "Value": null,
+              "ValueName": null,
+              "FirstConfigClassName": "agls_pitvipers_test"
+            },
+            {
+              "Value": "AGLS\\agls_pitvipers\\data\\frame\\agls_pitviper_frame_blacking_CO.paa",
+              "ValueName": null,
+              "FirstConfigClassName": "agls_pitvipers_blacking"
+            },
+            {
+              "Value": "AGLS\\agls_pitvipers\\data\\frame\\agls_pitviper_frame_brights_CO.paa",
+              "ValueName": null,
+              "FirstConfigClassName": "agls_pitvipers_brights"
+            },
+            {
+              "Value": "AGLS\\agls_pitvipers\\data\\frame\\agls_pitviper_frame_CO.paa",
+              "ValueName": null,
+              "FirstConfigClassName": "agls_pitvipers"
+            },
+            {
+              "Value": "AGLS\\agls_pitvipers\\data\\frame\\agls_pitviper_frame_gold_CO.paa",
+              "ValueName": null,
+              "FirstConfigClassName": "agls_pitvipers_gold"
+            },
+            {
+              "Value": "AGLS\\agls_pitvipers\\data\\frame\\agls_pitviper_frame_murica_CO.paa",
+              "ValueName": null,
+              "FirstConfigClassName": "agls_pitvipers_merika"
+            },
+            {
+              "Value": "AGLS\\agls_pitvipers\\data\\frame\\agls_pitviper_frame_tropics_CO.paa",
+              "ValueName": null,
+              "FirstConfigClassName": "agls_pitvipers_tropics"
+            },
+            {
+              "Value": "AGLS\\agls_pitvipers\\data\\frame\\agls_pitviper_frame_yellow_CO.paa",
+              "ValueName": null,
+              "FirstConfigClassName": "agls_pitvipers_cosmos"
+            }
+          ]
+        },
+        "lens_left": {
+          "Action": 0,
+          "OptionName": "Lense",
+          "OptionValue": "",
+          "Priority": 0,
+          "Values": [
+            {
+              "Value": null,
+              "ValueName": null,
+              "FirstConfigClassName": "agls_pitvipers_test"
+            },
+            {
+              "Value": "AGLS\\agls_pitvipers\\data\\lens\\agls_pitviper_lensleft_bclear_ca.paa",
+              "ValueName": null,
+              "FirstConfigClassName": "agls_pitvipers_brights_clear"
+            },
+            {
+              "Value": "AGLS\\agls_pitvipers\\data\\lens\\agls_pitviper_lensleft_blacking_ca.paa",
+              "ValueName": null,
+              "FirstConfigClassName": "agls_pitvipers_blacking"
+            },
+            {
+              "Value": "AGLS\\agls_pitvipers\\data\\lens\\agls_pitviper_lensleft_brights_ca.paa",
+              "ValueName": null,
+              "FirstConfigClassName": "agls_pitvipers_brights"
+            },
+            {
+              "Value": "AGLS\\agls_pitvipers\\data\\lens\\agls_pitviper_lensleft_ca.paa",
+              "ValueName": null,
+              "FirstConfigClassName": "agls_pitvipers"
+            },
+            {
+              "Value": "AGLS\\agls_pitvipers\\data\\lens\\agls_pitviper_lensleft_gold_ca.paa",
+              "ValueName": null,
+              "FirstConfigClassName": "agls_pitvipers_gold"
+            },
+            {
+              "Value": "AGLS\\agls_pitvipers\\data\\lens\\agls_pitviper_lensleft_mclear_ca.paa",
+              "ValueName": null,
+              "FirstConfigClassName": "agls_pitvipers_merika_clear"
+            },
+            {
+              "Value": "AGLS\\agls_pitvipers\\data\\lens\\agls_pitviper_lensleft_murica_ca.paa",
+              "ValueName": null,
+              "FirstConfigClassName": "agls_pitvipers_merika"
+            },
+            {
+              "Value": "AGLS\\agls_pitvipers\\data\\lens\\agls_pitviper_lensleft_tropics_ca.paa",
+              "ValueName": null,
+              "FirstConfigClassName": "agls_pitvipers_tropics"
+            },
+            {
+              "Value": "AGLS\\agls_pitvipers\\data\\lens\\agls_pitviper_lensleft_yellow_ca.paa",
+              "ValueName": null,
+              "FirstConfigClassName": "agls_pitvipers_cosmos"
+            }
+          ]
+        },
+        "lens_right": {
+          "Action": 2,
+          "OptionName": "lens_right",
+          "OptionValue": "",
+          "Priority": 0,
+          "Values": [
+            {
+              "Value": null,
+              "ValueName": null,
+              "FirstConfigClassName": "agls_pitvipers_test"
+            },
+            {
+              "Value": "AGLS\\agls_pitvipers\\data\\lens\\agls_pitviper_lensright_bclear_ca.paa",
+              "ValueName": null,
+              "FirstConfigClassName": "agls_pitvipers_brights_clear"
+            },
+            {
+              "Value": "AGLS\\agls_pitvipers\\data\\lens\\agls_pitviper_lensright_blacking_ca.paa",
+              "ValueName": null,
+              "FirstConfigClassName": "agls_pitvipers_blacking"
+            },
+            {
+              "Value": "AGLS\\agls_pitvipers\\data\\lens\\agls_pitviper_lensright_brights_ca.paa",
+              "ValueName": null,
+              "FirstConfigClassName": "agls_pitvipers_brights"
+            },
+            {
+              "Value": "AGLS\\agls_pitvipers\\data\\lens\\agls_pitviper_lensright_ca.paa",
+              "ValueName": null,
+              "FirstConfigClassName": "agls_pitvipers"
+            },
+            {
+              "Value": "AGLS\\agls_pitvipers\\data\\lens\\agls_pitviper_lensright_gold_ca.paa",
+              "ValueName": null,
+              "FirstConfigClassName": "agls_pitvipers_gold"
+            },
+            {
+              "Value": "AGLS\\agls_pitvipers\\data\\lens\\agls_pitviper_lensright_mclear_ca.paa",
+              "ValueName": null,
+              "FirstConfigClassName": "agls_pitvipers_merika_clear"
+            },
+            {
+              "Value": "AGLS\\agls_pitvipers\\data\\lens\\agls_pitviper_lensright_murica_ca.paa",
+              "ValueName": null,
+              "FirstConfigClassName": "agls_pitvipers_merika"
+            },
+            {
+              "Value": "AGLS\\agls_pitvipers\\data\\lens\\agls_pitviper_lensright_tropics_ca.paa",
+              "ValueName": null,
+              "FirstConfigClassName": "agls_pitvipers_tropics"
+            },
+            {
+              "Value": "AGLS\\agls_pitvipers\\data\\lens\\agls_pitviper_lensright_yellow_ca.paa",
+              "ValueName": null,
+              "FirstConfigClassName": "agls_pitvipers_cosmos"
+            }
+          ]
+        },
+        "plastic": {
+          "Action": 2,
+          "OptionName": "plastic",
+          "OptionValue": "",
+          "Priority": 0,
+          "Values": [
+            {
+              "Value": null,
+              "ValueName": null,
+              "FirstConfigClassName": "agls_pitvipers_test"
+            },
+            {
+              "Value": "AGLS\\agls_pitvipers\\data\\plastic\\agls_pitviper_plastic_CO.paa",
+              "ValueName": null,
+              "FirstConfigClassName": "agls_pitvipers"
+            }
+          ]
+        }
+      },
+      "GapOptions": {},
+      "ExplicitOptions": {}
+    },
+    {
+      "P3dModel": "agls\\agls_pitvipers\\agls_pitvipers_alt.p3d",
+      "ClassRoot": "CfgGlasses",
+      "Name": "agls_pitvipers",
+      "FirstConfigClassName": "agls_pitvipers_cosmos_alt",
+      "Action": null,
+      "ModelName": null,
+      "HiddenSelections": {
+        "frame": {
+          "Action": 2,
+          "OptionName": "Frame",
+          "OptionValue": "",
+          "Priority": 0,
+          "Values": [
+            {
+              "Value": "AGLS\\agls_pitvipers\\data\\frame\\agls_pitviper_frame_blacking_CO.paa",
+              "ValueName": null,
+              "FirstConfigClassName": "agls_pitvipers_blacking_alt"
+            },
+            {
+              "Value": "AGLS\\agls_pitvipers\\data\\frame\\agls_pitviper_frame_brights_CO.paa",
+              "ValueName": null,
+              "FirstConfigClassName": "agls_pitvipers_brights_alt"
+            },
+            {
+              "Value": "AGLS\\agls_pitvipers\\data\\frame\\agls_pitviper_frame_gold_CO.paa",
+              "ValueName": null,
+              "FirstConfigClassName": "agls_pitvipers_gold_alt"
+            },
+            {
+              "Value": "AGLS\\agls_pitvipers\\data\\frame\\agls_pitviper_frame_murica_CO.paa",
+              "ValueName": null,
+              "FirstConfigClassName": "agls_pitvipers_merika_alt"
+            },
+            {
+              "Value": "AGLS\\agls_pitvipers\\data\\frame\\agls_pitviper_frame_tropics_CO.paa",
+              "ValueName": null,
+              "FirstConfigClassName": "agls_pitvipers_tropics_alt"
+            },
+            {
+              "Value": "AGLS\\agls_pitvipers\\data\\frame\\agls_pitviper_frame_yellow_CO.paa",
+              "ValueName": null,
+              "FirstConfigClassName": "agls_pitvipers_cosmos_alt"
+            }
+          ]
+        },
+        "lens_left": {
+          "Action": 0,
+          "OptionName": "Lense",
+          "OptionValue": "",
+          "Priority": 0,
+          "Values": [
+            {
+              "Value": "AGLS\\agls_pitvipers\\data\\lens\\agls_pitviper_lensleft_blacking_co.paa",
+              "ValueName": null,
+              "FirstConfigClassName": "agls_pitvipers_blacking_alt"
+            },
+            {
+              "Value": "AGLS\\agls_pitvipers\\data\\lens\\agls_pitviper_lensleft_brights_co.paa",
+              "ValueName": null,
+              "FirstConfigClassName": "agls_pitvipers_brights_alt"
+            },
+            {
+              "Value": "AGLS\\agls_pitvipers\\data\\lens\\agls_pitviper_lensleft_gold_co.paa",
+              "ValueName": null,
+              "FirstConfigClassName": "agls_pitvipers_gold_alt"
+            },
+            {
+              "Value": "AGLS\\agls_pitvipers\\data\\lens\\agls_pitviper_lensleft_murica_co.paa",
+              "ValueName": null,
+              "FirstConfigClassName": "agls_pitvipers_merika_alt"
+            },
+            {
+              "Value": "AGLS\\agls_pitvipers\\data\\lens\\agls_pitviper_lensleft_tropics_co.paa",
+              "ValueName": null,
+              "FirstConfigClassName": "agls_pitvipers_tropics_alt"
+            },
+            {
+              "Value": "AGLS\\agls_pitvipers\\data\\lens\\agls_pitviper_lensleft_yellow_co.paa",
+              "ValueName": null,
+              "FirstConfigClassName": "agls_pitvipers_cosmos_alt"
+            }
+          ]
+        },
+        "lens_right": {
+          "Action": 2,
+          "OptionName": "lens_right",
+          "OptionValue": "",
+          "Priority": 0,
+          "Values": [
+            {
+              "Value": "AGLS\\agls_pitvipers\\data\\lens\\agls_pitviper_lensright_blacking_co.paa",
+              "ValueName": null,
+              "FirstConfigClassName": "agls_pitvipers_blacking_alt"
+            },
+            {
+              "Value": "AGLS\\agls_pitvipers\\data\\lens\\agls_pitviper_lensright_brights_co.paa",
+              "ValueName": null,
+              "FirstConfigClassName": "agls_pitvipers_brights_alt"
+            },
+            {
+              "Value": "AGLS\\agls_pitvipers\\data\\lens\\agls_pitviper_lensright_gold_co.paa",
+              "ValueName": null,
+              "FirstConfigClassName": "agls_pitvipers_gold_alt"
+            },
+            {
+              "Value": "AGLS\\agls_pitvipers\\data\\lens\\agls_pitviper_lensright_murica_co.paa",
+              "ValueName": null,
+              "FirstConfigClassName": "agls_pitvipers_merika_alt"
+            },
+            {
+              "Value": "AGLS\\agls_pitvipers\\data\\lens\\agls_pitviper_lensright_tropics_co.paa",
+              "ValueName": null,
+              "FirstConfigClassName": "agls_pitvipers_tropics_alt"
+            },
+            {
+              "Value": "AGLS\\agls_pitvipers\\data\\lens\\agls_pitviper_lensright_yellow_co.paa",
+              "ValueName": null,
+              "FirstConfigClassName": "agls_pitvipers_cosmos_alt"
+            }
+          ]
+        }
+      },
+      "GapOptions": {},
+      "ExplicitOptions": {}
+    }
+  ]
+}
