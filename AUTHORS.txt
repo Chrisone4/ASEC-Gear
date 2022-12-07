@@ -1,0 +1,9 @@
+﻿# CONTRIBUTOR LIST
+
+# CORE TEAM
+Jupster
+Lip
+Thunderbolt (chrisone4)
+
+# CONTRIBUTORS
+Basil
