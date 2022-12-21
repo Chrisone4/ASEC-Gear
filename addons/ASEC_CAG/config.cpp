@@ -30,7 +30,7 @@ class CfgWeapons
 	class ASEC_avs1: ItemCore
 	{
 		scope=2;
-		displayName=" [ASEC] Lip's AVS  ";
+		displayName="[ASEC] MC Grenadier AVS";
 		author="Jup, Lip, Thunder";
 		picture="";
 		logo="";
@@ -83,7 +83,7 @@ class CfgWeapons
 	class ASEC_avs2: ItemCore
 	{
 		scope=2;
-		displayName=" [ASEC] Lip's AVS [NV]  ";
+		displayName="[ASEC] AVS [NV]";
 		author="Jup, Lip, Thunder";
 		picture="";
 		logo="";
@@ -136,7 +136,7 @@ class CfgWeapons
 	class ASEC_avs3: ItemCore
 	{
 		scope=2;
-		displayName=" [ASEC] Lip's AVS [NB/V] ";
+		displayName="[ASEC] AVS [NB/V]";
 		author="Jup, Lip, Thunder";
 		picture="";
 		logo="";
@@ -192,7 +192,7 @@ class CfgWeapons
 		scope=0;
 		ace_hearing_protection=0.75;
 		ace_hearing_lowerVolume=0.15000001;
-		displayName="[CAG] Lip's Opscore";
+		displayName="[ASEC] Surefire Opscore";
 		model="\ASEC_CAG\ASEC_Helmet_1.p3d";
 		Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left_ARC";
 		hiddenSelections[]=
@@ -240,7 +240,7 @@ class CfgWeapons
 		scope=0;
 		ace_hearing_protection=0.75;
 		ace_hearing_lowerVolume=0.15000001;
-		displayName="[CAG] Lip's Opscore (UN)";
+		displayName="[ASEC] Surefire Opscore (UN)";
 		model="\ASEC_CAG\ASEC_Helmet_2.p3d";
 		Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left_ARC";
 		hiddenSelections[]=
@@ -288,7 +288,7 @@ class CfgWeapons
 		scope=0;
 		ace_hearing_protection=0.75;
 		ace_hearing_lowerVolume=0.15000001;
-		displayName="[CAG] Lip's Opscore (MC/Stowed)";
+		displayName="[ASEC] Surefire Opscore (MC/Stowed)";
 		model="\ASEC_CAG\ASEC_Helmet_3.p3d";
 		Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left_ARC";
 		hiddenSelections[]=
@@ -336,7 +336,7 @@ class CfgWeapons
 		scope=0;
 		ace_hearing_protection=0.75;
 		ace_hearing_lowerVolume=0.15000001;
-		displayName="[CAG] Lip's Opscore (Comtacs Off, Strapped)";
+		displayName="[ASEC] Surefire Opscore (Comtacs Off, Strapped)";
 		model="\ASEC_CAG\ASEC_helmet_4.p3d";
 		Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left_ARC";
 		hiddenSelections[]=
@@ -384,7 +384,7 @@ class CfgWeapons
 		scope=0;
 		ace_hearing_protection=0.75;
 		ace_hearing_lowerVolume=0.15000001;
-		displayName="[CAG] Lip's Opscore (Comtacs Off, Unstraped)";
+		displayName="[ASEC] Surefire Opscore (Comtacs Off, Unstraped)";
 		model="\ASEC_CAG\ASEC_helmet_5.p3d";
 		Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left_ARC";
 		hiddenSelections[]=
@@ -432,7 +432,7 @@ class CfgWeapons
 		scope=0;
 		ace_hearing_protection=0.75;
 		ace_hearing_lowerVolume=0.15000001;
-		displayName="[CAG] Lip's Opscore (Stowed, No Headset)";
+		displayName="[ASEC] Surefire Opscore (Stowed, No Headset)";
 		model="\ASEC_CAG\ASEC_helmet_6.p3d";
 		hiddenSelections[]=
 		{
@@ -477,7 +477,7 @@ class CfgWeapons
 	{
 		author="Jup, Lip, Thunder";
 		scope=0;
-		displayName="[CAG] Lip's Hat";
+		displayName="[ASEC] Hat";
 		model="\ASEC_CAG\ASEC_hat_1.p3d";
 		hiddenSelections[]=
 		{
@@ -518,7 +518,7 @@ class CfgWeapons
 	{
 		author="Jup, Lip, Thunder";
 		scope=0;
-		displayName="[CAG] Lip's Hat (No Headset)";
+		displayName="[ASEC] Hat (No Headset)";
 		model="\ASEC_CAG\ASEC_hat_2.p3d";
 		hiddenSelections[]=
 		{
@@ -561,7 +561,7 @@ class CfgWeapons
 		scope=0;
 		ace_hearing_protection=0.75;
 		ace_hearing_lowerVolume=0.15000001;
-		displayName="[CAG] Lip's Hat (Headset)";
+		displayName="[ASEC] Hat (Headset)";
 		model="\ASEC_CAG\ASEC_hat_3.p3d";
 		hiddenSelections[]=
 		{

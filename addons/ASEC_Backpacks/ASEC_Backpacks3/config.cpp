@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class TFN_BackPacks
+	class ASEC_Backpacks3
 	{
 		units[]={};
 		weapons[]={};
@@ -12,8 +12,4 @@ class CfgPatches
 		};
 	};
 };
-class cfgMods
-{
-	author="";
-	timepacked="1630018675";
-};
+

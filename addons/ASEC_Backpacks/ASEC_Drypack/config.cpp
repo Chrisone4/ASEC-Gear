@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class TFL_Drybag
+	class ASEC_Drybag
 	{
 		magazines[]={};
 		ammo[]={};
@@ -32,7 +32,7 @@ class CfgVehicles
 		model="";
 		hiddenSelections[]={};
 		hiddenSelectionsTextures[]={};
-		maximumLoad=9999999999;
+		maximumLoad=500;
 		mass=30;
 	};
 	class TFL_Drybag: Backpack_Base
@@ -41,14 +41,9 @@ class CfgVehicles
 		scopeArsenal=2;
 		eden=2;
 		displayName="[ASEC] Dry Bag (BLK)";
-		model="TFL_Drypack\Models\Drybag.p3d";
+		model="ASEC_Drypack\Models\Drybag.p3d";
 		hiddenSelections[]={};
 		hiddenSelectionsTextures[]={};
 		DLC="SOCOM";
 	};
-};
-class cfgMods
-{
-	author="MaL";
-	timepacked="1610099322";
 };

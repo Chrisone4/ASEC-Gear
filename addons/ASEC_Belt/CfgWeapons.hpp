@@ -6,12 +6,12 @@ class cfgWeapons
 	class ItemCore;
 	class Ronin_Belt_MC_1: ItemCore
 	{
-		author="Task Force Leviathan";
+		author="Jup, Lip, Thunder";
 		scope=2;
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
 		displayname="[TFL] Ronin Belt MC (Glock A)";
-		picture="\ASEC_vests\Textures\anti_rat.paa";
+		picture="\ASEC_Vests1\Textures\anti_rat.paa";
 		model="ASEC_Belt\Models\Ronin_Belt_Glock.p3d";
 		hiddenSelections[]=
 		{
@@ -35,23 +35,23 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"asec_vests\textures\jpc_main_MC_CO.paa",
-			"asec_vests\textures\jpc_cummerbund_MC_CO.paa",
-			"asec_vests\textures\avs_b_mc_co.paa",
-			"asec_vests\textures\esstac2_mc_co.paa",
-			"asec_vests\textures\esstac_mc_co.paa",
-			"asec_vests\textures\esstac_mc_co.paa",
-			"asec_vests\textures\kangaroo2_mc_co.paa",
-			"asec_vests\textures\medpouch_mc_co.paa",
-			"asec_vests\textures\ronin_belt_mc.paa",
-			"ASEC_vests\Textures\holster_mc.paa",
-			"ASEC_vests\Textures\avs_b_mc_co.paa",
-			"ASEC_vests\Textures\blueforce_mag_mc.paa",
-			"ASEC_vests\Textures\dump_mc.paa",
-			"ASEC_vests\Textures\vsm_boxmag_mc.paa",
-			"ASEC_vests\Textures\pouches_mc.paa",
-			"ASEC_vests\Textures\tfa_pouch_mc.paa",
-			"ASEC_vests\Textures\blueforce_mag_mc.paa"
+			"ASEC_Vests1\textures\jpc_main_MC_CO.paa",
+			"ASEC_Vests1\textures\jpc_cummerbund_MC_CO.paa",
+			"ASEC_Vests1\textures\avs_b_mc_co.paa",
+			"ASEC_Vests1\textures\esstac2_mc_co.paa",
+			"ASEC_Vests1\textures\esstac_mc_co.paa",
+			"ASEC_Vests1\textures\esstac_mc_co.paa",
+			"ASEC_Vests1\textures\kangaroo2_mc_co.paa",
+			"ASEC_Vests1\textures\medpouch_mc_co.paa",
+			"ASEC_Vests1\textures\ronin_belt_mc.paa",
+			"ASEC_Vests1\Textures\holster_mc.paa",
+			"ASEC_Vests1\Textures\avs_b_mc_co.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_mc.paa",
+			"ASEC_Vests1\Textures\dump_mc.paa",
+			"ASEC_Vests1\Textures\vsm_boxmag_mc.paa",
+			"ASEC_Vests1\Textures\pouches_mc.paa",
+			"ASEC_Vests1\Textures\tfa_pouch_mc.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_mc.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -78,23 +78,23 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"asec_vests\textures\jpc_main_MC_CO.paa",
-				"asec_vests\textures\jpc_cummerbund_MC_CO.paa",
-				"asec_vests\textures\avs_b_mc_co.paa",
-				"asec_vests\textures\esstac2_mc_co.paa",
-				"asec_vests\textures\esstac_mc_co.paa",
-				"asec_vests\textures\esstac_mc_co.paa",
-				"asec_vests\textures\kangaroo2_mc_co.paa",
-				"asec_vests\textures\medpouch_mc_co.paa",
-				"asec_vests\textures\ronin_belt_mc.paa",
-				"ASEC_vests\Textures\holster_mc.paa",
-				"ASEC_vests\Textures\avs_b_mc_co.paa",
-				"ASEC_vests\Textures\blueforce_mag_mc.paa",
-				"ASEC_vests\Textures\dump_mc.paa",
-				"ASEC_vests\Textures\vsm_boxmag_mc.paa",
-				"ASEC_vests\Textures\pouches_mc.paa",
-				"ASEC_vests\Textures\tfa_pouch_mc.paa",
-				"ASEC_vests\Textures\blueforce_mag_mc.paa"
+				"ASEC_Vests1\textures\jpc_main_MC_CO.paa",
+				"ASEC_Vests1\textures\jpc_cummerbund_MC_CO.paa",
+				"ASEC_Vests1\textures\avs_b_mc_co.paa",
+				"ASEC_Vests1\textures\esstac2_mc_co.paa",
+				"ASEC_Vests1\textures\esstac_mc_co.paa",
+				"ASEC_Vests1\textures\esstac_mc_co.paa",
+				"ASEC_Vests1\textures\kangaroo2_mc_co.paa",
+				"ASEC_Vests1\textures\medpouch_mc_co.paa",
+				"ASEC_Vests1\textures\ronin_belt_mc.paa",
+				"ASEC_Vests1\Textures\holster_mc.paa",
+				"ASEC_Vests1\Textures\avs_b_mc_co.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_mc.paa",
+				"ASEC_Vests1\Textures\dump_mc.paa",
+				"ASEC_Vests1\Textures\vsm_boxmag_mc.paa",
+				"ASEC_Vests1\Textures\pouches_mc.paa",
+				"ASEC_Vests1\Textures\tfa_pouch_mc.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_mc.paa"
 			};
 			containerClass="Supply140";
 			mass=80;
@@ -128,12 +128,12 @@ class cfgWeapons
 	};
 	class Ronin_Belt_AOR1_1: ItemCore
 	{
-		author="Task Force Leviathan";
+		author="Jup, Lip, Thunder";
 		scope=2;
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
 		displayname="[TFL] Ronin Belt AOR1 (Glock A)";
-		picture="\ASEC_vests\Textures\anti_rat.paa";
+		picture="\ASEC_Vests1\Textures\anti_rat.paa";
 		model="ASEC_Belt\Models\Ronin_Belt_Glock.p3d";
 		hiddenSelections[]=
 		{
@@ -157,23 +157,23 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"asec_vests\textures\jpc_main_AOR1_CO.paa",
-			"asec_vests\textures\jpc_cummerbund_aor1_CO.paa",
-			"asec_vests\textures\avs_b_aor1_co.paa",
-			"asec_vests\textures\esstac2_aor1_co.paa",
-			"asec_vests\textures\esstac_aor1_co.paa",
-			"asec_vests\textures\esstac_aor1_co.paa",
-			"asec_vests\textures\kangaroo2_aor1_co.paa",
-			"asec_vests\textures\medpouch_aor1_co.paa",
-			"asec_vests\textures\ronin_belt_aor1.paa",
-			"ASEC_vests\Textures\holster_tan_co.paa",
-			"ASEC_vests\Textures\avs_b_aor1_co.paa",
-			"ASEC_vests\Textures\blueforce_mag_aor1.paa",
-			"ASEC_vests\Textures\dump_aor1.paa",
-			"ASEC_vests\Textures\vsm_boxmag_aor1.paa",
-			"ASEC_vests\Textures\pouches_aor1.paa",
-			"ASEC_vests\Textures\tfa_pouch_aor1.paa",
-			"ASEC_vests\Textures\blueforce_mag_aor1.paa"
+			"ASEC_Vests1\textures\jpc_main_AOR1_CO.paa",
+			"ASEC_Vests1\textures\jpc_cummerbund_aor1_CO.paa",
+			"ASEC_Vests1\textures\avs_b_aor1_co.paa",
+			"ASEC_Vests1\textures\esstac2_aor1_co.paa",
+			"ASEC_Vests1\textures\esstac_aor1_co.paa",
+			"ASEC_Vests1\textures\esstac_aor1_co.paa",
+			"ASEC_Vests1\textures\kangaroo2_aor1_co.paa",
+			"ASEC_Vests1\textures\medpouch_aor1_co.paa",
+			"ASEC_Vests1\textures\ronin_belt_aor1.paa",
+			"ASEC_Vests1\Textures\holster_tan_co.paa",
+			"ASEC_Vests1\Textures\avs_b_aor1_co.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_aor1.paa",
+			"ASEC_Vests1\Textures\dump_aor1.paa",
+			"ASEC_Vests1\Textures\vsm_boxmag_aor1.paa",
+			"ASEC_Vests1\Textures\pouches_aor1.paa",
+			"ASEC_Vests1\Textures\tfa_pouch_aor1.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_aor1.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -200,23 +200,23 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"asec_vests\textures\jpc_main_AOR1_CO.paa",
-				"asec_vests\textures\jpc_cummerbund_aor1_CO.paa",
-				"asec_vests\textures\avs_b_aor1_co.paa",
-				"asec_vests\textures\esstac2_aor1_co.paa",
-				"asec_vests\textures\esstac_aor1_co.paa",
-				"asec_vests\textures\esstac_aor1_co.paa",
-				"asec_vests\textures\kangaroo2_aor1_co.paa",
-				"asec_vests\textures\medpouch_aor1_co.paa",
-				"asec_vests\textures\ronin_belt_aor1.paa",
-				"ASEC_vests\Textures\holster_tan_co.paa",
-				"ASEC_vests\Textures\avs_b_aor1_co.paa",
-				"ASEC_vests\Textures\blueforce_mag_aor1.paa",
-				"ASEC_vests\Textures\dump_aor1.paa",
-				"ASEC_vests\Textures\vsm_boxmag_aor1.paa",
-				"ASEC_vests\Textures\pouches_aor1.paa",
-				"ASEC_vests\Textures\tfa_pouch_aor1.paa",
-				"ASEC_vests\Textures\blueforce_mag_aor1.paa"
+				"ASEC_Vests1\textures\jpc_main_AOR1_CO.paa",
+				"ASEC_Vests1\textures\jpc_cummerbund_aor1_CO.paa",
+				"ASEC_Vests1\textures\avs_b_aor1_co.paa",
+				"ASEC_Vests1\textures\esstac2_aor1_co.paa",
+				"ASEC_Vests1\textures\esstac_aor1_co.paa",
+				"ASEC_Vests1\textures\esstac_aor1_co.paa",
+				"ASEC_Vests1\textures\kangaroo2_aor1_co.paa",
+				"ASEC_Vests1\textures\medpouch_aor1_co.paa",
+				"ASEC_Vests1\textures\ronin_belt_aor1.paa",
+				"ASEC_Vests1\Textures\holster_tan_co.paa",
+				"ASEC_Vests1\Textures\avs_b_aor1_co.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_aor1.paa",
+				"ASEC_Vests1\Textures\dump_aor1.paa",
+				"ASEC_Vests1\Textures\vsm_boxmag_aor1.paa",
+				"ASEC_Vests1\Textures\pouches_aor1.paa",
+				"ASEC_Vests1\Textures\tfa_pouch_aor1.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_aor1.paa"
 			};
 			containerClass="Supply140";
 			mass=80;
@@ -250,12 +250,12 @@ class cfgWeapons
 	};
 	class Ronin_Belt_AOR2_1: ItemCore
 	{
-		author="Task Force Leviathan";
+		author="Jup, Lip, Thunder";
 		scope=2;
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
 		displayname="[TFL] Ronin Belt AOR2 (Glock A)";
-		picture="\ASEC_vests\Textures\anti_rat.paa";
+		picture="\ASEC_Vests1\Textures\anti_rat.paa";
 		model="ASEC_Belt\Models\Ronin_Belt_Glock.p3d";
 		hiddenSelections[]=
 		{
@@ -279,23 +279,23 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"asec_vests\textures\jpc_main_AOR2_CO.paa",
-			"asec_vests\textures\jpc_cummerbund_aor2_CO.paa",
-			"asec_vests\textures\avs_b_aor2_co.paa",
-			"asec_vests\textures\esstac2_aor2_co.paa",
-			"asec_vests\textures\esstac_aor2_co.paa",
-			"asec_vests\textures\esstac_aor2_co.paa",
-			"asec_vests\textures\kangaroo2_aor2_co.paa",
-			"asec_vests\textures\medpouch_aor2_co.paa",
-			"asec_vests\textures\ronin_belt_aor2.paa",
-			"ASEC_vests\Textures\holster_od_co.paa",
-			"ASEC_vests\Textures\avs_b_aor2_co.paa",
-			"ASEC_vests\Textures\blueforce_mag_aor2.paa",
-			"ASEC_vests\Textures\dump_aor2.paa",
-			"ASEC_vests\Textures\vsm_boxmag_aor2.paa",
-			"ASEC_vests\Textures\pouches_aor2.paa",
-			"ASEC_vests\Textures\tfa_pouch_aor2.paa",
-			"ASEC_vests\Textures\blueforce_mag_aor2.paa"
+			"ASEC_Vests1\textures\jpc_main_AOR2_CO.paa",
+			"ASEC_Vests1\textures\jpc_cummerbund_aor2_CO.paa",
+			"ASEC_Vests1\textures\avs_b_aor2_co.paa",
+			"ASEC_Vests1\textures\esstac2_aor2_co.paa",
+			"ASEC_Vests1\textures\esstac_aor2_co.paa",
+			"ASEC_Vests1\textures\esstac_aor2_co.paa",
+			"ASEC_Vests1\textures\kangaroo2_aor2_co.paa",
+			"ASEC_Vests1\textures\medpouch_aor2_co.paa",
+			"ASEC_Vests1\textures\ronin_belt_aor2.paa",
+			"ASEC_Vests1\Textures\holster_od_co.paa",
+			"ASEC_Vests1\Textures\avs_b_aor2_co.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_aor2.paa",
+			"ASEC_Vests1\Textures\dump_aor2.paa",
+			"ASEC_Vests1\Textures\vsm_boxmag_aor2.paa",
+			"ASEC_Vests1\Textures\pouches_aor2.paa",
+			"ASEC_Vests1\Textures\tfa_pouch_aor2.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_aor2.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -322,23 +322,23 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"asec_vests\textures\jpc_main_AOR2_CO.paa",
-				"asec_vests\textures\jpc_cummerbund_aor2_CO.paa",
-				"asec_vests\textures\avs_b_aor2_co.paa",
-				"asec_vests\textures\esstac2_aor2_co.paa",
-				"asec_vests\textures\esstac_aor2_co.paa",
-				"asec_vests\textures\esstac_aor2_co.paa",
-				"asec_vests\textures\kangaroo2_aor2_co.paa",
-				"asec_vests\textures\medpouch_aor2_co.paa",
-				"asec_vests\textures\ronin_belt_aor2.paa",
-				"ASEC_vests\Textures\holster_od_co.paa",
-				"ASEC_vests\Textures\avs_b_aor2_co.paa",
-				"ASEC_vests\Textures\blueforce_mag_aor2.paa",
-				"ASEC_vests\Textures\dump_aor2.paa",
-				"ASEC_vests\Textures\vsm_boxmag_aor2.paa",
-				"ASEC_vests\Textures\pouches_aor2.paa",
-				"ASEC_vests\Textures\tfa_pouch_aor2.paa",
-				"ASEC_vests\Textures\blueforce_mag_aor2.paa"
+				"ASEC_Vests1\textures\jpc_main_AOR2_CO.paa",
+				"ASEC_Vests1\textures\jpc_cummerbund_aor2_CO.paa",
+				"ASEC_Vests1\textures\avs_b_aor2_co.paa",
+				"ASEC_Vests1\textures\esstac2_aor2_co.paa",
+				"ASEC_Vests1\textures\esstac_aor2_co.paa",
+				"ASEC_Vests1\textures\esstac_aor2_co.paa",
+				"ASEC_Vests1\textures\kangaroo2_aor2_co.paa",
+				"ASEC_Vests1\textures\medpouch_aor2_co.paa",
+				"ASEC_Vests1\textures\ronin_belt_aor2.paa",
+				"ASEC_Vests1\Textures\holster_od_co.paa",
+				"ASEC_Vests1\Textures\avs_b_aor2_co.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_aor2.paa",
+				"ASEC_Vests1\Textures\dump_aor2.paa",
+				"ASEC_Vests1\Textures\vsm_boxmag_aor2.paa",
+				"ASEC_Vests1\Textures\pouches_aor2.paa",
+				"ASEC_Vests1\Textures\tfa_pouch_aor2.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_aor2.paa"
 			};
 			containerClass="Supply140";
 			mass=80;
@@ -372,12 +372,12 @@ class cfgWeapons
 	};
 	class Ronin_Belt_CB_1: ItemCore
 	{
-		author="Task Force Leviathan";
+		author="Jup, Lip, Thunder";
 		scope=2;
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
 		displayname="[TFL] Ronin Belt CB (Glock A)";
-		picture="\ASEC_vests\Textures\anti_rat.paa";
+		picture="\ASEC_Vests1\Textures\anti_rat.paa";
 		model="ASEC_Belt\Models\Ronin_Belt_Glock.p3d";
 		hiddenSelections[]=
 		{
@@ -401,23 +401,23 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"asec_vests\textures\jpc_main_cb_CO.paa",
-			"asec_vests\textures\jpc_cummerbund_cb_CO.paa",
-			"asec_vests\textures\avs_b_cb_co.paa",
-			"asec_vests\textures\esstac2_cb_co.paa",
-			"asec_vests\textures\esstac_cb_co.paa",
-			"asec_vests\textures\esstac_cb_co.paa",
-			"asec_vests\textures\kangaroo2_cb_co.paa",
-			"asec_vests\textures\medpouch_cb_co.paa",
-			"asec_vests\textures\ronin_belt_cb.paa",
-			"ASEC_vests\Textures\holster_tan_co.paa",
-			"ASEC_vests\Textures\avs_b_cb_co.paa",
-			"ASEC_vests\Textures\blueforce_mag_cb.paa",
-			"ASEC_vests\Textures\dump_cb.paa",
-			"ASEC_vests\Textures\vsm_boxmag_cb.paa",
-			"ASEC_vests\Textures\pouches_cb.paa",
-			"ASEC_vests\Textures\tfa_pouch_cb.paa",
-			"ASEC_vests\Textures\blueforce_mag_cb.paa"
+			"ASEC_Vests1\textures\jpc_main_cb_CO.paa",
+			"ASEC_Vests1\textures\jpc_cummerbund_cb_CO.paa",
+			"ASEC_Vests1\textures\avs_b_cb_co.paa",
+			"ASEC_Vests1\textures\esstac2_cb_co.paa",
+			"ASEC_Vests1\textures\esstac_cb_co.paa",
+			"ASEC_Vests1\textures\esstac_cb_co.paa",
+			"ASEC_Vests1\textures\kangaroo2_cb_co.paa",
+			"ASEC_Vests1\textures\medpouch_cb_co.paa",
+			"ASEC_Vests1\textures\ronin_belt_cb.paa",
+			"ASEC_Vests1\Textures\holster_tan_co.paa",
+			"ASEC_Vests1\Textures\avs_b_cb_co.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_cb.paa",
+			"ASEC_Vests1\Textures\dump_cb.paa",
+			"ASEC_Vests1\Textures\vsm_boxmag_cb.paa",
+			"ASEC_Vests1\Textures\pouches_cb.paa",
+			"ASEC_Vests1\Textures\tfa_pouch_cb.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_cb.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -444,23 +444,23 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"asec_vests\textures\jpc_main_cb_CO.paa",
-				"asec_vests\textures\jpc_cummerbund_cb_CO.paa",
-				"asec_vests\textures\avs_b_cb_co.paa",
-				"asec_vests\textures\esstac2_cb_co.paa",
-				"asec_vests\textures\esstac_cb_co.paa",
-				"asec_vests\textures\esstac_cb_co.paa",
-				"asec_vests\textures\kangaroo2_cb_co.paa",
-				"asec_vests\textures\medpouch_cb_co.paa",
-				"asec_vests\textures\ronin_belt_cb.paa",
-				"ASEC_vests\Textures\holster_tan_co.paa",
-				"ASEC_vests\Textures\avs_b_cb_co.paa",
-				"ASEC_vests\Textures\blueforce_mag_cb.paa",
-				"ASEC_vests\Textures\dump_cb.paa",
-				"ASEC_vests\Textures\vsm_boxmag_cb.paa",
-				"ASEC_vests\Textures\pouches_cb.paa",
-				"ASEC_vests\Textures\tfa_pouch_cb.paa",
-				"ASEC_vests\Textures\blueforce_mag_cb.paa"
+				"ASEC_Vests1\textures\jpc_main_cb_CO.paa",
+				"ASEC_Vests1\textures\jpc_cummerbund_cb_CO.paa",
+				"ASEC_Vests1\textures\avs_b_cb_co.paa",
+				"ASEC_Vests1\textures\esstac2_cb_co.paa",
+				"ASEC_Vests1\textures\esstac_cb_co.paa",
+				"ASEC_Vests1\textures\esstac_cb_co.paa",
+				"ASEC_Vests1\textures\kangaroo2_cb_co.paa",
+				"ASEC_Vests1\textures\medpouch_cb_co.paa",
+				"ASEC_Vests1\textures\ronin_belt_cb.paa",
+				"ASEC_Vests1\Textures\holster_tan_co.paa",
+				"ASEC_Vests1\Textures\avs_b_cb_co.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_cb.paa",
+				"ASEC_Vests1\Textures\dump_cb.paa",
+				"ASEC_Vests1\Textures\vsm_boxmag_cb.paa",
+				"ASEC_Vests1\Textures\pouches_cb.paa",
+				"ASEC_Vests1\Textures\tfa_pouch_cb.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_cb.paa"
 			};
 			containerClass="Supply140";
 			mass=80;
@@ -494,12 +494,12 @@ class cfgWeapons
 	};
 	class Ronin_Belt_RG_1: ItemCore
 	{
-		author="Task Force Leviathan";
+		author="Jup, Lip, Thunder";
 		scope=2;
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
 		displayname="[TFL] Ronin Belt RG (Glock A)";
-		picture="\ASEC_vests\Textures\anti_rat.paa";
+		picture="\ASEC_Vests1\Textures\anti_rat.paa";
 		model="ASEC_Belt\Models\Ronin_Belt_Glock.p3d";
 		hiddenSelections[]=
 		{
@@ -523,23 +523,23 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"asec_vests\textures\jpc_main_rg_CO.paa",
-			"asec_vests\textures\jpc_cummerbund_rg_CO.paa",
-			"asec_vests\textures\avs_b_rg_co.paa",
-			"asec_vests\textures\esstac2_rg_co.paa",
-			"asec_vests\textures\esstac_rg_co.paa",
-			"asec_vests\textures\esstac_rg_co.paa",
-			"asec_vests\textures\kangaroo2_rg_co.paa",
-			"asec_vests\textures\medpouch_rg_co.paa",
-			"asec_vests\textures\ronin_belt_rg.paa",
-			"ASEC_vests\Textures\holster_od_co.paa",
-			"ASEC_vests\Textures\avs_b_rg_co.paa",
-			"ASEC_vests\Textures\blueforce_mag_rg.paa",
-			"ASEC_vests\Textures\dump_od.paa",
-			"ASEC_vests\Textures\vsm_boxmag_rg.paa",
-			"ASEC_vests\Textures\pouches_rg.paa",
-			"ASEC_vests\Textures\tfa_pouch_rg.paa",
-			"ASEC_vests\Textures\blueforce_mag_rg.paa"
+			"ASEC_Vests1\textures\jpc_main_rg_CO.paa",
+			"ASEC_Vests1\textures\jpc_cummerbund_rg_CO.paa",
+			"ASEC_Vests1\textures\avs_b_rg_co.paa",
+			"ASEC_Vests1\textures\esstac2_rg_co.paa",
+			"ASEC_Vests1\textures\esstac_rg_co.paa",
+			"ASEC_Vests1\textures\esstac_rg_co.paa",
+			"ASEC_Vests1\textures\kangaroo2_rg_co.paa",
+			"ASEC_Vests1\textures\medpouch_rg_co.paa",
+			"ASEC_Vests1\textures\ronin_belt_rg.paa",
+			"ASEC_Vests1\Textures\holster_od_co.paa",
+			"ASEC_Vests1\Textures\avs_b_rg_co.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_rg.paa",
+			"ASEC_Vests1\Textures\dump_od.paa",
+			"ASEC_Vests1\Textures\vsm_boxmag_rg.paa",
+			"ASEC_Vests1\Textures\pouches_rg.paa",
+			"ASEC_Vests1\Textures\tfa_pouch_rg.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_rg.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -566,23 +566,23 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"asec_vests\textures\jpc_main_rg_CO.paa",
-				"asec_vests\textures\jpc_cummerbund_rg_CO.paa",
-				"asec_vests\textures\avs_b_rg_co.paa",
-				"asec_vests\textures\esstac2_rg_co.paa",
-				"asec_vests\textures\esstac_rg_co.paa",
-				"asec_vests\textures\esstac_rg_co.paa",
-				"asec_vests\textures\kangaroo2_rg_co.paa",
-				"asec_vests\textures\medpouch_rg_co.paa",
-				"asec_vests\textures\ronin_belt_rg.paa",
-				"ASEC_vests\Textures\holster_od_co.paa",
-				"ASEC_vests\Textures\avs_b_rg_co.paa",
-				"ASEC_vests\Textures\blueforce_mag_rg.paa",
-				"ASEC_vests\Textures\dump_od.paa",
-				"ASEC_vests\Textures\vsm_boxmag_rg.paa",
-				"ASEC_vests\Textures\pouches_rg.paa",
-				"ASEC_vests\Textures\tfa_pouch_rg.paa",
-				"ASEC_vests\Textures\blueforce_mag_rg.paa"
+				"ASEC_Vests1\textures\jpc_main_rg_CO.paa",
+				"ASEC_Vests1\textures\jpc_cummerbund_rg_CO.paa",
+				"ASEC_Vests1\textures\avs_b_rg_co.paa",
+				"ASEC_Vests1\textures\esstac2_rg_co.paa",
+				"ASEC_Vests1\textures\esstac_rg_co.paa",
+				"ASEC_Vests1\textures\esstac_rg_co.paa",
+				"ASEC_Vests1\textures\kangaroo2_rg_co.paa",
+				"ASEC_Vests1\textures\medpouch_rg_co.paa",
+				"ASEC_Vests1\textures\ronin_belt_rg.paa",
+				"ASEC_Vests1\Textures\holster_od_co.paa",
+				"ASEC_Vests1\Textures\avs_b_rg_co.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_rg.paa",
+				"ASEC_Vests1\Textures\dump_od.paa",
+				"ASEC_Vests1\Textures\vsm_boxmag_rg.paa",
+				"ASEC_Vests1\Textures\pouches_rg.paa",
+				"ASEC_Vests1\Textures\tfa_pouch_rg.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_rg.paa"
 			};
 			mass=80;
 			containerClass="Supply140";
@@ -616,12 +616,12 @@ class cfgWeapons
 	};
 	class Ronin_Belt_BLK_1: ItemCore
 	{
-		author="Task Force Leviathan";
+		author="Jup, Lip, Thunder";
 		scope=2;
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
 		displayname="[TFL] Ronin Belt BLK (Glock A)";
-		picture="\ASEC_vests\Textures\anti_rat.paa";
+		picture="\ASEC_Vests1\Textures\anti_rat.paa";
 		model="ASEC_Belt\Models\Ronin_Belt_Glock.p3d";
 		hiddenSelections[]=
 		{
@@ -645,23 +645,23 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"asec_vests\textures\jpc_main_blk_CO.paa",
-			"asec_vests\textures\jpc_cummerbund_blk_CO.paa",
-			"asec_vests\textures\avs_b_blk_co.paa",
-			"asec_vests\textures\esstac2_blk_co.paa",
-			"asec_vests\textures\esstac_blk_co.paa",
-			"asec_vests\textures\esstac_blk_co.paa",
-			"asec_vests\textures\kangaroo2_blk_co.paa",
-			"asec_vests\textures\medpouch_blk_co.paa",
-			"asec_vests\textures\ronin_belt_blk.paa",
-			"ASEC_vests\Textures\holster_blk_co.paa",
-			"ASEC_vests\Textures\avs_b_blk_co.paa",
-			"ASEC_vests\Textures\blueforce_mag_blk.paa",
-			"ASEC_vests\Textures\dump_blk.paa",
-			"ASEC_vests\Textures\vsm_boxmag_blk.paa",
-			"ASEC_vests\Textures\pouches_blk.paa",
-			"ASEC_vests\Textures\tfa_pouch_blk.paa",
-			"ASEC_vests\Textures\blueforce_mag_blk.paa"
+			"ASEC_Vests1\textures\jpc_main_blk_CO.paa",
+			"ASEC_Vests1\textures\jpc_cummerbund_blk_CO.paa",
+			"ASEC_Vests1\textures\avs_b_blk_co.paa",
+			"ASEC_Vests1\textures\esstac2_blk_co.paa",
+			"ASEC_Vests1\textures\esstac_blk_co.paa",
+			"ASEC_Vests1\textures\esstac_blk_co.paa",
+			"ASEC_Vests1\textures\kangaroo2_blk_co.paa",
+			"ASEC_Vests1\textures\medpouch_blk_co.paa",
+			"ASEC_Vests1\textures\ronin_belt_blk.paa",
+			"ASEC_Vests1\Textures\holster_blk_co.paa",
+			"ASEC_Vests1\Textures\avs_b_blk_co.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_blk.paa",
+			"ASEC_Vests1\Textures\dump_blk.paa",
+			"ASEC_Vests1\Textures\vsm_boxmag_blk.paa",
+			"ASEC_Vests1\Textures\pouches_blk.paa",
+			"ASEC_Vests1\Textures\tfa_pouch_blk.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_blk.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -688,23 +688,23 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"asec_vests\textures\jpc_main_blk_CO.paa",
-				"asec_vests\textures\jpc_cummerbund_blk_CO.paa",
-				"asec_vests\textures\avs_b_blk_co.paa",
-				"asec_vests\textures\esstac2_blk_co.paa",
-				"asec_vests\textures\esstac_blk_co.paa",
-				"asec_vests\textures\esstac_blk_co.paa",
-				"asec_vests\textures\kangaroo2_blk_co.paa",
-				"asec_vests\textures\medpouch_blk_co.paa",
-				"asec_vests\textures\ronin_belt_blk.paa",
-				"ASEC_vests\Textures\holster_blk_co.paa",
-				"ASEC_vests\Textures\avs_b_blk_co.paa",
-				"ASEC_vests\Textures\blueforce_mag_blk.paa",
-				"ASEC_vests\Textures\dump_blk.paa",
-				"ASEC_vests\Textures\vsm_boxmag_blk.paa",
-				"ASEC_vests\Textures\pouches_blk.paa",
-				"ASEC_vests\Textures\tfa_pouch_blk.paa",
-				"ASEC_vests\Textures\blueforce_mag_blk.paa"
+				"ASEC_Vests1\textures\jpc_main_blk_CO.paa",
+				"ASEC_Vests1\textures\jpc_cummerbund_blk_CO.paa",
+				"ASEC_Vests1\textures\avs_b_blk_co.paa",
+				"ASEC_Vests1\textures\esstac2_blk_co.paa",
+				"ASEC_Vests1\textures\esstac_blk_co.paa",
+				"ASEC_Vests1\textures\esstac_blk_co.paa",
+				"ASEC_Vests1\textures\kangaroo2_blk_co.paa",
+				"ASEC_Vests1\textures\medpouch_blk_co.paa",
+				"ASEC_Vests1\textures\ronin_belt_blk.paa",
+				"ASEC_Vests1\Textures\holster_blk_co.paa",
+				"ASEC_Vests1\Textures\avs_b_blk_co.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_blk.paa",
+				"ASEC_Vests1\Textures\dump_blk.paa",
+				"ASEC_Vests1\Textures\vsm_boxmag_blk.paa",
+				"ASEC_Vests1\Textures\pouches_blk.paa",
+				"ASEC_Vests1\Textures\tfa_pouch_blk.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_blk.paa"
 			};
 			mass=80;
 			containerClass="Supply140";
@@ -738,12 +738,12 @@ class cfgWeapons
 	};
 	class Ronin_Belt_ALP_1: ItemCore
 	{
-		author="Task Force Leviathan";
+		author="Jup, Lip, Thunder";
 		scope=2;
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
 		displayname="[TFL] Ronin Belt ALP (Glock A)";
-		picture="\ASEC_vests\Textures\anti_rat.paa";
+		picture="\ASEC_Vests1\Textures\anti_rat.paa";
 		model="ASEC_Belt\Models\Ronin_Belt_Glock.p3d";
 		hiddenSelections[]=
 		{
@@ -767,23 +767,23 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"asec_vests\textures\jpc_main_alp_CO.paa",
-			"asec_vests\textures\jpc_cummerbund_alp_CO.paa",
-			"asec_vests\textures\avs_b_alp_co.paa",
-			"asec_vests\textures\esstac2_alpine_co.paa",
-			"asec_vests\textures\esstac_alpine_co.paa",
-			"asec_vests\textures\esstac_alpine_co.paa",
-			"asec_vests\textures\kangaroo2_alp_co.paa",
-			"asec_vests\textures\medpouch_alp_co.paa",
-			"asec_vests\textures\ronin_belt_alpine.paa",
-			"ASEC_vests\Textures\holster_alpine_co.paa",
-			"ASEC_vests\Textures\avs_b_alp_co.paa",
-			"ASEC_vests\Textures\blueforce_mag_alpine.paa",
-			"ASEC_vests\Textures\dump_alpine.paa",
-			"ASEC_vests\Textures\vsm_boxmag_alpine.paa",
-			"ASEC_vests\Textures\pouches_alpine.paa",
-			"ASEC_vests\Textures\tfa_pouch_alpine.paa",
-			"ASEC_vests\Textures\blueforce_mag_alpine.paa"
+			"ASEC_Vests1\textures\jpc_main_alp_CO.paa",
+			"ASEC_Vests1\textures\jpc_cummerbund_alp_CO.paa",
+			"ASEC_Vests1\textures\avs_b_alp_co.paa",
+			"ASEC_Vests1\textures\esstac2_alpine_co.paa",
+			"ASEC_Vests1\textures\esstac_alpine_co.paa",
+			"ASEC_Vests1\textures\esstac_alpine_co.paa",
+			"ASEC_Vests1\textures\kangaroo2_alp_co.paa",
+			"ASEC_Vests1\textures\medpouch_alp_co.paa",
+			"ASEC_Vests1\textures\ronin_belt_alpine.paa",
+			"ASEC_Vests1\Textures\holster_alpine_co.paa",
+			"ASEC_Vests1\Textures\avs_b_alp_co.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_alpine.paa",
+			"ASEC_Vests1\Textures\dump_alpine.paa",
+			"ASEC_Vests1\Textures\vsm_boxmag_alpine.paa",
+			"ASEC_Vests1\Textures\pouches_alpine.paa",
+			"ASEC_Vests1\Textures\tfa_pouch_alpine.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_alpine.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -810,23 +810,23 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"asec_vests\textures\jpc_main_alp_CO.paa",
-				"asec_vests\textures\jpc_cummerbund_alp_CO.paa",
-				"asec_vests\textures\avs_b_alp_co.paa",
-				"asec_vests\textures\esstac2_alpine_co.paa",
-				"asec_vests\textures\esstac_alpine_co.paa",
-				"asec_vests\textures\esstac_alpine_co.paa",
-				"asec_vests\textures\kangaroo2_alp_co.paa",
-				"asec_vests\textures\medpouch_alp_co.paa",
-				"asec_vests\textures\ronin_belt_alpine.paa",
-				"ASEC_vests\Textures\holster_alpine_co.paa",
-				"ASEC_vests\Textures\avs_b_alp_co.paa",
-				"ASEC_vests\Textures\blueforce_mag_alpine.paa",
-				"ASEC_vests\Textures\dump_alpine.paa",
-				"ASEC_vests\Textures\vsm_boxmag_alpine.paa",
-				"ASEC_vests\Textures\pouches_alpine.paa",
-				"ASEC_vests\Textures\tfa_pouch_alpine.paa",
-				"ASEC_vests\Textures\blueforce_mag_alpine.paa"
+				"ASEC_Vests1\textures\jpc_main_alp_CO.paa",
+				"ASEC_Vests1\textures\jpc_cummerbund_alp_CO.paa",
+				"ASEC_Vests1\textures\avs_b_alp_co.paa",
+				"ASEC_Vests1\textures\esstac2_alpine_co.paa",
+				"ASEC_Vests1\textures\esstac_alpine_co.paa",
+				"ASEC_Vests1\textures\esstac_alpine_co.paa",
+				"ASEC_Vests1\textures\kangaroo2_alp_co.paa",
+				"ASEC_Vests1\textures\medpouch_alp_co.paa",
+				"ASEC_Vests1\textures\ronin_belt_alpine.paa",
+				"ASEC_Vests1\Textures\holster_alpine_co.paa",
+				"ASEC_Vests1\Textures\avs_b_alp_co.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_alpine.paa",
+				"ASEC_Vests1\Textures\dump_alpine.paa",
+				"ASEC_Vests1\Textures\vsm_boxmag_alpine.paa",
+				"ASEC_Vests1\Textures\pouches_alpine.paa",
+				"ASEC_Vests1\Textures\tfa_pouch_alpine.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_alpine.paa"
 			};
 			mass=80;
 			containerClass="Supply140";
@@ -860,12 +860,12 @@ class cfgWeapons
 	};
 	class Ronin_Belt_MC_2: ItemCore
 	{
-		author="Task Force Leviathan";
+		author="Jup, Lip, Thunder";
 		scope=2;
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
 		displayname="[TFL] Ronin Belt MC (Glock B)";
-		picture="\ASEC_vests\Textures\anti_rat.paa";
+		picture="\ASEC_Vests1\Textures\anti_rat.paa";
 		model="ASEC_Belt\Models\Ronin_Belt_Glock2.p3d";
 		hiddenSelections[]=
 		{
@@ -889,23 +889,23 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"asec_vests\textures\jpc_main_MC_CO.paa",
-			"asec_vests\textures\jpc_cummerbund_MC_CO.paa",
-			"asec_vests\textures\avs_b_mc_co.paa",
-			"asec_vests\textures\esstac2_mc_co.paa",
-			"asec_vests\textures\esstac_mc_co.paa",
-			"asec_vests\textures\esstac_mc_co.paa",
-			"asec_vests\textures\kangaroo2_mc_co.paa",
-			"asec_vests\textures\medpouch_mc_co.paa",
-			"asec_vests\textures\ronin_belt_mc.paa",
-			"ASEC_vests\Textures\holster_mc.paa",
-			"ASEC_vests\Textures\avs_b_mc_co.paa",
-			"ASEC_vests\Textures\blueforce_mag_mc.paa",
-			"ASEC_vests\Textures\dump_mc.paa",
-			"ASEC_vests\Textures\vsm_boxmag_mc.paa",
-			"ASEC_vests\Textures\pouches_mc.paa",
-			"ASEC_vests\Textures\tfa_pouch_mc.paa",
-			"ASEC_vests\Textures\blueforce_mag_mc.paa"
+			"ASEC_Vests1\textures\jpc_main_MC_CO.paa",
+			"ASEC_Vests1\textures\jpc_cummerbund_MC_CO.paa",
+			"ASEC_Vests1\textures\avs_b_mc_co.paa",
+			"ASEC_Vests1\textures\esstac2_mc_co.paa",
+			"ASEC_Vests1\textures\esstac_mc_co.paa",
+			"ASEC_Vests1\textures\esstac_mc_co.paa",
+			"ASEC_Vests1\textures\kangaroo2_mc_co.paa",
+			"ASEC_Vests1\textures\medpouch_mc_co.paa",
+			"ASEC_Vests1\textures\ronin_belt_mc.paa",
+			"ASEC_Vests1\Textures\holster_mc.paa",
+			"ASEC_Vests1\Textures\avs_b_mc_co.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_mc.paa",
+			"ASEC_Vests1\Textures\dump_mc.paa",
+			"ASEC_Vests1\Textures\vsm_boxmag_mc.paa",
+			"ASEC_Vests1\Textures\pouches_mc.paa",
+			"ASEC_Vests1\Textures\tfa_pouch_mc.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_mc.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -932,23 +932,23 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"asec_vests\textures\jpc_main_MC_CO.paa",
-				"asec_vests\textures\jpc_cummerbund_MC_CO.paa",
-				"asec_vests\textures\avs_b_mc_co.paa",
-				"asec_vests\textures\esstac2_mc_co.paa",
-				"asec_vests\textures\esstac_mc_co.paa",
-				"asec_vests\textures\esstac_mc_co.paa",
-				"asec_vests\textures\kangaroo2_mc_co.paa",
-				"asec_vests\textures\medpouch_mc_co.paa",
-				"asec_vests\textures\ronin_belt_mc.paa",
-				"ASEC_vests\Textures\holster_mc.paa",
-				"ASEC_vests\Textures\avs_b_mc_co.paa",
-				"ASEC_vests\Textures\blueforce_mag_mc.paa",
-				"ASEC_vests\Textures\dump_mc.paa",
-				"ASEC_vests\Textures\vsm_boxmag_mc.paa",
-				"ASEC_vests\Textures\pouches_mc.paa",
-				"ASEC_vests\Textures\tfa_pouch_mc.paa",
-				"ASEC_vests\Textures\blueforce_mag_mc.paa"
+				"ASEC_Vests1\textures\jpc_main_MC_CO.paa",
+				"ASEC_Vests1\textures\jpc_cummerbund_MC_CO.paa",
+				"ASEC_Vests1\textures\avs_b_mc_co.paa",
+				"ASEC_Vests1\textures\esstac2_mc_co.paa",
+				"ASEC_Vests1\textures\esstac_mc_co.paa",
+				"ASEC_Vests1\textures\esstac_mc_co.paa",
+				"ASEC_Vests1\textures\kangaroo2_mc_co.paa",
+				"ASEC_Vests1\textures\medpouch_mc_co.paa",
+				"ASEC_Vests1\textures\ronin_belt_mc.paa",
+				"ASEC_Vests1\Textures\holster_mc.paa",
+				"ASEC_Vests1\Textures\avs_b_mc_co.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_mc.paa",
+				"ASEC_Vests1\Textures\dump_mc.paa",
+				"ASEC_Vests1\Textures\vsm_boxmag_mc.paa",
+				"ASEC_Vests1\Textures\pouches_mc.paa",
+				"ASEC_Vests1\Textures\tfa_pouch_mc.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_mc.paa"
 			};
 			containerClass="Supply140";
 			mass=80;
@@ -982,12 +982,12 @@ class cfgWeapons
 	};
 	class Ronin_Belt_AOR1_2: ItemCore
 	{
-		author="Task Force Leviathan";
+		author="Jup, Lip, Thunder";
 		scope=2;
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
 		displayname="[TFL] Ronin Belt AOR1 (Glock B)";
-		picture="\ASEC_vests\Textures\anti_rat.paa";
+		picture="\ASEC_Vests1\Textures\anti_rat.paa";
 		model="ASEC_Belt\Models\Ronin_Belt_Glock2.p3d";
 		hiddenSelections[]=
 		{
@@ -1011,23 +1011,23 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"asec_vests\textures\jpc_main_AOR1_CO.paa",
-			"asec_vests\textures\jpc_cummerbund_aor1_CO.paa",
-			"asec_vests\textures\avs_b_aor1_co.paa",
-			"asec_vests\textures\esstac2_aor1_co.paa",
-			"asec_vests\textures\esstac_aor1_co.paa",
-			"asec_vests\textures\esstac_aor1_co.paa",
-			"asec_vests\textures\kangaroo2_aor1_co.paa",
-			"asec_vests\textures\medpouch_aor1_co.paa",
-			"asec_vests\textures\ronin_belt_aor1.paa",
-			"ASEC_vests\Textures\holster_tan_co.paa",
-			"ASEC_vests\Textures\avs_b_aor1_co.paa",
-			"ASEC_vests\Textures\blueforce_mag_aor1.paa",
-			"ASEC_vests\Textures\dump_aor1.paa",
-			"ASEC_vests\Textures\vsm_boxmag_aor1.paa",
-			"ASEC_vests\Textures\pouches_aor1.paa",
-			"ASEC_vests\Textures\tfa_pouch_aor1.paa",
-			"ASEC_vests\Textures\blueforce_mag_aor1.paa"
+			"ASEC_Vests1\textures\jpc_main_AOR1_CO.paa",
+			"ASEC_Vests1\textures\jpc_cummerbund_aor1_CO.paa",
+			"ASEC_Vests1\textures\avs_b_aor1_co.paa",
+			"ASEC_Vests1\textures\esstac2_aor1_co.paa",
+			"ASEC_Vests1\textures\esstac_aor1_co.paa",
+			"ASEC_Vests1\textures\esstac_aor1_co.paa",
+			"ASEC_Vests1\textures\kangaroo2_aor1_co.paa",
+			"ASEC_Vests1\textures\medpouch_aor1_co.paa",
+			"ASEC_Vests1\textures\ronin_belt_aor1.paa",
+			"ASEC_Vests1\Textures\holster_tan_co.paa",
+			"ASEC_Vests1\Textures\avs_b_aor1_co.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_aor1.paa",
+			"ASEC_Vests1\Textures\dump_aor1.paa",
+			"ASEC_Vests1\Textures\vsm_boxmag_aor1.paa",
+			"ASEC_Vests1\Textures\pouches_aor1.paa",
+			"ASEC_Vests1\Textures\tfa_pouch_aor1.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_aor1.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -1054,23 +1054,23 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"asec_vests\textures\jpc_main_AOR1_CO.paa",
-				"asec_vests\textures\jpc_cummerbund_aor1_CO.paa",
-				"asec_vests\textures\avs_b_aor1_co.paa",
-				"asec_vests\textures\esstac2_aor1_co.paa",
-				"asec_vests\textures\esstac_aor1_co.paa",
-				"asec_vests\textures\esstac_aor1_co.paa",
-				"asec_vests\textures\kangaroo2_aor1_co.paa",
-				"asec_vests\textures\medpouch_aor1_co.paa",
-				"asec_vests\textures\ronin_belt_aor1.paa",
-				"ASEC_vests\Textures\holster_tan_co.paa",
-				"ASEC_vests\Textures\avs_b_aor1_co.paa",
-				"ASEC_vests\Textures\blueforce_mag_aor1.paa",
-				"ASEC_vests\Textures\dump_aor1.paa",
-				"ASEC_vests\Textures\vsm_boxmag_aor1.paa",
-				"ASEC_vests\Textures\pouches_aor1.paa",
-				"ASEC_vests\Textures\tfa_pouch_aor1.paa",
-				"ASEC_vests\Textures\blueforce_mag_aor1.paa"
+				"ASEC_Vests1\textures\jpc_main_AOR1_CO.paa",
+				"ASEC_Vests1\textures\jpc_cummerbund_aor1_CO.paa",
+				"ASEC_Vests1\textures\avs_b_aor1_co.paa",
+				"ASEC_Vests1\textures\esstac2_aor1_co.paa",
+				"ASEC_Vests1\textures\esstac_aor1_co.paa",
+				"ASEC_Vests1\textures\esstac_aor1_co.paa",
+				"ASEC_Vests1\textures\kangaroo2_aor1_co.paa",
+				"ASEC_Vests1\textures\medpouch_aor1_co.paa",
+				"ASEC_Vests1\textures\ronin_belt_aor1.paa",
+				"ASEC_Vests1\Textures\holster_tan_co.paa",
+				"ASEC_Vests1\Textures\avs_b_aor1_co.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_aor1.paa",
+				"ASEC_Vests1\Textures\dump_aor1.paa",
+				"ASEC_Vests1\Textures\vsm_boxmag_aor1.paa",
+				"ASEC_Vests1\Textures\pouches_aor1.paa",
+				"ASEC_Vests1\Textures\tfa_pouch_aor1.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_aor1.paa"
 			};
 			containerClass="Supply140";
 			mass=80;
@@ -1104,12 +1104,12 @@ class cfgWeapons
 	};
 	class Ronin_Belt_AOR2_2: ItemCore
 	{
-		author="Task Force Leviathan";
+		author="Jup, Lip, Thunder";
 		scope=2;
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
 		displayname="[TFL] Ronin Belt AOR2 (Glock B)";
-		picture="\ASEC_vests\Textures\anti_rat.paa";
+		picture="\ASEC_Vests1\Textures\anti_rat.paa";
 		model="ASEC_Belt\Models\Ronin_Belt_Glock2.p3d";
 		hiddenSelections[]=
 		{
@@ -1133,23 +1133,23 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"asec_vests\textures\jpc_main_AOR2_CO.paa",
-			"asec_vests\textures\jpc_cummerbund_aor2_CO.paa",
-			"asec_vests\textures\avs_b_aor2_co.paa",
-			"asec_vests\textures\esstac2_aor2_co.paa",
-			"asec_vests\textures\esstac_aor2_co.paa",
-			"asec_vests\textures\esstac_aor2_co.paa",
-			"asec_vests\textures\kangaroo2_aor2_co.paa",
-			"asec_vests\textures\medpouch_aor2_co.paa",
-			"asec_vests\textures\ronin_belt_aor2.paa",
-			"ASEC_vests\Textures\holster_od_co.paa",
-			"ASEC_vests\Textures\avs_b_aor2_co.paa",
-			"ASEC_vests\Textures\blueforce_mag_aor2.paa",
-			"ASEC_vests\Textures\dump_aor2.paa",
-			"ASEC_vests\Textures\vsm_boxmag_aor2.paa",
-			"ASEC_vests\Textures\pouches_aor2.paa",
-			"ASEC_vests\Textures\tfa_pouch_aor2.paa",
-			"ASEC_vests\Textures\blueforce_mag_aor2.paa"
+			"ASEC_Vests1\textures\jpc_main_AOR2_CO.paa",
+			"ASEC_Vests1\textures\jpc_cummerbund_aor2_CO.paa",
+			"ASEC_Vests1\textures\avs_b_aor2_co.paa",
+			"ASEC_Vests1\textures\esstac2_aor2_co.paa",
+			"ASEC_Vests1\textures\esstac_aor2_co.paa",
+			"ASEC_Vests1\textures\esstac_aor2_co.paa",
+			"ASEC_Vests1\textures\kangaroo2_aor2_co.paa",
+			"ASEC_Vests1\textures\medpouch_aor2_co.paa",
+			"ASEC_Vests1\textures\ronin_belt_aor2.paa",
+			"ASEC_Vests1\Textures\holster_od_co.paa",
+			"ASEC_Vests1\Textures\avs_b_aor2_co.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_aor2.paa",
+			"ASEC_Vests1\Textures\dump_aor2.paa",
+			"ASEC_Vests1\Textures\vsm_boxmag_aor2.paa",
+			"ASEC_Vests1\Textures\pouches_aor2.paa",
+			"ASEC_Vests1\Textures\tfa_pouch_aor2.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_aor2.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -1176,23 +1176,23 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"asec_vests\textures\jpc_main_AOR2_CO.paa",
-				"asec_vests\textures\jpc_cummerbund_aor2_CO.paa",
-				"asec_vests\textures\avs_b_aor2_co.paa",
-				"asec_vests\textures\esstac2_aor2_co.paa",
-				"asec_vests\textures\esstac_aor2_co.paa",
-				"asec_vests\textures\esstac_aor2_co.paa",
-				"asec_vests\textures\kangaroo2_aor2_co.paa",
-				"asec_vests\textures\medpouch_aor2_co.paa",
-				"asec_vests\textures\ronin_belt_aor2.paa",
-				"ASEC_vests\Textures\holster_od_co.paa",
-				"ASEC_vests\Textures\avs_b_aor2_co.paa",
-				"ASEC_vests\Textures\blueforce_mag_aor2.paa",
-				"ASEC_vests\Textures\dump_aor2.paa",
-				"ASEC_vests\Textures\vsm_boxmag_aor2.paa",
-				"ASEC_vests\Textures\pouches_aor2.paa",
-				"ASEC_vests\Textures\tfa_pouch_aor2.paa",
-				"ASEC_vests\Textures\blueforce_mag_aor2.paa"
+				"ASEC_Vests1\textures\jpc_main_AOR2_CO.paa",
+				"ASEC_Vests1\textures\jpc_cummerbund_aor2_CO.paa",
+				"ASEC_Vests1\textures\avs_b_aor2_co.paa",
+				"ASEC_Vests1\textures\esstac2_aor2_co.paa",
+				"ASEC_Vests1\textures\esstac_aor2_co.paa",
+				"ASEC_Vests1\textures\esstac_aor2_co.paa",
+				"ASEC_Vests1\textures\kangaroo2_aor2_co.paa",
+				"ASEC_Vests1\textures\medpouch_aor2_co.paa",
+				"ASEC_Vests1\textures\ronin_belt_aor2.paa",
+				"ASEC_Vests1\Textures\holster_od_co.paa",
+				"ASEC_Vests1\Textures\avs_b_aor2_co.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_aor2.paa",
+				"ASEC_Vests1\Textures\dump_aor2.paa",
+				"ASEC_Vests1\Textures\vsm_boxmag_aor2.paa",
+				"ASEC_Vests1\Textures\pouches_aor2.paa",
+				"ASEC_Vests1\Textures\tfa_pouch_aor2.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_aor2.paa"
 			};
 			containerClass="Supply140";
 			mass=80;
@@ -1226,12 +1226,12 @@ class cfgWeapons
 	};
 	class Ronin_Belt_CB_2: ItemCore
 	{
-		author="Task Force Leviathan";
+		author="Jup, Lip, Thunder";
 		scope=2;
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
 		displayname="[TFL] Ronin Belt CB (Glock B)";
-		picture="\ASEC_vests\Textures\anti_rat.paa";
+		picture="\ASEC_Vests1\Textures\anti_rat.paa";
 		model="ASEC_Belt\Models\Ronin_Belt_Glock2.p3d";
 		hiddenSelections[]=
 		{
@@ -1255,23 +1255,23 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"asec_vests\textures\jpc_main_cb_CO.paa",
-			"asec_vests\textures\jpc_cummerbund_cb_CO.paa",
-			"asec_vests\textures\avs_b_cb_co.paa",
-			"asec_vests\textures\esstac2_cb_co.paa",
-			"asec_vests\textures\esstac_cb_co.paa",
-			"asec_vests\textures\esstac_cb_co.paa",
-			"asec_vests\textures\kangaroo2_cb_co.paa",
-			"asec_vests\textures\medpouch_cb_co.paa",
-			"asec_vests\textures\ronin_belt_cb.paa",
-			"ASEC_vests\Textures\holster_tan_co.paa",
-			"ASEC_vests\Textures\avs_b_cb_co.paa",
-			"ASEC_vests\Textures\blueforce_mag_cb.paa",
-			"ASEC_vests\Textures\dump_cb.paa",
-			"ASEC_vests\Textures\vsm_boxmag_cb.paa",
-			"ASEC_vests\Textures\pouches_cb.paa",
-			"ASEC_vests\Textures\tfa_pouch_cb.paa",
-			"ASEC_vests\Textures\blueforce_mag_cb.paa"
+			"ASEC_Vests1\textures\jpc_main_cb_CO.paa",
+			"ASEC_Vests1\textures\jpc_cummerbund_cb_CO.paa",
+			"ASEC_Vests1\textures\avs_b_cb_co.paa",
+			"ASEC_Vests1\textures\esstac2_cb_co.paa",
+			"ASEC_Vests1\textures\esstac_cb_co.paa",
+			"ASEC_Vests1\textures\esstac_cb_co.paa",
+			"ASEC_Vests1\textures\kangaroo2_cb_co.paa",
+			"ASEC_Vests1\textures\medpouch_cb_co.paa",
+			"ASEC_Vests1\textures\ronin_belt_cb.paa",
+			"ASEC_Vests1\Textures\holster_tan_co.paa",
+			"ASEC_Vests1\Textures\avs_b_cb_co.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_cb.paa",
+			"ASEC_Vests1\Textures\dump_cb.paa",
+			"ASEC_Vests1\Textures\vsm_boxmag_cb.paa",
+			"ASEC_Vests1\Textures\pouches_cb.paa",
+			"ASEC_Vests1\Textures\tfa_pouch_cb.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_cb.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -1298,23 +1298,23 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"asec_vests\textures\jpc_main_cb_CO.paa",
-				"asec_vests\textures\jpc_cummerbund_cb_CO.paa",
-				"asec_vests\textures\avs_b_cb_co.paa",
-				"asec_vests\textures\esstac2_cb_co.paa",
-				"asec_vests\textures\esstac_cb_co.paa",
-				"asec_vests\textures\esstac_cb_co.paa",
-				"asec_vests\textures\kangaroo2_cb_co.paa",
-				"asec_vests\textures\medpouch_cb_co.paa",
-				"asec_vests\textures\ronin_belt_cb.paa",
-				"ASEC_vests\Textures\holster_tan_co.paa",
-				"ASEC_vests\Textures\avs_b_cb_co.paa",
-				"ASEC_vests\Textures\blueforce_mag_cb.paa",
-				"ASEC_vests\Textures\dump_cb.paa",
-				"ASEC_vests\Textures\vsm_boxmag_cb.paa",
-				"ASEC_vests\Textures\pouches_cb.paa",
-				"ASEC_vests\Textures\tfa_pouch_cb.paa",
-				"ASEC_vests\Textures\blueforce_mag_cb.paa"
+				"ASEC_Vests1\textures\jpc_main_cb_CO.paa",
+				"ASEC_Vests1\textures\jpc_cummerbund_cb_CO.paa",
+				"ASEC_Vests1\textures\avs_b_cb_co.paa",
+				"ASEC_Vests1\textures\esstac2_cb_co.paa",
+				"ASEC_Vests1\textures\esstac_cb_co.paa",
+				"ASEC_Vests1\textures\esstac_cb_co.paa",
+				"ASEC_Vests1\textures\kangaroo2_cb_co.paa",
+				"ASEC_Vests1\textures\medpouch_cb_co.paa",
+				"ASEC_Vests1\textures\ronin_belt_cb.paa",
+				"ASEC_Vests1\Textures\holster_tan_co.paa",
+				"ASEC_Vests1\Textures\avs_b_cb_co.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_cb.paa",
+				"ASEC_Vests1\Textures\dump_cb.paa",
+				"ASEC_Vests1\Textures\vsm_boxmag_cb.paa",
+				"ASEC_Vests1\Textures\pouches_cb.paa",
+				"ASEC_Vests1\Textures\tfa_pouch_cb.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_cb.paa"
 			};
 			containerClass="Supply140";
 			mass=80;
@@ -1348,12 +1348,12 @@ class cfgWeapons
 	};
 	class Ronin_Belt_RG_2: ItemCore
 	{
-		author="Task Force Leviathan";
+		author="Jup, Lip, Thunder";
 		scope=2;
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
 		displayname="[TFL] Ronin Belt RG (Glock B)";
-		picture="\ASEC_vests\Textures\anti_rat.paa";
+		picture="\ASEC_Vests1\Textures\anti_rat.paa";
 		model="ASEC_Belt\Models\Ronin_Belt_Glock2.p3d";
 		hiddenSelections[]=
 		{
@@ -1377,23 +1377,23 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"asec_vests\textures\jpc_main_rg_CO.paa",
-			"asec_vests\textures\jpc_cummerbund_rg_CO.paa",
-			"asec_vests\textures\avs_b_rg_co.paa",
-			"asec_vests\textures\esstac2_rg_co.paa",
-			"asec_vests\textures\esstac_rg_co.paa",
-			"asec_vests\textures\esstac_rg_co.paa",
-			"asec_vests\textures\kangaroo2_rg_co.paa",
-			"asec_vests\textures\medpouch_rg_co.paa",
-			"asec_vests\textures\ronin_belt_rg.paa",
-			"ASEC_vests\Textures\holster_od_co.paa",
-			"ASEC_vests\Textures\avs_b_rg_co.paa",
-			"ASEC_vests\Textures\blueforce_mag_rg.paa",
-			"ASEC_vests\Textures\dump_od.paa",
-			"ASEC_vests\Textures\vsm_boxmag_rg.paa",
-			"ASEC_vests\Textures\pouches_rg.paa",
-			"ASEC_vests\Textures\tfa_pouch_rg.paa",
-			"ASEC_vests\Textures\blueforce_mag_rg.paa"
+			"ASEC_Vests1\textures\jpc_main_rg_CO.paa",
+			"ASEC_Vests1\textures\jpc_cummerbund_rg_CO.paa",
+			"ASEC_Vests1\textures\avs_b_rg_co.paa",
+			"ASEC_Vests1\textures\esstac2_rg_co.paa",
+			"ASEC_Vests1\textures\esstac_rg_co.paa",
+			"ASEC_Vests1\textures\esstac_rg_co.paa",
+			"ASEC_Vests1\textures\kangaroo2_rg_co.paa",
+			"ASEC_Vests1\textures\medpouch_rg_co.paa",
+			"ASEC_Vests1\textures\ronin_belt_rg.paa",
+			"ASEC_Vests1\Textures\holster_od_co.paa",
+			"ASEC_Vests1\Textures\avs_b_rg_co.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_rg.paa",
+			"ASEC_Vests1\Textures\dump_od.paa",
+			"ASEC_Vests1\Textures\vsm_boxmag_rg.paa",
+			"ASEC_Vests1\Textures\pouches_rg.paa",
+			"ASEC_Vests1\Textures\tfa_pouch_rg.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_rg.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -1420,23 +1420,23 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"asec_vests\textures\jpc_main_rg_CO.paa",
-				"asec_vests\textures\jpc_cummerbund_rg_CO.paa",
-				"asec_vests\textures\avs_b_rg_co.paa",
-				"asec_vests\textures\esstac2_rg_co.paa",
-				"asec_vests\textures\esstac_rg_co.paa",
-				"asec_vests\textures\esstac_rg_co.paa",
-				"asec_vests\textures\kangaroo2_rg_co.paa",
-				"asec_vests\textures\medpouch_rg_co.paa",
-				"asec_vests\textures\ronin_belt_rg.paa",
-				"ASEC_vests\Textures\holster_od_co.paa",
-				"ASEC_vests\Textures\avs_b_rg_co.paa",
-				"ASEC_vests\Textures\blueforce_mag_rg.paa",
-				"ASEC_vests\Textures\dump_od.paa",
-				"ASEC_vests\Textures\vsm_boxmag_rg.paa",
-				"ASEC_vests\Textures\pouches_rg.paa",
-				"ASEC_vests\Textures\tfa_pouch_rg.paa",
-				"ASEC_vests\Textures\blueforce_mag_rg.paa"
+				"ASEC_Vests1\textures\jpc_main_rg_CO.paa",
+				"ASEC_Vests1\textures\jpc_cummerbund_rg_CO.paa",
+				"ASEC_Vests1\textures\avs_b_rg_co.paa",
+				"ASEC_Vests1\textures\esstac2_rg_co.paa",
+				"ASEC_Vests1\textures\esstac_rg_co.paa",
+				"ASEC_Vests1\textures\esstac_rg_co.paa",
+				"ASEC_Vests1\textures\kangaroo2_rg_co.paa",
+				"ASEC_Vests1\textures\medpouch_rg_co.paa",
+				"ASEC_Vests1\textures\ronin_belt_rg.paa",
+				"ASEC_Vests1\Textures\holster_od_co.paa",
+				"ASEC_Vests1\Textures\avs_b_rg_co.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_rg.paa",
+				"ASEC_Vests1\Textures\dump_od.paa",
+				"ASEC_Vests1\Textures\vsm_boxmag_rg.paa",
+				"ASEC_Vests1\Textures\pouches_rg.paa",
+				"ASEC_Vests1\Textures\tfa_pouch_rg.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_rg.paa"
 			};
 			mass=80;
 			containerClass="Supply140";
@@ -1470,12 +1470,12 @@ class cfgWeapons
 	};
 	class Ronin_Belt_BLK_2: ItemCore
 	{
-		author="Task Force Leviathan";
+		author="Jup, Lip, Thunder";
 		scope=2;
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
 		displayname="[TFL] Ronin Belt BLK (Glock B)";
-		picture="\ASEC_vests\Textures\anti_rat.paa";
+		picture="\ASEC_Vests1\Textures\anti_rat.paa";
 		model="ASEC_Belt\Models\Ronin_Belt_Glock2.p3d";
 		hiddenSelections[]=
 		{
@@ -1499,23 +1499,23 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"asec_vests\textures\jpc_main_blk_CO.paa",
-			"asec_vests\textures\jpc_cummerbund_blk_CO.paa",
-			"asec_vests\textures\avs_b_blk_co.paa",
-			"asec_vests\textures\esstac2_blk_co.paa",
-			"asec_vests\textures\esstac_blk_co.paa",
-			"asec_vests\textures\esstac_blk_co.paa",
-			"asec_vests\textures\kangaroo2_blk_co.paa",
-			"asec_vests\textures\medpouch_blk_co.paa",
-			"asec_vests\textures\ronin_belt_blk.paa",
-			"ASEC_vests\Textures\holster_blk_co.paa",
-			"ASEC_vests\Textures\avs_b_blk_co.paa",
-			"ASEC_vests\Textures\blueforce_mag_blk.paa",
-			"ASEC_vests\Textures\dump_blk.paa",
-			"ASEC_vests\Textures\vsm_boxmag_blk.paa",
-			"ASEC_vests\Textures\pouches_blk.paa",
-			"ASEC_vests\Textures\tfa_pouch_blk.paa",
-			"ASEC_vests\Textures\blueforce_mag_blk.paa"
+			"ASEC_Vests1\textures\jpc_main_blk_CO.paa",
+			"ASEC_Vests1\textures\jpc_cummerbund_blk_CO.paa",
+			"ASEC_Vests1\textures\avs_b_blk_co.paa",
+			"ASEC_Vests1\textures\esstac2_blk_co.paa",
+			"ASEC_Vests1\textures\esstac_blk_co.paa",
+			"ASEC_Vests1\textures\esstac_blk_co.paa",
+			"ASEC_Vests1\textures\kangaroo2_blk_co.paa",
+			"ASEC_Vests1\textures\medpouch_blk_co.paa",
+			"ASEC_Vests1\textures\ronin_belt_blk.paa",
+			"ASEC_Vests1\Textures\holster_blk_co.paa",
+			"ASEC_Vests1\Textures\avs_b_blk_co.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_blk.paa",
+			"ASEC_Vests1\Textures\dump_blk.paa",
+			"ASEC_Vests1\Textures\vsm_boxmag_blk.paa",
+			"ASEC_Vests1\Textures\pouches_blk.paa",
+			"ASEC_Vests1\Textures\tfa_pouch_blk.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_blk.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -1542,23 +1542,23 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"asec_vests\textures\jpc_main_blk_CO.paa",
-				"asec_vests\textures\jpc_cummerbund_blk_CO.paa",
-				"asec_vests\textures\avs_b_blk_co.paa",
-				"asec_vests\textures\esstac2_blk_co.paa",
-				"asec_vests\textures\esstac_blk_co.paa",
-				"asec_vests\textures\esstac_blk_co.paa",
-				"asec_vests\textures\kangaroo2_blk_co.paa",
-				"asec_vests\textures\medpouch_blk_co.paa",
-				"asec_vests\textures\ronin_belt_blk.paa",
-				"ASEC_vests\Textures\holster_blk_co.paa",
-				"ASEC_vests\Textures\avs_b_blk_co.paa",
-				"ASEC_vests\Textures\blueforce_mag_blk.paa",
-				"ASEC_vests\Textures\dump_blk.paa",
-				"ASEC_vests\Textures\vsm_boxmag_blk.paa",
-				"ASEC_vests\Textures\pouches_blk.paa",
-				"ASEC_vests\Textures\tfa_pouch_blk.paa",
-				"ASEC_vests\Textures\blueforce_mag_blk.paa"
+				"ASEC_Vests1\textures\jpc_main_blk_CO.paa",
+				"ASEC_Vests1\textures\jpc_cummerbund_blk_CO.paa",
+				"ASEC_Vests1\textures\avs_b_blk_co.paa",
+				"ASEC_Vests1\textures\esstac2_blk_co.paa",
+				"ASEC_Vests1\textures\esstac_blk_co.paa",
+				"ASEC_Vests1\textures\esstac_blk_co.paa",
+				"ASEC_Vests1\textures\kangaroo2_blk_co.paa",
+				"ASEC_Vests1\textures\medpouch_blk_co.paa",
+				"ASEC_Vests1\textures\ronin_belt_blk.paa",
+				"ASEC_Vests1\Textures\holster_blk_co.paa",
+				"ASEC_Vests1\Textures\avs_b_blk_co.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_blk.paa",
+				"ASEC_Vests1\Textures\dump_blk.paa",
+				"ASEC_Vests1\Textures\vsm_boxmag_blk.paa",
+				"ASEC_Vests1\Textures\pouches_blk.paa",
+				"ASEC_Vests1\Textures\tfa_pouch_blk.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_blk.paa"
 			};
 			mass=80;
 			containerClass="Supply140";
@@ -1592,12 +1592,12 @@ class cfgWeapons
 	};
 	class Ronin_Belt_ALP_2: ItemCore
 	{
-		author="Task Force Leviathan";
+		author="Jup, Lip, Thunder";
 		scope=2;
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
 		displayname="[TFL] Ronin Belt ALP (Glock B)";
-		picture="\ASEC_vests\Textures\anti_rat.paa";
+		picture="\ASEC_Vests1\Textures\anti_rat.paa";
 		model="ASEC_Belt\Models\Ronin_Belt_Glock2.p3d";
 		hiddenSelections[]=
 		{
@@ -1621,23 +1621,23 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"asec_vests\textures\jpc_main_alp_CO.paa",
-			"asec_vests\textures\jpc_cummerbund_alp_CO.paa",
-			"asec_vests\textures\avs_b_alp_co.paa",
-			"asec_vests\textures\esstac2_alpine_co.paa",
-			"asec_vests\textures\esstac_alpine_co.paa",
-			"asec_vests\textures\esstac_alpine_co.paa",
-			"asec_vests\textures\kangaroo2_alp_co.paa",
-			"asec_vests\textures\medpouch_alp_co.paa",
-			"asec_vests\textures\ronin_belt_alpine.paa",
-			"ASEC_vests\Textures\holster_alpine_co.paa",
-			"ASEC_vests\Textures\avs_b_alp_co.paa",
-			"ASEC_vests\Textures\blueforce_mag_alpine.paa",
-			"ASEC_vests\Textures\dump_alpine.paa",
-			"ASEC_vests\Textures\vsm_boxmag_alpine.paa",
-			"ASEC_vests\Textures\pouches_alpine.paa",
-			"ASEC_vests\Textures\tfa_pouch_alpine.paa",
-			"ASEC_vests\Textures\blueforce_mag_alpine.paa"
+			"ASEC_Vests1\textures\jpc_main_alp_CO.paa",
+			"ASEC_Vests1\textures\jpc_cummerbund_alp_CO.paa",
+			"ASEC_Vests1\textures\avs_b_alp_co.paa",
+			"ASEC_Vests1\textures\esstac2_alpine_co.paa",
+			"ASEC_Vests1\textures\esstac_alpine_co.paa",
+			"ASEC_Vests1\textures\esstac_alpine_co.paa",
+			"ASEC_Vests1\textures\kangaroo2_alp_co.paa",
+			"ASEC_Vests1\textures\medpouch_alp_co.paa",
+			"ASEC_Vests1\textures\ronin_belt_alpine.paa",
+			"ASEC_Vests1\Textures\holster_alpine_co.paa",
+			"ASEC_Vests1\Textures\avs_b_alp_co.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_alpine.paa",
+			"ASEC_Vests1\Textures\dump_alpine.paa",
+			"ASEC_Vests1\Textures\vsm_boxmag_alpine.paa",
+			"ASEC_Vests1\Textures\pouches_alpine.paa",
+			"ASEC_Vests1\Textures\tfa_pouch_alpine.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_alpine.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -1664,23 +1664,23 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"asec_vests\textures\jpc_main_alp_CO.paa",
-				"asec_vests\textures\jpc_cummerbund_alp_CO.paa",
-				"asec_vests\textures\avs_b_alp_co.paa",
-				"asec_vests\textures\esstac2_alpine_co.paa",
-				"asec_vests\textures\esstac_alpine_co.paa",
-				"asec_vests\textures\esstac_alpine_co.paa",
-				"asec_vests\textures\kangaroo2_alp_co.paa",
-				"asec_vests\textures\medpouch_alp_co.paa",
-				"asec_vests\textures\ronin_belt_alpine.paa",
-				"ASEC_vests\Textures\holster_alpine_co.paa",
-				"ASEC_vests\Textures\avs_b_alp_co.paa",
-				"ASEC_vests\Textures\blueforce_mag_alpine.paa",
-				"ASEC_vests\Textures\dump_alpine.paa",
-				"ASEC_vests\Textures\vsm_boxmag_alpine.paa",
-				"ASEC_vests\Textures\pouches_alpine.paa",
-				"ASEC_vests\Textures\tfa_pouch_alpine.paa",
-				"ASEC_vests\Textures\blueforce_mag_alpine.paa"
+				"ASEC_Vests1\textures\jpc_main_alp_CO.paa",
+				"ASEC_Vests1\textures\jpc_cummerbund_alp_CO.paa",
+				"ASEC_Vests1\textures\avs_b_alp_co.paa",
+				"ASEC_Vests1\textures\esstac2_alpine_co.paa",
+				"ASEC_Vests1\textures\esstac_alpine_co.paa",
+				"ASEC_Vests1\textures\esstac_alpine_co.paa",
+				"ASEC_Vests1\textures\kangaroo2_alp_co.paa",
+				"ASEC_Vests1\textures\medpouch_alp_co.paa",
+				"ASEC_Vests1\textures\ronin_belt_alpine.paa",
+				"ASEC_Vests1\Textures\holster_alpine_co.paa",
+				"ASEC_Vests1\Textures\avs_b_alp_co.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_alpine.paa",
+				"ASEC_Vests1\Textures\dump_alpine.paa",
+				"ASEC_Vests1\Textures\vsm_boxmag_alpine.paa",
+				"ASEC_Vests1\Textures\pouches_alpine.paa",
+				"ASEC_Vests1\Textures\tfa_pouch_alpine.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_alpine.paa"
 			};
 			mass=80;
 			containerClass="Supply140";
@@ -1714,12 +1714,12 @@ class cfgWeapons
 	};
 	class Ronin_Belt_MC_5: ItemCore
 	{
-		author="Task Force Leviathan";
+		author="Jup, Lip, Thunder";
 		scope=2;
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
 		displayname="[TFL] Ronin Belt MC (M4 A)";
-		picture="\ASEC_vests\Textures\anti_rat.paa";
+		picture="\ASEC_Vests1\Textures\anti_rat.paa";
 		model="ASEC_Belt\Models\Ronin_Belt_M4.p3d";
 		hiddenSelections[]=
 		{
@@ -1743,23 +1743,23 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"asec_vests\textures\jpc_main_MC_CO.paa",
-			"asec_vests\textures\jpc_cummerbund_MC_CO.paa",
-			"asec_vests\textures\avs_b_mc_co.paa",
-			"asec_vests\textures\esstac2_mc_co.paa",
-			"asec_vests\textures\esstac_mc_co.paa",
-			"asec_vests\textures\esstac_mc_co.paa",
-			"asec_vests\textures\kangaroo2_mc_co.paa",
-			"asec_vests\textures\medpouch_mc_co.paa",
-			"asec_vests\textures\ronin_belt_mc.paa",
-			"ASEC_vests\Textures\holster_mc.paa",
-			"ASEC_vests\Textures\avs_b_mc_co.paa",
-			"ASEC_vests\Textures\blueforce_mag_mc.paa",
-			"ASEC_vests\Textures\dump_mc.paa",
-			"ASEC_vests\Textures\vsm_boxmag_mc.paa",
-			"ASEC_vests\Textures\pouches_mc.paa",
-			"ASEC_vests\Textures\tfa_pouch_mc.paa",
-			"ASEC_vests\Textures\blueforce_mag_mc.paa"
+			"ASEC_Vests1\textures\jpc_main_MC_CO.paa",
+			"ASEC_Vests1\textures\jpc_cummerbund_MC_CO.paa",
+			"ASEC_Vests1\textures\avs_b_mc_co.paa",
+			"ASEC_Vests1\textures\esstac2_mc_co.paa",
+			"ASEC_Vests1\textures\esstac_mc_co.paa",
+			"ASEC_Vests1\textures\esstac_mc_co.paa",
+			"ASEC_Vests1\textures\kangaroo2_mc_co.paa",
+			"ASEC_Vests1\textures\medpouch_mc_co.paa",
+			"ASEC_Vests1\textures\ronin_belt_mc.paa",
+			"ASEC_Vests1\Textures\holster_mc.paa",
+			"ASEC_Vests1\Textures\avs_b_mc_co.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_mc.paa",
+			"ASEC_Vests1\Textures\dump_mc.paa",
+			"ASEC_Vests1\Textures\vsm_boxmag_mc.paa",
+			"ASEC_Vests1\Textures\pouches_mc.paa",
+			"ASEC_Vests1\Textures\tfa_pouch_mc.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_mc.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -1786,23 +1786,23 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"asec_vests\textures\jpc_main_MC_CO.paa",
-				"asec_vests\textures\jpc_cummerbund_MC_CO.paa",
-				"asec_vests\textures\avs_b_mc_co.paa",
-				"asec_vests\textures\esstac2_mc_co.paa",
-				"asec_vests\textures\esstac_mc_co.paa",
-				"asec_vests\textures\esstac_mc_co.paa",
-				"asec_vests\textures\kangaroo2_mc_co.paa",
-				"asec_vests\textures\medpouch_mc_co.paa",
-				"asec_vests\textures\ronin_belt_mc.paa",
-				"ASEC_vests\Textures\holster_mc.paa",
-				"ASEC_vests\Textures\avs_b_mc_co.paa",
-				"ASEC_vests\Textures\blueforce_mag_mc.paa",
-				"ASEC_vests\Textures\dump_mc.paa",
-				"ASEC_vests\Textures\vsm_boxmag_mc.paa",
-				"ASEC_vests\Textures\pouches_mc.paa",
-				"ASEC_vests\Textures\tfa_pouch_mc.paa",
-				"ASEC_vests\Textures\blueforce_mag_mc.paa"
+				"ASEC_Vests1\textures\jpc_main_MC_CO.paa",
+				"ASEC_Vests1\textures\jpc_cummerbund_MC_CO.paa",
+				"ASEC_Vests1\textures\avs_b_mc_co.paa",
+				"ASEC_Vests1\textures\esstac2_mc_co.paa",
+				"ASEC_Vests1\textures\esstac_mc_co.paa",
+				"ASEC_Vests1\textures\esstac_mc_co.paa",
+				"ASEC_Vests1\textures\kangaroo2_mc_co.paa",
+				"ASEC_Vests1\textures\medpouch_mc_co.paa",
+				"ASEC_Vests1\textures\ronin_belt_mc.paa",
+				"ASEC_Vests1\Textures\holster_mc.paa",
+				"ASEC_Vests1\Textures\avs_b_mc_co.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_mc.paa",
+				"ASEC_Vests1\Textures\dump_mc.paa",
+				"ASEC_Vests1\Textures\vsm_boxmag_mc.paa",
+				"ASEC_Vests1\Textures\pouches_mc.paa",
+				"ASEC_Vests1\Textures\tfa_pouch_mc.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_mc.paa"
 			};
 			containerClass="Supply140";
 			mass=80;
@@ -1836,12 +1836,12 @@ class cfgWeapons
 	};
 	class Ronin_Belt_AOR1_5: ItemCore
 	{
-		author="Task Force Leviathan";
+		author="Jup, Lip, Thunder";
 		scope=2;
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
 		displayname="[TFL] Ronin Belt AOR1 (M4 A)";
-		picture="\ASEC_vests\Textures\anti_rat.paa";
+		picture="\ASEC_Vests1\Textures\anti_rat.paa";
 		model="ASEC_Belt\Models\Ronin_Belt_M4.p3d";
 		hiddenSelections[]=
 		{
@@ -1865,23 +1865,23 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"asec_vests\textures\jpc_main_AOR1_CO.paa",
-			"asec_vests\textures\jpc_cummerbund_aor1_CO.paa",
-			"asec_vests\textures\avs_b_aor1_co.paa",
-			"asec_vests\textures\esstac2_aor1_co.paa",
-			"asec_vests\textures\esstac_aor1_co.paa",
-			"asec_vests\textures\esstac_aor1_co.paa",
-			"asec_vests\textures\kangaroo2_aor1_co.paa",
-			"asec_vests\textures\medpouch_aor1_co.paa",
-			"asec_vests\textures\ronin_belt_aor1.paa",
-			"ASEC_vests\Textures\holster_tan_co.paa",
-			"ASEC_vests\Textures\avs_b_aor1_co.paa",
-			"ASEC_vests\Textures\blueforce_mag_aor1.paa",
-			"ASEC_vests\Textures\dump_aor1.paa",
-			"ASEC_vests\Textures\vsm_boxmag_aor1.paa",
-			"ASEC_vests\Textures\pouches_aor1.paa",
-			"ASEC_vests\Textures\tfa_pouch_aor1.paa",
-			"ASEC_vests\Textures\blueforce_mag_aor1.paa"
+			"ASEC_Vests1\textures\jpc_main_AOR1_CO.paa",
+			"ASEC_Vests1\textures\jpc_cummerbund_aor1_CO.paa",
+			"ASEC_Vests1\textures\avs_b_aor1_co.paa",
+			"ASEC_Vests1\textures\esstac2_aor1_co.paa",
+			"ASEC_Vests1\textures\esstac_aor1_co.paa",
+			"ASEC_Vests1\textures\esstac_aor1_co.paa",
+			"ASEC_Vests1\textures\kangaroo2_aor1_co.paa",
+			"ASEC_Vests1\textures\medpouch_aor1_co.paa",
+			"ASEC_Vests1\textures\ronin_belt_aor1.paa",
+			"ASEC_Vests1\Textures\holster_tan_co.paa",
+			"ASEC_Vests1\Textures\avs_b_aor1_co.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_aor1.paa",
+			"ASEC_Vests1\Textures\dump_aor1.paa",
+			"ASEC_Vests1\Textures\vsm_boxmag_aor1.paa",
+			"ASEC_Vests1\Textures\pouches_aor1.paa",
+			"ASEC_Vests1\Textures\tfa_pouch_aor1.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_aor1.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -1908,23 +1908,23 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"asec_vests\textures\jpc_main_AOR1_CO.paa",
-				"asec_vests\textures\jpc_cummerbund_aor1_CO.paa",
-				"asec_vests\textures\avs_b_aor1_co.paa",
-				"asec_vests\textures\esstac2_aor1_co.paa",
-				"asec_vests\textures\esstac_aor1_co.paa",
-				"asec_vests\textures\esstac_aor1_co.paa",
-				"asec_vests\textures\kangaroo2_aor1_co.paa",
-				"asec_vests\textures\medpouch_aor1_co.paa",
-				"asec_vests\textures\ronin_belt_aor1.paa",
-				"ASEC_vests\Textures\holster_tan_co.paa",
-				"ASEC_vests\Textures\avs_b_aor1_co.paa",
-				"ASEC_vests\Textures\blueforce_mag_aor1.paa",
-				"ASEC_vests\Textures\dump_aor1.paa",
-				"ASEC_vests\Textures\vsm_boxmag_aor1.paa",
-				"ASEC_vests\Textures\pouches_aor1.paa",
-				"ASEC_vests\Textures\tfa_pouch_aor1.paa",
-				"ASEC_vests\Textures\blueforce_mag_aor1.paa"
+				"ASEC_Vests1\textures\jpc_main_AOR1_CO.paa",
+				"ASEC_Vests1\textures\jpc_cummerbund_aor1_CO.paa",
+				"ASEC_Vests1\textures\avs_b_aor1_co.paa",
+				"ASEC_Vests1\textures\esstac2_aor1_co.paa",
+				"ASEC_Vests1\textures\esstac_aor1_co.paa",
+				"ASEC_Vests1\textures\esstac_aor1_co.paa",
+				"ASEC_Vests1\textures\kangaroo2_aor1_co.paa",
+				"ASEC_Vests1\textures\medpouch_aor1_co.paa",
+				"ASEC_Vests1\textures\ronin_belt_aor1.paa",
+				"ASEC_Vests1\Textures\holster_tan_co.paa",
+				"ASEC_Vests1\Textures\avs_b_aor1_co.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_aor1.paa",
+				"ASEC_Vests1\Textures\dump_aor1.paa",
+				"ASEC_Vests1\Textures\vsm_boxmag_aor1.paa",
+				"ASEC_Vests1\Textures\pouches_aor1.paa",
+				"ASEC_Vests1\Textures\tfa_pouch_aor1.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_aor1.paa"
 			};
 			containerClass="Supply140";
 			mass=80;
@@ -1958,12 +1958,12 @@ class cfgWeapons
 	};
 	class Ronin_Belt_AOR2_5: ItemCore
 	{
-		author="Task Force Leviathan";
+		author="Jup, Lip, Thunder";
 		scope=2;
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
 		displayname="[TFL] Ronin Belt AOR2 (M4 A)";
-		picture="\ASEC_vests\Textures\anti_rat.paa";
+		picture="\ASEC_Vests1\Textures\anti_rat.paa";
 		model="ASEC_Belt\Models\Ronin_Belt_M4.p3d";
 		hiddenSelections[]=
 		{
@@ -1987,23 +1987,23 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"asec_vests\textures\jpc_main_AOR2_CO.paa",
-			"asec_vests\textures\jpc_cummerbund_aor2_CO.paa",
-			"asec_vests\textures\avs_b_aor2_co.paa",
-			"asec_vests\textures\esstac2_aor2_co.paa",
-			"asec_vests\textures\esstac_aor2_co.paa",
-			"asec_vests\textures\esstac_aor2_co.paa",
-			"asec_vests\textures\kangaroo2_aor2_co.paa",
-			"asec_vests\textures\medpouch_aor2_co.paa",
-			"asec_vests\textures\ronin_belt_aor2.paa",
-			"ASEC_vests\Textures\holster_od_co.paa",
-			"ASEC_vests\Textures\avs_b_aor2_co.paa",
-			"ASEC_vests\Textures\blueforce_mag_aor2.paa",
-			"ASEC_vests\Textures\dump_aor2.paa",
-			"ASEC_vests\Textures\vsm_boxmag_aor2.paa",
-			"ASEC_vests\Textures\pouches_aor2.paa",
-			"ASEC_vests\Textures\tfa_pouch_aor2.paa",
-			"ASEC_vests\Textures\blueforce_mag_aor2.paa"
+			"ASEC_Vests1\textures\jpc_main_AOR2_CO.paa",
+			"ASEC_Vests1\textures\jpc_cummerbund_aor2_CO.paa",
+			"ASEC_Vests1\textures\avs_b_aor2_co.paa",
+			"ASEC_Vests1\textures\esstac2_aor2_co.paa",
+			"ASEC_Vests1\textures\esstac_aor2_co.paa",
+			"ASEC_Vests1\textures\esstac_aor2_co.paa",
+			"ASEC_Vests1\textures\kangaroo2_aor2_co.paa",
+			"ASEC_Vests1\textures\medpouch_aor2_co.paa",
+			"ASEC_Vests1\textures\ronin_belt_aor2.paa",
+			"ASEC_Vests1\Textures\holster_od_co.paa",
+			"ASEC_Vests1\Textures\avs_b_aor2_co.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_aor2.paa",
+			"ASEC_Vests1\Textures\dump_aor2.paa",
+			"ASEC_Vests1\Textures\vsm_boxmag_aor2.paa",
+			"ASEC_Vests1\Textures\pouches_aor2.paa",
+			"ASEC_Vests1\Textures\tfa_pouch_aor2.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_aor2.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -2030,23 +2030,23 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"asec_vests\textures\jpc_main_AOR2_CO.paa",
-				"asec_vests\textures\jpc_cummerbund_aor2_CO.paa",
-				"asec_vests\textures\avs_b_aor2_co.paa",
-				"asec_vests\textures\esstac2_aor2_co.paa",
-				"asec_vests\textures\esstac_aor2_co.paa",
-				"asec_vests\textures\esstac_aor2_co.paa",
-				"asec_vests\textures\kangaroo2_aor2_co.paa",
-				"asec_vests\textures\medpouch_aor2_co.paa",
-				"asec_vests\textures\ronin_belt_aor2.paa",
-				"ASEC_vests\Textures\holster_od_co.paa",
-				"ASEC_vests\Textures\avs_b_aor2_co.paa",
-				"ASEC_vests\Textures\blueforce_mag_aor2.paa",
-				"ASEC_vests\Textures\dump_aor2.paa",
-				"ASEC_vests\Textures\vsm_boxmag_aor2.paa",
-				"ASEC_vests\Textures\pouches_aor2.paa",
-				"ASEC_vests\Textures\tfa_pouch_aor2.paa",
-				"ASEC_vests\Textures\blueforce_mag_aor2.paa"
+				"ASEC_Vests1\textures\jpc_main_AOR2_CO.paa",
+				"ASEC_Vests1\textures\jpc_cummerbund_aor2_CO.paa",
+				"ASEC_Vests1\textures\avs_b_aor2_co.paa",
+				"ASEC_Vests1\textures\esstac2_aor2_co.paa",
+				"ASEC_Vests1\textures\esstac_aor2_co.paa",
+				"ASEC_Vests1\textures\esstac_aor2_co.paa",
+				"ASEC_Vests1\textures\kangaroo2_aor2_co.paa",
+				"ASEC_Vests1\textures\medpouch_aor2_co.paa",
+				"ASEC_Vests1\textures\ronin_belt_aor2.paa",
+				"ASEC_Vests1\Textures\holster_od_co.paa",
+				"ASEC_Vests1\Textures\avs_b_aor2_co.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_aor2.paa",
+				"ASEC_Vests1\Textures\dump_aor2.paa",
+				"ASEC_Vests1\Textures\vsm_boxmag_aor2.paa",
+				"ASEC_Vests1\Textures\pouches_aor2.paa",
+				"ASEC_Vests1\Textures\tfa_pouch_aor2.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_aor2.paa"
 			};
 			containerClass="Supply140";
 			mass=80;
@@ -2080,12 +2080,12 @@ class cfgWeapons
 	};
 	class Ronin_Belt_CB_5: ItemCore
 	{
-		author="Task Force Leviathan";
+		author="Jup, Lip, Thunder";
 		scope=2;
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
 		displayname="[TFL] Ronin Belt CB (M4 A)";
-		picture="\ASEC_vests\Textures\anti_rat.paa";
+		picture="\ASEC_Vests1\Textures\anti_rat.paa";
 		model="ASEC_Belt\Models\Ronin_Belt_M4.p3d";
 		hiddenSelections[]=
 		{
@@ -2109,23 +2109,23 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"asec_vests\textures\jpc_main_cb_CO.paa",
-			"asec_vests\textures\jpc_cummerbund_cb_CO.paa",
-			"asec_vests\textures\avs_b_cb_co.paa",
-			"asec_vests\textures\esstac2_cb_co.paa",
-			"asec_vests\textures\esstac_cb_co.paa",
-			"asec_vests\textures\esstac_cb_co.paa",
-			"asec_vests\textures\kangaroo2_cb_co.paa",
-			"asec_vests\textures\medpouch_cb_co.paa",
-			"asec_vests\textures\ronin_belt_cb.paa",
-			"ASEC_vests\Textures\holster_tan_co.paa",
-			"ASEC_vests\Textures\avs_b_cb_co.paa",
-			"ASEC_vests\Textures\blueforce_mag_cb.paa",
-			"ASEC_vests\Textures\dump_cb.paa",
-			"ASEC_vests\Textures\vsm_boxmag_cb.paa",
-			"ASEC_vests\Textures\pouches_cb.paa",
-			"ASEC_vests\Textures\tfa_pouch_cb.paa",
-			"ASEC_vests\Textures\blueforce_mag_cb.paa"
+			"ASEC_Vests1\textures\jpc_main_cb_CO.paa",
+			"ASEC_Vests1\textures\jpc_cummerbund_cb_CO.paa",
+			"ASEC_Vests1\textures\avs_b_cb_co.paa",
+			"ASEC_Vests1\textures\esstac2_cb_co.paa",
+			"ASEC_Vests1\textures\esstac_cb_co.paa",
+			"ASEC_Vests1\textures\esstac_cb_co.paa",
+			"ASEC_Vests1\textures\kangaroo2_cb_co.paa",
+			"ASEC_Vests1\textures\medpouch_cb_co.paa",
+			"ASEC_Vests1\textures\ronin_belt_cb.paa",
+			"ASEC_Vests1\Textures\holster_tan_co.paa",
+			"ASEC_Vests1\Textures\avs_b_cb_co.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_cb.paa",
+			"ASEC_Vests1\Textures\dump_cb.paa",
+			"ASEC_Vests1\Textures\vsm_boxmag_cb.paa",
+			"ASEC_Vests1\Textures\pouches_cb.paa",
+			"ASEC_Vests1\Textures\tfa_pouch_cb.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_cb.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -2152,23 +2152,23 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"asec_vests\textures\jpc_main_cb_CO.paa",
-				"asec_vests\textures\jpc_cummerbund_cb_CO.paa",
-				"asec_vests\textures\avs_b_cb_co.paa",
-				"asec_vests\textures\esstac2_cb_co.paa",
-				"asec_vests\textures\esstac_cb_co.paa",
-				"asec_vests\textures\esstac_cb_co.paa",
-				"asec_vests\textures\kangaroo2_cb_co.paa",
-				"asec_vests\textures\medpouch_cb_co.paa",
-				"asec_vests\textures\ronin_belt_cb.paa",
-				"ASEC_vests\Textures\holster_tan_co.paa",
-				"ASEC_vests\Textures\avs_b_cb_co.paa",
-				"ASEC_vests\Textures\blueforce_mag_cb.paa",
-				"ASEC_vests\Textures\dump_cb.paa",
-				"ASEC_vests\Textures\vsm_boxmag_cb.paa",
-				"ASEC_vests\Textures\pouches_cb.paa",
-				"ASEC_vests\Textures\tfa_pouch_cb.paa",
-				"ASEC_vests\Textures\blueforce_mag_cb.paa"
+				"ASEC_Vests1\textures\jpc_main_cb_CO.paa",
+				"ASEC_Vests1\textures\jpc_cummerbund_cb_CO.paa",
+				"ASEC_Vests1\textures\avs_b_cb_co.paa",
+				"ASEC_Vests1\textures\esstac2_cb_co.paa",
+				"ASEC_Vests1\textures\esstac_cb_co.paa",
+				"ASEC_Vests1\textures\esstac_cb_co.paa",
+				"ASEC_Vests1\textures\kangaroo2_cb_co.paa",
+				"ASEC_Vests1\textures\medpouch_cb_co.paa",
+				"ASEC_Vests1\textures\ronin_belt_cb.paa",
+				"ASEC_Vests1\Textures\holster_tan_co.paa",
+				"ASEC_Vests1\Textures\avs_b_cb_co.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_cb.paa",
+				"ASEC_Vests1\Textures\dump_cb.paa",
+				"ASEC_Vests1\Textures\vsm_boxmag_cb.paa",
+				"ASEC_Vests1\Textures\pouches_cb.paa",
+				"ASEC_Vests1\Textures\tfa_pouch_cb.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_cb.paa"
 			};
 			containerClass="Supply140";
 			mass=80;
@@ -2202,12 +2202,12 @@ class cfgWeapons
 	};
 	class Ronin_Belt_RG_5: ItemCore
 	{
-		author="Task Force Leviathan";
+		author="Jup, Lip, Thunder";
 		scope=2;
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
 		displayname="[TFL] Ronin Belt RG (M4 A)";
-		picture="\ASEC_vests\Textures\anti_rat.paa";
+		picture="\ASEC_Vests1\Textures\anti_rat.paa";
 		model="ASEC_Belt\Models\Ronin_Belt_M4.p3d";
 		hiddenSelections[]=
 		{
@@ -2231,23 +2231,23 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"asec_vests\textures\jpc_main_rg_CO.paa",
-			"asec_vests\textures\jpc_cummerbund_rg_CO.paa",
-			"asec_vests\textures\avs_b_rg_co.paa",
-			"asec_vests\textures\esstac2_rg_co.paa",
-			"asec_vests\textures\esstac_rg_co.paa",
-			"asec_vests\textures\esstac_rg_co.paa",
-			"asec_vests\textures\kangaroo2_rg_co.paa",
-			"asec_vests\textures\medpouch_rg_co.paa",
-			"asec_vests\textures\ronin_belt_rg.paa",
-			"ASEC_vests\Textures\holster_od_co.paa",
-			"ASEC_vests\Textures\avs_b_rg_co.paa",
-			"ASEC_vests\Textures\blueforce_mag_rg.paa",
-			"ASEC_vests\Textures\dump_od.paa",
-			"ASEC_vests\Textures\vsm_boxmag_rg.paa",
-			"ASEC_vests\Textures\pouches_rg.paa",
-			"ASEC_vests\Textures\tfa_pouch_rg.paa",
-			"ASEC_vests\Textures\blueforce_mag_rg.paa"
+			"ASEC_Vests1\textures\jpc_main_rg_CO.paa",
+			"ASEC_Vests1\textures\jpc_cummerbund_rg_CO.paa",
+			"ASEC_Vests1\textures\avs_b_rg_co.paa",
+			"ASEC_Vests1\textures\esstac2_rg_co.paa",
+			"ASEC_Vests1\textures\esstac_rg_co.paa",
+			"ASEC_Vests1\textures\esstac_rg_co.paa",
+			"ASEC_Vests1\textures\kangaroo2_rg_co.paa",
+			"ASEC_Vests1\textures\medpouch_rg_co.paa",
+			"ASEC_Vests1\textures\ronin_belt_rg.paa",
+			"ASEC_Vests1\Textures\holster_od_co.paa",
+			"ASEC_Vests1\Textures\avs_b_rg_co.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_rg.paa",
+			"ASEC_Vests1\Textures\dump_od.paa",
+			"ASEC_Vests1\Textures\vsm_boxmag_rg.paa",
+			"ASEC_Vests1\Textures\pouches_rg.paa",
+			"ASEC_Vests1\Textures\tfa_pouch_rg.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_rg.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -2274,23 +2274,23 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"asec_vests\textures\jpc_main_rg_CO.paa",
-				"asec_vests\textures\jpc_cummerbund_rg_CO.paa",
-				"asec_vests\textures\avs_b_rg_co.paa",
-				"asec_vests\textures\esstac2_rg_co.paa",
-				"asec_vests\textures\esstac_rg_co.paa",
-				"asec_vests\textures\esstac_rg_co.paa",
-				"asec_vests\textures\kangaroo2_rg_co.paa",
-				"asec_vests\textures\medpouch_rg_co.paa",
-				"asec_vests\textures\ronin_belt_rg.paa",
-				"ASEC_vests\Textures\holster_od_co.paa",
-				"ASEC_vests\Textures\avs_b_rg_co.paa",
-				"ASEC_vests\Textures\blueforce_mag_rg.paa",
-				"ASEC_vests\Textures\dump_od.paa",
-				"ASEC_vests\Textures\vsm_boxmag_rg.paa",
-				"ASEC_vests\Textures\pouches_rg.paa",
-				"ASEC_vests\Textures\tfa_pouch_rg.paa",
-				"ASEC_vests\Textures\blueforce_mag_rg.paa"
+				"ASEC_Vests1\textures\jpc_main_rg_CO.paa",
+				"ASEC_Vests1\textures\jpc_cummerbund_rg_CO.paa",
+				"ASEC_Vests1\textures\avs_b_rg_co.paa",
+				"ASEC_Vests1\textures\esstac2_rg_co.paa",
+				"ASEC_Vests1\textures\esstac_rg_co.paa",
+				"ASEC_Vests1\textures\esstac_rg_co.paa",
+				"ASEC_Vests1\textures\kangaroo2_rg_co.paa",
+				"ASEC_Vests1\textures\medpouch_rg_co.paa",
+				"ASEC_Vests1\textures\ronin_belt_rg.paa",
+				"ASEC_Vests1\Textures\holster_od_co.paa",
+				"ASEC_Vests1\Textures\avs_b_rg_co.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_rg.paa",
+				"ASEC_Vests1\Textures\dump_od.paa",
+				"ASEC_Vests1\Textures\vsm_boxmag_rg.paa",
+				"ASEC_Vests1\Textures\pouches_rg.paa",
+				"ASEC_Vests1\Textures\tfa_pouch_rg.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_rg.paa"
 			};
 			mass=80;
 			containerClass="Supply140";
@@ -2324,12 +2324,12 @@ class cfgWeapons
 	};
 	class Ronin_Belt_BLK_5: ItemCore
 	{
-		author="Task Force Leviathan";
+		author="Jup, Lip, Thunder";
 		scope=2;
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
 		displayname="[TFL] Ronin Belt BLK (M4 A)";
-		picture="\ASEC_vests\Textures\anti_rat.paa";
+		picture="\ASEC_Vests1\Textures\anti_rat.paa";
 		model="ASEC_Belt\Models\Ronin_Belt_M4.p3d";
 		hiddenSelections[]=
 		{
@@ -2353,23 +2353,23 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"asec_vests\textures\jpc_main_blk_CO.paa",
-			"asec_vests\textures\jpc_cummerbund_blk_CO.paa",
-			"asec_vests\textures\avs_b_blk_co.paa",
-			"asec_vests\textures\esstac2_blk_co.paa",
-			"asec_vests\textures\esstac_blk_co.paa",
-			"asec_vests\textures\esstac_blk_co.paa",
-			"asec_vests\textures\kangaroo2_blk_co.paa",
-			"asec_vests\textures\medpouch_blk_co.paa",
-			"asec_vests\textures\ronin_belt_blk.paa",
-			"ASEC_vests\Textures\holster_blk_co.paa",
-			"ASEC_vests\Textures\avs_b_blk_co.paa",
-			"ASEC_vests\Textures\blueforce_mag_blk.paa",
-			"ASEC_vests\Textures\dump_blk.paa",
-			"ASEC_vests\Textures\vsm_boxmag_blk.paa",
-			"ASEC_vests\Textures\pouches_blk.paa",
-			"ASEC_vests\Textures\tfa_pouch_blk.paa",
-			"ASEC_vests\Textures\blueforce_mag_blk.paa"
+			"ASEC_Vests1\textures\jpc_main_blk_CO.paa",
+			"ASEC_Vests1\textures\jpc_cummerbund_blk_CO.paa",
+			"ASEC_Vests1\textures\avs_b_blk_co.paa",
+			"ASEC_Vests1\textures\esstac2_blk_co.paa",
+			"ASEC_Vests1\textures\esstac_blk_co.paa",
+			"ASEC_Vests1\textures\esstac_blk_co.paa",
+			"ASEC_Vests1\textures\kangaroo2_blk_co.paa",
+			"ASEC_Vests1\textures\medpouch_blk_co.paa",
+			"ASEC_Vests1\textures\ronin_belt_blk.paa",
+			"ASEC_Vests1\Textures\holster_blk_co.paa",
+			"ASEC_Vests1\Textures\avs_b_blk_co.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_blk.paa",
+			"ASEC_Vests1\Textures\dump_blk.paa",
+			"ASEC_Vests1\Textures\vsm_boxmag_blk.paa",
+			"ASEC_Vests1\Textures\pouches_blk.paa",
+			"ASEC_Vests1\Textures\tfa_pouch_blk.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_blk.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -2396,23 +2396,23 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"asec_vests\textures\jpc_main_blk_CO.paa",
-				"asec_vests\textures\jpc_cummerbund_blk_CO.paa",
-				"asec_vests\textures\avs_b_blk_co.paa",
-				"asec_vests\textures\esstac2_blk_co.paa",
-				"asec_vests\textures\esstac_blk_co.paa",
-				"asec_vests\textures\esstac_blk_co.paa",
-				"asec_vests\textures\kangaroo2_blk_co.paa",
-				"asec_vests\textures\medpouch_blk_co.paa",
-				"asec_vests\textures\ronin_belt_blk.paa",
-				"ASEC_vests\Textures\holster_blk_co.paa",
-				"ASEC_vests\Textures\avs_b_blk_co.paa",
-				"ASEC_vests\Textures\blueforce_mag_blk.paa",
-				"ASEC_vests\Textures\dump_blk.paa",
-				"ASEC_vests\Textures\vsm_boxmag_blk.paa",
-				"ASEC_vests\Textures\pouches_blk.paa",
-				"ASEC_vests\Textures\tfa_pouch_blk.paa",
-				"ASEC_vests\Textures\blueforce_mag_blk.paa"
+				"ASEC_Vests1\textures\jpc_main_blk_CO.paa",
+				"ASEC_Vests1\textures\jpc_cummerbund_blk_CO.paa",
+				"ASEC_Vests1\textures\avs_b_blk_co.paa",
+				"ASEC_Vests1\textures\esstac2_blk_co.paa",
+				"ASEC_Vests1\textures\esstac_blk_co.paa",
+				"ASEC_Vests1\textures\esstac_blk_co.paa",
+				"ASEC_Vests1\textures\kangaroo2_blk_co.paa",
+				"ASEC_Vests1\textures\medpouch_blk_co.paa",
+				"ASEC_Vests1\textures\ronin_belt_blk.paa",
+				"ASEC_Vests1\Textures\holster_blk_co.paa",
+				"ASEC_Vests1\Textures\avs_b_blk_co.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_blk.paa",
+				"ASEC_Vests1\Textures\dump_blk.paa",
+				"ASEC_Vests1\Textures\vsm_boxmag_blk.paa",
+				"ASEC_Vests1\Textures\pouches_blk.paa",
+				"ASEC_Vests1\Textures\tfa_pouch_blk.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_blk.paa"
 			};
 			mass=80;
 			containerClass="Supply140";
@@ -2446,12 +2446,12 @@ class cfgWeapons
 	};
 	class Ronin_Belt_ALP_5: ItemCore
 	{
-		author="Task Force Leviathan";
+		author="Jup, Lip, Thunder";
 		scope=2;
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
 		displayname="[TFL] Ronin Belt ALP (M4 A)";
-		picture="\ASEC_vests\Textures\anti_rat.paa";
+		picture="\ASEC_Vests1\Textures\anti_rat.paa";
 		model="ASEC_Belt\Models\Ronin_Belt_M4.p3d";
 		hiddenSelections[]=
 		{
@@ -2475,23 +2475,23 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"asec_vests\textures\jpc_main_alp_CO.paa",
-			"asec_vests\textures\jpc_cummerbund_alp_CO.paa",
-			"asec_vests\textures\avs_b_alp_co.paa",
-			"asec_vests\textures\esstac2_alpine_co.paa",
-			"asec_vests\textures\esstac_alpine_co.paa",
-			"asec_vests\textures\esstac_alpine_co.paa",
-			"asec_vests\textures\kangaroo2_alp_co.paa",
-			"asec_vests\textures\medpouch_alp_co.paa",
-			"asec_vests\textures\ronin_belt_alpine.paa",
-			"ASEC_vests\Textures\holster_alpine_co.paa",
-			"ASEC_vests\Textures\avs_b_alp_co.paa",
-			"ASEC_vests\Textures\blueforce_mag_alpine.paa",
-			"ASEC_vests\Textures\dump_alpine.paa",
-			"ASEC_vests\Textures\vsm_boxmag_alpine.paa",
-			"ASEC_vests\Textures\pouches_alpine.paa",
-			"ASEC_vests\Textures\tfa_pouch_alpine.paa",
-			"ASEC_vests\Textures\blueforce_mag_alpine.paa"
+			"ASEC_Vests1\textures\jpc_main_alp_CO.paa",
+			"ASEC_Vests1\textures\jpc_cummerbund_alp_CO.paa",
+			"ASEC_Vests1\textures\avs_b_alp_co.paa",
+			"ASEC_Vests1\textures\esstac2_alpine_co.paa",
+			"ASEC_Vests1\textures\esstac_alpine_co.paa",
+			"ASEC_Vests1\textures\esstac_alpine_co.paa",
+			"ASEC_Vests1\textures\kangaroo2_alp_co.paa",
+			"ASEC_Vests1\textures\medpouch_alp_co.paa",
+			"ASEC_Vests1\textures\ronin_belt_alpine.paa",
+			"ASEC_Vests1\Textures\holster_alpine_co.paa",
+			"ASEC_Vests1\Textures\avs_b_alp_co.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_alpine.paa",
+			"ASEC_Vests1\Textures\dump_alpine.paa",
+			"ASEC_Vests1\Textures\vsm_boxmag_alpine.paa",
+			"ASEC_Vests1\Textures\pouches_alpine.paa",
+			"ASEC_Vests1\Textures\tfa_pouch_alpine.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_alpine.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -2518,23 +2518,23 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"asec_vests\textures\jpc_main_alp_CO.paa",
-				"asec_vests\textures\jpc_cummerbund_alp_CO.paa",
-				"asec_vests\textures\avs_b_alp_co.paa",
-				"asec_vests\textures\esstac2_alpine_co.paa",
-				"asec_vests\textures\esstac_alpine_co.paa",
-				"asec_vests\textures\esstac_alpine_co.paa",
-				"asec_vests\textures\kangaroo2_alp_co.paa",
-				"asec_vests\textures\medpouch_alp_co.paa",
-				"asec_vests\textures\ronin_belt_alpine.paa",
-				"ASEC_vests\Textures\holster_alpine_co.paa",
-				"ASEC_vests\Textures\avs_b_alp_co.paa",
-				"ASEC_vests\Textures\blueforce_mag_alpine.paa",
-				"ASEC_vests\Textures\dump_alpine.paa",
-				"ASEC_vests\Textures\vsm_boxmag_alpine.paa",
-				"ASEC_vests\Textures\pouches_alpine.paa",
-				"ASEC_vests\Textures\tfa_pouch_alpine.paa",
-				"ASEC_vests\Textures\blueforce_mag_alpine.paa"
+				"ASEC_Vests1\textures\jpc_main_alp_CO.paa",
+				"ASEC_Vests1\textures\jpc_cummerbund_alp_CO.paa",
+				"ASEC_Vests1\textures\avs_b_alp_co.paa",
+				"ASEC_Vests1\textures\esstac2_alpine_co.paa",
+				"ASEC_Vests1\textures\esstac_alpine_co.paa",
+				"ASEC_Vests1\textures\esstac_alpine_co.paa",
+				"ASEC_Vests1\textures\kangaroo2_alp_co.paa",
+				"ASEC_Vests1\textures\medpouch_alp_co.paa",
+				"ASEC_Vests1\textures\ronin_belt_alpine.paa",
+				"ASEC_Vests1\Textures\holster_alpine_co.paa",
+				"ASEC_Vests1\Textures\avs_b_alp_co.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_alpine.paa",
+				"ASEC_Vests1\Textures\dump_alpine.paa",
+				"ASEC_Vests1\Textures\vsm_boxmag_alpine.paa",
+				"ASEC_Vests1\Textures\pouches_alpine.paa",
+				"ASEC_Vests1\Textures\tfa_pouch_alpine.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_alpine.paa"
 			};
 			mass=80;
 			containerClass="Supply140";
@@ -2568,12 +2568,12 @@ class cfgWeapons
 	};
 	class Ronin_Belt_MC_6: ItemCore
 	{
-		author="Task Force Leviathan";
+		author="Jup, Lip, Thunder";
 		scope=2;
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
 		displayname="[TFL] Ronin Belt MC (M4 B)";
-		picture="\ASEC_vests\Textures\anti_rat.paa";
+		picture="\ASEC_Vests1\Textures\anti_rat.paa";
 		model="ASEC_Belt\Models\Ronin_Belt_M42.p3d";
 		hiddenSelections[]=
 		{
@@ -2597,23 +2597,23 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"asec_vests\textures\jpc_main_MC_CO.paa",
-			"asec_vests\textures\jpc_cummerbund_MC_CO.paa",
-			"asec_vests\textures\avs_b_mc_co.paa",
-			"asec_vests\textures\esstac2_mc_co.paa",
-			"asec_vests\textures\esstac_mc_co.paa",
-			"asec_vests\textures\esstac_mc_co.paa",
-			"asec_vests\textures\kangaroo2_mc_co.paa",
-			"asec_vests\textures\medpouch_mc_co.paa",
-			"asec_vests\textures\ronin_belt_mc.paa",
-			"ASEC_vests\Textures\holster_mc.paa",
-			"ASEC_vests\Textures\avs_b_mc_co.paa",
-			"ASEC_vests\Textures\blueforce_mag_mc.paa",
-			"ASEC_vests\Textures\dump_mc.paa",
-			"ASEC_vests\Textures\vsm_boxmag_mc.paa",
-			"ASEC_vests\Textures\pouches_mc.paa",
-			"ASEC_vests\Textures\tfa_pouch_mc.paa",
-			"ASEC_vests\Textures\blueforce_mag_mc.paa"
+			"ASEC_Vests1\textures\jpc_main_MC_CO.paa",
+			"ASEC_Vests1\textures\jpc_cummerbund_MC_CO.paa",
+			"ASEC_Vests1\textures\avs_b_mc_co.paa",
+			"ASEC_Vests1\textures\esstac2_mc_co.paa",
+			"ASEC_Vests1\textures\esstac_mc_co.paa",
+			"ASEC_Vests1\textures\esstac_mc_co.paa",
+			"ASEC_Vests1\textures\kangaroo2_mc_co.paa",
+			"ASEC_Vests1\textures\medpouch_mc_co.paa",
+			"ASEC_Vests1\textures\ronin_belt_mc.paa",
+			"ASEC_Vests1\Textures\holster_mc.paa",
+			"ASEC_Vests1\Textures\avs_b_mc_co.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_mc.paa",
+			"ASEC_Vests1\Textures\dump_mc.paa",
+			"ASEC_Vests1\Textures\vsm_boxmag_mc.paa",
+			"ASEC_Vests1\Textures\pouches_mc.paa",
+			"ASEC_Vests1\Textures\tfa_pouch_mc.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_mc.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -2640,23 +2640,23 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"asec_vests\textures\jpc_main_MC_CO.paa",
-				"asec_vests\textures\jpc_cummerbund_MC_CO.paa",
-				"asec_vests\textures\avs_b_mc_co.paa",
-				"asec_vests\textures\esstac2_mc_co.paa",
-				"asec_vests\textures\esstac_mc_co.paa",
-				"asec_vests\textures\esstac_mc_co.paa",
-				"asec_vests\textures\kangaroo2_mc_co.paa",
-				"asec_vests\textures\medpouch_mc_co.paa",
-				"asec_vests\textures\ronin_belt_mc.paa",
-				"ASEC_vests\Textures\holster_mc.paa",
-				"ASEC_vests\Textures\avs_b_mc_co.paa",
-				"ASEC_vests\Textures\blueforce_mag_mc.paa",
-				"ASEC_vests\Textures\dump_mc.paa",
-				"ASEC_vests\Textures\vsm_boxmag_mc.paa",
-				"ASEC_vests\Textures\pouches_mc.paa",
-				"ASEC_vests\Textures\tfa_pouch_mc.paa",
-				"ASEC_vests\Textures\blueforce_mag_mc.paa"
+				"ASEC_Vests1\textures\jpc_main_MC_CO.paa",
+				"ASEC_Vests1\textures\jpc_cummerbund_MC_CO.paa",
+				"ASEC_Vests1\textures\avs_b_mc_co.paa",
+				"ASEC_Vests1\textures\esstac2_mc_co.paa",
+				"ASEC_Vests1\textures\esstac_mc_co.paa",
+				"ASEC_Vests1\textures\esstac_mc_co.paa",
+				"ASEC_Vests1\textures\kangaroo2_mc_co.paa",
+				"ASEC_Vests1\textures\medpouch_mc_co.paa",
+				"ASEC_Vests1\textures\ronin_belt_mc.paa",
+				"ASEC_Vests1\Textures\holster_mc.paa",
+				"ASEC_Vests1\Textures\avs_b_mc_co.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_mc.paa",
+				"ASEC_Vests1\Textures\dump_mc.paa",
+				"ASEC_Vests1\Textures\vsm_boxmag_mc.paa",
+				"ASEC_Vests1\Textures\pouches_mc.paa",
+				"ASEC_Vests1\Textures\tfa_pouch_mc.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_mc.paa"
 			};
 			containerClass="Supply140";
 			mass=80;
@@ -2690,12 +2690,12 @@ class cfgWeapons
 	};
 	class Ronin_Belt_AOR1_6: ItemCore
 	{
-		author="Task Force Leviathan";
+		author="Jup, Lip, Thunder";
 		scope=2;
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
 		displayname="[TFL] Ronin Belt AOR1 (M4 B)";
-		picture="\ASEC_vests\Textures\anti_rat.paa";
+		picture="\ASEC_Vests1\Textures\anti_rat.paa";
 		model="ASEC_Belt\Models\Ronin_Belt_M42.p3d";
 		hiddenSelections[]=
 		{
@@ -2719,23 +2719,23 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"asec_vests\textures\jpc_main_AOR1_CO.paa",
-			"asec_vests\textures\jpc_cummerbund_aor1_CO.paa",
-			"asec_vests\textures\avs_b_aor1_co.paa",
-			"asec_vests\textures\esstac2_aor1_co.paa",
-			"asec_vests\textures\esstac_aor1_co.paa",
-			"asec_vests\textures\esstac_aor1_co.paa",
-			"asec_vests\textures\kangaroo2_aor1_co.paa",
-			"asec_vests\textures\medpouch_aor1_co.paa",
-			"asec_vests\textures\ronin_belt_aor1.paa",
-			"ASEC_vests\Textures\holster_tan_co.paa",
-			"ASEC_vests\Textures\avs_b_aor1_co.paa",
-			"ASEC_vests\Textures\blueforce_mag_aor1.paa",
-			"ASEC_vests\Textures\dump_aor1.paa",
-			"ASEC_vests\Textures\vsm_boxmag_aor1.paa",
-			"ASEC_vests\Textures\pouches_aor1.paa",
-			"ASEC_vests\Textures\tfa_pouch_aor1.paa",
-			"ASEC_vests\Textures\blueforce_mag_aor1.paa"
+			"ASEC_Vests1\textures\jpc_main_AOR1_CO.paa",
+			"ASEC_Vests1\textures\jpc_cummerbund_aor1_CO.paa",
+			"ASEC_Vests1\textures\avs_b_aor1_co.paa",
+			"ASEC_Vests1\textures\esstac2_aor1_co.paa",
+			"ASEC_Vests1\textures\esstac_aor1_co.paa",
+			"ASEC_Vests1\textures\esstac_aor1_co.paa",
+			"ASEC_Vests1\textures\kangaroo2_aor1_co.paa",
+			"ASEC_Vests1\textures\medpouch_aor1_co.paa",
+			"ASEC_Vests1\textures\ronin_belt_aor1.paa",
+			"ASEC_Vests1\Textures\holster_tan_co.paa",
+			"ASEC_Vests1\Textures\avs_b_aor1_co.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_aor1.paa",
+			"ASEC_Vests1\Textures\dump_aor1.paa",
+			"ASEC_Vests1\Textures\vsm_boxmag_aor1.paa",
+			"ASEC_Vests1\Textures\pouches_aor1.paa",
+			"ASEC_Vests1\Textures\tfa_pouch_aor1.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_aor1.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -2762,23 +2762,23 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"asec_vests\textures\jpc_main_AOR1_CO.paa",
-				"asec_vests\textures\jpc_cummerbund_aor1_CO.paa",
-				"asec_vests\textures\avs_b_aor1_co.paa",
-				"asec_vests\textures\esstac2_aor1_co.paa",
-				"asec_vests\textures\esstac_aor1_co.paa",
-				"asec_vests\textures\esstac_aor1_co.paa",
-				"asec_vests\textures\kangaroo2_aor1_co.paa",
-				"asec_vests\textures\medpouch_aor1_co.paa",
-				"asec_vests\textures\ronin_belt_aor1.paa",
-				"ASEC_vests\Textures\holster_tan_co.paa",
-				"ASEC_vests\Textures\avs_b_aor1_co.paa",
-				"ASEC_vests\Textures\blueforce_mag_aor1.paa",
-				"ASEC_vests\Textures\dump_aor1.paa",
-				"ASEC_vests\Textures\vsm_boxmag_aor1.paa",
-				"ASEC_vests\Textures\pouches_aor1.paa",
-				"ASEC_vests\Textures\tfa_pouch_aor1.paa",
-				"ASEC_vests\Textures\blueforce_mag_aor1.paa"
+				"ASEC_Vests1\textures\jpc_main_AOR1_CO.paa",
+				"ASEC_Vests1\textures\jpc_cummerbund_aor1_CO.paa",
+				"ASEC_Vests1\textures\avs_b_aor1_co.paa",
+				"ASEC_Vests1\textures\esstac2_aor1_co.paa",
+				"ASEC_Vests1\textures\esstac_aor1_co.paa",
+				"ASEC_Vests1\textures\esstac_aor1_co.paa",
+				"ASEC_Vests1\textures\kangaroo2_aor1_co.paa",
+				"ASEC_Vests1\textures\medpouch_aor1_co.paa",
+				"ASEC_Vests1\textures\ronin_belt_aor1.paa",
+				"ASEC_Vests1\Textures\holster_tan_co.paa",
+				"ASEC_Vests1\Textures\avs_b_aor1_co.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_aor1.paa",
+				"ASEC_Vests1\Textures\dump_aor1.paa",
+				"ASEC_Vests1\Textures\vsm_boxmag_aor1.paa",
+				"ASEC_Vests1\Textures\pouches_aor1.paa",
+				"ASEC_Vests1\Textures\tfa_pouch_aor1.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_aor1.paa"
 			};
 			containerClass="Supply140";
 			mass=80;
@@ -2812,12 +2812,12 @@ class cfgWeapons
 	};
 	class Ronin_Belt_AOR2_6: ItemCore
 	{
-		author="Task Force Leviathan";
+		author="Jup, Lip, Thunder";
 		scope=2;
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
 		displayname="[TFL] Ronin Belt AOR2 (M4 B)";
-		picture="\ASEC_vests\Textures\anti_rat.paa";
+		picture="\ASEC_Vests1\Textures\anti_rat.paa";
 		model="ASEC_Belt\Models\Ronin_Belt_M42.p3d";
 		hiddenSelections[]=
 		{
@@ -2841,23 +2841,23 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"asec_vests\textures\jpc_main_AOR2_CO.paa",
-			"asec_vests\textures\jpc_cummerbund_aor2_CO.paa",
-			"asec_vests\textures\avs_b_aor2_co.paa",
-			"asec_vests\textures\esstac2_aor2_co.paa",
-			"asec_vests\textures\esstac_aor2_co.paa",
-			"asec_vests\textures\esstac_aor2_co.paa",
-			"asec_vests\textures\kangaroo2_aor2_co.paa",
-			"asec_vests\textures\medpouch_aor2_co.paa",
-			"asec_vests\textures\ronin_belt_aor2.paa",
-			"ASEC_vests\Textures\holster_od_co.paa",
-			"ASEC_vests\Textures\avs_b_aor2_co.paa",
-			"ASEC_vests\Textures\blueforce_mag_aor2.paa",
-			"ASEC_vests\Textures\dump_aor2.paa",
-			"ASEC_vests\Textures\vsm_boxmag_aor2.paa",
-			"ASEC_vests\Textures\pouches_aor2.paa",
-			"ASEC_vests\Textures\tfa_pouch_aor2.paa",
-			"ASEC_vests\Textures\blueforce_mag_aor2.paa"
+			"ASEC_Vests1\textures\jpc_main_AOR2_CO.paa",
+			"ASEC_Vests1\textures\jpc_cummerbund_aor2_CO.paa",
+			"ASEC_Vests1\textures\avs_b_aor2_co.paa",
+			"ASEC_Vests1\textures\esstac2_aor2_co.paa",
+			"ASEC_Vests1\textures\esstac_aor2_co.paa",
+			"ASEC_Vests1\textures\esstac_aor2_co.paa",
+			"ASEC_Vests1\textures\kangaroo2_aor2_co.paa",
+			"ASEC_Vests1\textures\medpouch_aor2_co.paa",
+			"ASEC_Vests1\textures\ronin_belt_aor2.paa",
+			"ASEC_Vests1\Textures\holster_od_co.paa",
+			"ASEC_Vests1\Textures\avs_b_aor2_co.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_aor2.paa",
+			"ASEC_Vests1\Textures\dump_aor2.paa",
+			"ASEC_Vests1\Textures\vsm_boxmag_aor2.paa",
+			"ASEC_Vests1\Textures\pouches_aor2.paa",
+			"ASEC_Vests1\Textures\tfa_pouch_aor2.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_aor2.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -2884,23 +2884,23 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"asec_vests\textures\jpc_main_AOR2_CO.paa",
-				"asec_vests\textures\jpc_cummerbund_aor2_CO.paa",
-				"asec_vests\textures\avs_b_aor2_co.paa",
-				"asec_vests\textures\esstac2_aor2_co.paa",
-				"asec_vests\textures\esstac_aor2_co.paa",
-				"asec_vests\textures\esstac_aor2_co.paa",
-				"asec_vests\textures\kangaroo2_aor2_co.paa",
-				"asec_vests\textures\medpouch_aor2_co.paa",
-				"asec_vests\textures\ronin_belt_aor2.paa",
-				"ASEC_vests\Textures\holster_od_co.paa",
-				"ASEC_vests\Textures\avs_b_aor2_co.paa",
-				"ASEC_vests\Textures\blueforce_mag_aor2.paa",
-				"ASEC_vests\Textures\dump_aor2.paa",
-				"ASEC_vests\Textures\vsm_boxmag_aor2.paa",
-				"ASEC_vests\Textures\pouches_aor2.paa",
-				"ASEC_vests\Textures\tfa_pouch_aor2.paa",
-				"ASEC_vests\Textures\blueforce_mag_aor2.paa"
+				"ASEC_Vests1\textures\jpc_main_AOR2_CO.paa",
+				"ASEC_Vests1\textures\jpc_cummerbund_aor2_CO.paa",
+				"ASEC_Vests1\textures\avs_b_aor2_co.paa",
+				"ASEC_Vests1\textures\esstac2_aor2_co.paa",
+				"ASEC_Vests1\textures\esstac_aor2_co.paa",
+				"ASEC_Vests1\textures\esstac_aor2_co.paa",
+				"ASEC_Vests1\textures\kangaroo2_aor2_co.paa",
+				"ASEC_Vests1\textures\medpouch_aor2_co.paa",
+				"ASEC_Vests1\textures\ronin_belt_aor2.paa",
+				"ASEC_Vests1\Textures\holster_od_co.paa",
+				"ASEC_Vests1\Textures\avs_b_aor2_co.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_aor2.paa",
+				"ASEC_Vests1\Textures\dump_aor2.paa",
+				"ASEC_Vests1\Textures\vsm_boxmag_aor2.paa",
+				"ASEC_Vests1\Textures\pouches_aor2.paa",
+				"ASEC_Vests1\Textures\tfa_pouch_aor2.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_aor2.paa"
 			};
 			containerClass="Supply140";
 			mass=80;
@@ -2934,12 +2934,12 @@ class cfgWeapons
 	};
 	class Ronin_Belt_CB_6: ItemCore
 	{
-		author="Task Force Leviathan";
+		author="Jup, Lip, Thunder";
 		scope=2;
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
 		displayname="[TFL] Ronin Belt CB (M4 B)";
-		picture="\ASEC_vests\Textures\anti_rat.paa";
+		picture="\ASEC_Vests1\Textures\anti_rat.paa";
 		model="ASEC_Belt\Models\Ronin_Belt_M42.p3d";
 		hiddenSelections[]=
 		{
@@ -2963,23 +2963,23 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"asec_vests\textures\jpc_main_cb_CO.paa",
-			"asec_vests\textures\jpc_cummerbund_cb_CO.paa",
-			"asec_vests\textures\avs_b_cb_co.paa",
-			"asec_vests\textures\esstac2_cb_co.paa",
-			"asec_vests\textures\esstac_cb_co.paa",
-			"asec_vests\textures\esstac_cb_co.paa",
-			"asec_vests\textures\kangaroo2_cb_co.paa",
-			"asec_vests\textures\medpouch_cb_co.paa",
-			"asec_vests\textures\ronin_belt_cb.paa",
-			"ASEC_vests\Textures\holster_tan_co.paa",
-			"ASEC_vests\Textures\avs_b_cb_co.paa",
-			"ASEC_vests\Textures\blueforce_mag_cb.paa",
-			"ASEC_vests\Textures\dump_cb.paa",
-			"ASEC_vests\Textures\vsm_boxmag_cb.paa",
-			"ASEC_vests\Textures\pouches_cb.paa",
-			"ASEC_vests\Textures\tfa_pouch_cb.paa",
-			"ASEC_vests\Textures\blueforce_mag_cb.paa"
+			"ASEC_Vests1\textures\jpc_main_cb_CO.paa",
+			"ASEC_Vests1\textures\jpc_cummerbund_cb_CO.paa",
+			"ASEC_Vests1\textures\avs_b_cb_co.paa",
+			"ASEC_Vests1\textures\esstac2_cb_co.paa",
+			"ASEC_Vests1\textures\esstac_cb_co.paa",
+			"ASEC_Vests1\textures\esstac_cb_co.paa",
+			"ASEC_Vests1\textures\kangaroo2_cb_co.paa",
+			"ASEC_Vests1\textures\medpouch_cb_co.paa",
+			"ASEC_Vests1\textures\ronin_belt_cb.paa",
+			"ASEC_Vests1\Textures\holster_tan_co.paa",
+			"ASEC_Vests1\Textures\avs_b_cb_co.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_cb.paa",
+			"ASEC_Vests1\Textures\dump_cb.paa",
+			"ASEC_Vests1\Textures\vsm_boxmag_cb.paa",
+			"ASEC_Vests1\Textures\pouches_cb.paa",
+			"ASEC_Vests1\Textures\tfa_pouch_cb.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_cb.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -3006,23 +3006,23 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"asec_vests\textures\jpc_main_cb_CO.paa",
-				"asec_vests\textures\jpc_cummerbund_cb_CO.paa",
-				"asec_vests\textures\avs_b_cb_co.paa",
-				"asec_vests\textures\esstac2_cb_co.paa",
-				"asec_vests\textures\esstac_cb_co.paa",
-				"asec_vests\textures\esstac_cb_co.paa",
-				"asec_vests\textures\kangaroo2_cb_co.paa",
-				"asec_vests\textures\medpouch_cb_co.paa",
-				"asec_vests\textures\ronin_belt_cb.paa",
-				"ASEC_vests\Textures\holster_tan_co.paa",
-				"ASEC_vests\Textures\avs_b_cb_co.paa",
-				"ASEC_vests\Textures\blueforce_mag_cb.paa",
-				"ASEC_vests\Textures\dump_cb.paa",
-				"ASEC_vests\Textures\vsm_boxmag_cb.paa",
-				"ASEC_vests\Textures\pouches_cb.paa",
-				"ASEC_vests\Textures\tfa_pouch_cb.paa",
-				"ASEC_vests\Textures\blueforce_mag_cb.paa"
+				"ASEC_Vests1\textures\jpc_main_cb_CO.paa",
+				"ASEC_Vests1\textures\jpc_cummerbund_cb_CO.paa",
+				"ASEC_Vests1\textures\avs_b_cb_co.paa",
+				"ASEC_Vests1\textures\esstac2_cb_co.paa",
+				"ASEC_Vests1\textures\esstac_cb_co.paa",
+				"ASEC_Vests1\textures\esstac_cb_co.paa",
+				"ASEC_Vests1\textures\kangaroo2_cb_co.paa",
+				"ASEC_Vests1\textures\medpouch_cb_co.paa",
+				"ASEC_Vests1\textures\ronin_belt_cb.paa",
+				"ASEC_Vests1\Textures\holster_tan_co.paa",
+				"ASEC_Vests1\Textures\avs_b_cb_co.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_cb.paa",
+				"ASEC_Vests1\Textures\dump_cb.paa",
+				"ASEC_Vests1\Textures\vsm_boxmag_cb.paa",
+				"ASEC_Vests1\Textures\pouches_cb.paa",
+				"ASEC_Vests1\Textures\tfa_pouch_cb.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_cb.paa"
 			};
 			containerClass="Supply140";
 			mass=80;
@@ -3056,12 +3056,12 @@ class cfgWeapons
 	};
 	class Ronin_Belt_RG_6: ItemCore
 	{
-		author="Task Force Leviathan";
+		author="Jup, Lip, Thunder";
 		scope=2;
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
 		displayname="[TFL] Ronin Belt RG (M4 B)";
-		picture="\ASEC_vests\Textures\anti_rat.paa";
+		picture="\ASEC_Vests1\Textures\anti_rat.paa";
 		model="ASEC_Belt\Models\Ronin_Belt_M42.p3d";
 		hiddenSelections[]=
 		{
@@ -3085,23 +3085,23 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"asec_vests\textures\jpc_main_rg_CO.paa",
-			"asec_vests\textures\jpc_cummerbund_rg_CO.paa",
-			"asec_vests\textures\avs_b_rg_co.paa",
-			"asec_vests\textures\esstac2_rg_co.paa",
-			"asec_vests\textures\esstac_rg_co.paa",
-			"asec_vests\textures\esstac_rg_co.paa",
-			"asec_vests\textures\kangaroo2_rg_co.paa",
-			"asec_vests\textures\medpouch_rg_co.paa",
-			"asec_vests\textures\ronin_belt_rg.paa",
-			"ASEC_vests\Textures\holster_od_co.paa",
-			"ASEC_vests\Textures\avs_b_rg_co.paa",
-			"ASEC_vests\Textures\blueforce_mag_rg.paa",
-			"ASEC_vests\Textures\dump_od.paa",
-			"ASEC_vests\Textures\vsm_boxmag_rg.paa",
-			"ASEC_vests\Textures\pouches_rg.paa",
-			"ASEC_vests\Textures\tfa_pouch_rg.paa",
-			"ASEC_vests\Textures\blueforce_mag_rg.paa"
+			"ASEC_Vests1\textures\jpc_main_rg_CO.paa",
+			"ASEC_Vests1\textures\jpc_cummerbund_rg_CO.paa",
+			"ASEC_Vests1\textures\avs_b_rg_co.paa",
+			"ASEC_Vests1\textures\esstac2_rg_co.paa",
+			"ASEC_Vests1\textures\esstac_rg_co.paa",
+			"ASEC_Vests1\textures\esstac_rg_co.paa",
+			"ASEC_Vests1\textures\kangaroo2_rg_co.paa",
+			"ASEC_Vests1\textures\medpouch_rg_co.paa",
+			"ASEC_Vests1\textures\ronin_belt_rg.paa",
+			"ASEC_Vests1\Textures\holster_od_co.paa",
+			"ASEC_Vests1\Textures\avs_b_rg_co.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_rg.paa",
+			"ASEC_Vests1\Textures\dump_od.paa",
+			"ASEC_Vests1\Textures\vsm_boxmag_rg.paa",
+			"ASEC_Vests1\Textures\pouches_rg.paa",
+			"ASEC_Vests1\Textures\tfa_pouch_rg.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_rg.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -3128,23 +3128,23 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"asec_vests\textures\jpc_main_rg_CO.paa",
-				"asec_vests\textures\jpc_cummerbund_rg_CO.paa",
-				"asec_vests\textures\avs_b_rg_co.paa",
-				"asec_vests\textures\esstac2_rg_co.paa",
-				"asec_vests\textures\esstac_rg_co.paa",
-				"asec_vests\textures\esstac_rg_co.paa",
-				"asec_vests\textures\kangaroo2_rg_co.paa",
-				"asec_vests\textures\medpouch_rg_co.paa",
-				"asec_vests\textures\ronin_belt_rg.paa",
-				"ASEC_vests\Textures\holster_od_co.paa",
-				"ASEC_vests\Textures\avs_b_rg_co.paa",
-				"ASEC_vests\Textures\blueforce_mag_rg.paa",
-				"ASEC_vests\Textures\dump_od.paa",
-				"ASEC_vests\Textures\vsm_boxmag_rg.paa",
-				"ASEC_vests\Textures\pouches_rg.paa",
-				"ASEC_vests\Textures\tfa_pouch_rg.paa",
-				"ASEC_vests\Textures\blueforce_mag_rg.paa"
+				"ASEC_Vests1\textures\jpc_main_rg_CO.paa",
+				"ASEC_Vests1\textures\jpc_cummerbund_rg_CO.paa",
+				"ASEC_Vests1\textures\avs_b_rg_co.paa",
+				"ASEC_Vests1\textures\esstac2_rg_co.paa",
+				"ASEC_Vests1\textures\esstac_rg_co.paa",
+				"ASEC_Vests1\textures\esstac_rg_co.paa",
+				"ASEC_Vests1\textures\kangaroo2_rg_co.paa",
+				"ASEC_Vests1\textures\medpouch_rg_co.paa",
+				"ASEC_Vests1\textures\ronin_belt_rg.paa",
+				"ASEC_Vests1\Textures\holster_od_co.paa",
+				"ASEC_Vests1\Textures\avs_b_rg_co.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_rg.paa",
+				"ASEC_Vests1\Textures\dump_od.paa",
+				"ASEC_Vests1\Textures\vsm_boxmag_rg.paa",
+				"ASEC_Vests1\Textures\pouches_rg.paa",
+				"ASEC_Vests1\Textures\tfa_pouch_rg.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_rg.paa"
 			};
 			mass=80;
 			containerClass="Supply140";
@@ -3178,12 +3178,12 @@ class cfgWeapons
 	};
 	class Ronin_Belt_BLK_6: ItemCore
 	{
-		author="Task Force Leviathan";
+		author="Jup, Lip, Thunder";
 		scope=2;
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
 		displayname="[TFL] Ronin Belt BLK (M4 B)";
-		picture="\ASEC_vests\Textures\anti_rat.paa";
+		picture="\ASEC_Vests1\Textures\anti_rat.paa";
 		model="ASEC_Belt\Models\Ronin_Belt_M42.p3d";
 		hiddenSelections[]=
 		{
@@ -3207,23 +3207,23 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"asec_vests\textures\jpc_main_blk_CO.paa",
-			"asec_vests\textures\jpc_cummerbund_blk_CO.paa",
-			"asec_vests\textures\avs_b_blk_co.paa",
-			"asec_vests\textures\esstac2_blk_co.paa",
-			"asec_vests\textures\esstac_blk_co.paa",
-			"asec_vests\textures\esstac_blk_co.paa",
-			"asec_vests\textures\kangaroo2_blk_co.paa",
-			"asec_vests\textures\medpouch_blk_co.paa",
-			"asec_vests\textures\ronin_belt_blk.paa",
-			"ASEC_vests\Textures\holster_blk_co.paa",
-			"ASEC_vests\Textures\avs_b_blk_co.paa",
-			"ASEC_vests\Textures\blueforce_mag_blk.paa",
-			"ASEC_vests\Textures\dump_blk.paa",
-			"ASEC_vests\Textures\vsm_boxmag_blk.paa",
-			"ASEC_vests\Textures\pouches_blk.paa",
-			"ASEC_vests\Textures\tfa_pouch_blk.paa",
-			"ASEC_vests\Textures\blueforce_mag_blk.paa"
+			"ASEC_Vests1\textures\jpc_main_blk_CO.paa",
+			"ASEC_Vests1\textures\jpc_cummerbund_blk_CO.paa",
+			"ASEC_Vests1\textures\avs_b_blk_co.paa",
+			"ASEC_Vests1\textures\esstac2_blk_co.paa",
+			"ASEC_Vests1\textures\esstac_blk_co.paa",
+			"ASEC_Vests1\textures\esstac_blk_co.paa",
+			"ASEC_Vests1\textures\kangaroo2_blk_co.paa",
+			"ASEC_Vests1\textures\medpouch_blk_co.paa",
+			"ASEC_Vests1\textures\ronin_belt_blk.paa",
+			"ASEC_Vests1\Textures\holster_blk_co.paa",
+			"ASEC_Vests1\Textures\avs_b_blk_co.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_blk.paa",
+			"ASEC_Vests1\Textures\dump_blk.paa",
+			"ASEC_Vests1\Textures\vsm_boxmag_blk.paa",
+			"ASEC_Vests1\Textures\pouches_blk.paa",
+			"ASEC_Vests1\Textures\tfa_pouch_blk.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_blk.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -3250,23 +3250,23 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"asec_vests\textures\jpc_main_blk_CO.paa",
-				"asec_vests\textures\jpc_cummerbund_blk_CO.paa",
-				"asec_vests\textures\avs_b_blk_co.paa",
-				"asec_vests\textures\esstac2_blk_co.paa",
-				"asec_vests\textures\esstac_blk_co.paa",
-				"asec_vests\textures\esstac_blk_co.paa",
-				"asec_vests\textures\kangaroo2_blk_co.paa",
-				"asec_vests\textures\medpouch_blk_co.paa",
-				"asec_vests\textures\ronin_belt_blk.paa",
-				"ASEC_vests\Textures\holster_blk_co.paa",
-				"ASEC_vests\Textures\avs_b_blk_co.paa",
-				"ASEC_vests\Textures\blueforce_mag_blk.paa",
-				"ASEC_vests\Textures\dump_blk.paa",
-				"ASEC_vests\Textures\vsm_boxmag_blk.paa",
-				"ASEC_vests\Textures\pouches_blk.paa",
-				"ASEC_vests\Textures\tfa_pouch_blk.paa",
-				"ASEC_vests\Textures\blueforce_mag_blk.paa"
+				"ASEC_Vests1\textures\jpc_main_blk_CO.paa",
+				"ASEC_Vests1\textures\jpc_cummerbund_blk_CO.paa",
+				"ASEC_Vests1\textures\avs_b_blk_co.paa",
+				"ASEC_Vests1\textures\esstac2_blk_co.paa",
+				"ASEC_Vests1\textures\esstac_blk_co.paa",
+				"ASEC_Vests1\textures\esstac_blk_co.paa",
+				"ASEC_Vests1\textures\kangaroo2_blk_co.paa",
+				"ASEC_Vests1\textures\medpouch_blk_co.paa",
+				"ASEC_Vests1\textures\ronin_belt_blk.paa",
+				"ASEC_Vests1\Textures\holster_blk_co.paa",
+				"ASEC_Vests1\Textures\avs_b_blk_co.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_blk.paa",
+				"ASEC_Vests1\Textures\dump_blk.paa",
+				"ASEC_Vests1\Textures\vsm_boxmag_blk.paa",
+				"ASEC_Vests1\Textures\pouches_blk.paa",
+				"ASEC_Vests1\Textures\tfa_pouch_blk.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_blk.paa"
 			};
 			mass=80;
 			containerClass="Supply140";
@@ -3300,12 +3300,12 @@ class cfgWeapons
 	};
 	class Ronin_Belt_ALP_6: ItemCore
 	{
-		author="Task Force Leviathan";
+		author="Jup, Lip, Thunder";
 		scope=2;
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
 		displayname="[TFL] Ronin Belt ALP (M4 B)";
-		picture="\ASEC_vests\Textures\anti_rat.paa";
+		picture="\ASEC_Vests1\Textures\anti_rat.paa";
 		model="ASEC_Belt\Models\Ronin_Belt_M42.p3d";
 		hiddenSelections[]=
 		{
@@ -3329,23 +3329,23 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"asec_vests\textures\jpc_main_alp_CO.paa",
-			"asec_vests\textures\jpc_cummerbund_alp_CO.paa",
-			"asec_vests\textures\avs_b_alp_co.paa",
-			"asec_vests\textures\esstac2_alpine_co.paa",
-			"asec_vests\textures\esstac_alpine_co.paa",
-			"asec_vests\textures\esstac_alpine_co.paa",
-			"asec_vests\textures\kangaroo2_alp_co.paa",
-			"asec_vests\textures\medpouch_alp_co.paa",
-			"asec_vests\textures\ronin_belt_alpine.paa",
-			"ASEC_vests\Textures\holster_alpine_co.paa",
-			"ASEC_vests\Textures\avs_b_alp_co.paa",
-			"ASEC_vests\Textures\blueforce_mag_alpine.paa",
-			"ASEC_vests\Textures\dump_alpine.paa",
-			"ASEC_vests\Textures\vsm_boxmag_alpine.paa",
-			"ASEC_vests\Textures\pouches_alpine.paa",
-			"ASEC_vests\Textures\tfa_pouch_alpine.paa",
-			"ASEC_vests\Textures\blueforce_mag_alpine.paa"
+			"ASEC_Vests1\textures\jpc_main_alp_CO.paa",
+			"ASEC_Vests1\textures\jpc_cummerbund_alp_CO.paa",
+			"ASEC_Vests1\textures\avs_b_alp_co.paa",
+			"ASEC_Vests1\textures\esstac2_alpine_co.paa",
+			"ASEC_Vests1\textures\esstac_alpine_co.paa",
+			"ASEC_Vests1\textures\esstac_alpine_co.paa",
+			"ASEC_Vests1\textures\kangaroo2_alp_co.paa",
+			"ASEC_Vests1\textures\medpouch_alp_co.paa",
+			"ASEC_Vests1\textures\ronin_belt_alpine.paa",
+			"ASEC_Vests1\Textures\holster_alpine_co.paa",
+			"ASEC_Vests1\Textures\avs_b_alp_co.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_alpine.paa",
+			"ASEC_Vests1\Textures\dump_alpine.paa",
+			"ASEC_Vests1\Textures\vsm_boxmag_alpine.paa",
+			"ASEC_Vests1\Textures\pouches_alpine.paa",
+			"ASEC_Vests1\Textures\tfa_pouch_alpine.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_alpine.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -3372,23 +3372,23 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"asec_vests\textures\jpc_main_alp_CO.paa",
-				"asec_vests\textures\jpc_cummerbund_alp_CO.paa",
-				"asec_vests\textures\avs_b_alp_co.paa",
-				"asec_vests\textures\esstac2_alpine_co.paa",
-				"asec_vests\textures\esstac_alpine_co.paa",
-				"asec_vests\textures\esstac_alpine_co.paa",
-				"asec_vests\textures\kangaroo2_alp_co.paa",
-				"asec_vests\textures\medpouch_alp_co.paa",
-				"asec_vests\textures\ronin_belt_alpine.paa",
-				"ASEC_vests\Textures\holster_alpine_co.paa",
-				"ASEC_vests\Textures\avs_b_alp_co.paa",
-				"ASEC_vests\Textures\blueforce_mag_alpine.paa",
-				"ASEC_vests\Textures\dump_alpine.paa",
-				"ASEC_vests\Textures\vsm_boxmag_alpine.paa",
-				"ASEC_vests\Textures\pouches_alpine.paa",
-				"ASEC_vests\Textures\tfa_pouch_alpine.paa",
-				"ASEC_vests\Textures\blueforce_mag_alpine.paa"
+				"ASEC_Vests1\textures\jpc_main_alp_CO.paa",
+				"ASEC_Vests1\textures\jpc_cummerbund_alp_CO.paa",
+				"ASEC_Vests1\textures\avs_b_alp_co.paa",
+				"ASEC_Vests1\textures\esstac2_alpine_co.paa",
+				"ASEC_Vests1\textures\esstac_alpine_co.paa",
+				"ASEC_Vests1\textures\esstac_alpine_co.paa",
+				"ASEC_Vests1\textures\kangaroo2_alp_co.paa",
+				"ASEC_Vests1\textures\medpouch_alp_co.paa",
+				"ASEC_Vests1\textures\ronin_belt_alpine.paa",
+				"ASEC_Vests1\Textures\holster_alpine_co.paa",
+				"ASEC_Vests1\Textures\avs_b_alp_co.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_alpine.paa",
+				"ASEC_Vests1\Textures\dump_alpine.paa",
+				"ASEC_Vests1\Textures\vsm_boxmag_alpine.paa",
+				"ASEC_Vests1\Textures\pouches_alpine.paa",
+				"ASEC_Vests1\Textures\tfa_pouch_alpine.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_alpine.paa"
 			};
 			mass=80;
 			containerClass="Supply140";
@@ -3422,12 +3422,12 @@ class cfgWeapons
 	};
 	class Ronin_Belt_MC_7: ItemCore
 	{
-		author="Task Force Leviathan";
+		author="Jup, Lip, Thunder";
 		scope=2;
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
 		displayname="[TFL] Ronin Belt MC (MK11 A)";
-		picture="\ASEC_vests\Textures\anti_rat.paa";
+		picture="\ASEC_Vests1\Textures\anti_rat.paa";
 		model="ASEC_Belt\Models\Ronin_Belt_MK11.p3d";
 		hiddenSelections[]=
 		{
@@ -3451,23 +3451,23 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"asec_vests\textures\jpc_main_MC_CO.paa",
-			"asec_vests\textures\jpc_cummerbund_MC_CO.paa",
-			"asec_vests\textures\avs_b_mc_co.paa",
-			"asec_vests\textures\esstac2_mc_co.paa",
-			"asec_vests\textures\esstac_mc_co.paa",
-			"asec_vests\textures\esstac_mc_co.paa",
-			"asec_vests\textures\kangaroo2_mc_co.paa",
-			"asec_vests\textures\medpouch_mc_co.paa",
-			"asec_vests\textures\ronin_belt_mc.paa",
-			"ASEC_vests\Textures\holster_mc.paa",
-			"ASEC_vests\Textures\avs_b_mc_co.paa",
-			"ASEC_vests\Textures\blueforce_mag_mc.paa",
-			"ASEC_vests\Textures\dump_mc.paa",
-			"ASEC_vests\Textures\vsm_boxmag_mc.paa",
-			"ASEC_vests\Textures\pouches_mc.paa",
-			"ASEC_vests\Textures\tfa_pouch_mc.paa",
-			"ASEC_vests\Textures\blueforce_mag_mc.paa"
+			"ASEC_Vests1\textures\jpc_main_MC_CO.paa",
+			"ASEC_Vests1\textures\jpc_cummerbund_MC_CO.paa",
+			"ASEC_Vests1\textures\avs_b_mc_co.paa",
+			"ASEC_Vests1\textures\esstac2_mc_co.paa",
+			"ASEC_Vests1\textures\esstac_mc_co.paa",
+			"ASEC_Vests1\textures\esstac_mc_co.paa",
+			"ASEC_Vests1\textures\kangaroo2_mc_co.paa",
+			"ASEC_Vests1\textures\medpouch_mc_co.paa",
+			"ASEC_Vests1\textures\ronin_belt_mc.paa",
+			"ASEC_Vests1\Textures\holster_mc.paa",
+			"ASEC_Vests1\Textures\avs_b_mc_co.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_mc.paa",
+			"ASEC_Vests1\Textures\dump_mc.paa",
+			"ASEC_Vests1\Textures\vsm_boxmag_mc.paa",
+			"ASEC_Vests1\Textures\pouches_mc.paa",
+			"ASEC_Vests1\Textures\tfa_pouch_mc.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_mc.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -3494,23 +3494,23 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"asec_vests\textures\jpc_main_MC_CO.paa",
-				"asec_vests\textures\jpc_cummerbund_MC_CO.paa",
-				"asec_vests\textures\avs_b_mc_co.paa",
-				"asec_vests\textures\esstac2_mc_co.paa",
-				"asec_vests\textures\esstac_mc_co.paa",
-				"asec_vests\textures\esstac_mc_co.paa",
-				"asec_vests\textures\kangaroo2_mc_co.paa",
-				"asec_vests\textures\medpouch_mc_co.paa",
-				"asec_vests\textures\ronin_belt_mc.paa",
-				"ASEC_vests\Textures\holster_mc.paa",
-				"ASEC_vests\Textures\avs_b_mc_co.paa",
-				"ASEC_vests\Textures\blueforce_mag_mc.paa",
-				"ASEC_vests\Textures\dump_mc.paa",
-				"ASEC_vests\Textures\vsm_boxmag_mc.paa",
-				"ASEC_vests\Textures\pouches_mc.paa",
-				"ASEC_vests\Textures\tfa_pouch_mc.paa",
-				"ASEC_vests\Textures\blueforce_mag_mc.paa"
+				"ASEC_Vests1\textures\jpc_main_MC_CO.paa",
+				"ASEC_Vests1\textures\jpc_cummerbund_MC_CO.paa",
+				"ASEC_Vests1\textures\avs_b_mc_co.paa",
+				"ASEC_Vests1\textures\esstac2_mc_co.paa",
+				"ASEC_Vests1\textures\esstac_mc_co.paa",
+				"ASEC_Vests1\textures\esstac_mc_co.paa",
+				"ASEC_Vests1\textures\kangaroo2_mc_co.paa",
+				"ASEC_Vests1\textures\medpouch_mc_co.paa",
+				"ASEC_Vests1\textures\ronin_belt_mc.paa",
+				"ASEC_Vests1\Textures\holster_mc.paa",
+				"ASEC_Vests1\Textures\avs_b_mc_co.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_mc.paa",
+				"ASEC_Vests1\Textures\dump_mc.paa",
+				"ASEC_Vests1\Textures\vsm_boxmag_mc.paa",
+				"ASEC_Vests1\Textures\pouches_mc.paa",
+				"ASEC_Vests1\Textures\tfa_pouch_mc.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_mc.paa"
 			};
 			containerClass="Supply140";
 			mass=80;
@@ -3544,12 +3544,12 @@ class cfgWeapons
 	};
 	class Ronin_Belt_AOR1_7: ItemCore
 	{
-		author="Task Force Leviathan";
+		author="Jup, Lip, Thunder";
 		scope=2;
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
 		displayname="[TFL] Ronin Belt AOR1 (MK11 A)";
-		picture="\ASEC_vests\Textures\anti_rat.paa";
+		picture="\ASEC_Vests1\Textures\anti_rat.paa";
 		model="ASEC_Belt\Models\Ronin_Belt_MK11.p3d";
 		hiddenSelections[]=
 		{
@@ -3573,23 +3573,23 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"asec_vests\textures\jpc_main_AOR1_CO.paa",
-			"asec_vests\textures\jpc_cummerbund_aor1_CO.paa",
-			"asec_vests\textures\avs_b_aor1_co.paa",
-			"asec_vests\textures\esstac2_aor1_co.paa",
-			"asec_vests\textures\esstac_aor1_co.paa",
-			"asec_vests\textures\esstac_aor1_co.paa",
-			"asec_vests\textures\kangaroo2_aor1_co.paa",
-			"asec_vests\textures\medpouch_aor1_co.paa",
-			"asec_vests\textures\ronin_belt_aor1.paa",
-			"ASEC_vests\Textures\holster_tan_co.paa",
-			"ASEC_vests\Textures\avs_b_aor1_co.paa",
-			"ASEC_vests\Textures\blueforce_mag_aor1.paa",
-			"ASEC_vests\Textures\dump_aor1.paa",
-			"ASEC_vests\Textures\vsm_boxmag_aor1.paa",
-			"ASEC_vests\Textures\pouches_aor1.paa",
-			"ASEC_vests\Textures\tfa_pouch_aor1.paa",
-			"ASEC_vests\Textures\blueforce_mag_aor1.paa"
+			"ASEC_Vests1\textures\jpc_main_AOR1_CO.paa",
+			"ASEC_Vests1\textures\jpc_cummerbund_aor1_CO.paa",
+			"ASEC_Vests1\textures\avs_b_aor1_co.paa",
+			"ASEC_Vests1\textures\esstac2_aor1_co.paa",
+			"ASEC_Vests1\textures\esstac_aor1_co.paa",
+			"ASEC_Vests1\textures\esstac_aor1_co.paa",
+			"ASEC_Vests1\textures\kangaroo2_aor1_co.paa",
+			"ASEC_Vests1\textures\medpouch_aor1_co.paa",
+			"ASEC_Vests1\textures\ronin_belt_aor1.paa",
+			"ASEC_Vests1\Textures\holster_tan_co.paa",
+			"ASEC_Vests1\Textures\avs_b_aor1_co.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_aor1.paa",
+			"ASEC_Vests1\Textures\dump_aor1.paa",
+			"ASEC_Vests1\Textures\vsm_boxmag_aor1.paa",
+			"ASEC_Vests1\Textures\pouches_aor1.paa",
+			"ASEC_Vests1\Textures\tfa_pouch_aor1.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_aor1.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -3616,23 +3616,23 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"asec_vests\textures\jpc_main_AOR1_CO.paa",
-				"asec_vests\textures\jpc_cummerbund_aor1_CO.paa",
-				"asec_vests\textures\avs_b_aor1_co.paa",
-				"asec_vests\textures\esstac2_aor1_co.paa",
-				"asec_vests\textures\esstac_aor1_co.paa",
-				"asec_vests\textures\esstac_aor1_co.paa",
-				"asec_vests\textures\kangaroo2_aor1_co.paa",
-				"asec_vests\textures\medpouch_aor1_co.paa",
-				"asec_vests\textures\ronin_belt_aor1.paa",
-				"ASEC_vests\Textures\holster_tan_co.paa",
-				"ASEC_vests\Textures\avs_b_aor1_co.paa",
-				"ASEC_vests\Textures\blueforce_mag_aor1.paa",
-				"ASEC_vests\Textures\dump_aor1.paa",
-				"ASEC_vests\Textures\vsm_boxmag_aor1.paa",
-				"ASEC_vests\Textures\pouches_aor1.paa",
-				"ASEC_vests\Textures\tfa_pouch_aor1.paa",
-				"ASEC_vests\Textures\blueforce_mag_aor1.paa"
+				"ASEC_Vests1\textures\jpc_main_AOR1_CO.paa",
+				"ASEC_Vests1\textures\jpc_cummerbund_aor1_CO.paa",
+				"ASEC_Vests1\textures\avs_b_aor1_co.paa",
+				"ASEC_Vests1\textures\esstac2_aor1_co.paa",
+				"ASEC_Vests1\textures\esstac_aor1_co.paa",
+				"ASEC_Vests1\textures\esstac_aor1_co.paa",
+				"ASEC_Vests1\textures\kangaroo2_aor1_co.paa",
+				"ASEC_Vests1\textures\medpouch_aor1_co.paa",
+				"ASEC_Vests1\textures\ronin_belt_aor1.paa",
+				"ASEC_Vests1\Textures\holster_tan_co.paa",
+				"ASEC_Vests1\Textures\avs_b_aor1_co.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_aor1.paa",
+				"ASEC_Vests1\Textures\dump_aor1.paa",
+				"ASEC_Vests1\Textures\vsm_boxmag_aor1.paa",
+				"ASEC_Vests1\Textures\pouches_aor1.paa",
+				"ASEC_Vests1\Textures\tfa_pouch_aor1.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_aor1.paa"
 			};
 			containerClass="Supply140";
 			mass=80;
@@ -3666,12 +3666,12 @@ class cfgWeapons
 	};
 	class Ronin_Belt_AOR2_7: ItemCore
 	{
-		author="Task Force Leviathan";
+		author="Jup, Lip, Thunder";
 		scope=2;
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
 		displayname="[TFL] Ronin Belt AOR2 (MK11 A)";
-		picture="\ASEC_vests\Textures\anti_rat.paa";
+		picture="\ASEC_Vests1\Textures\anti_rat.paa";
 		model="ASEC_Belt\Models\Ronin_Belt_MK11.p3d";
 		hiddenSelections[]=
 		{
@@ -3695,23 +3695,23 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"asec_vests\textures\jpc_main_AOR2_CO.paa",
-			"asec_vests\textures\jpc_cummerbund_aor2_CO.paa",
-			"asec_vests\textures\avs_b_aor2_co.paa",
-			"asec_vests\textures\esstac2_aor2_co.paa",
-			"asec_vests\textures\esstac_aor2_co.paa",
-			"asec_vests\textures\esstac_aor2_co.paa",
-			"asec_vests\textures\kangaroo2_aor2_co.paa",
-			"asec_vests\textures\medpouch_aor2_co.paa",
-			"asec_vests\textures\ronin_belt_aor2.paa",
-			"ASEC_vests\Textures\holster_od_co.paa",
-			"ASEC_vests\Textures\avs_b_aor2_co.paa",
-			"ASEC_vests\Textures\blueforce_mag_aor2.paa",
-			"ASEC_vests\Textures\dump_aor2.paa",
-			"ASEC_vests\Textures\vsm_boxmag_aor2.paa",
-			"ASEC_vests\Textures\pouches_aor2.paa",
-			"ASEC_vests\Textures\tfa_pouch_aor2.paa",
-			"ASEC_vests\Textures\blueforce_mag_aor2.paa"
+			"ASEC_Vests1\textures\jpc_main_AOR2_CO.paa",
+			"ASEC_Vests1\textures\jpc_cummerbund_aor2_CO.paa",
+			"ASEC_Vests1\textures\avs_b_aor2_co.paa",
+			"ASEC_Vests1\textures\esstac2_aor2_co.paa",
+			"ASEC_Vests1\textures\esstac_aor2_co.paa",
+			"ASEC_Vests1\textures\esstac_aor2_co.paa",
+			"ASEC_Vests1\textures\kangaroo2_aor2_co.paa",
+			"ASEC_Vests1\textures\medpouch_aor2_co.paa",
+			"ASEC_Vests1\textures\ronin_belt_aor2.paa",
+			"ASEC_Vests1\Textures\holster_od_co.paa",
+			"ASEC_Vests1\Textures\avs_b_aor2_co.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_aor2.paa",
+			"ASEC_Vests1\Textures\dump_aor2.paa",
+			"ASEC_Vests1\Textures\vsm_boxmag_aor2.paa",
+			"ASEC_Vests1\Textures\pouches_aor2.paa",
+			"ASEC_Vests1\Textures\tfa_pouch_aor2.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_aor2.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -3738,23 +3738,23 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"asec_vests\textures\jpc_main_AOR2_CO.paa",
-				"asec_vests\textures\jpc_cummerbund_aor2_CO.paa",
-				"asec_vests\textures\avs_b_aor2_co.paa",
-				"asec_vests\textures\esstac2_aor2_co.paa",
-				"asec_vests\textures\esstac_aor2_co.paa",
-				"asec_vests\textures\esstac_aor2_co.paa",
-				"asec_vests\textures\kangaroo2_aor2_co.paa",
-				"asec_vests\textures\medpouch_aor2_co.paa",
-				"asec_vests\textures\ronin_belt_aor2.paa",
-				"ASEC_vests\Textures\holster_od_co.paa",
-				"ASEC_vests\Textures\avs_b_aor2_co.paa",
-				"ASEC_vests\Textures\blueforce_mag_aor2.paa",
-				"ASEC_vests\Textures\dump_aor2.paa",
-				"ASEC_vests\Textures\vsm_boxmag_aor2.paa",
-				"ASEC_vests\Textures\pouches_aor2.paa",
-				"ASEC_vests\Textures\tfa_pouch_aor2.paa",
-				"ASEC_vests\Textures\blueforce_mag_aor2.paa"
+				"ASEC_Vests1\textures\jpc_main_AOR2_CO.paa",
+				"ASEC_Vests1\textures\jpc_cummerbund_aor2_CO.paa",
+				"ASEC_Vests1\textures\avs_b_aor2_co.paa",
+				"ASEC_Vests1\textures\esstac2_aor2_co.paa",
+				"ASEC_Vests1\textures\esstac_aor2_co.paa",
+				"ASEC_Vests1\textures\esstac_aor2_co.paa",
+				"ASEC_Vests1\textures\kangaroo2_aor2_co.paa",
+				"ASEC_Vests1\textures\medpouch_aor2_co.paa",
+				"ASEC_Vests1\textures\ronin_belt_aor2.paa",
+				"ASEC_Vests1\Textures\holster_od_co.paa",
+				"ASEC_Vests1\Textures\avs_b_aor2_co.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_aor2.paa",
+				"ASEC_Vests1\Textures\dump_aor2.paa",
+				"ASEC_Vests1\Textures\vsm_boxmag_aor2.paa",
+				"ASEC_Vests1\Textures\pouches_aor2.paa",
+				"ASEC_Vests1\Textures\tfa_pouch_aor2.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_aor2.paa"
 			};
 			containerClass="Supply140";
 			mass=80;
@@ -3788,12 +3788,12 @@ class cfgWeapons
 	};
 	class Ronin_Belt_CB_7: ItemCore
 	{
-		author="Task Force Leviathan";
+		author="Jup, Lip, Thunder";
 		scope=2;
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
 		displayname="[TFL] Ronin Belt CB (MK11 A)";
-		picture="\ASEC_vests\Textures\anti_rat.paa";
+		picture="\ASEC_Vests1\Textures\anti_rat.paa";
 		model="ASEC_Belt\Models\Ronin_Belt_MK11.p3d";
 		hiddenSelections[]=
 		{
@@ -3817,23 +3817,23 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"asec_vests\textures\jpc_main_cb_CO.paa",
-			"asec_vests\textures\jpc_cummerbund_cb_CO.paa",
-			"asec_vests\textures\avs_b_cb_co.paa",
-			"asec_vests\textures\esstac2_cb_co.paa",
-			"asec_vests\textures\esstac_cb_co.paa",
-			"asec_vests\textures\esstac_cb_co.paa",
-			"asec_vests\textures\kangaroo2_cb_co.paa",
-			"asec_vests\textures\medpouch_cb_co.paa",
-			"asec_vests\textures\ronin_belt_cb.paa",
-			"ASEC_vests\Textures\holster_tan_co.paa",
-			"ASEC_vests\Textures\avs_b_cb_co.paa",
-			"ASEC_vests\Textures\blueforce_mag_cb.paa",
-			"ASEC_vests\Textures\dump_cb.paa",
-			"ASEC_vests\Textures\vsm_boxmag_cb.paa",
-			"ASEC_vests\Textures\pouches_cb.paa",
-			"ASEC_vests\Textures\tfa_pouch_cb.paa",
-			"ASEC_vests\Textures\blueforce_mag_cb.paa"
+			"ASEC_Vests1\textures\jpc_main_cb_CO.paa",
+			"ASEC_Vests1\textures\jpc_cummerbund_cb_CO.paa",
+			"ASEC_Vests1\textures\avs_b_cb_co.paa",
+			"ASEC_Vests1\textures\esstac2_cb_co.paa",
+			"ASEC_Vests1\textures\esstac_cb_co.paa",
+			"ASEC_Vests1\textures\esstac_cb_co.paa",
+			"ASEC_Vests1\textures\kangaroo2_cb_co.paa",
+			"ASEC_Vests1\textures\medpouch_cb_co.paa",
+			"ASEC_Vests1\textures\ronin_belt_cb.paa",
+			"ASEC_Vests1\Textures\holster_tan_co.paa",
+			"ASEC_Vests1\Textures\avs_b_cb_co.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_cb.paa",
+			"ASEC_Vests1\Textures\dump_cb.paa",
+			"ASEC_Vests1\Textures\vsm_boxmag_cb.paa",
+			"ASEC_Vests1\Textures\pouches_cb.paa",
+			"ASEC_Vests1\Textures\tfa_pouch_cb.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_cb.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -3860,23 +3860,23 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"asec_vests\textures\jpc_main_cb_CO.paa",
-				"asec_vests\textures\jpc_cummerbund_cb_CO.paa",
-				"asec_vests\textures\avs_b_cb_co.paa",
-				"asec_vests\textures\esstac2_cb_co.paa",
-				"asec_vests\textures\esstac_cb_co.paa",
-				"asec_vests\textures\esstac_cb_co.paa",
-				"asec_vests\textures\kangaroo2_cb_co.paa",
-				"asec_vests\textures\medpouch_cb_co.paa",
-				"asec_vests\textures\ronin_belt_cb.paa",
-				"ASEC_vests\Textures\holster_tan_co.paa",
-				"ASEC_vests\Textures\avs_b_cb_co.paa",
-				"ASEC_vests\Textures\blueforce_mag_cb.paa",
-				"ASEC_vests\Textures\dump_cb.paa",
-				"ASEC_vests\Textures\vsm_boxmag_cb.paa",
-				"ASEC_vests\Textures\pouches_cb.paa",
-				"ASEC_vests\Textures\tfa_pouch_cb.paa",
-				"ASEC_vests\Textures\blueforce_mag_cb.paa"
+				"ASEC_Vests1\textures\jpc_main_cb_CO.paa",
+				"ASEC_Vests1\textures\jpc_cummerbund_cb_CO.paa",
+				"ASEC_Vests1\textures\avs_b_cb_co.paa",
+				"ASEC_Vests1\textures\esstac2_cb_co.paa",
+				"ASEC_Vests1\textures\esstac_cb_co.paa",
+				"ASEC_Vests1\textures\esstac_cb_co.paa",
+				"ASEC_Vests1\textures\kangaroo2_cb_co.paa",
+				"ASEC_Vests1\textures\medpouch_cb_co.paa",
+				"ASEC_Vests1\textures\ronin_belt_cb.paa",
+				"ASEC_Vests1\Textures\holster_tan_co.paa",
+				"ASEC_Vests1\Textures\avs_b_cb_co.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_cb.paa",
+				"ASEC_Vests1\Textures\dump_cb.paa",
+				"ASEC_Vests1\Textures\vsm_boxmag_cb.paa",
+				"ASEC_Vests1\Textures\pouches_cb.paa",
+				"ASEC_Vests1\Textures\tfa_pouch_cb.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_cb.paa"
 			};
 			containerClass="Supply140";
 			mass=80;
@@ -3910,12 +3910,12 @@ class cfgWeapons
 	};
 	class Ronin_Belt_RG_7: ItemCore
 	{
-		author="Task Force Leviathan";
+		author="Jup, Lip, Thunder";
 		scope=2;
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
 		displayname="[TFL] Ronin Belt RG (MK11 A)";
-		picture="\ASEC_vests\Textures\anti_rat.paa";
+		picture="\ASEC_Vests1\Textures\anti_rat.paa";
 		model="ASEC_Belt\Models\Ronin_Belt_MK11.p3d";
 		hiddenSelections[]=
 		{
@@ -3939,23 +3939,23 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"asec_vests\textures\jpc_main_rg_CO.paa",
-			"asec_vests\textures\jpc_cummerbund_rg_CO.paa",
-			"asec_vests\textures\avs_b_rg_co.paa",
-			"asec_vests\textures\esstac2_rg_co.paa",
-			"asec_vests\textures\esstac_rg_co.paa",
-			"asec_vests\textures\esstac_rg_co.paa",
-			"asec_vests\textures\kangaroo2_rg_co.paa",
-			"asec_vests\textures\medpouch_rg_co.paa",
-			"asec_vests\textures\ronin_belt_rg.paa",
-			"ASEC_vests\Textures\holster_od_co.paa",
-			"ASEC_vests\Textures\avs_b_rg_co.paa",
-			"ASEC_vests\Textures\blueforce_mag_rg.paa",
-			"ASEC_vests\Textures\dump_od.paa",
-			"ASEC_vests\Textures\vsm_boxmag_rg.paa",
-			"ASEC_vests\Textures\pouches_rg.paa",
-			"ASEC_vests\Textures\tfa_pouch_rg.paa",
-			"ASEC_vests\Textures\blueforce_mag_rg.paa"
+			"ASEC_Vests1\textures\jpc_main_rg_CO.paa",
+			"ASEC_Vests1\textures\jpc_cummerbund_rg_CO.paa",
+			"ASEC_Vests1\textures\avs_b_rg_co.paa",
+			"ASEC_Vests1\textures\esstac2_rg_co.paa",
+			"ASEC_Vests1\textures\esstac_rg_co.paa",
+			"ASEC_Vests1\textures\esstac_rg_co.paa",
+			"ASEC_Vests1\textures\kangaroo2_rg_co.paa",
+			"ASEC_Vests1\textures\medpouch_rg_co.paa",
+			"ASEC_Vests1\textures\ronin_belt_rg.paa",
+			"ASEC_Vests1\Textures\holster_od_co.paa",
+			"ASEC_Vests1\Textures\avs_b_rg_co.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_rg.paa",
+			"ASEC_Vests1\Textures\dump_od.paa",
+			"ASEC_Vests1\Textures\vsm_boxmag_rg.paa",
+			"ASEC_Vests1\Textures\pouches_rg.paa",
+			"ASEC_Vests1\Textures\tfa_pouch_rg.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_rg.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -3982,23 +3982,23 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"asec_vests\textures\jpc_main_rg_CO.paa",
-				"asec_vests\textures\jpc_cummerbund_rg_CO.paa",
-				"asec_vests\textures\avs_b_rg_co.paa",
-				"asec_vests\textures\esstac2_rg_co.paa",
-				"asec_vests\textures\esstac_rg_co.paa",
-				"asec_vests\textures\esstac_rg_co.paa",
-				"asec_vests\textures\kangaroo2_rg_co.paa",
-				"asec_vests\textures\medpouch_rg_co.paa",
-				"asec_vests\textures\ronin_belt_rg.paa",
-				"ASEC_vests\Textures\holster_od_co.paa",
-				"ASEC_vests\Textures\avs_b_rg_co.paa",
-				"ASEC_vests\Textures\blueforce_mag_rg.paa",
-				"ASEC_vests\Textures\dump_od.paa",
-				"ASEC_vests\Textures\vsm_boxmag_rg.paa",
-				"ASEC_vests\Textures\pouches_rg.paa",
-				"ASEC_vests\Textures\tfa_pouch_rg.paa",
-				"ASEC_vests\Textures\blueforce_mag_rg.paa"
+				"ASEC_Vests1\textures\jpc_main_rg_CO.paa",
+				"ASEC_Vests1\textures\jpc_cummerbund_rg_CO.paa",
+				"ASEC_Vests1\textures\avs_b_rg_co.paa",
+				"ASEC_Vests1\textures\esstac2_rg_co.paa",
+				"ASEC_Vests1\textures\esstac_rg_co.paa",
+				"ASEC_Vests1\textures\esstac_rg_co.paa",
+				"ASEC_Vests1\textures\kangaroo2_rg_co.paa",
+				"ASEC_Vests1\textures\medpouch_rg_co.paa",
+				"ASEC_Vests1\textures\ronin_belt_rg.paa",
+				"ASEC_Vests1\Textures\holster_od_co.paa",
+				"ASEC_Vests1\Textures\avs_b_rg_co.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_rg.paa",
+				"ASEC_Vests1\Textures\dump_od.paa",
+				"ASEC_Vests1\Textures\vsm_boxmag_rg.paa",
+				"ASEC_Vests1\Textures\pouches_rg.paa",
+				"ASEC_Vests1\Textures\tfa_pouch_rg.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_rg.paa"
 			};
 			mass=80;
 			containerClass="Supply140";
@@ -4032,12 +4032,12 @@ class cfgWeapons
 	};
 	class Ronin_Belt_BLK_7: ItemCore
 	{
-		author="Task Force Leviathan";
+		author="Jup, Lip, Thunder";
 		scope=2;
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
 		displayname="[TFL] Ronin Belt BLK (MK11 A)";
-		picture="\ASEC_vests\Textures\anti_rat.paa";
+		picture="\ASEC_Vests1\Textures\anti_rat.paa";
 		model="ASEC_Belt\Models\Ronin_Belt_MK11.p3d";
 		hiddenSelections[]=
 		{
@@ -4061,23 +4061,23 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"asec_vests\textures\jpc_main_blk_CO.paa",
-			"asec_vests\textures\jpc_cummerbund_blk_CO.paa",
-			"asec_vests\textures\avs_b_blk_co.paa",
-			"asec_vests\textures\esstac2_blk_co.paa",
-			"asec_vests\textures\esstac_blk_co.paa",
-			"asec_vests\textures\esstac_blk_co.paa",
-			"asec_vests\textures\kangaroo2_blk_co.paa",
-			"asec_vests\textures\medpouch_blk_co.paa",
-			"asec_vests\textures\ronin_belt_blk.paa",
-			"ASEC_vests\Textures\holster_blk_co.paa",
-			"ASEC_vests\Textures\avs_b_blk_co.paa",
-			"ASEC_vests\Textures\blueforce_mag_blk.paa",
-			"ASEC_vests\Textures\dump_blk.paa",
-			"ASEC_vests\Textures\vsm_boxmag_blk.paa",
-			"ASEC_vests\Textures\pouches_blk.paa",
-			"ASEC_vests\Textures\tfa_pouch_blk.paa",
-			"ASEC_vests\Textures\blueforce_mag_blk.paa"
+			"ASEC_Vests1\textures\jpc_main_blk_CO.paa",
+			"ASEC_Vests1\textures\jpc_cummerbund_blk_CO.paa",
+			"ASEC_Vests1\textures\avs_b_blk_co.paa",
+			"ASEC_Vests1\textures\esstac2_blk_co.paa",
+			"ASEC_Vests1\textures\esstac_blk_co.paa",
+			"ASEC_Vests1\textures\esstac_blk_co.paa",
+			"ASEC_Vests1\textures\kangaroo2_blk_co.paa",
+			"ASEC_Vests1\textures\medpouch_blk_co.paa",
+			"ASEC_Vests1\textures\ronin_belt_blk.paa",
+			"ASEC_Vests1\Textures\holster_blk_co.paa",
+			"ASEC_Vests1\Textures\avs_b_blk_co.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_blk.paa",
+			"ASEC_Vests1\Textures\dump_blk.paa",
+			"ASEC_Vests1\Textures\vsm_boxmag_blk.paa",
+			"ASEC_Vests1\Textures\pouches_blk.paa",
+			"ASEC_Vests1\Textures\tfa_pouch_blk.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_blk.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -4104,23 +4104,23 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"asec_vests\textures\jpc_main_blk_CO.paa",
-				"asec_vests\textures\jpc_cummerbund_blk_CO.paa",
-				"asec_vests\textures\avs_b_blk_co.paa",
-				"asec_vests\textures\esstac2_blk_co.paa",
-				"asec_vests\textures\esstac_blk_co.paa",
-				"asec_vests\textures\esstac_blk_co.paa",
-				"asec_vests\textures\kangaroo2_blk_co.paa",
-				"asec_vests\textures\medpouch_blk_co.paa",
-				"asec_vests\textures\ronin_belt_blk.paa",
-				"ASEC_vests\Textures\holster_blk_co.paa",
-				"ASEC_vests\Textures\avs_b_blk_co.paa",
-				"ASEC_vests\Textures\blueforce_mag_blk.paa",
-				"ASEC_vests\Textures\dump_blk.paa",
-				"ASEC_vests\Textures\vsm_boxmag_blk.paa",
-				"ASEC_vests\Textures\pouches_blk.paa",
-				"ASEC_vests\Textures\tfa_pouch_blk.paa",
-				"ASEC_vests\Textures\blueforce_mag_blk.paa"
+				"ASEC_Vests1\textures\jpc_main_blk_CO.paa",
+				"ASEC_Vests1\textures\jpc_cummerbund_blk_CO.paa",
+				"ASEC_Vests1\textures\avs_b_blk_co.paa",
+				"ASEC_Vests1\textures\esstac2_blk_co.paa",
+				"ASEC_Vests1\textures\esstac_blk_co.paa",
+				"ASEC_Vests1\textures\esstac_blk_co.paa",
+				"ASEC_Vests1\textures\kangaroo2_blk_co.paa",
+				"ASEC_Vests1\textures\medpouch_blk_co.paa",
+				"ASEC_Vests1\textures\ronin_belt_blk.paa",
+				"ASEC_Vests1\Textures\holster_blk_co.paa",
+				"ASEC_Vests1\Textures\avs_b_blk_co.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_blk.paa",
+				"ASEC_Vests1\Textures\dump_blk.paa",
+				"ASEC_Vests1\Textures\vsm_boxmag_blk.paa",
+				"ASEC_Vests1\Textures\pouches_blk.paa",
+				"ASEC_Vests1\Textures\tfa_pouch_blk.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_blk.paa"
 			};
 			mass=80;
 			containerClass="Supply140";
@@ -4154,12 +4154,12 @@ class cfgWeapons
 	};
 	class Ronin_Belt_ALP_7: ItemCore
 	{
-		author="Task Force Leviathan";
+		author="Jup, Lip, Thunder";
 		scope=2;
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
 		displayname="[TFL] Ronin Belt ALP (MK11 A)";
-		picture="\ASEC_vests\Textures\anti_rat.paa";
+		picture="\ASEC_Vests1\Textures\anti_rat.paa";
 		model="ASEC_Belt\Models\Ronin_Belt_MK11.p3d";
 		hiddenSelections[]=
 		{
@@ -4183,23 +4183,23 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"asec_vests\textures\jpc_main_alp_CO.paa",
-			"asec_vests\textures\jpc_cummerbund_alp_CO.paa",
-			"asec_vests\textures\avs_b_alp_co.paa",
-			"asec_vests\textures\esstac2_alpine_co.paa",
-			"asec_vests\textures\esstac_alpine_co.paa",
-			"asec_vests\textures\esstac_alpine_co.paa",
-			"asec_vests\textures\kangaroo2_alp_co.paa",
-			"asec_vests\textures\medpouch_alp_co.paa",
-			"asec_vests\textures\ronin_belt_alpine.paa",
-			"ASEC_vests\Textures\holster_alpine_co.paa",
-			"ASEC_vests\Textures\avs_b_alp_co.paa",
-			"ASEC_vests\Textures\blueforce_mag_alpine.paa",
-			"ASEC_vests\Textures\dump_alpine.paa",
-			"ASEC_vests\Textures\vsm_boxmag_alpine.paa",
-			"ASEC_vests\Textures\pouches_alpine.paa",
-			"ASEC_vests\Textures\tfa_pouch_alpine.paa",
-			"ASEC_vests\Textures\blueforce_mag_alpine.paa"
+			"ASEC_Vests1\textures\jpc_main_alp_CO.paa",
+			"ASEC_Vests1\textures\jpc_cummerbund_alp_CO.paa",
+			"ASEC_Vests1\textures\avs_b_alp_co.paa",
+			"ASEC_Vests1\textures\esstac2_alpine_co.paa",
+			"ASEC_Vests1\textures\esstac_alpine_co.paa",
+			"ASEC_Vests1\textures\esstac_alpine_co.paa",
+			"ASEC_Vests1\textures\kangaroo2_alp_co.paa",
+			"ASEC_Vests1\textures\medpouch_alp_co.paa",
+			"ASEC_Vests1\textures\ronin_belt_alpine.paa",
+			"ASEC_Vests1\Textures\holster_alpine_co.paa",
+			"ASEC_Vests1\Textures\avs_b_alp_co.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_alpine.paa",
+			"ASEC_Vests1\Textures\dump_alpine.paa",
+			"ASEC_Vests1\Textures\vsm_boxmag_alpine.paa",
+			"ASEC_Vests1\Textures\pouches_alpine.paa",
+			"ASEC_Vests1\Textures\tfa_pouch_alpine.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_alpine.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -4226,23 +4226,23 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"asec_vests\textures\jpc_main_alp_CO.paa",
-				"asec_vests\textures\jpc_cummerbund_alp_CO.paa",
-				"asec_vests\textures\avs_b_alp_co.paa",
-				"asec_vests\textures\esstac2_alpine_co.paa",
-				"asec_vests\textures\esstac_alpine_co.paa",
-				"asec_vests\textures\esstac_alpine_co.paa",
-				"asec_vests\textures\kangaroo2_alp_co.paa",
-				"asec_vests\textures\medpouch_alp_co.paa",
-				"asec_vests\textures\ronin_belt_alpine.paa",
-				"ASEC_vests\Textures\holster_alpine_co.paa",
-				"ASEC_vests\Textures\avs_b_alp_co.paa",
-				"ASEC_vests\Textures\blueforce_mag_alpine.paa",
-				"ASEC_vests\Textures\dump_alpine.paa",
-				"ASEC_vests\Textures\vsm_boxmag_alpine.paa",
-				"ASEC_vests\Textures\pouches_alpine.paa",
-				"ASEC_vests\Textures\tfa_pouch_alpine.paa",
-				"ASEC_vests\Textures\blueforce_mag_alpine.paa"
+				"ASEC_Vests1\textures\jpc_main_alp_CO.paa",
+				"ASEC_Vests1\textures\jpc_cummerbund_alp_CO.paa",
+				"ASEC_Vests1\textures\avs_b_alp_co.paa",
+				"ASEC_Vests1\textures\esstac2_alpine_co.paa",
+				"ASEC_Vests1\textures\esstac_alpine_co.paa",
+				"ASEC_Vests1\textures\esstac_alpine_co.paa",
+				"ASEC_Vests1\textures\kangaroo2_alp_co.paa",
+				"ASEC_Vests1\textures\medpouch_alp_co.paa",
+				"ASEC_Vests1\textures\ronin_belt_alpine.paa",
+				"ASEC_Vests1\Textures\holster_alpine_co.paa",
+				"ASEC_Vests1\Textures\avs_b_alp_co.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_alpine.paa",
+				"ASEC_Vests1\Textures\dump_alpine.paa",
+				"ASEC_Vests1\Textures\vsm_boxmag_alpine.paa",
+				"ASEC_Vests1\Textures\pouches_alpine.paa",
+				"ASEC_Vests1\Textures\tfa_pouch_alpine.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_alpine.paa"
 			};
 			mass=80;
 			containerClass="Supply140";
@@ -4276,12 +4276,12 @@ class cfgWeapons
 	};
 	class Ronin_Belt_MC_8: ItemCore
 	{
-		author="Task Force Leviathan";
+		author="Jup, Lip, Thunder";
 		scope=2;
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
 		displayname="[TFL] Ronin Belt MC (MK11 B)";
-		picture="\ASEC_vests\Textures\anti_rat.paa";
+		picture="\ASEC_Vests1\Textures\anti_rat.paa";
 		model="ASEC_Belt\Models\Ronin_Belt_MK112.p3d";
 		hiddenSelections[]=
 		{
@@ -4305,23 +4305,23 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"asec_vests\textures\jpc_main_MC_CO.paa",
-			"asec_vests\textures\jpc_cummerbund_MC_CO.paa",
-			"asec_vests\textures\avs_b_mc_co.paa",
-			"asec_vests\textures\esstac2_mc_co.paa",
-			"asec_vests\textures\esstac_mc_co.paa",
-			"asec_vests\textures\esstac_mc_co.paa",
-			"asec_vests\textures\kangaroo2_mc_co.paa",
-			"asec_vests\textures\medpouch_mc_co.paa",
-			"asec_vests\textures\ronin_belt_mc.paa",
-			"ASEC_vests\Textures\holster_mc.paa",
-			"ASEC_vests\Textures\avs_b_mc_co.paa",
-			"ASEC_vests\Textures\blueforce_mag_mc.paa",
-			"ASEC_vests\Textures\dump_mc.paa",
-			"ASEC_vests\Textures\vsm_boxmag_mc.paa",
-			"ASEC_vests\Textures\pouches_mc.paa",
-			"ASEC_vests\Textures\tfa_pouch_mc.paa",
-			"ASEC_vests\Textures\blueforce_mag_mc.paa"
+			"ASEC_Vests1\textures\jpc_main_MC_CO.paa",
+			"ASEC_Vests1\textures\jpc_cummerbund_MC_CO.paa",
+			"ASEC_Vests1\textures\avs_b_mc_co.paa",
+			"ASEC_Vests1\textures\esstac2_mc_co.paa",
+			"ASEC_Vests1\textures\esstac_mc_co.paa",
+			"ASEC_Vests1\textures\esstac_mc_co.paa",
+			"ASEC_Vests1\textures\kangaroo2_mc_co.paa",
+			"ASEC_Vests1\textures\medpouch_mc_co.paa",
+			"ASEC_Vests1\textures\ronin_belt_mc.paa",
+			"ASEC_Vests1\Textures\holster_mc.paa",
+			"ASEC_Vests1\Textures\avs_b_mc_co.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_mc.paa",
+			"ASEC_Vests1\Textures\dump_mc.paa",
+			"ASEC_Vests1\Textures\vsm_boxmag_mc.paa",
+			"ASEC_Vests1\Textures\pouches_mc.paa",
+			"ASEC_Vests1\Textures\tfa_pouch_mc.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_mc.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -4348,23 +4348,23 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"asec_vests\textures\jpc_main_MC_CO.paa",
-				"asec_vests\textures\jpc_cummerbund_MC_CO.paa",
-				"asec_vests\textures\avs_b_mc_co.paa",
-				"asec_vests\textures\esstac2_mc_co.paa",
-				"asec_vests\textures\esstac_mc_co.paa",
-				"asec_vests\textures\esstac_mc_co.paa",
-				"asec_vests\textures\kangaroo2_mc_co.paa",
-				"asec_vests\textures\medpouch_mc_co.paa",
-				"asec_vests\textures\ronin_belt_mc.paa",
-				"ASEC_vests\Textures\holster_mc.paa",
-				"ASEC_vests\Textures\avs_b_mc_co.paa",
-				"ASEC_vests\Textures\blueforce_mag_mc.paa",
-				"ASEC_vests\Textures\dump_mc.paa",
-				"ASEC_vests\Textures\vsm_boxmag_mc.paa",
-				"ASEC_vests\Textures\pouches_mc.paa",
-				"ASEC_vests\Textures\tfa_pouch_mc.paa",
-				"ASEC_vests\Textures\blueforce_mag_mc.paa"
+				"ASEC_Vests1\textures\jpc_main_MC_CO.paa",
+				"ASEC_Vests1\textures\jpc_cummerbund_MC_CO.paa",
+				"ASEC_Vests1\textures\avs_b_mc_co.paa",
+				"ASEC_Vests1\textures\esstac2_mc_co.paa",
+				"ASEC_Vests1\textures\esstac_mc_co.paa",
+				"ASEC_Vests1\textures\esstac_mc_co.paa",
+				"ASEC_Vests1\textures\kangaroo2_mc_co.paa",
+				"ASEC_Vests1\textures\medpouch_mc_co.paa",
+				"ASEC_Vests1\textures\ronin_belt_mc.paa",
+				"ASEC_Vests1\Textures\holster_mc.paa",
+				"ASEC_Vests1\Textures\avs_b_mc_co.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_mc.paa",
+				"ASEC_Vests1\Textures\dump_mc.paa",
+				"ASEC_Vests1\Textures\vsm_boxmag_mc.paa",
+				"ASEC_Vests1\Textures\pouches_mc.paa",
+				"ASEC_Vests1\Textures\tfa_pouch_mc.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_mc.paa"
 			};
 			containerClass="Supply140";
 			mass=80;
@@ -4398,12 +4398,12 @@ class cfgWeapons
 	};
 	class Ronin_Belt_AOR1_8: ItemCore
 	{
-		author="Task Force Leviathan";
+		author="Jup, Lip, Thunder";
 		scope=2;
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
 		displayname="[TFL] Ronin Belt AOR1 (MK11 B)";
-		picture="\ASEC_vests\Textures\anti_rat.paa";
+		picture="\ASEC_Vests1\Textures\anti_rat.paa";
 		model="ASEC_Belt\Models\Ronin_Belt_MK112.p3d";
 		hiddenSelections[]=
 		{
@@ -4427,23 +4427,23 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"asec_vests\textures\jpc_main_AOR1_CO.paa",
-			"asec_vests\textures\jpc_cummerbund_aor1_CO.paa",
-			"asec_vests\textures\avs_b_aor1_co.paa",
-			"asec_vests\textures\esstac2_aor1_co.paa",
-			"asec_vests\textures\esstac_aor1_co.paa",
-			"asec_vests\textures\esstac_aor1_co.paa",
-			"asec_vests\textures\kangaroo2_aor1_co.paa",
-			"asec_vests\textures\medpouch_aor1_co.paa",
-			"asec_vests\textures\ronin_belt_aor1.paa",
-			"ASEC_vests\Textures\holster_tan_co.paa",
-			"ASEC_vests\Textures\avs_b_aor1_co.paa",
-			"ASEC_vests\Textures\blueforce_mag_aor1.paa",
-			"ASEC_vests\Textures\dump_aor1.paa",
-			"ASEC_vests\Textures\vsm_boxmag_aor1.paa",
-			"ASEC_vests\Textures\pouches_aor1.paa",
-			"ASEC_vests\Textures\tfa_pouch_aor1.paa",
-			"ASEC_vests\Textures\blueforce_mag_aor1.paa"
+			"ASEC_Vests1\textures\jpc_main_AOR1_CO.paa",
+			"ASEC_Vests1\textures\jpc_cummerbund_aor1_CO.paa",
+			"ASEC_Vests1\textures\avs_b_aor1_co.paa",
+			"ASEC_Vests1\textures\esstac2_aor1_co.paa",
+			"ASEC_Vests1\textures\esstac_aor1_co.paa",
+			"ASEC_Vests1\textures\esstac_aor1_co.paa",
+			"ASEC_Vests1\textures\kangaroo2_aor1_co.paa",
+			"ASEC_Vests1\textures\medpouch_aor1_co.paa",
+			"ASEC_Vests1\textures\ronin_belt_aor1.paa",
+			"ASEC_Vests1\Textures\holster_tan_co.paa",
+			"ASEC_Vests1\Textures\avs_b_aor1_co.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_aor1.paa",
+			"ASEC_Vests1\Textures\dump_aor1.paa",
+			"ASEC_Vests1\Textures\vsm_boxmag_aor1.paa",
+			"ASEC_Vests1\Textures\pouches_aor1.paa",
+			"ASEC_Vests1\Textures\tfa_pouch_aor1.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_aor1.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -4470,23 +4470,23 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"asec_vests\textures\jpc_main_AOR1_CO.paa",
-				"asec_vests\textures\jpc_cummerbund_aor1_CO.paa",
-				"asec_vests\textures\avs_b_aor1_co.paa",
-				"asec_vests\textures\esstac2_aor1_co.paa",
-				"asec_vests\textures\esstac_aor1_co.paa",
-				"asec_vests\textures\esstac_aor1_co.paa",
-				"asec_vests\textures\kangaroo2_aor1_co.paa",
-				"asec_vests\textures\medpouch_aor1_co.paa",
-				"asec_vests\textures\ronin_belt_aor1.paa",
-				"ASEC_vests\Textures\holster_tan_co.paa",
-				"ASEC_vests\Textures\avs_b_aor1_co.paa",
-				"ASEC_vests\Textures\blueforce_mag_aor1.paa",
-				"ASEC_vests\Textures\dump_aor1.paa",
-				"ASEC_vests\Textures\vsm_boxmag_aor1.paa",
-				"ASEC_vests\Textures\pouches_aor1.paa",
-				"ASEC_vests\Textures\tfa_pouch_aor1.paa",
-				"ASEC_vests\Textures\blueforce_mag_aor1.paa"
+				"ASEC_Vests1\textures\jpc_main_AOR1_CO.paa",
+				"ASEC_Vests1\textures\jpc_cummerbund_aor1_CO.paa",
+				"ASEC_Vests1\textures\avs_b_aor1_co.paa",
+				"ASEC_Vests1\textures\esstac2_aor1_co.paa",
+				"ASEC_Vests1\textures\esstac_aor1_co.paa",
+				"ASEC_Vests1\textures\esstac_aor1_co.paa",
+				"ASEC_Vests1\textures\kangaroo2_aor1_co.paa",
+				"ASEC_Vests1\textures\medpouch_aor1_co.paa",
+				"ASEC_Vests1\textures\ronin_belt_aor1.paa",
+				"ASEC_Vests1\Textures\holster_tan_co.paa",
+				"ASEC_Vests1\Textures\avs_b_aor1_co.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_aor1.paa",
+				"ASEC_Vests1\Textures\dump_aor1.paa",
+				"ASEC_Vests1\Textures\vsm_boxmag_aor1.paa",
+				"ASEC_Vests1\Textures\pouches_aor1.paa",
+				"ASEC_Vests1\Textures\tfa_pouch_aor1.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_aor1.paa"
 			};
 			containerClass="Supply140";
 			mass=80;
@@ -4520,12 +4520,12 @@ class cfgWeapons
 	};
 	class Ronin_Belt_AOR2_8: ItemCore
 	{
-		author="Task Force Leviathan";
+		author="Jup, Lip, Thunder";
 		scope=2;
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
 		displayname="[TFL] Ronin Belt AOR2 (MK11 B)";
-		picture="\ASEC_vests\Textures\anti_rat.paa";
+		picture="\ASEC_Vests1\Textures\anti_rat.paa";
 		model="ASEC_Belt\Models\Ronin_Belt_MK112.p3d";
 		hiddenSelections[]=
 		{
@@ -4549,23 +4549,23 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"asec_vests\textures\jpc_main_AOR2_CO.paa",
-			"asec_vests\textures\jpc_cummerbund_aor2_CO.paa",
-			"asec_vests\textures\avs_b_aor2_co.paa",
-			"asec_vests\textures\esstac2_aor2_co.paa",
-			"asec_vests\textures\esstac_aor2_co.paa",
-			"asec_vests\textures\esstac_aor2_co.paa",
-			"asec_vests\textures\kangaroo2_aor2_co.paa",
-			"asec_vests\textures\medpouch_aor2_co.paa",
-			"asec_vests\textures\ronin_belt_aor2.paa",
-			"ASEC_vests\Textures\holster_od_co.paa",
-			"ASEC_vests\Textures\avs_b_aor2_co.paa",
-			"ASEC_vests\Textures\blueforce_mag_aor2.paa",
-			"ASEC_vests\Textures\dump_aor2.paa",
-			"ASEC_vests\Textures\vsm_boxmag_aor2.paa",
-			"ASEC_vests\Textures\pouches_aor2.paa",
-			"ASEC_vests\Textures\tfa_pouch_aor2.paa",
-			"ASEC_vests\Textures\blueforce_mag_aor2.paa"
+			"ASEC_Vests1\textures\jpc_main_AOR2_CO.paa",
+			"ASEC_Vests1\textures\jpc_cummerbund_aor2_CO.paa",
+			"ASEC_Vests1\textures\avs_b_aor2_co.paa",
+			"ASEC_Vests1\textures\esstac2_aor2_co.paa",
+			"ASEC_Vests1\textures\esstac_aor2_co.paa",
+			"ASEC_Vests1\textures\esstac_aor2_co.paa",
+			"ASEC_Vests1\textures\kangaroo2_aor2_co.paa",
+			"ASEC_Vests1\textures\medpouch_aor2_co.paa",
+			"ASEC_Vests1\textures\ronin_belt_aor2.paa",
+			"ASEC_Vests1\Textures\holster_od_co.paa",
+			"ASEC_Vests1\Textures\avs_b_aor2_co.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_aor2.paa",
+			"ASEC_Vests1\Textures\dump_aor2.paa",
+			"ASEC_Vests1\Textures\vsm_boxmag_aor2.paa",
+			"ASEC_Vests1\Textures\pouches_aor2.paa",
+			"ASEC_Vests1\Textures\tfa_pouch_aor2.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_aor2.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -4592,23 +4592,23 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"asec_vests\textures\jpc_main_AOR2_CO.paa",
-				"asec_vests\textures\jpc_cummerbund_aor2_CO.paa",
-				"asec_vests\textures\avs_b_aor2_co.paa",
-				"asec_vests\textures\esstac2_aor2_co.paa",
-				"asec_vests\textures\esstac_aor2_co.paa",
-				"asec_vests\textures\esstac_aor2_co.paa",
-				"asec_vests\textures\kangaroo2_aor2_co.paa",
-				"asec_vests\textures\medpouch_aor2_co.paa",
-				"asec_vests\textures\ronin_belt_aor2.paa",
-				"ASEC_vests\Textures\holster_od_co.paa",
-				"ASEC_vests\Textures\avs_b_aor2_co.paa",
-				"ASEC_vests\Textures\blueforce_mag_aor2.paa",
-				"ASEC_vests\Textures\dump_aor2.paa",
-				"ASEC_vests\Textures\vsm_boxmag_aor2.paa",
-				"ASEC_vests\Textures\pouches_aor2.paa",
-				"ASEC_vests\Textures\tfa_pouch_aor2.paa",
-				"ASEC_vests\Textures\blueforce_mag_aor2.paa"
+				"ASEC_Vests1\textures\jpc_main_AOR2_CO.paa",
+				"ASEC_Vests1\textures\jpc_cummerbund_aor2_CO.paa",
+				"ASEC_Vests1\textures\avs_b_aor2_co.paa",
+				"ASEC_Vests1\textures\esstac2_aor2_co.paa",
+				"ASEC_Vests1\textures\esstac_aor2_co.paa",
+				"ASEC_Vests1\textures\esstac_aor2_co.paa",
+				"ASEC_Vests1\textures\kangaroo2_aor2_co.paa",
+				"ASEC_Vests1\textures\medpouch_aor2_co.paa",
+				"ASEC_Vests1\textures\ronin_belt_aor2.paa",
+				"ASEC_Vests1\Textures\holster_od_co.paa",
+				"ASEC_Vests1\Textures\avs_b_aor2_co.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_aor2.paa",
+				"ASEC_Vests1\Textures\dump_aor2.paa",
+				"ASEC_Vests1\Textures\vsm_boxmag_aor2.paa",
+				"ASEC_Vests1\Textures\pouches_aor2.paa",
+				"ASEC_Vests1\Textures\tfa_pouch_aor2.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_aor2.paa"
 			};
 			containerClass="Supply140";
 			mass=80;
@@ -4642,12 +4642,12 @@ class cfgWeapons
 	};
 	class Ronin_Belt_CB_8: ItemCore
 	{
-		author="Task Force Leviathan";
+		author="Jup, Lip, Thunder";
 		scope=2;
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
 		displayname="[TFL] Ronin Belt CB (MK11 B)";
-		picture="\ASEC_vests\Textures\anti_rat.paa";
+		picture="\ASEC_Vests1\Textures\anti_rat.paa";
 		model="ASEC_Belt\Models\Ronin_Belt_MK112.p3d";
 		hiddenSelections[]=
 		{
@@ -4671,23 +4671,23 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"asec_vests\textures\jpc_main_cb_CO.paa",
-			"asec_vests\textures\jpc_cummerbund_cb_CO.paa",
-			"asec_vests\textures\avs_b_cb_co.paa",
-			"asec_vests\textures\esstac2_cb_co.paa",
-			"asec_vests\textures\esstac_cb_co.paa",
-			"asec_vests\textures\esstac_cb_co.paa",
-			"asec_vests\textures\kangaroo2_cb_co.paa",
-			"asec_vests\textures\medpouch_cb_co.paa",
-			"asec_vests\textures\ronin_belt_cb.paa",
-			"ASEC_vests\Textures\holster_tan_co.paa",
-			"ASEC_vests\Textures\avs_b_cb_co.paa",
-			"ASEC_vests\Textures\blueforce_mag_cb.paa",
-			"ASEC_vests\Textures\dump_cb.paa",
-			"ASEC_vests\Textures\vsm_boxmag_cb.paa",
-			"ASEC_vests\Textures\pouches_cb.paa",
-			"ASEC_vests\Textures\tfa_pouch_cb.paa",
-			"ASEC_vests\Textures\blueforce_mag_cb.paa"
+			"ASEC_Vests1\textures\jpc_main_cb_CO.paa",
+			"ASEC_Vests1\textures\jpc_cummerbund_cb_CO.paa",
+			"ASEC_Vests1\textures\avs_b_cb_co.paa",
+			"ASEC_Vests1\textures\esstac2_cb_co.paa",
+			"ASEC_Vests1\textures\esstac_cb_co.paa",
+			"ASEC_Vests1\textures\esstac_cb_co.paa",
+			"ASEC_Vests1\textures\kangaroo2_cb_co.paa",
+			"ASEC_Vests1\textures\medpouch_cb_co.paa",
+			"ASEC_Vests1\textures\ronin_belt_cb.paa",
+			"ASEC_Vests1\Textures\holster_tan_co.paa",
+			"ASEC_Vests1\Textures\avs_b_cb_co.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_cb.paa",
+			"ASEC_Vests1\Textures\dump_cb.paa",
+			"ASEC_Vests1\Textures\vsm_boxmag_cb.paa",
+			"ASEC_Vests1\Textures\pouches_cb.paa",
+			"ASEC_Vests1\Textures\tfa_pouch_cb.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_cb.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -4714,23 +4714,23 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"asec_vests\textures\jpc_main_cb_CO.paa",
-				"asec_vests\textures\jpc_cummerbund_cb_CO.paa",
-				"asec_vests\textures\avs_b_cb_co.paa",
-				"asec_vests\textures\esstac2_cb_co.paa",
-				"asec_vests\textures\esstac_cb_co.paa",
-				"asec_vests\textures\esstac_cb_co.paa",
-				"asec_vests\textures\kangaroo2_cb_co.paa",
-				"asec_vests\textures\medpouch_cb_co.paa",
-				"asec_vests\textures\ronin_belt_cb.paa",
-				"ASEC_vests\Textures\holster_tan_co.paa",
-				"ASEC_vests\Textures\avs_b_cb_co.paa",
-				"ASEC_vests\Textures\blueforce_mag_cb.paa",
-				"ASEC_vests\Textures\dump_cb.paa",
-				"ASEC_vests\Textures\vsm_boxmag_cb.paa",
-				"ASEC_vests\Textures\pouches_cb.paa",
-				"ASEC_vests\Textures\tfa_pouch_cb.paa",
-				"ASEC_vests\Textures\blueforce_mag_cb.paa"
+				"ASEC_Vests1\textures\jpc_main_cb_CO.paa",
+				"ASEC_Vests1\textures\jpc_cummerbund_cb_CO.paa",
+				"ASEC_Vests1\textures\avs_b_cb_co.paa",
+				"ASEC_Vests1\textures\esstac2_cb_co.paa",
+				"ASEC_Vests1\textures\esstac_cb_co.paa",
+				"ASEC_Vests1\textures\esstac_cb_co.paa",
+				"ASEC_Vests1\textures\kangaroo2_cb_co.paa",
+				"ASEC_Vests1\textures\medpouch_cb_co.paa",
+				"ASEC_Vests1\textures\ronin_belt_cb.paa",
+				"ASEC_Vests1\Textures\holster_tan_co.paa",
+				"ASEC_Vests1\Textures\avs_b_cb_co.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_cb.paa",
+				"ASEC_Vests1\Textures\dump_cb.paa",
+				"ASEC_Vests1\Textures\vsm_boxmag_cb.paa",
+				"ASEC_Vests1\Textures\pouches_cb.paa",
+				"ASEC_Vests1\Textures\tfa_pouch_cb.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_cb.paa"
 			};
 			containerClass="Supply140";
 			mass=80;
@@ -4764,12 +4764,12 @@ class cfgWeapons
 	};
 	class Ronin_Belt_RG_8: ItemCore
 	{
-		author="Task Force Leviathan";
+		author="Jup, Lip, Thunder";
 		scope=2;
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
 		displayname="[TFL] Ronin Belt RG (MK11 B)";
-		picture="\ASEC_vests\Textures\anti_rat.paa";
+		picture="\ASEC_Vests1\Textures\anti_rat.paa";
 		model="ASEC_Belt\Models\Ronin_Belt_MK112.p3d";
 		hiddenSelections[]=
 		{
@@ -4793,23 +4793,23 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"asec_vests\textures\jpc_main_rg_CO.paa",
-			"asec_vests\textures\jpc_cummerbund_rg_CO.paa",
-			"asec_vests\textures\avs_b_rg_co.paa",
-			"asec_vests\textures\esstac2_rg_co.paa",
-			"asec_vests\textures\esstac_rg_co.paa",
-			"asec_vests\textures\esstac_rg_co.paa",
-			"asec_vests\textures\kangaroo2_rg_co.paa",
-			"asec_vests\textures\medpouch_rg_co.paa",
-			"asec_vests\textures\ronin_belt_rg.paa",
-			"ASEC_vests\Textures\holster_od_co.paa",
-			"ASEC_vests\Textures\avs_b_rg_co.paa",
-			"ASEC_vests\Textures\blueforce_mag_rg.paa",
-			"ASEC_vests\Textures\dump_od.paa",
-			"ASEC_vests\Textures\vsm_boxmag_rg.paa",
-			"ASEC_vests\Textures\pouches_rg.paa",
-			"ASEC_vests\Textures\tfa_pouch_rg.paa",
-			"ASEC_vests\Textures\blueforce_mag_rg.paa"
+			"ASEC_Vests1\textures\jpc_main_rg_CO.paa",
+			"ASEC_Vests1\textures\jpc_cummerbund_rg_CO.paa",
+			"ASEC_Vests1\textures\avs_b_rg_co.paa",
+			"ASEC_Vests1\textures\esstac2_rg_co.paa",
+			"ASEC_Vests1\textures\esstac_rg_co.paa",
+			"ASEC_Vests1\textures\esstac_rg_co.paa",
+			"ASEC_Vests1\textures\kangaroo2_rg_co.paa",
+			"ASEC_Vests1\textures\medpouch_rg_co.paa",
+			"ASEC_Vests1\textures\ronin_belt_rg.paa",
+			"ASEC_Vests1\Textures\holster_od_co.paa",
+			"ASEC_Vests1\Textures\avs_b_rg_co.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_rg.paa",
+			"ASEC_Vests1\Textures\dump_od.paa",
+			"ASEC_Vests1\Textures\vsm_boxmag_rg.paa",
+			"ASEC_Vests1\Textures\pouches_rg.paa",
+			"ASEC_Vests1\Textures\tfa_pouch_rg.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_rg.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -4836,23 +4836,23 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"asec_vests\textures\jpc_main_rg_CO.paa",
-				"asec_vests\textures\jpc_cummerbund_rg_CO.paa",
-				"asec_vests\textures\avs_b_rg_co.paa",
-				"asec_vests\textures\esstac2_rg_co.paa",
-				"asec_vests\textures\esstac_rg_co.paa",
-				"asec_vests\textures\esstac_rg_co.paa",
-				"asec_vests\textures\kangaroo2_rg_co.paa",
-				"asec_vests\textures\medpouch_rg_co.paa",
-				"asec_vests\textures\ronin_belt_rg.paa",
-				"ASEC_vests\Textures\holster_od_co.paa",
-				"ASEC_vests\Textures\avs_b_rg_co.paa",
-				"ASEC_vests\Textures\blueforce_mag_rg.paa",
-				"ASEC_vests\Textures\dump_od.paa",
-				"ASEC_vests\Textures\vsm_boxmag_rg.paa",
-				"ASEC_vests\Textures\pouches_rg.paa",
-				"ASEC_vests\Textures\tfa_pouch_rg.paa",
-				"ASEC_vests\Textures\blueforce_mag_rg.paa"
+				"ASEC_Vests1\textures\jpc_main_rg_CO.paa",
+				"ASEC_Vests1\textures\jpc_cummerbund_rg_CO.paa",
+				"ASEC_Vests1\textures\avs_b_rg_co.paa",
+				"ASEC_Vests1\textures\esstac2_rg_co.paa",
+				"ASEC_Vests1\textures\esstac_rg_co.paa",
+				"ASEC_Vests1\textures\esstac_rg_co.paa",
+				"ASEC_Vests1\textures\kangaroo2_rg_co.paa",
+				"ASEC_Vests1\textures\medpouch_rg_co.paa",
+				"ASEC_Vests1\textures\ronin_belt_rg.paa",
+				"ASEC_Vests1\Textures\holster_od_co.paa",
+				"ASEC_Vests1\Textures\avs_b_rg_co.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_rg.paa",
+				"ASEC_Vests1\Textures\dump_od.paa",
+				"ASEC_Vests1\Textures\vsm_boxmag_rg.paa",
+				"ASEC_Vests1\Textures\pouches_rg.paa",
+				"ASEC_Vests1\Textures\tfa_pouch_rg.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_rg.paa"
 			};
 			mass=80;
 			containerClass="Supply140";
@@ -4886,12 +4886,12 @@ class cfgWeapons
 	};
 	class Ronin_Belt_BLK_8: ItemCore
 	{
-		author="Task Force Leviathan";
+		author="Jup, Lip, Thunder";
 		scope=2;
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
 		displayname="[TFL] Ronin Belt BLK (MK11 B)";
-		picture="\ASEC_vests\Textures\anti_rat.paa";
+		picture="\ASEC_Vests1\Textures\anti_rat.paa";
 		model="ASEC_Belt\Models\Ronin_Belt_MK112.p3d";
 		hiddenSelections[]=
 		{
@@ -4915,23 +4915,23 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"asec_vests\textures\jpc_main_blk_CO.paa",
-			"asec_vests\textures\jpc_cummerbund_blk_CO.paa",
-			"asec_vests\textures\avs_b_blk_co.paa",
-			"asec_vests\textures\esstac2_blk_co.paa",
-			"asec_vests\textures\esstac_blk_co.paa",
-			"asec_vests\textures\esstac_blk_co.paa",
-			"asec_vests\textures\kangaroo2_blk_co.paa",
-			"asec_vests\textures\medpouch_blk_co.paa",
-			"asec_vests\textures\ronin_belt_blk.paa",
-			"ASEC_vests\Textures\holster_blk_co.paa",
-			"ASEC_vests\Textures\avs_b_blk_co.paa",
-			"ASEC_vests\Textures\blueforce_mag_blk.paa",
-			"ASEC_vests\Textures\dump_blk.paa",
-			"ASEC_vests\Textures\vsm_boxmag_blk.paa",
-			"ASEC_vests\Textures\pouches_blk.paa",
-			"ASEC_vests\Textures\tfa_pouch_blk.paa",
-			"ASEC_vests\Textures\blueforce_mag_blk.paa"
+			"ASEC_Vests1\textures\jpc_main_blk_CO.paa",
+			"ASEC_Vests1\textures\jpc_cummerbund_blk_CO.paa",
+			"ASEC_Vests1\textures\avs_b_blk_co.paa",
+			"ASEC_Vests1\textures\esstac2_blk_co.paa",
+			"ASEC_Vests1\textures\esstac_blk_co.paa",
+			"ASEC_Vests1\textures\esstac_blk_co.paa",
+			"ASEC_Vests1\textures\kangaroo2_blk_co.paa",
+			"ASEC_Vests1\textures\medpouch_blk_co.paa",
+			"ASEC_Vests1\textures\ronin_belt_blk.paa",
+			"ASEC_Vests1\Textures\holster_blk_co.paa",
+			"ASEC_Vests1\Textures\avs_b_blk_co.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_blk.paa",
+			"ASEC_Vests1\Textures\dump_blk.paa",
+			"ASEC_Vests1\Textures\vsm_boxmag_blk.paa",
+			"ASEC_Vests1\Textures\pouches_blk.paa",
+			"ASEC_Vests1\Textures\tfa_pouch_blk.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_blk.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -4958,23 +4958,23 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"asec_vests\textures\jpc_main_blk_CO.paa",
-				"asec_vests\textures\jpc_cummerbund_blk_CO.paa",
-				"asec_vests\textures\avs_b_blk_co.paa",
-				"asec_vests\textures\esstac2_blk_co.paa",
-				"asec_vests\textures\esstac_blk_co.paa",
-				"asec_vests\textures\esstac_blk_co.paa",
-				"asec_vests\textures\kangaroo2_blk_co.paa",
-				"asec_vests\textures\medpouch_blk_co.paa",
-				"asec_vests\textures\ronin_belt_blk.paa",
-				"ASEC_vests\Textures\holster_blk_co.paa",
-				"ASEC_vests\Textures\avs_b_blk_co.paa",
-				"ASEC_vests\Textures\blueforce_mag_blk.paa",
-				"ASEC_vests\Textures\dump_blk.paa",
-				"ASEC_vests\Textures\vsm_boxmag_blk.paa",
-				"ASEC_vests\Textures\pouches_blk.paa",
-				"ASEC_vests\Textures\tfa_pouch_blk.paa",
-				"ASEC_vests\Textures\blueforce_mag_blk.paa"
+				"ASEC_Vests1\textures\jpc_main_blk_CO.paa",
+				"ASEC_Vests1\textures\jpc_cummerbund_blk_CO.paa",
+				"ASEC_Vests1\textures\avs_b_blk_co.paa",
+				"ASEC_Vests1\textures\esstac2_blk_co.paa",
+				"ASEC_Vests1\textures\esstac_blk_co.paa",
+				"ASEC_Vests1\textures\esstac_blk_co.paa",
+				"ASEC_Vests1\textures\kangaroo2_blk_co.paa",
+				"ASEC_Vests1\textures\medpouch_blk_co.paa",
+				"ASEC_Vests1\textures\ronin_belt_blk.paa",
+				"ASEC_Vests1\Textures\holster_blk_co.paa",
+				"ASEC_Vests1\Textures\avs_b_blk_co.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_blk.paa",
+				"ASEC_Vests1\Textures\dump_blk.paa",
+				"ASEC_Vests1\Textures\vsm_boxmag_blk.paa",
+				"ASEC_Vests1\Textures\pouches_blk.paa",
+				"ASEC_Vests1\Textures\tfa_pouch_blk.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_blk.paa"
 			};
 			mass=80;
 			containerClass="Supply140";
@@ -5008,12 +5008,12 @@ class cfgWeapons
 	};
 	class Ronin_Belt_ALP_8: ItemCore
 	{
-		author="Task Force Leviathan";
+		author="Jup, Lip, Thunder";
 		scope=2;
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
 		displayname="[TFL] Ronin Belt ALP (MK11 B)";
-		picture="\ASEC_vests\Textures\anti_rat.paa";
+		picture="\ASEC_Vests1\Textures\anti_rat.paa";
 		model="ASEC_Belt\Models\Ronin_Belt_MK112.p3d";
 		hiddenSelections[]=
 		{
@@ -5037,23 +5037,23 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"asec_vests\textures\jpc_main_alp_CO.paa",
-			"asec_vests\textures\jpc_cummerbund_alp_CO.paa",
-			"asec_vests\textures\avs_b_alp_co.paa",
-			"asec_vests\textures\esstac2_alpine_co.paa",
-			"asec_vests\textures\esstac_alpine_co.paa",
-			"asec_vests\textures\esstac_alpine_co.paa",
-			"asec_vests\textures\kangaroo2_alp_co.paa",
-			"asec_vests\textures\medpouch_alp_co.paa",
-			"asec_vests\textures\ronin_belt_alpine.paa",
-			"ASEC_vests\Textures\holster_alpine_co.paa",
-			"ASEC_vests\Textures\avs_b_alp_co.paa",
-			"ASEC_vests\Textures\blueforce_mag_alpine.paa",
-			"ASEC_vests\Textures\dump_alpine.paa",
-			"ASEC_vests\Textures\vsm_boxmag_alpine.paa",
-			"ASEC_vests\Textures\pouches_alpine.paa",
-			"ASEC_vests\Textures\tfa_pouch_alpine.paa",
-			"ASEC_vests\Textures\blueforce_mag_alpine.paa"
+			"ASEC_Vests1\textures\jpc_main_alp_CO.paa",
+			"ASEC_Vests1\textures\jpc_cummerbund_alp_CO.paa",
+			"ASEC_Vests1\textures\avs_b_alp_co.paa",
+			"ASEC_Vests1\textures\esstac2_alpine_co.paa",
+			"ASEC_Vests1\textures\esstac_alpine_co.paa",
+			"ASEC_Vests1\textures\esstac_alpine_co.paa",
+			"ASEC_Vests1\textures\kangaroo2_alp_co.paa",
+			"ASEC_Vests1\textures\medpouch_alp_co.paa",
+			"ASEC_Vests1\textures\ronin_belt_alpine.paa",
+			"ASEC_Vests1\Textures\holster_alpine_co.paa",
+			"ASEC_Vests1\Textures\avs_b_alp_co.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_alpine.paa",
+			"ASEC_Vests1\Textures\dump_alpine.paa",
+			"ASEC_Vests1\Textures\vsm_boxmag_alpine.paa",
+			"ASEC_Vests1\Textures\pouches_alpine.paa",
+			"ASEC_Vests1\Textures\tfa_pouch_alpine.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_alpine.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -5080,23 +5080,23 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"asec_vests\textures\jpc_main_alp_CO.paa",
-				"asec_vests\textures\jpc_cummerbund_alp_CO.paa",
-				"asec_vests\textures\avs_b_alp_co.paa",
-				"asec_vests\textures\esstac2_alpine_co.paa",
-				"asec_vests\textures\esstac_alpine_co.paa",
-				"asec_vests\textures\esstac_alpine_co.paa",
-				"asec_vests\textures\kangaroo2_alp_co.paa",
-				"asec_vests\textures\medpouch_alp_co.paa",
-				"asec_vests\textures\ronin_belt_alpine.paa",
-				"ASEC_vests\Textures\holster_alpine_co.paa",
-				"ASEC_vests\Textures\avs_b_alp_co.paa",
-				"ASEC_vests\Textures\blueforce_mag_alpine.paa",
-				"ASEC_vests\Textures\dump_alpine.paa",
-				"ASEC_vests\Textures\vsm_boxmag_alpine.paa",
-				"ASEC_vests\Textures\pouches_alpine.paa",
-				"ASEC_vests\Textures\tfa_pouch_alpine.paa",
-				"ASEC_vests\Textures\blueforce_mag_alpine.paa"
+				"ASEC_Vests1\textures\jpc_main_alp_CO.paa",
+				"ASEC_Vests1\textures\jpc_cummerbund_alp_CO.paa",
+				"ASEC_Vests1\textures\avs_b_alp_co.paa",
+				"ASEC_Vests1\textures\esstac2_alpine_co.paa",
+				"ASEC_Vests1\textures\esstac_alpine_co.paa",
+				"ASEC_Vests1\textures\esstac_alpine_co.paa",
+				"ASEC_Vests1\textures\kangaroo2_alp_co.paa",
+				"ASEC_Vests1\textures\medpouch_alp_co.paa",
+				"ASEC_Vests1\textures\ronin_belt_alpine.paa",
+				"ASEC_Vests1\Textures\holster_alpine_co.paa",
+				"ASEC_Vests1\Textures\avs_b_alp_co.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_alpine.paa",
+				"ASEC_Vests1\Textures\dump_alpine.paa",
+				"ASEC_Vests1\Textures\vsm_boxmag_alpine.paa",
+				"ASEC_Vests1\Textures\pouches_alpine.paa",
+				"ASEC_Vests1\Textures\tfa_pouch_alpine.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_alpine.paa"
 			};
 			mass=80;
 			containerClass="Supply140";
@@ -5130,12 +5130,12 @@ class cfgWeapons
 	};
 	class Ronin_Belt_MC_9: ItemCore
 	{
-		author="Task Force Leviathan";
+		author="Jup, Lip, Thunder";
 		scope=2;
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
 		displayname="[TFL] Ronin Belt MC (Scar A)";
-		picture="\ASEC_vests\Textures\anti_rat.paa";
+		picture="\ASEC_Vests1\Textures\anti_rat.paa";
 		model="ASEC_Belt\Models\Ronin_Belt_Scar.p3d";
 		hiddenSelections[]=
 		{
@@ -5159,23 +5159,23 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"asec_vests\textures\jpc_main_MC_CO.paa",
-			"asec_vests\textures\jpc_cummerbund_MC_CO.paa",
-			"asec_vests\textures\avs_b_mc_co.paa",
-			"asec_vests\textures\esstac2_mc_co.paa",
-			"asec_vests\textures\esstac_mc_co.paa",
-			"asec_vests\textures\esstac_mc_co.paa",
-			"asec_vests\textures\kangaroo2_mc_co.paa",
-			"asec_vests\textures\medpouch_mc_co.paa",
-			"asec_vests\textures\ronin_belt_mc.paa",
-			"ASEC_vests\Textures\holster_mc.paa",
-			"ASEC_vests\Textures\avs_b_mc_co.paa",
-			"ASEC_vests\Textures\blueforce_mag_mc.paa",
-			"ASEC_vests\Textures\dump_mc.paa",
-			"ASEC_vests\Textures\vsm_boxmag_mc.paa",
-			"ASEC_vests\Textures\pouches_mc.paa",
-			"ASEC_vests\Textures\tfa_pouch_mc.paa",
-			"ASEC_vests\Textures\blueforce_mag_mc.paa"
+			"ASEC_Vests1\textures\jpc_main_MC_CO.paa",
+			"ASEC_Vests1\textures\jpc_cummerbund_MC_CO.paa",
+			"ASEC_Vests1\textures\avs_b_mc_co.paa",
+			"ASEC_Vests1\textures\esstac2_mc_co.paa",
+			"ASEC_Vests1\textures\esstac_mc_co.paa",
+			"ASEC_Vests1\textures\esstac_mc_co.paa",
+			"ASEC_Vests1\textures\kangaroo2_mc_co.paa",
+			"ASEC_Vests1\textures\medpouch_mc_co.paa",
+			"ASEC_Vests1\textures\ronin_belt_mc.paa",
+			"ASEC_Vests1\Textures\holster_mc.paa",
+			"ASEC_Vests1\Textures\avs_b_mc_co.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_mc.paa",
+			"ASEC_Vests1\Textures\dump_mc.paa",
+			"ASEC_Vests1\Textures\vsm_boxmag_mc.paa",
+			"ASEC_Vests1\Textures\pouches_mc.paa",
+			"ASEC_Vests1\Textures\tfa_pouch_mc.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_mc.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -5202,23 +5202,23 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"asec_vests\textures\jpc_main_MC_CO.paa",
-				"asec_vests\textures\jpc_cummerbund_MC_CO.paa",
-				"asec_vests\textures\avs_b_mc_co.paa",
-				"asec_vests\textures\esstac2_mc_co.paa",
-				"asec_vests\textures\esstac_mc_co.paa",
-				"asec_vests\textures\esstac_mc_co.paa",
-				"asec_vests\textures\kangaroo2_mc_co.paa",
-				"asec_vests\textures\medpouch_mc_co.paa",
-				"asec_vests\textures\ronin_belt_mc.paa",
-				"ASEC_vests\Textures\holster_mc.paa",
-				"ASEC_vests\Textures\avs_b_mc_co.paa",
-				"ASEC_vests\Textures\blueforce_mag_mc.paa",
-				"ASEC_vests\Textures\dump_mc.paa",
-				"ASEC_vests\Textures\vsm_boxmag_mc.paa",
-				"ASEC_vests\Textures\pouches_mc.paa",
-				"ASEC_vests\Textures\tfa_pouch_mc.paa",
-				"ASEC_vests\Textures\blueforce_mag_mc.paa"
+				"ASEC_Vests1\textures\jpc_main_MC_CO.paa",
+				"ASEC_Vests1\textures\jpc_cummerbund_MC_CO.paa",
+				"ASEC_Vests1\textures\avs_b_mc_co.paa",
+				"ASEC_Vests1\textures\esstac2_mc_co.paa",
+				"ASEC_Vests1\textures\esstac_mc_co.paa",
+				"ASEC_Vests1\textures\esstac_mc_co.paa",
+				"ASEC_Vests1\textures\kangaroo2_mc_co.paa",
+				"ASEC_Vests1\textures\medpouch_mc_co.paa",
+				"ASEC_Vests1\textures\ronin_belt_mc.paa",
+				"ASEC_Vests1\Textures\holster_mc.paa",
+				"ASEC_Vests1\Textures\avs_b_mc_co.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_mc.paa",
+				"ASEC_Vests1\Textures\dump_mc.paa",
+				"ASEC_Vests1\Textures\vsm_boxmag_mc.paa",
+				"ASEC_Vests1\Textures\pouches_mc.paa",
+				"ASEC_Vests1\Textures\tfa_pouch_mc.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_mc.paa"
 			};
 			containerClass="Supply140";
 			mass=80;
@@ -5252,12 +5252,12 @@ class cfgWeapons
 	};
 	class Ronin_Belt_AOR1_9: ItemCore
 	{
-		author="Task Force Leviathan";
+		author="Jup, Lip, Thunder";
 		scope=2;
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
 		displayname="[TFL] Ronin Belt AOR1 (Scar A)";
-		picture="\ASEC_vests\Textures\anti_rat.paa";
+		picture="\ASEC_Vests1\Textures\anti_rat.paa";
 		model="ASEC_Belt\Models\Ronin_Belt_Scar.p3d";
 		hiddenSelections[]=
 		{
@@ -5281,23 +5281,23 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"asec_vests\textures\jpc_main_AOR1_CO.paa",
-			"asec_vests\textures\jpc_cummerbund_aor1_CO.paa",
-			"asec_vests\textures\avs_b_aor1_co.paa",
-			"asec_vests\textures\esstac2_aor1_co.paa",
-			"asec_vests\textures\esstac_aor1_co.paa",
-			"asec_vests\textures\esstac_aor1_co.paa",
-			"asec_vests\textures\kangaroo2_aor1_co.paa",
-			"asec_vests\textures\medpouch_aor1_co.paa",
-			"asec_vests\textures\ronin_belt_aor1.paa",
-			"ASEC_vests\Textures\holster_tan_co.paa",
-			"ASEC_vests\Textures\avs_b_aor1_co.paa",
-			"ASEC_vests\Textures\blueforce_mag_aor1.paa",
-			"ASEC_vests\Textures\dump_aor1.paa",
-			"ASEC_vests\Textures\vsm_boxmag_aor1.paa",
-			"ASEC_vests\Textures\pouches_aor1.paa",
-			"ASEC_vests\Textures\tfa_pouch_aor1.paa",
-			"ASEC_vests\Textures\blueforce_mag_aor1.paa"
+			"ASEC_Vests1\textures\jpc_main_AOR1_CO.paa",
+			"ASEC_Vests1\textures\jpc_cummerbund_aor1_CO.paa",
+			"ASEC_Vests1\textures\avs_b_aor1_co.paa",
+			"ASEC_Vests1\textures\esstac2_aor1_co.paa",
+			"ASEC_Vests1\textures\esstac_aor1_co.paa",
+			"ASEC_Vests1\textures\esstac_aor1_co.paa",
+			"ASEC_Vests1\textures\kangaroo2_aor1_co.paa",
+			"ASEC_Vests1\textures\medpouch_aor1_co.paa",
+			"ASEC_Vests1\textures\ronin_belt_aor1.paa",
+			"ASEC_Vests1\Textures\holster_tan_co.paa",
+			"ASEC_Vests1\Textures\avs_b_aor1_co.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_aor1.paa",
+			"ASEC_Vests1\Textures\dump_aor1.paa",
+			"ASEC_Vests1\Textures\vsm_boxmag_aor1.paa",
+			"ASEC_Vests1\Textures\pouches_aor1.paa",
+			"ASEC_Vests1\Textures\tfa_pouch_aor1.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_aor1.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -5324,23 +5324,23 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"asec_vests\textures\jpc_main_AOR1_CO.paa",
-				"asec_vests\textures\jpc_cummerbund_aor1_CO.paa",
-				"asec_vests\textures\avs_b_aor1_co.paa",
-				"asec_vests\textures\esstac2_aor1_co.paa",
-				"asec_vests\textures\esstac_aor1_co.paa",
-				"asec_vests\textures\esstac_aor1_co.paa",
-				"asec_vests\textures\kangaroo2_aor1_co.paa",
-				"asec_vests\textures\medpouch_aor1_co.paa",
-				"asec_vests\textures\ronin_belt_aor1.paa",
-				"ASEC_vests\Textures\holster_tan_co.paa",
-				"ASEC_vests\Textures\avs_b_aor1_co.paa",
-				"ASEC_vests\Textures\blueforce_mag_aor1.paa",
-				"ASEC_vests\Textures\dump_aor1.paa",
-				"ASEC_vests\Textures\vsm_boxmag_aor1.paa",
-				"ASEC_vests\Textures\pouches_aor1.paa",
-				"ASEC_vests\Textures\tfa_pouch_aor1.paa",
-				"ASEC_vests\Textures\blueforce_mag_aor1.paa"
+				"ASEC_Vests1\textures\jpc_main_AOR1_CO.paa",
+				"ASEC_Vests1\textures\jpc_cummerbund_aor1_CO.paa",
+				"ASEC_Vests1\textures\avs_b_aor1_co.paa",
+				"ASEC_Vests1\textures\esstac2_aor1_co.paa",
+				"ASEC_Vests1\textures\esstac_aor1_co.paa",
+				"ASEC_Vests1\textures\esstac_aor1_co.paa",
+				"ASEC_Vests1\textures\kangaroo2_aor1_co.paa",
+				"ASEC_Vests1\textures\medpouch_aor1_co.paa",
+				"ASEC_Vests1\textures\ronin_belt_aor1.paa",
+				"ASEC_Vests1\Textures\holster_tan_co.paa",
+				"ASEC_Vests1\Textures\avs_b_aor1_co.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_aor1.paa",
+				"ASEC_Vests1\Textures\dump_aor1.paa",
+				"ASEC_Vests1\Textures\vsm_boxmag_aor1.paa",
+				"ASEC_Vests1\Textures\pouches_aor1.paa",
+				"ASEC_Vests1\Textures\tfa_pouch_aor1.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_aor1.paa"
 			};
 			containerClass="Supply140";
 			mass=80;
@@ -5374,12 +5374,12 @@ class cfgWeapons
 	};
 	class Ronin_Belt_AOR2_9: ItemCore
 	{
-		author="Task Force Leviathan";
+		author="Jup, Lip, Thunder";
 		scope=2;
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
 		displayname="[TFL] Ronin Belt AOR2 (Scar A)";
-		picture="\ASEC_vests\Textures\anti_rat.paa";
+		picture="\ASEC_Vests1\Textures\anti_rat.paa";
 		model="ASEC_Belt\Models\Ronin_Belt_Scar.p3d";
 		hiddenSelections[]=
 		{
@@ -5403,23 +5403,23 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"asec_vests\textures\jpc_main_AOR2_CO.paa",
-			"asec_vests\textures\jpc_cummerbund_aor2_CO.paa",
-			"asec_vests\textures\avs_b_aor2_co.paa",
-			"asec_vests\textures\esstac2_aor2_co.paa",
-			"asec_vests\textures\esstac_aor2_co.paa",
-			"asec_vests\textures\esstac_aor2_co.paa",
-			"asec_vests\textures\kangaroo2_aor2_co.paa",
-			"asec_vests\textures\medpouch_aor2_co.paa",
-			"asec_vests\textures\ronin_belt_aor2.paa",
-			"ASEC_vests\Textures\holster_od_co.paa",
-			"ASEC_vests\Textures\avs_b_aor2_co.paa",
-			"ASEC_vests\Textures\blueforce_mag_aor2.paa",
-			"ASEC_vests\Textures\dump_aor2.paa",
-			"ASEC_vests\Textures\vsm_boxmag_aor2.paa",
-			"ASEC_vests\Textures\pouches_aor2.paa",
-			"ASEC_vests\Textures\tfa_pouch_aor2.paa",
-			"ASEC_vests\Textures\blueforce_mag_aor2.paa"
+			"ASEC_Vests1\textures\jpc_main_AOR2_CO.paa",
+			"ASEC_Vests1\textures\jpc_cummerbund_aor2_CO.paa",
+			"ASEC_Vests1\textures\avs_b_aor2_co.paa",
+			"ASEC_Vests1\textures\esstac2_aor2_co.paa",
+			"ASEC_Vests1\textures\esstac_aor2_co.paa",
+			"ASEC_Vests1\textures\esstac_aor2_co.paa",
+			"ASEC_Vests1\textures\kangaroo2_aor2_co.paa",
+			"ASEC_Vests1\textures\medpouch_aor2_co.paa",
+			"ASEC_Vests1\textures\ronin_belt_aor2.paa",
+			"ASEC_Vests1\Textures\holster_od_co.paa",
+			"ASEC_Vests1\Textures\avs_b_aor2_co.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_aor2.paa",
+			"ASEC_Vests1\Textures\dump_aor2.paa",
+			"ASEC_Vests1\Textures\vsm_boxmag_aor2.paa",
+			"ASEC_Vests1\Textures\pouches_aor2.paa",
+			"ASEC_Vests1\Textures\tfa_pouch_aor2.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_aor2.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -5446,23 +5446,23 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"asec_vests\textures\jpc_main_AOR2_CO.paa",
-				"asec_vests\textures\jpc_cummerbund_aor2_CO.paa",
-				"asec_vests\textures\avs_b_aor2_co.paa",
-				"asec_vests\textures\esstac2_aor2_co.paa",
-				"asec_vests\textures\esstac_aor2_co.paa",
-				"asec_vests\textures\esstac_aor2_co.paa",
-				"asec_vests\textures\kangaroo2_aor2_co.paa",
-				"asec_vests\textures\medpouch_aor2_co.paa",
-				"asec_vests\textures\ronin_belt_aor2.paa",
-				"ASEC_vests\Textures\holster_od_co.paa",
-				"ASEC_vests\Textures\avs_b_aor2_co.paa",
-				"ASEC_vests\Textures\blueforce_mag_aor2.paa",
-				"ASEC_vests\Textures\dump_aor2.paa",
-				"ASEC_vests\Textures\vsm_boxmag_aor2.paa",
-				"ASEC_vests\Textures\pouches_aor2.paa",
-				"ASEC_vests\Textures\tfa_pouch_aor2.paa",
-				"ASEC_vests\Textures\blueforce_mag_aor2.paa"
+				"ASEC_Vests1\textures\jpc_main_AOR2_CO.paa",
+				"ASEC_Vests1\textures\jpc_cummerbund_aor2_CO.paa",
+				"ASEC_Vests1\textures\avs_b_aor2_co.paa",
+				"ASEC_Vests1\textures\esstac2_aor2_co.paa",
+				"ASEC_Vests1\textures\esstac_aor2_co.paa",
+				"ASEC_Vests1\textures\esstac_aor2_co.paa",
+				"ASEC_Vests1\textures\kangaroo2_aor2_co.paa",
+				"ASEC_Vests1\textures\medpouch_aor2_co.paa",
+				"ASEC_Vests1\textures\ronin_belt_aor2.paa",
+				"ASEC_Vests1\Textures\holster_od_co.paa",
+				"ASEC_Vests1\Textures\avs_b_aor2_co.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_aor2.paa",
+				"ASEC_Vests1\Textures\dump_aor2.paa",
+				"ASEC_Vests1\Textures\vsm_boxmag_aor2.paa",
+				"ASEC_Vests1\Textures\pouches_aor2.paa",
+				"ASEC_Vests1\Textures\tfa_pouch_aor2.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_aor2.paa"
 			};
 			containerClass="Supply140";
 			mass=80;
@@ -5496,12 +5496,12 @@ class cfgWeapons
 	};
 	class Ronin_Belt_CB_9: ItemCore
 	{
-		author="Task Force Leviathan";
+		author="Jup, Lip, Thunder";
 		scope=2;
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
 		displayname="[TFL] Ronin Belt CB (Scar A)";
-		picture="\ASEC_vests\Textures\anti_rat.paa";
+		picture="\ASEC_Vests1\Textures\anti_rat.paa";
 		model="ASEC_Belt\Models\Ronin_Belt_Scar.p3d";
 		hiddenSelections[]=
 		{
@@ -5525,23 +5525,23 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"asec_vests\textures\jpc_main_cb_CO.paa",
-			"asec_vests\textures\jpc_cummerbund_cb_CO.paa",
-			"asec_vests\textures\avs_b_cb_co.paa",
-			"asec_vests\textures\esstac2_cb_co.paa",
-			"asec_vests\textures\esstac_cb_co.paa",
-			"asec_vests\textures\esstac_cb_co.paa",
-			"asec_vests\textures\kangaroo2_cb_co.paa",
-			"asec_vests\textures\medpouch_cb_co.paa",
-			"asec_vests\textures\ronin_belt_cb.paa",
-			"ASEC_vests\Textures\holster_tan_co.paa",
-			"ASEC_vests\Textures\avs_b_cb_co.paa",
-			"ASEC_vests\Textures\blueforce_mag_cb.paa",
-			"ASEC_vests\Textures\dump_cb.paa",
-			"ASEC_vests\Textures\vsm_boxmag_cb.paa",
-			"ASEC_vests\Textures\pouches_cb.paa",
-			"ASEC_vests\Textures\tfa_pouch_cb.paa",
-			"ASEC_vests\Textures\blueforce_mag_cb.paa"
+			"ASEC_Vests1\textures\jpc_main_cb_CO.paa",
+			"ASEC_Vests1\textures\jpc_cummerbund_cb_CO.paa",
+			"ASEC_Vests1\textures\avs_b_cb_co.paa",
+			"ASEC_Vests1\textures\esstac2_cb_co.paa",
+			"ASEC_Vests1\textures\esstac_cb_co.paa",
+			"ASEC_Vests1\textures\esstac_cb_co.paa",
+			"ASEC_Vests1\textures\kangaroo2_cb_co.paa",
+			"ASEC_Vests1\textures\medpouch_cb_co.paa",
+			"ASEC_Vests1\textures\ronin_belt_cb.paa",
+			"ASEC_Vests1\Textures\holster_tan_co.paa",
+			"ASEC_Vests1\Textures\avs_b_cb_co.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_cb.paa",
+			"ASEC_Vests1\Textures\dump_cb.paa",
+			"ASEC_Vests1\Textures\vsm_boxmag_cb.paa",
+			"ASEC_Vests1\Textures\pouches_cb.paa",
+			"ASEC_Vests1\Textures\tfa_pouch_cb.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_cb.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -5568,23 +5568,23 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"asec_vests\textures\jpc_main_cb_CO.paa",
-				"asec_vests\textures\jpc_cummerbund_cb_CO.paa",
-				"asec_vests\textures\avs_b_cb_co.paa",
-				"asec_vests\textures\esstac2_cb_co.paa",
-				"asec_vests\textures\esstac_cb_co.paa",
-				"asec_vests\textures\esstac_cb_co.paa",
-				"asec_vests\textures\kangaroo2_cb_co.paa",
-				"asec_vests\textures\medpouch_cb_co.paa",
-				"asec_vests\textures\ronin_belt_cb.paa",
-				"ASEC_vests\Textures\holster_tan_co.paa",
-				"ASEC_vests\Textures\avs_b_cb_co.paa",
-				"ASEC_vests\Textures\blueforce_mag_cb.paa",
-				"ASEC_vests\Textures\dump_cb.paa",
-				"ASEC_vests\Textures\vsm_boxmag_cb.paa",
-				"ASEC_vests\Textures\pouches_cb.paa",
-				"ASEC_vests\Textures\tfa_pouch_cb.paa",
-				"ASEC_vests\Textures\blueforce_mag_cb.paa"
+				"ASEC_Vests1\textures\jpc_main_cb_CO.paa",
+				"ASEC_Vests1\textures\jpc_cummerbund_cb_CO.paa",
+				"ASEC_Vests1\textures\avs_b_cb_co.paa",
+				"ASEC_Vests1\textures\esstac2_cb_co.paa",
+				"ASEC_Vests1\textures\esstac_cb_co.paa",
+				"ASEC_Vests1\textures\esstac_cb_co.paa",
+				"ASEC_Vests1\textures\kangaroo2_cb_co.paa",
+				"ASEC_Vests1\textures\medpouch_cb_co.paa",
+				"ASEC_Vests1\textures\ronin_belt_cb.paa",
+				"ASEC_Vests1\Textures\holster_tan_co.paa",
+				"ASEC_Vests1\Textures\avs_b_cb_co.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_cb.paa",
+				"ASEC_Vests1\Textures\dump_cb.paa",
+				"ASEC_Vests1\Textures\vsm_boxmag_cb.paa",
+				"ASEC_Vests1\Textures\pouches_cb.paa",
+				"ASEC_Vests1\Textures\tfa_pouch_cb.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_cb.paa"
 			};
 			containerClass="Supply140";
 			mass=80;
@@ -5618,12 +5618,12 @@ class cfgWeapons
 	};
 	class Ronin_Belt_RG_9: ItemCore
 	{
-		author="Task Force Leviathan";
+		author="Jup, Lip, Thunder";
 		scope=2;
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
 		displayname="[TFL] Ronin Belt RG (Scar A)";
-		picture="\ASEC_vests\Textures\anti_rat.paa";
+		picture="\ASEC_Vests1\Textures\anti_rat.paa";
 		model="ASEC_Belt\Models\Ronin_Belt_Scar.p3d";
 		hiddenSelections[]=
 		{
@@ -5647,23 +5647,23 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"asec_vests\textures\jpc_main_rg_CO.paa",
-			"asec_vests\textures\jpc_cummerbund_rg_CO.paa",
-			"asec_vests\textures\avs_b_rg_co.paa",
-			"asec_vests\textures\esstac2_rg_co.paa",
-			"asec_vests\textures\esstac_rg_co.paa",
-			"asec_vests\textures\esstac_rg_co.paa",
-			"asec_vests\textures\kangaroo2_rg_co.paa",
-			"asec_vests\textures\medpouch_rg_co.paa",
-			"asec_vests\textures\ronin_belt_rg.paa",
-			"ASEC_vests\Textures\holster_od_co.paa",
-			"ASEC_vests\Textures\avs_b_rg_co.paa",
-			"ASEC_vests\Textures\blueforce_mag_rg.paa",
-			"ASEC_vests\Textures\dump_od.paa",
-			"ASEC_vests\Textures\vsm_boxmag_rg.paa",
-			"ASEC_vests\Textures\pouches_rg.paa",
-			"ASEC_vests\Textures\tfa_pouch_rg.paa",
-			"ASEC_vests\Textures\blueforce_mag_rg.paa"
+			"ASEC_Vests1\textures\jpc_main_rg_CO.paa",
+			"ASEC_Vests1\textures\jpc_cummerbund_rg_CO.paa",
+			"ASEC_Vests1\textures\avs_b_rg_co.paa",
+			"ASEC_Vests1\textures\esstac2_rg_co.paa",
+			"ASEC_Vests1\textures\esstac_rg_co.paa",
+			"ASEC_Vests1\textures\esstac_rg_co.paa",
+			"ASEC_Vests1\textures\kangaroo2_rg_co.paa",
+			"ASEC_Vests1\textures\medpouch_rg_co.paa",
+			"ASEC_Vests1\textures\ronin_belt_rg.paa",
+			"ASEC_Vests1\Textures\holster_od_co.paa",
+			"ASEC_Vests1\Textures\avs_b_rg_co.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_rg.paa",
+			"ASEC_Vests1\Textures\dump_od.paa",
+			"ASEC_Vests1\Textures\vsm_boxmag_rg.paa",
+			"ASEC_Vests1\Textures\pouches_rg.paa",
+			"ASEC_Vests1\Textures\tfa_pouch_rg.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_rg.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -5690,23 +5690,23 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"asec_vests\textures\jpc_main_rg_CO.paa",
-				"asec_vests\textures\jpc_cummerbund_rg_CO.paa",
-				"asec_vests\textures\avs_b_rg_co.paa",
-				"asec_vests\textures\esstac2_rg_co.paa",
-				"asec_vests\textures\esstac_rg_co.paa",
-				"asec_vests\textures\esstac_rg_co.paa",
-				"asec_vests\textures\kangaroo2_rg_co.paa",
-				"asec_vests\textures\medpouch_rg_co.paa",
-				"asec_vests\textures\ronin_belt_rg.paa",
-				"ASEC_vests\Textures\holster_od_co.paa",
-				"ASEC_vests\Textures\avs_b_rg_co.paa",
-				"ASEC_vests\Textures\blueforce_mag_rg.paa",
-				"ASEC_vests\Textures\dump_od.paa",
-				"ASEC_vests\Textures\vsm_boxmag_rg.paa",
-				"ASEC_vests\Textures\pouches_rg.paa",
-				"ASEC_vests\Textures\tfa_pouch_rg.paa",
-				"ASEC_vests\Textures\blueforce_mag_rg.paa"
+				"ASEC_Vests1\textures\jpc_main_rg_CO.paa",
+				"ASEC_Vests1\textures\jpc_cummerbund_rg_CO.paa",
+				"ASEC_Vests1\textures\avs_b_rg_co.paa",
+				"ASEC_Vests1\textures\esstac2_rg_co.paa",
+				"ASEC_Vests1\textures\esstac_rg_co.paa",
+				"ASEC_Vests1\textures\esstac_rg_co.paa",
+				"ASEC_Vests1\textures\kangaroo2_rg_co.paa",
+				"ASEC_Vests1\textures\medpouch_rg_co.paa",
+				"ASEC_Vests1\textures\ronin_belt_rg.paa",
+				"ASEC_Vests1\Textures\holster_od_co.paa",
+				"ASEC_Vests1\Textures\avs_b_rg_co.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_rg.paa",
+				"ASEC_Vests1\Textures\dump_od.paa",
+				"ASEC_Vests1\Textures\vsm_boxmag_rg.paa",
+				"ASEC_Vests1\Textures\pouches_rg.paa",
+				"ASEC_Vests1\Textures\tfa_pouch_rg.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_rg.paa"
 			};
 			mass=80;
 			containerClass="Supply140";
@@ -5740,12 +5740,12 @@ class cfgWeapons
 	};
 	class Ronin_Belt_BLK_9: ItemCore
 	{
-		author="Task Force Leviathan";
+		author="Jup, Lip, Thunder";
 		scope=2;
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
 		displayname="[TFL] Ronin Belt BLK (Scar A)";
-		picture="\ASEC_vests\Textures\anti_rat.paa";
+		picture="\ASEC_Vests1\Textures\anti_rat.paa";
 		model="ASEC_Belt\Models\Ronin_Belt_Scar.p3d";
 		hiddenSelections[]=
 		{
@@ -5769,23 +5769,23 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"asec_vests\textures\jpc_main_blk_CO.paa",
-			"asec_vests\textures\jpc_cummerbund_blk_CO.paa",
-			"asec_vests\textures\avs_b_blk_co.paa",
-			"asec_vests\textures\esstac2_blk_co.paa",
-			"asec_vests\textures\esstac_blk_co.paa",
-			"asec_vests\textures\esstac_blk_co.paa",
-			"asec_vests\textures\kangaroo2_blk_co.paa",
-			"asec_vests\textures\medpouch_blk_co.paa",
-			"asec_vests\textures\ronin_belt_blk.paa",
-			"ASEC_vests\Textures\holster_blk_co.paa",
-			"ASEC_vests\Textures\avs_b_blk_co.paa",
-			"ASEC_vests\Textures\blueforce_mag_blk.paa",
-			"ASEC_vests\Textures\dump_blk.paa",
-			"ASEC_vests\Textures\vsm_boxmag_blk.paa",
-			"ASEC_vests\Textures\pouches_blk.paa",
-			"ASEC_vests\Textures\tfa_pouch_blk.paa",
-			"ASEC_vests\Textures\blueforce_mag_blk.paa"
+			"ASEC_Vests1\textures\jpc_main_blk_CO.paa",
+			"ASEC_Vests1\textures\jpc_cummerbund_blk_CO.paa",
+			"ASEC_Vests1\textures\avs_b_blk_co.paa",
+			"ASEC_Vests1\textures\esstac2_blk_co.paa",
+			"ASEC_Vests1\textures\esstac_blk_co.paa",
+			"ASEC_Vests1\textures\esstac_blk_co.paa",
+			"ASEC_Vests1\textures\kangaroo2_blk_co.paa",
+			"ASEC_Vests1\textures\medpouch_blk_co.paa",
+			"ASEC_Vests1\textures\ronin_belt_blk.paa",
+			"ASEC_Vests1\Textures\holster_blk_co.paa",
+			"ASEC_Vests1\Textures\avs_b_blk_co.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_blk.paa",
+			"ASEC_Vests1\Textures\dump_blk.paa",
+			"ASEC_Vests1\Textures\vsm_boxmag_blk.paa",
+			"ASEC_Vests1\Textures\pouches_blk.paa",
+			"ASEC_Vests1\Textures\tfa_pouch_blk.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_blk.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -5812,23 +5812,23 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"asec_vests\textures\jpc_main_blk_CO.paa",
-				"asec_vests\textures\jpc_cummerbund_blk_CO.paa",
-				"asec_vests\textures\avs_b_blk_co.paa",
-				"asec_vests\textures\esstac2_blk_co.paa",
-				"asec_vests\textures\esstac_blk_co.paa",
-				"asec_vests\textures\esstac_blk_co.paa",
-				"asec_vests\textures\kangaroo2_blk_co.paa",
-				"asec_vests\textures\medpouch_blk_co.paa",
-				"asec_vests\textures\ronin_belt_blk.paa",
-				"ASEC_vests\Textures\holster_blk_co.paa",
-				"ASEC_vests\Textures\avs_b_blk_co.paa",
-				"ASEC_vests\Textures\blueforce_mag_blk.paa",
-				"ASEC_vests\Textures\dump_blk.paa",
-				"ASEC_vests\Textures\vsm_boxmag_blk.paa",
-				"ASEC_vests\Textures\pouches_blk.paa",
-				"ASEC_vests\Textures\tfa_pouch_blk.paa",
-				"ASEC_vests\Textures\blueforce_mag_blk.paa"
+				"ASEC_Vests1\textures\jpc_main_blk_CO.paa",
+				"ASEC_Vests1\textures\jpc_cummerbund_blk_CO.paa",
+				"ASEC_Vests1\textures\avs_b_blk_co.paa",
+				"ASEC_Vests1\textures\esstac2_blk_co.paa",
+				"ASEC_Vests1\textures\esstac_blk_co.paa",
+				"ASEC_Vests1\textures\esstac_blk_co.paa",
+				"ASEC_Vests1\textures\kangaroo2_blk_co.paa",
+				"ASEC_Vests1\textures\medpouch_blk_co.paa",
+				"ASEC_Vests1\textures\ronin_belt_blk.paa",
+				"ASEC_Vests1\Textures\holster_blk_co.paa",
+				"ASEC_Vests1\Textures\avs_b_blk_co.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_blk.paa",
+				"ASEC_Vests1\Textures\dump_blk.paa",
+				"ASEC_Vests1\Textures\vsm_boxmag_blk.paa",
+				"ASEC_Vests1\Textures\pouches_blk.paa",
+				"ASEC_Vests1\Textures\tfa_pouch_blk.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_blk.paa"
 			};
 			mass=80;
 			containerClass="Supply140";
@@ -5862,12 +5862,12 @@ class cfgWeapons
 	};
 	class Ronin_Belt_ALP_9: ItemCore
 	{
-		author="Task Force Leviathan";
+		author="Jup, Lip, Thunder";
 		scope=2;
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
 		displayname="[TFL] Ronin Belt ALP (Scar A)";
-		picture="\ASEC_vests\Textures\anti_rat.paa";
+		picture="\ASEC_Vests1\Textures\anti_rat.paa";
 		model="ASEC_Belt\Models\Ronin_Belt_Scar.p3d";
 		hiddenSelections[]=
 		{
@@ -5891,23 +5891,23 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"asec_vests\textures\jpc_main_alp_CO.paa",
-			"asec_vests\textures\jpc_cummerbund_alp_CO.paa",
-			"asec_vests\textures\avs_b_alp_co.paa",
-			"asec_vests\textures\esstac2_alpine_co.paa",
-			"asec_vests\textures\esstac_alpine_co.paa",
-			"asec_vests\textures\esstac_alpine_co.paa",
-			"asec_vests\textures\kangaroo2_alp_co.paa",
-			"asec_vests\textures\medpouch_alp_co.paa",
-			"asec_vests\textures\ronin_belt_alpine.paa",
-			"ASEC_vests\Textures\holster_alpine_co.paa",
-			"ASEC_vests\Textures\avs_b_alp_co.paa",
-			"ASEC_vests\Textures\blueforce_mag_alpine.paa",
-			"ASEC_vests\Textures\dump_alpine.paa",
-			"ASEC_vests\Textures\vsm_boxmag_alpine.paa",
-			"ASEC_vests\Textures\pouches_alpine.paa",
-			"ASEC_vests\Textures\tfa_pouch_alpine.paa",
-			"ASEC_vests\Textures\blueforce_mag_alpine.paa"
+			"ASEC_Vests1\textures\jpc_main_alp_CO.paa",
+			"ASEC_Vests1\textures\jpc_cummerbund_alp_CO.paa",
+			"ASEC_Vests1\textures\avs_b_alp_co.paa",
+			"ASEC_Vests1\textures\esstac2_alpine_co.paa",
+			"ASEC_Vests1\textures\esstac_alpine_co.paa",
+			"ASEC_Vests1\textures\esstac_alpine_co.paa",
+			"ASEC_Vests1\textures\kangaroo2_alp_co.paa",
+			"ASEC_Vests1\textures\medpouch_alp_co.paa",
+			"ASEC_Vests1\textures\ronin_belt_alpine.paa",
+			"ASEC_Vests1\Textures\holster_alpine_co.paa",
+			"ASEC_Vests1\Textures\avs_b_alp_co.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_alpine.paa",
+			"ASEC_Vests1\Textures\dump_alpine.paa",
+			"ASEC_Vests1\Textures\vsm_boxmag_alpine.paa",
+			"ASEC_Vests1\Textures\pouches_alpine.paa",
+			"ASEC_Vests1\Textures\tfa_pouch_alpine.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_alpine.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -5934,23 +5934,23 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"asec_vests\textures\jpc_main_alp_CO.paa",
-				"asec_vests\textures\jpc_cummerbund_alp_CO.paa",
-				"asec_vests\textures\avs_b_alp_co.paa",
-				"asec_vests\textures\esstac2_alpine_co.paa",
-				"asec_vests\textures\esstac_alpine_co.paa",
-				"asec_vests\textures\esstac_alpine_co.paa",
-				"asec_vests\textures\kangaroo2_alp_co.paa",
-				"asec_vests\textures\medpouch_alp_co.paa",
-				"asec_vests\textures\ronin_belt_alpine.paa",
-				"ASEC_vests\Textures\holster_alpine_co.paa",
-				"ASEC_vests\Textures\avs_b_alp_co.paa",
-				"ASEC_vests\Textures\blueforce_mag_alpine.paa",
-				"ASEC_vests\Textures\dump_alpine.paa",
-				"ASEC_vests\Textures\vsm_boxmag_alpine.paa",
-				"ASEC_vests\Textures\pouches_alpine.paa",
-				"ASEC_vests\Textures\tfa_pouch_alpine.paa",
-				"ASEC_vests\Textures\blueforce_mag_alpine.paa"
+				"ASEC_Vests1\textures\jpc_main_alp_CO.paa",
+				"ASEC_Vests1\textures\jpc_cummerbund_alp_CO.paa",
+				"ASEC_Vests1\textures\avs_b_alp_co.paa",
+				"ASEC_Vests1\textures\esstac2_alpine_co.paa",
+				"ASEC_Vests1\textures\esstac_alpine_co.paa",
+				"ASEC_Vests1\textures\esstac_alpine_co.paa",
+				"ASEC_Vests1\textures\kangaroo2_alp_co.paa",
+				"ASEC_Vests1\textures\medpouch_alp_co.paa",
+				"ASEC_Vests1\textures\ronin_belt_alpine.paa",
+				"ASEC_Vests1\Textures\holster_alpine_co.paa",
+				"ASEC_Vests1\Textures\avs_b_alp_co.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_alpine.paa",
+				"ASEC_Vests1\Textures\dump_alpine.paa",
+				"ASEC_Vests1\Textures\vsm_boxmag_alpine.paa",
+				"ASEC_Vests1\Textures\pouches_alpine.paa",
+				"ASEC_Vests1\Textures\tfa_pouch_alpine.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_alpine.paa"
 			};
 			mass=80;
 			containerClass="Supply140";
@@ -5984,12 +5984,12 @@ class cfgWeapons
 	};
 	class Ronin_Belt_MC_10: ItemCore
 	{
-		author="Task Force Leviathan";
+		author="Jup, Lip, Thunder";
 		scope=2;
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
 		displayname="[TFL] Ronin Belt MC (Scar B)";
-		picture="\ASEC_vests\Textures\anti_rat.paa";
+		picture="\ASEC_Vests1\Textures\anti_rat.paa";
 		model="ASEC_Belt\Models\Ronin_Belt_Scar2.p3d";
 		hiddenSelections[]=
 		{
@@ -6013,23 +6013,23 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"asec_vests\textures\jpc_main_MC_CO.paa",
-			"asec_vests\textures\jpc_cummerbund_MC_CO.paa",
-			"asec_vests\textures\avs_b_mc_co.paa",
-			"asec_vests\textures\esstac2_mc_co.paa",
-			"asec_vests\textures\esstac_mc_co.paa",
-			"asec_vests\textures\esstac_mc_co.paa",
-			"asec_vests\textures\kangaroo2_mc_co.paa",
-			"asec_vests\textures\medpouch_mc_co.paa",
-			"asec_vests\textures\ronin_belt_mc.paa",
-			"ASEC_vests\Textures\holster_mc.paa",
-			"ASEC_vests\Textures\avs_b_mc_co.paa",
-			"ASEC_vests\Textures\blueforce_mag_mc.paa",
-			"ASEC_vests\Textures\dump_mc.paa",
-			"ASEC_vests\Textures\vsm_boxmag_mc.paa",
-			"ASEC_vests\Textures\pouches_mc.paa",
-			"ASEC_vests\Textures\tfa_pouch_mc.paa",
-			"ASEC_vests\Textures\blueforce_mag_mc.paa"
+			"ASEC_Vests1\textures\jpc_main_MC_CO.paa",
+			"ASEC_Vests1\textures\jpc_cummerbund_MC_CO.paa",
+			"ASEC_Vests1\textures\avs_b_mc_co.paa",
+			"ASEC_Vests1\textures\esstac2_mc_co.paa",
+			"ASEC_Vests1\textures\esstac_mc_co.paa",
+			"ASEC_Vests1\textures\esstac_mc_co.paa",
+			"ASEC_Vests1\textures\kangaroo2_mc_co.paa",
+			"ASEC_Vests1\textures\medpouch_mc_co.paa",
+			"ASEC_Vests1\textures\ronin_belt_mc.paa",
+			"ASEC_Vests1\Textures\holster_mc.paa",
+			"ASEC_Vests1\Textures\avs_b_mc_co.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_mc.paa",
+			"ASEC_Vests1\Textures\dump_mc.paa",
+			"ASEC_Vests1\Textures\vsm_boxmag_mc.paa",
+			"ASEC_Vests1\Textures\pouches_mc.paa",
+			"ASEC_Vests1\Textures\tfa_pouch_mc.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_mc.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -6056,23 +6056,23 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"asec_vests\textures\jpc_main_MC_CO.paa",
-				"asec_vests\textures\jpc_cummerbund_MC_CO.paa",
-				"asec_vests\textures\avs_b_mc_co.paa",
-				"asec_vests\textures\esstac2_mc_co.paa",
-				"asec_vests\textures\esstac_mc_co.paa",
-				"asec_vests\textures\esstac_mc_co.paa",
-				"asec_vests\textures\kangaroo2_mc_co.paa",
-				"asec_vests\textures\medpouch_mc_co.paa",
-				"asec_vests\textures\ronin_belt_mc.paa",
-				"ASEC_vests\Textures\holster_mc.paa",
-				"ASEC_vests\Textures\avs_b_mc_co.paa",
-				"ASEC_vests\Textures\blueforce_mag_mc.paa",
-				"ASEC_vests\Textures\dump_mc.paa",
-				"ASEC_vests\Textures\vsm_boxmag_mc.paa",
-				"ASEC_vests\Textures\pouches_mc.paa",
-				"ASEC_vests\Textures\tfa_pouch_mc.paa",
-				"ASEC_vests\Textures\blueforce_mag_mc.paa"
+				"ASEC_Vests1\textures\jpc_main_MC_CO.paa",
+				"ASEC_Vests1\textures\jpc_cummerbund_MC_CO.paa",
+				"ASEC_Vests1\textures\avs_b_mc_co.paa",
+				"ASEC_Vests1\textures\esstac2_mc_co.paa",
+				"ASEC_Vests1\textures\esstac_mc_co.paa",
+				"ASEC_Vests1\textures\esstac_mc_co.paa",
+				"ASEC_Vests1\textures\kangaroo2_mc_co.paa",
+				"ASEC_Vests1\textures\medpouch_mc_co.paa",
+				"ASEC_Vests1\textures\ronin_belt_mc.paa",
+				"ASEC_Vests1\Textures\holster_mc.paa",
+				"ASEC_Vests1\Textures\avs_b_mc_co.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_mc.paa",
+				"ASEC_Vests1\Textures\dump_mc.paa",
+				"ASEC_Vests1\Textures\vsm_boxmag_mc.paa",
+				"ASEC_Vests1\Textures\pouches_mc.paa",
+				"ASEC_Vests1\Textures\tfa_pouch_mc.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_mc.paa"
 			};
 			containerClass="Supply140";
 			mass=80;
@@ -6106,12 +6106,12 @@ class cfgWeapons
 	};
 	class Ronin_Belt_AOR1_10: ItemCore
 	{
-		author="Task Force Leviathan";
+		author="Jup, Lip, Thunder";
 		scope=2;
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
 		displayname="[TFL] Ronin Belt AOR1 (Scar B)";
-		picture="\ASEC_vests\Textures\anti_rat.paa";
+		picture="\ASEC_Vests1\Textures\anti_rat.paa";
 		model="ASEC_Belt\Models\Ronin_Belt_Scar2.p3d";
 		hiddenSelections[]=
 		{
@@ -6135,23 +6135,23 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"asec_vests\textures\jpc_main_AOR1_CO.paa",
-			"asec_vests\textures\jpc_cummerbund_aor1_CO.paa",
-			"asec_vests\textures\avs_b_aor1_co.paa",
-			"asec_vests\textures\esstac2_aor1_co.paa",
-			"asec_vests\textures\esstac_aor1_co.paa",
-			"asec_vests\textures\esstac_aor1_co.paa",
-			"asec_vests\textures\kangaroo2_aor1_co.paa",
-			"asec_vests\textures\medpouch_aor1_co.paa",
-			"asec_vests\textures\ronin_belt_aor1.paa",
-			"ASEC_vests\Textures\holster_tan_co.paa",
-			"ASEC_vests\Textures\avs_b_aor1_co.paa",
-			"ASEC_vests\Textures\blueforce_mag_aor1.paa",
-			"ASEC_vests\Textures\dump_aor1.paa",
-			"ASEC_vests\Textures\vsm_boxmag_aor1.paa",
-			"ASEC_vests\Textures\pouches_aor1.paa",
-			"ASEC_vests\Textures\tfa_pouch_aor1.paa",
-			"ASEC_vests\Textures\blueforce_mag_aor1.paa"
+			"ASEC_Vests1\textures\jpc_main_AOR1_CO.paa",
+			"ASEC_Vests1\textures\jpc_cummerbund_aor1_CO.paa",
+			"ASEC_Vests1\textures\avs_b_aor1_co.paa",
+			"ASEC_Vests1\textures\esstac2_aor1_co.paa",
+			"ASEC_Vests1\textures\esstac_aor1_co.paa",
+			"ASEC_Vests1\textures\esstac_aor1_co.paa",
+			"ASEC_Vests1\textures\kangaroo2_aor1_co.paa",
+			"ASEC_Vests1\textures\medpouch_aor1_co.paa",
+			"ASEC_Vests1\textures\ronin_belt_aor1.paa",
+			"ASEC_Vests1\Textures\holster_tan_co.paa",
+			"ASEC_Vests1\Textures\avs_b_aor1_co.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_aor1.paa",
+			"ASEC_Vests1\Textures\dump_aor1.paa",
+			"ASEC_Vests1\Textures\vsm_boxmag_aor1.paa",
+			"ASEC_Vests1\Textures\pouches_aor1.paa",
+			"ASEC_Vests1\Textures\tfa_pouch_aor1.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_aor1.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -6178,23 +6178,23 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"asec_vests\textures\jpc_main_AOR1_CO.paa",
-				"asec_vests\textures\jpc_cummerbund_aor1_CO.paa",
-				"asec_vests\textures\avs_b_aor1_co.paa",
-				"asec_vests\textures\esstac2_aor1_co.paa",
-				"asec_vests\textures\esstac_aor1_co.paa",
-				"asec_vests\textures\esstac_aor1_co.paa",
-				"asec_vests\textures\kangaroo2_aor1_co.paa",
-				"asec_vests\textures\medpouch_aor1_co.paa",
-				"asec_vests\textures\ronin_belt_aor1.paa",
-				"ASEC_vests\Textures\holster_tan_co.paa",
-				"ASEC_vests\Textures\avs_b_aor1_co.paa",
-				"ASEC_vests\Textures\blueforce_mag_aor1.paa",
-				"ASEC_vests\Textures\dump_aor1.paa",
-				"ASEC_vests\Textures\vsm_boxmag_aor1.paa",
-				"ASEC_vests\Textures\pouches_aor1.paa",
-				"ASEC_vests\Textures\tfa_pouch_aor1.paa",
-				"ASEC_vests\Textures\blueforce_mag_aor1.paa"
+				"ASEC_Vests1\textures\jpc_main_AOR1_CO.paa",
+				"ASEC_Vests1\textures\jpc_cummerbund_aor1_CO.paa",
+				"ASEC_Vests1\textures\avs_b_aor1_co.paa",
+				"ASEC_Vests1\textures\esstac2_aor1_co.paa",
+				"ASEC_Vests1\textures\esstac_aor1_co.paa",
+				"ASEC_Vests1\textures\esstac_aor1_co.paa",
+				"ASEC_Vests1\textures\kangaroo2_aor1_co.paa",
+				"ASEC_Vests1\textures\medpouch_aor1_co.paa",
+				"ASEC_Vests1\textures\ronin_belt_aor1.paa",
+				"ASEC_Vests1\Textures\holster_tan_co.paa",
+				"ASEC_Vests1\Textures\avs_b_aor1_co.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_aor1.paa",
+				"ASEC_Vests1\Textures\dump_aor1.paa",
+				"ASEC_Vests1\Textures\vsm_boxmag_aor1.paa",
+				"ASEC_Vests1\Textures\pouches_aor1.paa",
+				"ASEC_Vests1\Textures\tfa_pouch_aor1.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_aor1.paa"
 			};
 			containerClass="Supply140";
 			mass=80;
@@ -6228,12 +6228,12 @@ class cfgWeapons
 	};
 	class Ronin_Belt_AOR2_10: ItemCore
 	{
-		author="Task Force Leviathan";
+		author="Jup, Lip, Thunder";
 		scope=2;
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
 		displayname="[TFL] Ronin Belt AOR2 (Scar B)";
-		picture="\ASEC_vests\Textures\anti_rat.paa";
+		picture="\ASEC_Vests1\Textures\anti_rat.paa";
 		model="ASEC_Belt\Models\Ronin_Belt_Scar2.p3d";
 		hiddenSelections[]=
 		{
@@ -6257,23 +6257,23 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"asec_vests\textures\jpc_main_AOR2_CO.paa",
-			"asec_vests\textures\jpc_cummerbund_aor2_CO.paa",
-			"asec_vests\textures\avs_b_aor2_co.paa",
-			"asec_vests\textures\esstac2_aor2_co.paa",
-			"asec_vests\textures\esstac_aor2_co.paa",
-			"asec_vests\textures\esstac_aor2_co.paa",
-			"asec_vests\textures\kangaroo2_aor2_co.paa",
-			"asec_vests\textures\medpouch_aor2_co.paa",
-			"asec_vests\textures\ronin_belt_aor2.paa",
-			"ASEC_vests\Textures\holster_od_co.paa",
-			"ASEC_vests\Textures\avs_b_aor2_co.paa",
-			"ASEC_vests\Textures\blueforce_mag_aor2.paa",
-			"ASEC_vests\Textures\dump_aor2.paa",
-			"ASEC_vests\Textures\vsm_boxmag_aor2.paa",
-			"ASEC_vests\Textures\pouches_aor2.paa",
-			"ASEC_vests\Textures\tfa_pouch_aor2.paa",
-			"ASEC_vests\Textures\blueforce_mag_aor2.paa"
+			"ASEC_Vests1\textures\jpc_main_AOR2_CO.paa",
+			"ASEC_Vests1\textures\jpc_cummerbund_aor2_CO.paa",
+			"ASEC_Vests1\textures\avs_b_aor2_co.paa",
+			"ASEC_Vests1\textures\esstac2_aor2_co.paa",
+			"ASEC_Vests1\textures\esstac_aor2_co.paa",
+			"ASEC_Vests1\textures\esstac_aor2_co.paa",
+			"ASEC_Vests1\textures\kangaroo2_aor2_co.paa",
+			"ASEC_Vests1\textures\medpouch_aor2_co.paa",
+			"ASEC_Vests1\textures\ronin_belt_aor2.paa",
+			"ASEC_Vests1\Textures\holster_od_co.paa",
+			"ASEC_Vests1\Textures\avs_b_aor2_co.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_aor2.paa",
+			"ASEC_Vests1\Textures\dump_aor2.paa",
+			"ASEC_Vests1\Textures\vsm_boxmag_aor2.paa",
+			"ASEC_Vests1\Textures\pouches_aor2.paa",
+			"ASEC_Vests1\Textures\tfa_pouch_aor2.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_aor2.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -6300,23 +6300,23 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"asec_vests\textures\jpc_main_AOR2_CO.paa",
-				"asec_vests\textures\jpc_cummerbund_aor2_CO.paa",
-				"asec_vests\textures\avs_b_aor2_co.paa",
-				"asec_vests\textures\esstac2_aor2_co.paa",
-				"asec_vests\textures\esstac_aor2_co.paa",
-				"asec_vests\textures\esstac_aor2_co.paa",
-				"asec_vests\textures\kangaroo2_aor2_co.paa",
-				"asec_vests\textures\medpouch_aor2_co.paa",
-				"asec_vests\textures\ronin_belt_aor2.paa",
-				"ASEC_vests\Textures\holster_od_co.paa",
-				"ASEC_vests\Textures\avs_b_aor2_co.paa",
-				"ASEC_vests\Textures\blueforce_mag_aor2.paa",
-				"ASEC_vests\Textures\dump_aor2.paa",
-				"ASEC_vests\Textures\vsm_boxmag_aor2.paa",
-				"ASEC_vests\Textures\pouches_aor2.paa",
-				"ASEC_vests\Textures\tfa_pouch_aor2.paa",
-				"ASEC_vests\Textures\blueforce_mag_aor2.paa"
+				"ASEC_Vests1\textures\jpc_main_AOR2_CO.paa",
+				"ASEC_Vests1\textures\jpc_cummerbund_aor2_CO.paa",
+				"ASEC_Vests1\textures\avs_b_aor2_co.paa",
+				"ASEC_Vests1\textures\esstac2_aor2_co.paa",
+				"ASEC_Vests1\textures\esstac_aor2_co.paa",
+				"ASEC_Vests1\textures\esstac_aor2_co.paa",
+				"ASEC_Vests1\textures\kangaroo2_aor2_co.paa",
+				"ASEC_Vests1\textures\medpouch_aor2_co.paa",
+				"ASEC_Vests1\textures\ronin_belt_aor2.paa",
+				"ASEC_Vests1\Textures\holster_od_co.paa",
+				"ASEC_Vests1\Textures\avs_b_aor2_co.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_aor2.paa",
+				"ASEC_Vests1\Textures\dump_aor2.paa",
+				"ASEC_Vests1\Textures\vsm_boxmag_aor2.paa",
+				"ASEC_Vests1\Textures\pouches_aor2.paa",
+				"ASEC_Vests1\Textures\tfa_pouch_aor2.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_aor2.paa"
 			};
 			containerClass="Supply140";
 			mass=80;
@@ -6350,12 +6350,12 @@ class cfgWeapons
 	};
 	class Ronin_Belt_CB_10: ItemCore
 	{
-		author="Task Force Leviathan";
+		author="Jup, Lip, Thunder";
 		scope=2;
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
 		displayname="[TFL] Ronin Belt CB (Scar B)";
-		picture="\ASEC_vests\Textures\anti_rat.paa";
+		picture="\ASEC_Vests1\Textures\anti_rat.paa";
 		model="ASEC_Belt\Models\Ronin_Belt_Scar2.p3d";
 		hiddenSelections[]=
 		{
@@ -6379,23 +6379,23 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"asec_vests\textures\jpc_main_cb_CO.paa",
-			"asec_vests\textures\jpc_cummerbund_cb_CO.paa",
-			"asec_vests\textures\avs_b_cb_co.paa",
-			"asec_vests\textures\esstac2_cb_co.paa",
-			"asec_vests\textures\esstac_cb_co.paa",
-			"asec_vests\textures\esstac_cb_co.paa",
-			"asec_vests\textures\kangaroo2_cb_co.paa",
-			"asec_vests\textures\medpouch_cb_co.paa",
-			"asec_vests\textures\ronin_belt_cb.paa",
-			"ASEC_vests\Textures\holster_tan_co.paa",
-			"ASEC_vests\Textures\avs_b_cb_co.paa",
-			"ASEC_vests\Textures\blueforce_mag_cb.paa",
-			"ASEC_vests\Textures\dump_cb.paa",
-			"ASEC_vests\Textures\vsm_boxmag_cb.paa",
-			"ASEC_vests\Textures\pouches_cb.paa",
-			"ASEC_vests\Textures\tfa_pouch_cb.paa",
-			"ASEC_vests\Textures\blueforce_mag_cb.paa"
+			"ASEC_Vests1\textures\jpc_main_cb_CO.paa",
+			"ASEC_Vests1\textures\jpc_cummerbund_cb_CO.paa",
+			"ASEC_Vests1\textures\avs_b_cb_co.paa",
+			"ASEC_Vests1\textures\esstac2_cb_co.paa",
+			"ASEC_Vests1\textures\esstac_cb_co.paa",
+			"ASEC_Vests1\textures\esstac_cb_co.paa",
+			"ASEC_Vests1\textures\kangaroo2_cb_co.paa",
+			"ASEC_Vests1\textures\medpouch_cb_co.paa",
+			"ASEC_Vests1\textures\ronin_belt_cb.paa",
+			"ASEC_Vests1\Textures\holster_tan_co.paa",
+			"ASEC_Vests1\Textures\avs_b_cb_co.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_cb.paa",
+			"ASEC_Vests1\Textures\dump_cb.paa",
+			"ASEC_Vests1\Textures\vsm_boxmag_cb.paa",
+			"ASEC_Vests1\Textures\pouches_cb.paa",
+			"ASEC_Vests1\Textures\tfa_pouch_cb.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_cb.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -6422,23 +6422,23 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"asec_vests\textures\jpc_main_cb_CO.paa",
-				"asec_vests\textures\jpc_cummerbund_cb_CO.paa",
-				"asec_vests\textures\avs_b_cb_co.paa",
-				"asec_vests\textures\esstac2_cb_co.paa",
-				"asec_vests\textures\esstac_cb_co.paa",
-				"asec_vests\textures\esstac_cb_co.paa",
-				"asec_vests\textures\kangaroo2_cb_co.paa",
-				"asec_vests\textures\medpouch_cb_co.paa",
-				"asec_vests\textures\ronin_belt_cb.paa",
-				"ASEC_vests\Textures\holster_tan_co.paa",
-				"ASEC_vests\Textures\avs_b_cb_co.paa",
-				"ASEC_vests\Textures\blueforce_mag_cb.paa",
-				"ASEC_vests\Textures\dump_cb.paa",
-				"ASEC_vests\Textures\vsm_boxmag_cb.paa",
-				"ASEC_vests\Textures\pouches_cb.paa",
-				"ASEC_vests\Textures\tfa_pouch_cb.paa",
-				"ASEC_vests\Textures\blueforce_mag_cb.paa"
+				"ASEC_Vests1\textures\jpc_main_cb_CO.paa",
+				"ASEC_Vests1\textures\jpc_cummerbund_cb_CO.paa",
+				"ASEC_Vests1\textures\avs_b_cb_co.paa",
+				"ASEC_Vests1\textures\esstac2_cb_co.paa",
+				"ASEC_Vests1\textures\esstac_cb_co.paa",
+				"ASEC_Vests1\textures\esstac_cb_co.paa",
+				"ASEC_Vests1\textures\kangaroo2_cb_co.paa",
+				"ASEC_Vests1\textures\medpouch_cb_co.paa",
+				"ASEC_Vests1\textures\ronin_belt_cb.paa",
+				"ASEC_Vests1\Textures\holster_tan_co.paa",
+				"ASEC_Vests1\Textures\avs_b_cb_co.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_cb.paa",
+				"ASEC_Vests1\Textures\dump_cb.paa",
+				"ASEC_Vests1\Textures\vsm_boxmag_cb.paa",
+				"ASEC_Vests1\Textures\pouches_cb.paa",
+				"ASEC_Vests1\Textures\tfa_pouch_cb.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_cb.paa"
 			};
 			containerClass="Supply140";
 			mass=80;
@@ -6472,12 +6472,12 @@ class cfgWeapons
 	};
 	class Ronin_Belt_RG_10: ItemCore
 	{
-		author="Task Force Leviathan";
+		author="Jup, Lip, Thunder";
 		scope=2;
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
 		displayname="[TFL] Ronin Belt RG (Scar B)";
-		picture="\ASEC_vests\Textures\anti_rat.paa";
+		picture="\ASEC_Vests1\Textures\anti_rat.paa";
 		model="ASEC_Belt\Models\Ronin_Belt_Scar2.p3d";
 		hiddenSelections[]=
 		{
@@ -6501,23 +6501,23 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"asec_vests\textures\jpc_main_rg_CO.paa",
-			"asec_vests\textures\jpc_cummerbund_rg_CO.paa",
-			"asec_vests\textures\avs_b_rg_co.paa",
-			"asec_vests\textures\esstac2_rg_co.paa",
-			"asec_vests\textures\esstac_rg_co.paa",
-			"asec_vests\textures\esstac_rg_co.paa",
-			"asec_vests\textures\kangaroo2_rg_co.paa",
-			"asec_vests\textures\medpouch_rg_co.paa",
-			"asec_vests\textures\ronin_belt_rg.paa",
-			"ASEC_vests\Textures\holster_od_co.paa",
-			"ASEC_vests\Textures\avs_b_rg_co.paa",
-			"ASEC_vests\Textures\blueforce_mag_rg.paa",
-			"ASEC_vests\Textures\dump_od.paa",
-			"ASEC_vests\Textures\vsm_boxmag_rg.paa",
-			"ASEC_vests\Textures\pouches_rg.paa",
-			"ASEC_vests\Textures\tfa_pouch_rg.paa",
-			"ASEC_vests\Textures\blueforce_mag_rg.paa"
+			"ASEC_Vests1\textures\jpc_main_rg_CO.paa",
+			"ASEC_Vests1\textures\jpc_cummerbund_rg_CO.paa",
+			"ASEC_Vests1\textures\avs_b_rg_co.paa",
+			"ASEC_Vests1\textures\esstac2_rg_co.paa",
+			"ASEC_Vests1\textures\esstac_rg_co.paa",
+			"ASEC_Vests1\textures\esstac_rg_co.paa",
+			"ASEC_Vests1\textures\kangaroo2_rg_co.paa",
+			"ASEC_Vests1\textures\medpouch_rg_co.paa",
+			"ASEC_Vests1\textures\ronin_belt_rg.paa",
+			"ASEC_Vests1\Textures\holster_od_co.paa",
+			"ASEC_Vests1\Textures\avs_b_rg_co.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_rg.paa",
+			"ASEC_Vests1\Textures\dump_od.paa",
+			"ASEC_Vests1\Textures\vsm_boxmag_rg.paa",
+			"ASEC_Vests1\Textures\pouches_rg.paa",
+			"ASEC_Vests1\Textures\tfa_pouch_rg.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_rg.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -6544,23 +6544,23 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"asec_vests\textures\jpc_main_rg_CO.paa",
-				"asec_vests\textures\jpc_cummerbund_rg_CO.paa",
-				"asec_vests\textures\avs_b_rg_co.paa",
-				"asec_vests\textures\esstac2_rg_co.paa",
-				"asec_vests\textures\esstac_rg_co.paa",
-				"asec_vests\textures\esstac_rg_co.paa",
-				"asec_vests\textures\kangaroo2_rg_co.paa",
-				"asec_vests\textures\medpouch_rg_co.paa",
-				"asec_vests\textures\ronin_belt_rg.paa",
-				"ASEC_vests\Textures\holster_od_co.paa",
-				"ASEC_vests\Textures\avs_b_rg_co.paa",
-				"ASEC_vests\Textures\blueforce_mag_rg.paa",
-				"ASEC_vests\Textures\dump_od.paa",
-				"ASEC_vests\Textures\vsm_boxmag_rg.paa",
-				"ASEC_vests\Textures\pouches_rg.paa",
-				"ASEC_vests\Textures\tfa_pouch_rg.paa",
-				"ASEC_vests\Textures\blueforce_mag_rg.paa"
+				"ASEC_Vests1\textures\jpc_main_rg_CO.paa",
+				"ASEC_Vests1\textures\jpc_cummerbund_rg_CO.paa",
+				"ASEC_Vests1\textures\avs_b_rg_co.paa",
+				"ASEC_Vests1\textures\esstac2_rg_co.paa",
+				"ASEC_Vests1\textures\esstac_rg_co.paa",
+				"ASEC_Vests1\textures\esstac_rg_co.paa",
+				"ASEC_Vests1\textures\kangaroo2_rg_co.paa",
+				"ASEC_Vests1\textures\medpouch_rg_co.paa",
+				"ASEC_Vests1\textures\ronin_belt_rg.paa",
+				"ASEC_Vests1\Textures\holster_od_co.paa",
+				"ASEC_Vests1\Textures\avs_b_rg_co.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_rg.paa",
+				"ASEC_Vests1\Textures\dump_od.paa",
+				"ASEC_Vests1\Textures\vsm_boxmag_rg.paa",
+				"ASEC_Vests1\Textures\pouches_rg.paa",
+				"ASEC_Vests1\Textures\tfa_pouch_rg.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_rg.paa"
 			};
 			mass=80;
 			containerClass="Supply140";
@@ -6594,12 +6594,12 @@ class cfgWeapons
 	};
 	class Ronin_Belt_BLK_10: ItemCore
 	{
-		author="Task Force Leviathan";
+		author="Jup, Lip, Thunder";
 		scope=2;
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
 		displayname="[TFL] Ronin Belt BLK (Scar B)";
-		picture="\ASEC_vests\Textures\anti_rat.paa";
+		picture="\ASEC_Vests1\Textures\anti_rat.paa";
 		model="ASEC_Belt\Models\Ronin_Belt_Scar2.p3d";
 		hiddenSelections[]=
 		{
@@ -6623,23 +6623,23 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"asec_vests\textures\jpc_main_blk_CO.paa",
-			"asec_vests\textures\jpc_cummerbund_blk_CO.paa",
-			"asec_vests\textures\avs_b_blk_co.paa",
-			"asec_vests\textures\esstac2_blk_co.paa",
-			"asec_vests\textures\esstac_blk_co.paa",
-			"asec_vests\textures\esstac_blk_co.paa",
-			"asec_vests\textures\kangaroo2_blk_co.paa",
-			"asec_vests\textures\medpouch_blk_co.paa",
-			"asec_vests\textures\ronin_belt_blk.paa",
-			"ASEC_vests\Textures\holster_blk_co.paa",
-			"ASEC_vests\Textures\avs_b_blk_co.paa",
-			"ASEC_vests\Textures\blueforce_mag_blk.paa",
-			"ASEC_vests\Textures\dump_blk.paa",
-			"ASEC_vests\Textures\vsm_boxmag_blk.paa",
-			"ASEC_vests\Textures\pouches_blk.paa",
-			"ASEC_vests\Textures\tfa_pouch_blk.paa",
-			"ASEC_vests\Textures\blueforce_mag_blk.paa"
+			"ASEC_Vests1\textures\jpc_main_blk_CO.paa",
+			"ASEC_Vests1\textures\jpc_cummerbund_blk_CO.paa",
+			"ASEC_Vests1\textures\avs_b_blk_co.paa",
+			"ASEC_Vests1\textures\esstac2_blk_co.paa",
+			"ASEC_Vests1\textures\esstac_blk_co.paa",
+			"ASEC_Vests1\textures\esstac_blk_co.paa",
+			"ASEC_Vests1\textures\kangaroo2_blk_co.paa",
+			"ASEC_Vests1\textures\medpouch_blk_co.paa",
+			"ASEC_Vests1\textures\ronin_belt_blk.paa",
+			"ASEC_Vests1\Textures\holster_blk_co.paa",
+			"ASEC_Vests1\Textures\avs_b_blk_co.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_blk.paa",
+			"ASEC_Vests1\Textures\dump_blk.paa",
+			"ASEC_Vests1\Textures\vsm_boxmag_blk.paa",
+			"ASEC_Vests1\Textures\pouches_blk.paa",
+			"ASEC_Vests1\Textures\tfa_pouch_blk.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_blk.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -6666,23 +6666,23 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"asec_vests\textures\jpc_main_blk_CO.paa",
-				"asec_vests\textures\jpc_cummerbund_blk_CO.paa",
-				"asec_vests\textures\avs_b_blk_co.paa",
-				"asec_vests\textures\esstac2_blk_co.paa",
-				"asec_vests\textures\esstac_blk_co.paa",
-				"asec_vests\textures\esstac_blk_co.paa",
-				"asec_vests\textures\kangaroo2_blk_co.paa",
-				"asec_vests\textures\medpouch_blk_co.paa",
-				"asec_vests\textures\ronin_belt_blk.paa",
-				"ASEC_vests\Textures\holster_blk_co.paa",
-				"ASEC_vests\Textures\avs_b_blk_co.paa",
-				"ASEC_vests\Textures\blueforce_mag_blk.paa",
-				"ASEC_vests\Textures\dump_blk.paa",
-				"ASEC_vests\Textures\vsm_boxmag_blk.paa",
-				"ASEC_vests\Textures\pouches_blk.paa",
-				"ASEC_vests\Textures\tfa_pouch_blk.paa",
-				"ASEC_vests\Textures\blueforce_mag_blk.paa"
+				"ASEC_Vests1\textures\jpc_main_blk_CO.paa",
+				"ASEC_Vests1\textures\jpc_cummerbund_blk_CO.paa",
+				"ASEC_Vests1\textures\avs_b_blk_co.paa",
+				"ASEC_Vests1\textures\esstac2_blk_co.paa",
+				"ASEC_Vests1\textures\esstac_blk_co.paa",
+				"ASEC_Vests1\textures\esstac_blk_co.paa",
+				"ASEC_Vests1\textures\kangaroo2_blk_co.paa",
+				"ASEC_Vests1\textures\medpouch_blk_co.paa",
+				"ASEC_Vests1\textures\ronin_belt_blk.paa",
+				"ASEC_Vests1\Textures\holster_blk_co.paa",
+				"ASEC_Vests1\Textures\avs_b_blk_co.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_blk.paa",
+				"ASEC_Vests1\Textures\dump_blk.paa",
+				"ASEC_Vests1\Textures\vsm_boxmag_blk.paa",
+				"ASEC_Vests1\Textures\pouches_blk.paa",
+				"ASEC_Vests1\Textures\tfa_pouch_blk.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_blk.paa"
 			};
 			mass=80;
 			containerClass="Supply140";
@@ -6716,12 +6716,12 @@ class cfgWeapons
 	};
 	class Ronin_Belt_ALP_10: ItemCore
 	{
-		author="Task Force Leviathan";
+		author="Jup, Lip, Thunder";
 		scope=2;
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
 		displayname="[TFL] Ronin Belt ALP (Scar B)";
-		picture="\ASEC_vests\Textures\anti_rat.paa";
+		picture="\ASEC_Vests1\Textures\anti_rat.paa";
 		model="ASEC_Belt\Models\Ronin_Belt_Scar2.p3d";
 		hiddenSelections[]=
 		{
@@ -6745,23 +6745,23 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"asec_vests\textures\jpc_main_alp_CO.paa",
-			"asec_vests\textures\jpc_cummerbund_alp_CO.paa",
-			"asec_vests\textures\avs_b_alp_co.paa",
-			"asec_vests\textures\esstac2_alpine_co.paa",
-			"asec_vests\textures\esstac_alpine_co.paa",
-			"asec_vests\textures\esstac_alpine_co.paa",
-			"asec_vests\textures\kangaroo2_alp_co.paa",
-			"asec_vests\textures\medpouch_alp_co.paa",
-			"asec_vests\textures\ronin_belt_alpine.paa",
-			"ASEC_vests\Textures\holster_alpine_co.paa",
-			"ASEC_vests\Textures\avs_b_alp_co.paa",
-			"ASEC_vests\Textures\blueforce_mag_alpine.paa",
-			"ASEC_vests\Textures\dump_alpine.paa",
-			"ASEC_vests\Textures\vsm_boxmag_alpine.paa",
-			"ASEC_vests\Textures\pouches_alpine.paa",
-			"ASEC_vests\Textures\tfa_pouch_alpine.paa",
-			"ASEC_vests\Textures\blueforce_mag_alpine.paa"
+			"ASEC_Vests1\textures\jpc_main_alp_CO.paa",
+			"ASEC_Vests1\textures\jpc_cummerbund_alp_CO.paa",
+			"ASEC_Vests1\textures\avs_b_alp_co.paa",
+			"ASEC_Vests1\textures\esstac2_alpine_co.paa",
+			"ASEC_Vests1\textures\esstac_alpine_co.paa",
+			"ASEC_Vests1\textures\esstac_alpine_co.paa",
+			"ASEC_Vests1\textures\kangaroo2_alp_co.paa",
+			"ASEC_Vests1\textures\medpouch_alp_co.paa",
+			"ASEC_Vests1\textures\ronin_belt_alpine.paa",
+			"ASEC_Vests1\Textures\holster_alpine_co.paa",
+			"ASEC_Vests1\Textures\avs_b_alp_co.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_alpine.paa",
+			"ASEC_Vests1\Textures\dump_alpine.paa",
+			"ASEC_Vests1\Textures\vsm_boxmag_alpine.paa",
+			"ASEC_Vests1\Textures\pouches_alpine.paa",
+			"ASEC_Vests1\Textures\tfa_pouch_alpine.paa",
+			"ASEC_Vests1\Textures\blueforce_mag_alpine.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -6788,23 +6788,23 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"asec_vests\textures\jpc_main_alp_CO.paa",
-				"asec_vests\textures\jpc_cummerbund_alp_CO.paa",
-				"asec_vests\textures\avs_b_alp_co.paa",
-				"asec_vests\textures\esstac2_alpine_co.paa",
-				"asec_vests\textures\esstac_alpine_co.paa",
-				"asec_vests\textures\esstac_alpine_co.paa",
-				"asec_vests\textures\kangaroo2_alp_co.paa",
-				"asec_vests\textures\medpouch_alp_co.paa",
-				"asec_vests\textures\ronin_belt_alpine.paa",
-				"ASEC_vests\Textures\holster_alpine_co.paa",
-				"ASEC_vests\Textures\avs_b_alp_co.paa",
-				"ASEC_vests\Textures\blueforce_mag_alpine.paa",
-				"ASEC_vests\Textures\dump_alpine.paa",
-				"ASEC_vests\Textures\vsm_boxmag_alpine.paa",
-				"ASEC_vests\Textures\pouches_alpine.paa",
-				"ASEC_vests\Textures\tfa_pouch_alpine.paa",
-				"ASEC_vests\Textures\blueforce_mag_alpine.paa"
+				"ASEC_Vests1\textures\jpc_main_alp_CO.paa",
+				"ASEC_Vests1\textures\jpc_cummerbund_alp_CO.paa",
+				"ASEC_Vests1\textures\avs_b_alp_co.paa",
+				"ASEC_Vests1\textures\esstac2_alpine_co.paa",
+				"ASEC_Vests1\textures\esstac_alpine_co.paa",
+				"ASEC_Vests1\textures\esstac_alpine_co.paa",
+				"ASEC_Vests1\textures\kangaroo2_alp_co.paa",
+				"ASEC_Vests1\textures\medpouch_alp_co.paa",
+				"ASEC_Vests1\textures\ronin_belt_alpine.paa",
+				"ASEC_Vests1\Textures\holster_alpine_co.paa",
+				"ASEC_Vests1\Textures\avs_b_alp_co.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_alpine.paa",
+				"ASEC_Vests1\Textures\dump_alpine.paa",
+				"ASEC_Vests1\Textures\vsm_boxmag_alpine.paa",
+				"ASEC_Vests1\Textures\pouches_alpine.paa",
+				"ASEC_Vests1\Textures\tfa_pouch_alpine.paa",
+				"ASEC_Vests1\Textures\blueforce_mag_alpine.paa"
 			};
 			mass=80;
 			containerClass="Supply140";
