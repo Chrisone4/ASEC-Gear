@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class TFL_Headgear_Functions
+	class ASEC_Headgear_Functions
 	{
 		units[]={};
 		weapons[]={};
@@ -9,8 +9,8 @@ class CfgPatches
 		{
 			"A3_Characters_F_BLUFOR",
 			"A3_Weapons_F_Ammoboxes",
-			"TFL_Headgear",
-			"TFL_SF",
+			"ASEC_Headgear",
+			"ASEC_SF",
 			"A3_Data_F",
 			"A3_Weapons_F",
 			"A3_Characters_F",
@@ -21,10 +21,10 @@ class CfgPatches
 };
 class CfgFunctions
 {
-	class TFL
+	class ASEC
 	{
-		tag="TFL";
-		file="\TFL_Headgear_Functions\functions";
+		tag="ASEC";
+		file="\ASEC_Headgear_Functions\functions";
 		class functions
 		{
 			class Headsetdown
@@ -51,27 +51,27 @@ class cfgVehicles
 		{
 			class ACE_Equipment
 			{
-				class TFL_headsetdown
+				class ASEC_headsetdown
 				{
 					displayName="Fold Headset Down";
-					condition="[_player] call TFL_fnc_headsetupCheck";
+					condition="[_player] call ASEC_fnc_headsetupCheck";
 					exceptions[]=
 					{
 						"isNotInside"
 					};
-					statement="[_player] call TFL_fnc_Headsetdown";
+					statement="[_player] call ASEC_fnc_Headsetdown";
 					showDisabled=0;
 					priority=2.5;
 				};
-				class TFL_headsetup
+				class ASEC_headsetup
 				{
 					displayName="Fold Headset Up";
-					condition="[_player] call TFL_fnc_headsetdownCheck";
+					condition="[_player] call ASEC_fnc_headsetdownCheck";
 					exceptions[]=
 					{
 						"isNotInside"
 					};
-					statement="[_player] call TFL_fnc_Headsetup";
+					statement="[_player] call ASEC_fnc_Headsetup";
 					showDisabled=0;
 					priority=2.5;
 				};
@@ -101,8 +101,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT AOR1 (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -134,15 +134,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor1_co.paa",
-			"tfl_headgear\textures\rails_tan.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor1_co.paa",
+			"ASEC_Headgear\textures\rails_tan.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -159,11 +159,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -204,8 +204,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT AOR1 Comtac3 Arc (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -237,15 +237,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor1_co.paa",
-			"tfl_headgear\textures\rails_tan.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor1_co.paa",
+			"ASEC_Headgear\textures\rails_tan.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -262,11 +262,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -307,8 +307,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT AOR2 Comtac3 Arc (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -340,15 +340,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor2_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor2_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
@@ -365,11 +365,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -410,8 +410,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT MC Comtac3 Arc (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -443,15 +443,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_mc_co.paa",
-			"tfl_headgear\textures\rails.paa",
-			"tfl_headgear\textures\tfa_opscore_mc_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_mc_co.paa",
+			"ASEC_Headgear\textures\rails.paa",
+			"ASEC_Headgear\textures\tfa_opscore_mc_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
@@ -468,11 +468,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -513,8 +513,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT BLK Comtac3 Arc (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -546,15 +546,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_blk.paa",
+			"ASEC_Headgear\textures\comtac_III_blk.paa",
 			"",
 			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
@@ -571,11 +571,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -616,8 +616,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT WHT Comtac3 Arc (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -649,15 +649,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_white_co.paa",
-			"tfl_headgear\textures\rails_white.paa",
-			"tfl_headgear\textures\tfa_opscore_white_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_white_co.paa",
+			"ASEC_Headgear\textures\rails_white.paa",
+			"ASEC_Headgear\textures\tfa_opscore_white_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_blk.paa",
+			"ASEC_Headgear\textures\comtac_III_blk.paa",
 			"",
 			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
@@ -674,11 +674,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -719,8 +719,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT UT Comtac3 Arc (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -752,15 +752,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
@@ -777,11 +777,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -822,8 +822,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT AOR1 Comtac3 Arc (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -855,17 +855,17 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor1_co.paa",
-			"tfl_headgear\textures\rails_tan.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor1_co.paa",
+			"ASEC_Headgear\textures\rails_tan.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -880,11 +880,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -925,8 +925,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT AOR2 Comtac3 Arc (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -958,17 +958,17 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor2_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor2_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
@@ -983,11 +983,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -1028,8 +1028,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT MC Comtac3 Arc (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -1061,17 +1061,17 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_mc_co.paa",
-			"tfl_headgear\textures\rails.paa",
-			"tfl_headgear\textures\tfa_opscore_mc_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_mc_co.paa",
+			"ASEC_Headgear\textures\rails.paa",
+			"ASEC_Headgear\textures\tfa_opscore_mc_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
@@ -1086,11 +1086,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -1131,8 +1131,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT BLK Comtac3 Arc (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -1164,17 +1164,17 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_blk.paa",
+			"ASEC_Headgear\textures\comtac_III_blk.paa",
 			"",
 			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
@@ -1189,11 +1189,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -1234,8 +1234,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT WHT Comtac3 Arc (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -1267,17 +1267,17 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_white_co.paa",
-			"tfl_headgear\textures\rails_white.paa",
-			"tfl_headgear\textures\tfa_opscore_white_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_white_co.paa",
+			"ASEC_Headgear\textures\rails_white.paa",
+			"ASEC_Headgear\textures\tfa_opscore_white_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_blk.paa",
+			"ASEC_Headgear\textures\comtac_III_blk.paa",
 			"",
 			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
@@ -1292,11 +1292,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -1337,8 +1337,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT UT Comtac3 Arc (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -1370,17 +1370,17 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
@@ -1395,11 +1395,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -1440,8 +1440,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT AOR1 Comtac3 Arc (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -1473,22 +1473,22 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor1_co.paa",
-			"tfl_headgear\textures\rails_tan.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor1_co.paa",
+			"ASEC_Headgear\textures\rails_tan.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
@@ -1498,11 +1498,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -1543,8 +1543,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT AOR2 Comtac3 Arc (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -1576,22 +1576,22 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor2_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor2_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
@@ -1601,11 +1601,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -1646,8 +1646,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT MC Comtac3 Arc (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -1679,22 +1679,22 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_mc_co.paa",
-			"tfl_headgear\textures\rails.paa",
-			"tfl_headgear\textures\tfa_opscore_mc_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_mc_co.paa",
+			"ASEC_Headgear\textures\rails.paa",
+			"ASEC_Headgear\textures\tfa_opscore_mc_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
@@ -1704,11 +1704,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -1749,8 +1749,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT BLK Comtac3 Arc (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -1782,22 +1782,22 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_blk.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\comtac_III_blk.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_blk_co.paa",
-			"tfl_headgear\textures\accessories_h1m_blk_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\m300c_blk_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_blk_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
@@ -1807,11 +1807,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -1852,8 +1852,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT WHT Comtac3 Arc (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -1885,22 +1885,22 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_white_co.paa",
-			"tfl_headgear\textures\rails_white.paa",
-			"tfl_headgear\textures\tfa_opscore_white_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_white_co.paa",
+			"ASEC_Headgear\textures\rails_white.paa",
+			"ASEC_Headgear\textures\tfa_opscore_white_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_blk.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\comtac_III_blk.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_blk_co.paa",
-			"tfl_headgear\textures\accessories_h1m_blk_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\m300c_blk_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_blk_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
@@ -1910,11 +1910,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -1955,8 +1955,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT UT Comtac3 Arc (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -1988,22 +1988,22 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
@@ -2013,11 +2013,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -2058,8 +2058,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT AOR1 Comtac3 Arc (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -2091,19 +2091,19 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor1_co.paa",
-			"tfl_headgear\textures\rails_tan.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor1_co.paa",
+			"ASEC_Headgear\textures\rails_tan.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -2116,11 +2116,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -2161,8 +2161,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT AOR2 Comtac3 Arc (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -2194,19 +2194,19 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor2_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor2_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
@@ -2219,11 +2219,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -2264,8 +2264,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT MC Comtac3 Arc (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -2297,19 +2297,19 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_mc_co.paa",
-			"tfl_headgear\textures\rails.paa",
-			"tfl_headgear\textures\tfa_opscore_mc_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_mc_co.paa",
+			"ASEC_Headgear\textures\rails.paa",
+			"ASEC_Headgear\textures\tfa_opscore_mc_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
@@ -2322,11 +2322,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -2367,8 +2367,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT BLK Comtac3 Arc (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -2400,19 +2400,19 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_blk.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\comtac_III_blk.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
@@ -2425,11 +2425,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -2470,8 +2470,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT WHT Comtac3 Arc (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -2503,19 +2503,19 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_white_co.paa",
-			"tfl_headgear\textures\rails_white.paa",
-			"tfl_headgear\textures\tfa_opscore_white_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_white_co.paa",
+			"ASEC_Headgear\textures\rails_white.paa",
+			"ASEC_Headgear\textures\tfa_opscore_white_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_blk.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\comtac_III_blk.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
@@ -2528,11 +2528,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -2573,8 +2573,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT UT Comtac3 Arc (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -2606,19 +2606,19 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
@@ -2631,11 +2631,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -2676,8 +2676,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT AOR1 Comtac3 Arc (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -2709,22 +2709,22 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor1_co.paa",
-			"tfl_headgear\textures\rails_tan.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor1_co.paa",
+			"ASEC_Headgear\textures\rails_tan.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
@@ -2734,11 +2734,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -2779,8 +2779,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT AOR2 Comtac3 Arc (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -2812,22 +2812,22 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor2_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor2_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
@@ -2837,11 +2837,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -2882,8 +2882,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT MC Comtac3 Arc (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -2915,22 +2915,22 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_mc_co.paa",
-			"tfl_headgear\textures\rails.paa",
-			"tfl_headgear\textures\tfa_opscore_mc_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_mc_co.paa",
+			"ASEC_Headgear\textures\rails.paa",
+			"ASEC_Headgear\textures\tfa_opscore_mc_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
@@ -2940,11 +2940,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -2985,8 +2985,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT BLK Comtac3 Arc (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -3018,22 +3018,22 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_blk.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\comtac_III_blk.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
-			"tfl_headgear\textures\m300c_blk_co.paa",
-			"tfl_headgear\textures\accessories_h1m_blk_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\m300c_blk_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_blk_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
@@ -3043,11 +3043,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -3088,8 +3088,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT WHT Comtac3 Arc (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -3121,22 +3121,22 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_white_co.paa",
-			"tfl_headgear\textures\rails_white.paa",
-			"tfl_headgear\textures\tfa_opscore_white_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_white_co.paa",
+			"ASEC_Headgear\textures\rails_white.paa",
+			"ASEC_Headgear\textures\tfa_opscore_white_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_blk.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\comtac_III_blk.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
-			"tfl_headgear\textures\m300c_blk_co.paa",
-			"tfl_headgear\textures\accessories_h1m_blk_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\m300c_blk_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_blk_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
@@ -3146,11 +3146,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -3191,8 +3191,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT UT Comtac3 Arc (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -3224,22 +3224,22 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
@@ -3249,11 +3249,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -3294,8 +3294,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT AOR1 Comtac3 Arc (F)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -3327,22 +3327,22 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor1_co.paa",
-			"tfl_headgear\textures\rails_tan.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor1_co.paa",
+			"ASEC_Headgear\textures\rails_tan.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
@@ -3352,11 +3352,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -3397,8 +3397,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT AOR2 Comtac3 Arc (F)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -3430,22 +3430,22 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor2_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor2_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
@@ -3455,11 +3455,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -3500,8 +3500,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT MC Comtac3 Arc (F)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -3533,22 +3533,22 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_mc_co.paa",
-			"tfl_headgear\textures\rails.paa",
-			"tfl_headgear\textures\tfa_opscore_mc_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_mc_co.paa",
+			"ASEC_Headgear\textures\rails.paa",
+			"ASEC_Headgear\textures\tfa_opscore_mc_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
@@ -3558,11 +3558,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -3603,8 +3603,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT BLK Comtac3 Arc (F)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -3636,22 +3636,22 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_blk.paa",
+			"ASEC_Headgear\textures\comtac_III_blk.paa",
 			"",
 			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
-			"tfl_headgear\textures\m300c_blk_co.paa",
-			"tfl_headgear\textures\accessories_h1m_blk_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\m300c_blk_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_blk_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
@@ -3661,11 +3661,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -3706,8 +3706,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT WHT Comtac3 Arc (F)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -3739,22 +3739,22 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_white_co.paa",
-			"tfl_headgear\textures\rails_white.paa",
-			"tfl_headgear\textures\tfa_opscore_white_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_white_co.paa",
+			"ASEC_Headgear\textures\rails_white.paa",
+			"ASEC_Headgear\textures\tfa_opscore_white_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_blk.paa",
+			"ASEC_Headgear\textures\comtac_III_blk.paa",
 			"",
 			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
-			"tfl_headgear\textures\m300c_blk_co.paa",
-			"tfl_headgear\textures\accessories_h1m_blk_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\m300c_blk_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_blk_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
@@ -3764,11 +3764,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -3809,8 +3809,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT UT Comtac3 Arc (F)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -3842,22 +3842,22 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
@@ -3867,11 +3867,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -3912,8 +3912,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT AOR1 Comtac3 Arc (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -3945,17 +3945,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor1_co.paa",
-			"tfl_headgear\textures\rails_tan.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor1_co.paa",
+			"ASEC_Headgear\textures\rails_tan.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -3964,17 +3962,19 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_aor1.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_aor1.paa",
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -4015,8 +4015,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT AOR2 Comtac3 Arc (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -4048,17 +4048,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor2_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor2_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
@@ -4067,17 +4065,19 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_aor2.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_aor2.paa",
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -4118,8 +4118,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT MC Comtac3 Arc (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -4151,17 +4151,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_mc_co.paa",
-			"tfl_headgear\textures\rails.paa",
-			"tfl_headgear\textures\tfa_opscore_mc_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_mc_co.paa",
+			"ASEC_Headgear\textures\rails.paa",
+			"ASEC_Headgear\textures\tfa_opscore_mc_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
@@ -4170,17 +4168,19 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -4221,8 +4221,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT BLK Comtac3 Arc (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -4254,17 +4254,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_blk.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\comtac_III_blk.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
@@ -4273,17 +4271,19 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_blk_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_blk.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_blk.paa",
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -4324,8 +4324,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT WHT Comtac3 Arc (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -4357,17 +4357,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_white_co.paa",
-			"tfl_headgear\textures\rails_white.paa",
-			"tfl_headgear\textures\tfa_opscore_white_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_white_co.paa",
+			"ASEC_Headgear\textures\rails_white.paa",
+			"ASEC_Headgear\textures\tfa_opscore_white_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_blk.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\comtac_III_blk.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
@@ -4376,17 +4374,19 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_white_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_wht.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_wht.paa",
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -4427,8 +4427,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT UT Comtac3 Arc (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -4460,17 +4460,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
@@ -4479,17 +4477,19 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_tan.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_tan.paa",
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -4530,8 +4530,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT AOR1 Comtac3 Arc (H)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -4563,36 +4563,36 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor1_co.paa",
-			"tfl_headgear\textures\rails_tan.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor1_co.paa",
+			"ASEC_Headgear\textures\rails_tan.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"",
-			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_aor1.paa",
+			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_aor1.paa",
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -4633,8 +4633,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT AOR2 Comtac3 Arc (H)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -4666,36 +4666,36 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor2_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor2_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"",
-			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_aor2.paa",
+			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_aor2.paa",
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -4736,8 +4736,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT MC Comtac3 Arc (H)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -4769,36 +4769,36 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_mc_co.paa",
-			"tfl_headgear\textures\rails.paa",
-			"tfl_headgear\textures\tfa_opscore_mc_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_mc_co.paa",
+			"ASEC_Headgear\textures\rails.paa",
+			"ASEC_Headgear\textures\tfa_opscore_mc_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"",
-			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
+			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -4839,8 +4839,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT BLK Comtac3 Arc (H)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -4872,36 +4872,36 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_blk.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\comtac_III_blk.paa",
 			"",
 			"",
-			"",
-			"",
-			"tfl_headgear\textures\m300c_blk_co.paa",
-			"tfl_headgear\textures\accessories_h1m_blk_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_blk_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_blk.paa",
+			"",
+			"ASEC_Headgear\textures\m300c_blk_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_blk_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_blk.paa",
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -4942,8 +4942,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT WHT Comtac3 Arc (H)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -4975,36 +4975,36 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_white_co.paa",
-			"tfl_headgear\textures\rails_white.paa",
-			"tfl_headgear\textures\tfa_opscore_white_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_white_co.paa",
+			"ASEC_Headgear\textures\rails_white.paa",
+			"ASEC_Headgear\textures\tfa_opscore_white_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_blk.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\comtac_III_blk.paa",
 			"",
 			"",
-			"",
-			"",
-			"tfl_headgear\textures\m300c_blk_co.paa",
-			"tfl_headgear\textures\accessories_h1m_blk_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_white_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_wht.paa",
+			"",
+			"ASEC_Headgear\textures\m300c_blk_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_blk_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_wht.paa",
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -5045,8 +5045,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT UT Comtac3 Arc (H)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -5078,36 +5078,36 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"",
-			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_tan.paa",
+			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_tan.paa",
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -5148,8 +5148,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT AOR1 Comtac3 Arc (I)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -5181,36 +5181,36 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor1_co.paa",
-			"tfl_headgear\textures\rails_tan.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor1_co.paa",
+			"ASEC_Headgear\textures\rails_tan.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -5251,8 +5251,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT AOR2 Comtac3 Arc (I)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -5284,36 +5284,36 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor2_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor2_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -5354,8 +5354,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT MC Comtac3 Arc (I)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -5387,36 +5387,36 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_mc_co.paa",
-			"tfl_headgear\textures\rails.paa",
-			"tfl_headgear\textures\tfa_opscore_mc_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_mc_co.paa",
+			"ASEC_Headgear\textures\rails.paa",
+			"ASEC_Headgear\textures\tfa_opscore_mc_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -5457,8 +5457,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT BLK Comtac3 Arc (I)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -5490,36 +5490,36 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_blk.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\comtac_III_blk.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -5560,8 +5560,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT WHT Comtac3 Arc (I)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -5593,36 +5593,36 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_white_co.paa",
-			"tfl_headgear\textures\rails_white.paa",
-			"tfl_headgear\textures\tfa_opscore_white_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_white_co.paa",
+			"ASEC_Headgear\textures\rails_white.paa",
+			"ASEC_Headgear\textures\tfa_opscore_white_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_blk.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\comtac_III_blk.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -5663,8 +5663,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT UT Comtac3 Arc (I)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -5696,36 +5696,36 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -5766,8 +5766,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT AOR1 Comtac3 Arc (J)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -5799,36 +5799,36 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor1_co.paa",
-			"tfl_headgear\textures\rails_tan.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor1_co.paa",
+			"ASEC_Headgear\textures\rails_tan.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -5869,8 +5869,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT AOR2 Comtac3 Arc (J)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -5902,36 +5902,36 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor2_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor2_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -5972,8 +5972,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT MC Comtac3 Arc (J)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -6005,36 +6005,36 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_mc_co.paa",
-			"tfl_headgear\textures\rails.paa",
-			"tfl_headgear\textures\tfa_opscore_mc_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_mc_co.paa",
+			"ASEC_Headgear\textures\rails.paa",
+			"ASEC_Headgear\textures\tfa_opscore_mc_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -6075,8 +6075,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT BLK Comtac3 Arc (J)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -6108,36 +6108,36 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_blk.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\comtac_III_blk.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_blk_co.paa",
-			"tfl_headgear\textures\accessories_h1m_blk_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"",
+			"ASEC_Headgear\textures\m300c_blk_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_blk_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -6178,8 +6178,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT WHT Comtac3 Arc (J)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -6211,36 +6211,36 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_white_co.paa",
-			"tfl_headgear\textures\rails_white.paa",
-			"tfl_headgear\textures\tfa_opscore_white_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_white_co.paa",
+			"ASEC_Headgear\textures\rails_white.paa",
+			"ASEC_Headgear\textures\tfa_opscore_white_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_blk.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\comtac_III_blk.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_blk_co.paa",
-			"tfl_headgear\textures\accessories_h1m_blk_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"",
+			"ASEC_Headgear\textures\m300c_blk_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_blk_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -6281,8 +6281,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT UT Comtac3 Arc (J)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -6314,36 +6314,36 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -6384,8 +6384,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT AOR1 Comtac3 Arc (K)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -6417,17 +6417,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor1_co.paa",
-			"tfl_headgear\textures\rails_tan.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor1_co.paa",
+			"ASEC_Headgear\textures\rails_tan.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -6441,13 +6439,15 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -6488,8 +6488,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT AOR2 Comtac3 Arc (K)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -6521,17 +6521,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor2_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor2_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
@@ -6545,13 +6543,15 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -6592,8 +6592,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT MC Comtac3 Arc (K)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -6625,17 +6625,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_mc_co.paa",
-			"tfl_headgear\textures\rails.paa",
-			"tfl_headgear\textures\tfa_opscore_mc_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_mc_co.paa",
+			"ASEC_Headgear\textures\rails.paa",
+			"ASEC_Headgear\textures\tfa_opscore_mc_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
@@ -6649,13 +6647,15 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -6696,8 +6696,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT BLK Comtac3 Arc (K)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -6729,17 +6729,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_blk.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\comtac_III_blk.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
@@ -6753,13 +6751,15 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -6800,8 +6800,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT WHT Comtac3 Arc (K)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -6833,17 +6833,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_white_co.paa",
-			"tfl_headgear\textures\rails_white.paa",
-			"tfl_headgear\textures\tfa_opscore_white_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_white_co.paa",
+			"ASEC_Headgear\textures\rails_white.paa",
+			"ASEC_Headgear\textures\tfa_opscore_white_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_blk.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\comtac_III_blk.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
@@ -6857,13 +6855,15 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -6904,8 +6904,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT UT Comtac3 Arc (K)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -6937,17 +6937,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
@@ -6961,13 +6959,15 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -7008,8 +7008,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT AOR1 Comtac3 Arc (L)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -7041,37 +7041,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor1_co.paa",
-			"tfl_headgear\textures\rails_tan.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor1_co.paa",
+			"ASEC_Headgear\textures\rails_tan.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -7112,8 +7112,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT AOR2 Comtac3 Arc (L)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -7145,37 +7145,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor2_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor2_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -7216,8 +7216,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT MC Comtac3 Arc (L)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -7249,37 +7249,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_mc_co.paa",
-			"tfl_headgear\textures\rails.paa",
-			"tfl_headgear\textures\tfa_opscore_mc_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_mc_co.paa",
+			"ASEC_Headgear\textures\rails.paa",
+			"ASEC_Headgear\textures\tfa_opscore_mc_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -7320,8 +7320,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT BLK Comtac3 Arc (L)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -7353,37 +7353,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_blk.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\comtac_III_blk.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_blk_co.paa",
-			"tfl_headgear\textures\accessories_h1m_blk_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\m300c_blk_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_blk_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -7424,8 +7424,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT WHT Comtac3 Arc (L)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -7457,37 +7457,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_white_co.paa",
-			"tfl_headgear\textures\rails_white.paa",
-			"tfl_headgear\textures\tfa_opscore_white_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_white_co.paa",
+			"ASEC_Headgear\textures\rails_white.paa",
+			"ASEC_Headgear\textures\tfa_opscore_white_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_blk.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\comtac_III_blk.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_blk_co.paa",
-			"tfl_headgear\textures\accessories_h1m_blk_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\m300c_blk_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_blk_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -7528,8 +7528,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT UT Comtac3 Arc (L)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -7561,37 +7561,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -7632,8 +7632,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT AOR1 AMP (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -7665,21 +7665,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor1_co.paa",
-			"tfl_headgear\textures\rails_tan.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor1_co.paa",
+			"ASEC_Headgear\textures\rails_tan.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -7687,16 +7681,22 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -7737,8 +7737,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT AOR2 AMP (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -7770,21 +7770,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor2_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor2_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
@@ -7792,16 +7786,22 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -7842,8 +7842,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT MC AMP (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -7875,21 +7875,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_mc_co.paa",
-			"tfl_headgear\textures\rails.paa",
-			"tfl_headgear\textures\tfa_opscore_mc_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_mc_co.paa",
+			"ASEC_Headgear\textures\rails.paa",
+			"ASEC_Headgear\textures\tfa_opscore_mc_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
@@ -7897,16 +7891,22 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -7947,8 +7947,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT BLK AMP (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -7980,21 +7980,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_blk_co.paa",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
@@ -8002,16 +7996,22 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_blk_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_blk_co.paa"
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_blk_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -8052,8 +8052,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT WHT AMP (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -8085,21 +8085,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_white_co.paa",
-			"tfl_headgear\textures\rails_white.paa",
-			"tfl_headgear\textures\tfa_opscore_white_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_white_co.paa",
+			"ASEC_Headgear\textures\rails_white.paa",
+			"ASEC_Headgear\textures\tfa_opscore_white_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_white_co.paa",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
@@ -8107,16 +8101,22 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_blk_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_blk_co.paa"
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_blk_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -8157,8 +8157,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT UT AMP (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -8190,21 +8190,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
@@ -8212,16 +8206,22 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -8262,8 +8262,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT AOR1 AMP (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -8295,17 +8295,17 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor1_co.paa",
-			"tfl_headgear\textures\rails_tan.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor1_co.paa",
+			"ASEC_Headgear\textures\rails_tan.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -8317,16 +8317,16 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -8367,8 +8367,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT AOR2 AMP (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -8400,17 +8400,17 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor2_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor2_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
@@ -8422,16 +8422,16 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -8472,8 +8472,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT MC AMP (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -8505,17 +8505,17 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_mc_co.paa",
-			"tfl_headgear\textures\rails.paa",
-			"tfl_headgear\textures\tfa_opscore_mc_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_mc_co.paa",
+			"ASEC_Headgear\textures\rails.paa",
+			"ASEC_Headgear\textures\tfa_opscore_mc_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
@@ -8527,16 +8527,16 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -8577,8 +8577,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT BLK AMP (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -8610,17 +8610,17 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_blk_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
@@ -8632,16 +8632,16 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_blk_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_blk_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_blk_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -8682,8 +8682,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT WHT AMP (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -8715,17 +8715,17 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_white_co.paa",
-			"tfl_headgear\textures\rails_white.paa",
-			"tfl_headgear\textures\tfa_opscore_white_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_white_co.paa",
+			"ASEC_Headgear\textures\rails_white.paa",
+			"ASEC_Headgear\textures\tfa_opscore_white_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_white_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
@@ -8737,16 +8737,16 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_blk_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_blk_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_blk_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -8787,8 +8787,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT UT AMP (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -8820,17 +8820,17 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
@@ -8842,16 +8842,16 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -8892,8 +8892,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT AOR1 AMP (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -8925,38 +8925,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor1_co.paa",
-			"tfl_headgear\textures\rails_tan.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor1_co.paa",
+			"ASEC_Headgear\textures\rails_tan.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -8997,8 +8997,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT AOR2 AMP (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -9030,38 +9030,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor2_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor2_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -9102,8 +9102,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT MC AMP (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -9135,38 +9135,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_mc_co.paa",
-			"tfl_headgear\textures\rails.paa",
-			"tfl_headgear\textures\tfa_opscore_mc_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_mc_co.paa",
+			"ASEC_Headgear\textures\rails.paa",
+			"ASEC_Headgear\textures\tfa_opscore_mc_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -9207,8 +9207,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT BLK AMP (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -9240,38 +9240,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_blk_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_blk_co.paa",
-			"tfl_headgear\textures\accessories_h1m_blk_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\m300c_blk_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_blk_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_blk_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_blk_co.paa"
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_blk_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -9312,8 +9312,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT WHT AMP (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -9345,38 +9345,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_white_co.paa",
-			"tfl_headgear\textures\rails_white.paa",
-			"tfl_headgear\textures\tfa_opscore_white_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_white_co.paa",
+			"ASEC_Headgear\textures\rails_white.paa",
+			"ASEC_Headgear\textures\tfa_opscore_white_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_white_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_blk_co.paa",
-			"tfl_headgear\textures\accessories_h1m_blk_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\m300c_blk_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_blk_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_blk_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_blk_co.paa"
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_blk_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -9417,8 +9417,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT UT AMP (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -9450,38 +9450,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -9522,8 +9522,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT AOR1 AMP (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -9555,38 +9555,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor1_co.paa",
-			"tfl_headgear\textures\rails_tan.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor1_co.paa",
+			"ASEC_Headgear\textures\rails_tan.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -9627,8 +9627,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT AOR2 AMP (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -9660,38 +9660,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor2_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor2_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_co.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -9732,8 +9732,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT MC AMP (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -9765,38 +9765,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_mc_co.paa",
-			"tfl_headgear\textures\rails.paa",
-			"tfl_headgear\textures\tfa_opscore_mc_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_mc_co.paa",
+			"ASEC_Headgear\textures\rails.paa",
+			"ASEC_Headgear\textures\tfa_opscore_mc_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_co.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -9837,8 +9837,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT BLK AMP (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -9870,38 +9870,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_blk_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_blk_co.paa"
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_blk_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -9942,8 +9942,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT WHT AMP (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -9975,38 +9975,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_white_co.paa",
-			"tfl_headgear\textures\rails_white.paa",
-			"tfl_headgear\textures\tfa_opscore_white_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_white_co.paa",
+			"ASEC_Headgear\textures\rails_white.paa",
+			"ASEC_Headgear\textures\tfa_opscore_white_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_blk_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_blk_co.paa"
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_blk_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -10047,8 +10047,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT UT AMP (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -10080,38 +10080,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_co.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -10152,8 +10152,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT AOR1 AMP (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -10185,38 +10185,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor1_co.paa",
-			"tfl_headgear\textures\rails_tan.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor1_co.paa",
+			"ASEC_Headgear\textures\rails_tan.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -10257,8 +10257,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT AOR2 AMP (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -10290,38 +10290,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor2_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor2_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -10362,8 +10362,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT MC AMP (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -10395,38 +10395,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_mc_co.paa",
-			"tfl_headgear\textures\rails.paa",
-			"tfl_headgear\textures\tfa_opscore_mc_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_mc_co.paa",
+			"ASEC_Headgear\textures\rails.paa",
+			"ASEC_Headgear\textures\tfa_opscore_mc_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -10467,8 +10467,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT BLK AMP (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -10500,38 +10500,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
-			"tfl_headgear\textures\m300c_blk_co.paa",
-			"tfl_headgear\textures\accessories_h1m_blk_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\m300c_blk_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_blk_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_blk_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_blk_co.paa"
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_blk_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -10572,8 +10572,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT WHT AMP (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -10605,38 +10605,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_white_co.paa",
-			"tfl_headgear\textures\rails_white.paa",
-			"tfl_headgear\textures\tfa_opscore_white_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_white_co.paa",
+			"ASEC_Headgear\textures\rails_white.paa",
+			"ASEC_Headgear\textures\tfa_opscore_white_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
-			"tfl_headgear\textures\m300c_blk_co.paa",
-			"tfl_headgear\textures\accessories_h1m_blk_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\m300c_blk_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_blk_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_blk_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_blk_co.paa"
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_blk_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -10677,8 +10677,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT UT AMP (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -10710,38 +10710,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -10782,8 +10782,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT AOR1 AMP (F)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -10815,38 +10815,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor1_co.paa",
-			"tfl_headgear\textures\rails_tan.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor1_co.paa",
+			"ASEC_Headgear\textures\rails_tan.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -10887,8 +10887,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT AOR2 AMP (F)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -10920,38 +10920,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor2_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor2_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -10992,8 +10992,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT MC AMP (F)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -11025,38 +11025,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_mc_co.paa",
-			"tfl_headgear\textures\rails.paa",
-			"tfl_headgear\textures\tfa_opscore_mc_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_mc_co.paa",
+			"ASEC_Headgear\textures\rails.paa",
+			"ASEC_Headgear\textures\tfa_opscore_mc_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -11097,8 +11097,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT BLK AMP (F)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -11130,38 +11130,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_blk_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
-			"tfl_headgear\textures\m300c_blk_co.paa",
-			"tfl_headgear\textures\accessories_h1m_blk_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\m300c_blk_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_blk_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_blk_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_blk_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_blk_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -11202,8 +11202,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT WHT AMP (F)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -11235,38 +11235,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_white_co.paa",
-			"tfl_headgear\textures\rails_white.paa",
-			"tfl_headgear\textures\tfa_opscore_white_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_white_co.paa",
+			"ASEC_Headgear\textures\rails_white.paa",
+			"ASEC_Headgear\textures\tfa_opscore_white_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_white_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
-			"tfl_headgear\textures\m300c_blk_co.paa",
-			"tfl_headgear\textures\accessories_h1m_blk_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\m300c_blk_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_blk_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_blk_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_blk_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_blk_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -11307,8 +11307,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT UT AMP (F)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -11340,38 +11340,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_blk_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_blk_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -11412,8 +11412,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT AOR1 AMP (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -11445,15 +11445,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor1_co.paa",
-			"tfl_headgear\textures\rails_tan.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor1_co.paa",
+			"ASEC_Headgear\textures\rails_tan.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -11464,19 +11464,19 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_aor1.paa",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_aor1.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -11517,8 +11517,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT AOR2 AMP (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -11550,15 +11550,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor2_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor2_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
@@ -11569,19 +11569,19 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_aor2.paa",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_aor2.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -11622,8 +11622,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT MC AMP (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -11655,15 +11655,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_mc_co.paa",
-			"tfl_headgear\textures\rails.paa",
-			"tfl_headgear\textures\tfa_opscore_mc_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_mc_co.paa",
+			"ASEC_Headgear\textures\rails.paa",
+			"ASEC_Headgear\textures\tfa_opscore_mc_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
@@ -11674,19 +11674,19 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -11727,8 +11727,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT BLK AMP (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -11760,15 +11760,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
@@ -11779,19 +11779,19 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_blk_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_blk.paa",
-			"tfl_headgear\textures\opscore_amp1_blk_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_blk.paa",
+			"ASEC_Headgear\textures\opscore_amp1_blk_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_blk_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -11832,8 +11832,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT WHT AMP (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -11865,15 +11865,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_white_co.paa",
-			"tfl_headgear\textures\rails_white.paa",
-			"tfl_headgear\textures\tfa_opscore_white_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_white_co.paa",
+			"ASEC_Headgear\textures\rails_white.paa",
+			"ASEC_Headgear\textures\tfa_opscore_white_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
@@ -11884,19 +11884,19 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_white_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_wht.paa",
-			"tfl_headgear\textures\opscore_amp1_blk_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_wht.paa",
+			"ASEC_Headgear\textures\opscore_amp1_blk_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_blk_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -11937,8 +11937,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT UT AMP (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -11970,15 +11970,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
@@ -11989,19 +11989,19 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_tan.paa",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_tan.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -12042,8 +12042,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT AOR1 AMP (H)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -12075,38 +12075,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor1_co.paa",
-			"tfl_headgear\textures\rails_tan.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor1_co.paa",
+			"ASEC_Headgear\textures\rails_tan.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_aor1.paa",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_aor1.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -12147,8 +12147,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT AOR2 AMP (H)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -12180,38 +12180,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor2_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor2_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_aor2.paa",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_aor2.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -12252,8 +12252,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT MC AMP (H)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -12285,38 +12285,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_mc_co.paa",
-			"tfl_headgear\textures\rails.paa",
-			"tfl_headgear\textures\tfa_opscore_mc_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_mc_co.paa",
+			"ASEC_Headgear\textures\rails.paa",
+			"ASEC_Headgear\textures\tfa_opscore_mc_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -12357,8 +12357,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT BLK AMP (H)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -12390,38 +12390,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_blk_co.paa",
-			"tfl_headgear\textures\accessories_h1m_blk_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_blk_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_blk_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_blk_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_blk.paa",
-			"tfl_headgear\textures\opscore_amp1_blk_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_blk.paa",
+			"ASEC_Headgear\textures\opscore_amp1_blk_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_blk_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -12462,8 +12462,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT WHT AMP (H)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -12495,38 +12495,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_white_co.paa",
-			"tfl_headgear\textures\rails_white.paa",
-			"tfl_headgear\textures\tfa_opscore_white_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_white_co.paa",
+			"ASEC_Headgear\textures\rails_white.paa",
+			"ASEC_Headgear\textures\tfa_opscore_white_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_blk_co.paa",
-			"tfl_headgear\textures\accessories_h1m_blk_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_blk_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_blk_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_white_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_wht.paa",
-			"tfl_headgear\textures\opscore_amp1_blk_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_wht.paa",
+			"ASEC_Headgear\textures\opscore_amp1_blk_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_blk_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -12567,8 +12567,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT UT AMP (H)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -12600,38 +12600,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_tan.paa",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_tan.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -12672,8 +12672,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT AOR1 AMP (I)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -12705,15 +12705,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor1_co.paa",
-			"tfl_headgear\textures\rails_tan.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor1_co.paa",
+			"ASEC_Headgear\textures\rails_tan.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -12722,21 +12722,21 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -12777,8 +12777,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT AOR2 AMP (I)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -12810,15 +12810,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor2_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor2_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
@@ -12827,21 +12827,21 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -12882,8 +12882,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT MC AMP (I)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -12915,15 +12915,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_mc_co.paa",
-			"tfl_headgear\textures\rails.paa",
-			"tfl_headgear\textures\tfa_opscore_mc_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_mc_co.paa",
+			"ASEC_Headgear\textures\rails.paa",
+			"ASEC_Headgear\textures\tfa_opscore_mc_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
@@ -12932,21 +12932,21 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -12987,8 +12987,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT BLK AMP (I)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -13020,15 +13020,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
@@ -13037,21 +13037,21 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_blk_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_blk_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_blk_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -13092,8 +13092,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT WHT AMP (I)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -13125,15 +13125,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_white_co.paa",
-			"tfl_headgear\textures\rails_white.paa",
-			"tfl_headgear\textures\tfa_opscore_white_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_white_co.paa",
+			"ASEC_Headgear\textures\rails_white.paa",
+			"ASEC_Headgear\textures\tfa_opscore_white_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
@@ -13142,21 +13142,21 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_blk_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_blk_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_blk_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -13197,8 +13197,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT UT AMP (I)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -13230,15 +13230,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
@@ -13247,21 +13247,21 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -13302,8 +13302,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT AOR1 AMP (J)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -13335,38 +13335,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor1_co.paa",
-			"tfl_headgear\textures\rails_tan.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor1_co.paa",
+			"ASEC_Headgear\textures\rails_tan.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -13407,8 +13407,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT AOR2 AMP (J)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -13440,38 +13440,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor2_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor2_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_co.paa",
-			"",
-			"",
-			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -13512,8 +13512,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT MC AMP (J)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -13545,38 +13545,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_mc_co.paa",
-			"tfl_headgear\textures\rails.paa",
-			"tfl_headgear\textures\tfa_opscore_mc_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_mc_co.paa",
+			"ASEC_Headgear\textures\rails.paa",
+			"ASEC_Headgear\textures\tfa_opscore_mc_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_co.paa",
-			"",
-			"",
-			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -13617,8 +13617,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT BLK AMP (J)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -13650,38 +13650,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_blk_co.paa",
-			"tfl_headgear\textures\accessories_h1m_blk_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_blk_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_blk_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
-			"",
-			"",
-			"",
-			"tfl_headgear\textures\opscore_amp1_blk_co.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_blk_co.paa"
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_blk_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -13722,8 +13722,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT WHT AMP (J)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -13755,38 +13755,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_white_co.paa",
-			"tfl_headgear\textures\rails_white.paa",
-			"tfl_headgear\textures\tfa_opscore_white_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_white_co.paa",
+			"ASEC_Headgear\textures\rails_white.paa",
+			"ASEC_Headgear\textures\tfa_opscore_white_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_blk_co.paa",
-			"tfl_headgear\textures\accessories_h1m_blk_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_blk_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_blk_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
-			"",
-			"",
-			"",
-			"tfl_headgear\textures\opscore_amp1_blk_co.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_blk_co.paa"
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_blk_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -13827,8 +13827,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT UT AMP (J)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -13860,38 +13860,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_co.paa",
-			"",
-			"",
-			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -13932,8 +13932,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT AOR1 AMP (K)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -13965,21 +13965,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor1_co.paa",
-			"tfl_headgear\textures\rails_tan.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor1_co.paa",
+			"ASEC_Headgear\textures\rails_tan.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -13987,16 +13981,22 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"",
+			"ASEC_Headgear\textures\acc_soc_manta.paa",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -14037,8 +14037,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT AOR2 AMP (K)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -14070,21 +14070,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor2_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor2_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
@@ -14092,16 +14086,22 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"",
+			"ASEC_Headgear\textures\acc_soc_manta.paa",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -14142,8 +14142,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT MC AMP (K)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -14175,21 +14175,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_mc_co.paa",
-			"tfl_headgear\textures\rails.paa",
-			"tfl_headgear\textures\tfa_opscore_mc_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_mc_co.paa",
+			"ASEC_Headgear\textures\rails.paa",
+			"ASEC_Headgear\textures\tfa_opscore_mc_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
@@ -14197,16 +14191,22 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"",
+			"ASEC_Headgear\textures\acc_soc_manta.paa",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -14247,8 +14247,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT BLK AMP (K)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -14280,21 +14280,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_blk_co.paa",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
@@ -14302,16 +14296,22 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_blk_co.paa",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa",
-			"tfl_headgear\textures\opscore_amp2_blk_co.paa"
+			"",
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_blk_co.paa",
+			"",
+			"ASEC_Headgear\textures\acc_soc_manta.paa",
+			"ASEC_Headgear\textures\opscore_amp2_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -14352,8 +14352,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT WHT AMP (K)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -14385,21 +14385,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_white_co.paa",
-			"tfl_headgear\textures\rails_white.paa",
-			"tfl_headgear\textures\tfa_opscore_white_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_white_co.paa",
+			"ASEC_Headgear\textures\rails_white.paa",
+			"ASEC_Headgear\textures\tfa_opscore_white_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_white_co.paa",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
@@ -14407,16 +14401,22 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_blk_co.paa",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa",
-			"tfl_headgear\textures\opscore_amp2_blk_co.paa"
+			"",
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_blk_co.paa",
+			"",
+			"ASEC_Headgear\textures\acc_soc_manta.paa",
+			"ASEC_Headgear\textures\opscore_amp2_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -14457,8 +14457,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT UT AMP (K)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -14490,21 +14490,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
@@ -14512,16 +14506,22 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"",
+			"ASEC_Headgear\textures\acc_soc_manta.paa",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -14562,8 +14562,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT AOR1 AMP (L)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -14595,38 +14595,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor1_co.paa",
-			"tfl_headgear\textures\rails_tan.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor1_co.paa",
+			"ASEC_Headgear\textures\rails_tan.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\acc_soc_manta.paa",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -14667,8 +14667,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT AOR2 AMP (L)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -14700,38 +14700,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor2_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor2_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\acc_soc_manta.paa",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -14772,8 +14772,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT MC AMP (L)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -14805,38 +14805,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_mc_co.paa",
-			"tfl_headgear\textures\rails.paa",
-			"tfl_headgear\textures\tfa_opscore_mc_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_mc_co.paa",
+			"ASEC_Headgear\textures\rails.paa",
+			"ASEC_Headgear\textures\tfa_opscore_mc_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\acc_soc_manta.paa",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -14877,8 +14877,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT BLK AMP (L)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -14910,38 +14910,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_blk_co.paa",
-			"tfl_headgear\textures\accessories_h1m_blk_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_blk_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_blk_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_blk_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_blk_co.paa",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa",
-			"tfl_headgear\textures\opscore_amp2_blk_co.paa"
+			"ASEC_Headgear\textures\acc_soc_manta.paa",
+			"ASEC_Headgear\textures\opscore_amp2_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -14982,8 +14982,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT WHT AMP (L)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -15015,38 +15015,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_white_co.paa",
-			"tfl_headgear\textures\rails_white.paa",
-			"tfl_headgear\textures\tfa_opscore_white_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_white_co.paa",
+			"ASEC_Headgear\textures\rails_white.paa",
+			"ASEC_Headgear\textures\tfa_opscore_white_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_blk_co.paa",
-			"tfl_headgear\textures\accessories_h1m_blk_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_blk_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_blk_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_blk_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_blk_co.paa",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa",
-			"tfl_headgear\textures\opscore_amp2_blk_co.paa"
+			"ASEC_Headgear\textures\acc_soc_manta.paa",
+			"ASEC_Headgear\textures\opscore_amp2_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -15087,8 +15087,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT UT AMP (L)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -15120,38 +15120,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\acc_soc_manta.paa",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -15192,8 +15192,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover AOR1 Comtac3 Arc (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -15225,17 +15225,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor1_co.paa",
-			"tfl_headgear\textures\rails_tan.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor1_co.paa",
+			"ASEC_Headgear\textures\rails_tan.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -15248,13 +15246,15 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_aor1_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\mt_cover_aor1_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -15295,8 +15295,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover AOR2 Comtac3 Arc (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -15328,17 +15328,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
@@ -15351,13 +15349,15 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_aor2_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\mt_cover_aor2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -15398,8 +15398,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover MC Comtac3 Arc (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -15431,17 +15431,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_mc_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_mc_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
@@ -15454,13 +15452,15 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_mc_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\mt_cover_mc_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -15501,8 +15501,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover BLK Comtac3 Arc (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -15534,17 +15534,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_blk.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\comtac_III_blk.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
@@ -15557,13 +15555,15 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_blk_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\mt_cover_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -15604,8 +15604,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover MCB Comtac3 Arc (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -15637,17 +15637,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_blk.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\comtac_III_blk.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
@@ -15660,13 +15658,15 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_mcb_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\mt_cover_mcb_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -15707,8 +15707,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover WHT Comtac3 Arc (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -15740,17 +15740,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
@@ -15763,13 +15761,15 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_alpine_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\mt_cover_alpine_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -15810,8 +15810,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover UT Comtac3 Arc (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -15843,17 +15843,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
@@ -15866,13 +15864,15 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_od_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\mt_cover_od_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -15913,8 +15913,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover AOR1 Comtac3 Arc (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -15946,19 +15946,17 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor1_co.paa",
-			"tfl_headgear\textures\rails_tan.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor1_co.paa",
+			"ASEC_Headgear\textures\rails_tan.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -15969,13 +15967,15 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_aor1_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\mt_cover_aor1_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -16016,8 +16016,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover AOR2 Comtac3 Arc (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -16049,19 +16049,17 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
@@ -16072,13 +16070,15 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_aor2_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\mt_cover_aor2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -16119,8 +16119,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover MC Comtac3 Arc (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -16152,19 +16152,17 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_mc_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_mc_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
@@ -16175,13 +16173,15 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_mc_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\mt_cover_mc_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -16222,8 +16222,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover BLK Comtac3 Arc (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -16255,19 +16255,17 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_blk.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\comtac_III_blk.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
@@ -16278,13 +16276,15 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_blk_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\mt_cover_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -16325,8 +16325,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover MCB Comtac3 Arc (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -16358,19 +16358,17 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_blk.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\comtac_III_blk.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
@@ -16381,13 +16379,15 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_mcb_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\mt_cover_mcb_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -16428,8 +16428,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover WHT Comtac3 Arc (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -16461,19 +16461,17 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
@@ -16484,13 +16482,15 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_alpine_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\mt_cover_alpine_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -16531,8 +16531,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover UT Comtac3 Arc (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -16564,19 +16564,17 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
@@ -16587,13 +16585,15 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_od_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\mt_cover_od_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -16634,8 +16634,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover AOR1 Comtac3 Arc (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -16667,36 +16667,36 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor1_co.paa",
-			"tfl_headgear\textures\rails_tan.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor1_co.paa",
+			"ASEC_Headgear\textures\rails_tan.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_aor1_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\mt_cover_aor1_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -16737,8 +16737,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover AOR2 Comtac3 Arc (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -16770,36 +16770,36 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_aor2_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\mt_cover_aor2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -16840,8 +16840,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover MC Comtac3 Arc (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -16873,36 +16873,36 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_mc_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_mc_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_mc_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\mt_cover_mc_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -16943,8 +16943,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover BLK Comtac3 Arc (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -16976,36 +16976,36 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_blk.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\comtac_III_blk.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_blk_co.paa",
-			"tfl_headgear\textures\accessories_h1m_blk_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\m300c_blk_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_blk_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_blk_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\mt_cover_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -17046,8 +17046,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover MCB Comtac3 Arc (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -17079,36 +17079,36 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_blk.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\comtac_III_blk.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_blk_co.paa",
-			"tfl_headgear\textures\accessories_h1m_blk_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\m300c_blk_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_blk_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_mcb_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\mt_cover_mcb_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -17149,8 +17149,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover WHT Comtac3 Arc (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -17182,36 +17182,36 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_alpine_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\mt_cover_alpine_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -17252,8 +17252,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover UT Comtac3 Arc (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -17285,36 +17285,36 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_od_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\mt_cover_od_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -17355,8 +17355,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover AOR1 Comtac3 Arc (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -17388,21 +17388,19 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor1_co.paa",
-			"tfl_headgear\textures\rails_tan.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor1_co.paa",
+			"ASEC_Headgear\textures\rails_tan.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -17411,13 +17409,15 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_aor1_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\mt_cover_aor1_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -17458,8 +17458,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover AOR2 Comtac3 Arc (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -17491,21 +17491,19 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
@@ -17514,13 +17512,15 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_aor2_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\mt_cover_aor2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -17561,8 +17561,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover MC Comtac3 Arc (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -17594,21 +17594,19 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_mc_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_mc_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
@@ -17617,13 +17615,15 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_mc_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\mt_cover_mc_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -17664,8 +17664,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover BLK Comtac3 Arc (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -17697,21 +17697,19 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_blk.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\comtac_III_blk.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
@@ -17720,13 +17718,15 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_blk_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\mt_cover_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -17767,8 +17767,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover MCB Comtac3 Arc (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -17800,21 +17800,19 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_blk.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\comtac_III_blk.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
@@ -17823,13 +17821,15 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_mcb_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\mt_cover_mcb_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -17870,8 +17870,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover WHT Comtac3 Arc (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -17903,21 +17903,19 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
@@ -17926,13 +17924,15 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_alpine_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\mt_cover_alpine_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -17973,8 +17973,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover UT Comtac3 Arc (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -18006,21 +18006,19 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
@@ -18029,13 +18027,15 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_od_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\mt_cover_od_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -18076,8 +18076,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover AOR1 Comtac3 Arc (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -18109,36 +18109,36 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor1_co.paa",
-			"tfl_headgear\textures\rails_tan.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor1_co.paa",
+			"ASEC_Headgear\textures\rails_tan.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_aor1_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\mt_cover_aor1_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -18179,8 +18179,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover AOR2 Comtac3 Arc (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -18212,36 +18212,36 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_aor2_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\mt_cover_aor2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -18282,8 +18282,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover MC Comtac3 Arc (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -18315,36 +18315,36 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_mc_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_mc_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_mc_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\mt_cover_mc_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -18385,8 +18385,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover BLK Comtac3 Arc (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -18418,36 +18418,36 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_blk.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\comtac_III_blk.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
-			"tfl_headgear\textures\m300c_blk_co.paa",
-			"tfl_headgear\textures\accessories_h1m_blk_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\m300c_blk_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_blk_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_blk_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\mt_cover_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -18488,8 +18488,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover MCB Comtac3 Arc (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -18521,36 +18521,36 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_blk.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\comtac_III_blk.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
-			"tfl_headgear\textures\m300c_blk_co.paa",
-			"tfl_headgear\textures\accessories_h1m_blk_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\m300c_blk_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_blk_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_mcb_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\mt_cover_mcb_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -18591,8 +18591,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover WHT Comtac3 Arc (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -18624,36 +18624,36 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_alpine_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\mt_cover_alpine_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -18694,8 +18694,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover UT Comtac3 Arc (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -18727,36 +18727,36 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_od_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\mt_cover_od_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -18797,8 +18797,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover AOR1 Comtac3 Arc (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -18830,17 +18830,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor1_co.paa",
-			"tfl_headgear\textures\rails_tan.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor1_co.paa",
+			"ASEC_Headgear\textures\rails_tan.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -18849,17 +18847,19 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_aor1.paa",
 			"",
-			"tfl_headgear\textures\mt_cover_aor1_co.paa"
+			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_aor1.paa",
+			"",
+			"ASEC_Headgear\textures\mt_cover_aor1_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -18900,8 +18900,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover AOR2 Comtac3 Arc (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -18933,17 +18933,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
@@ -18952,17 +18950,19 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_aor2.paa",
 			"",
-			"tfl_headgear\textures\mt_cover_aor2_co.paa"
+			"",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_aor2.paa",
+			"",
+			"ASEC_Headgear\textures\mt_cover_aor2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -19003,8 +19003,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover MC Comtac3 Arc (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -19036,17 +19036,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_mc_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_mc_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
@@ -19055,17 +19053,19 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
 			"",
-			"tfl_headgear\textures\mt_cover_mc_co.paa"
+			"",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
+			"",
+			"ASEC_Headgear\textures\mt_cover_mc_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -19106,8 +19106,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover BLK Comtac3 Arc (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -19139,17 +19139,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_blk.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\comtac_III_blk.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
@@ -19158,17 +19156,19 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_blk_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_blk.paa",
 			"",
-			"tfl_headgear\textures\mt_cover_blk_co.paa"
+			"",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_blk.paa",
+			"",
+			"ASEC_Headgear\textures\mt_cover_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -19209,8 +19209,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover MCB Comtac3 Arc (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -19242,17 +19242,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_blk.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\comtac_III_blk.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
@@ -19261,17 +19259,19 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_blk_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mcb.paa",
 			"",
-			"tfl_headgear\textures\mt_cover_mcb_co.paa"
+			"",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mcb.paa",
+			"",
+			"ASEC_Headgear\textures\mt_cover_mcb_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -19312,8 +19312,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover WHT Comtac3 Arc (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -19345,17 +19345,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
@@ -19364,17 +19362,19 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_white_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_wht.paa",
 			"",
-			"tfl_headgear\textures\mt_cover_alpine_co.paa"
+			"",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_wht.paa",
+			"",
+			"ASEC_Headgear\textures\mt_cover_alpine_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -19415,8 +19415,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover UT Comtac3 Arc (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -19448,17 +19448,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
@@ -19467,17 +19465,19 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_tan.paa",
 			"",
-			"tfl_headgear\textures\mt_cover_od_co.paa"
+			"",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_tan.paa",
+			"",
+			"ASEC_Headgear\textures\mt_cover_od_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -19518,8 +19518,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover AOR1 Comtac3 Arc (H)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -19551,36 +19551,36 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor1_co.paa",
-			"tfl_headgear\textures\rails_tan.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor1_co.paa",
+			"ASEC_Headgear\textures\rails_tan.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"",
-			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_aor1.paa",
 			"",
-			"tfl_headgear\textures\mt_cover_aor1_co.paa"
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_aor1.paa",
+			"",
+			"ASEC_Headgear\textures\mt_cover_aor1_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -19621,8 +19621,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover AOR2 Comtac3 Arc (H)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -19654,36 +19654,36 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"",
-			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_aor2.paa",
 			"",
-			"tfl_headgear\textures\mt_cover_aor2_co.paa"
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_aor2.paa",
+			"",
+			"ASEC_Headgear\textures\mt_cover_aor2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -19724,8 +19724,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover MC Comtac3 Arc (H)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -19757,36 +19757,36 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_mc_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_mc_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"",
-			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
 			"",
-			"tfl_headgear\textures\mt_cover_mc_co.paa"
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
+			"",
+			"ASEC_Headgear\textures\mt_cover_mc_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -19827,8 +19827,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover BLK Comtac3 Arc (H)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -19860,36 +19860,36 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_blk.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\comtac_III_blk.paa",
 			"",
 			"",
-			"",
-			"",
-			"tfl_headgear\textures\m300c_blk_co.paa",
-			"tfl_headgear\textures\accessories_h1m_blk_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_blk_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_blk.paa",
 			"",
-			"tfl_headgear\textures\mt_cover_blk_co.paa"
+			"ASEC_Headgear\textures\m300c_blk_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_blk_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_blk.paa",
+			"",
+			"ASEC_Headgear\textures\mt_cover_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -19930,8 +19930,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover MCB Comtac3 Arc (H)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -19963,36 +19963,36 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_blk.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\comtac_III_blk.paa",
 			"",
 			"",
-			"",
-			"",
-			"tfl_headgear\textures\m300c_blk_co.paa",
-			"tfl_headgear\textures\accessories_h1m_blk_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_blk_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mcb.paa",
 			"",
-			"tfl_headgear\textures\mt_cover_mcb_co.paa"
+			"ASEC_Headgear\textures\m300c_blk_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_blk_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mcb.paa",
+			"",
+			"ASEC_Headgear\textures\mt_cover_mcb_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -20033,8 +20033,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover WHT Comtac3 Arc (H)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -20066,36 +20066,36 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"",
-			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_white_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_wht.paa",
 			"",
-			"tfl_headgear\textures\mt_cover_alpine_co.paa"
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_wht.paa",
+			"",
+			"ASEC_Headgear\textures\mt_cover_alpine_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -20136,8 +20136,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover UT Comtac3 Arc (H)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -20169,36 +20169,36 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"",
-			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_tan.paa",
 			"",
-			"tfl_headgear\textures\mt_cover_od_co.paa"
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_tan.paa",
+			"",
+			"ASEC_Headgear\textures\mt_cover_od_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -20239,8 +20239,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover AOR1 Comtac3 Arc (I)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -20272,36 +20272,36 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor1_co.paa",
-			"tfl_headgear\textures\rails_tan.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor1_co.paa",
+			"ASEC_Headgear\textures\rails_tan.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_aor1_co.paa"
+			"ASEC_Headgear\textures\mt_cover_aor1_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -20342,8 +20342,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover AOR2 Comtac3 Arc (I)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -20375,36 +20375,36 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_aor2_co.paa"
+			"ASEC_Headgear\textures\mt_cover_aor2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -20445,8 +20445,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover MC Comtac3 Arc (I)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -20478,36 +20478,36 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_mc_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_mc_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_mc_co.paa"
+			"ASEC_Headgear\textures\mt_cover_mc_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -20548,8 +20548,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover BLK Comtac3 Arc (I)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -20581,36 +20581,36 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_blk.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\comtac_III_blk.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_blk_co.paa"
+			"ASEC_Headgear\textures\mt_cover_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -20651,8 +20651,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover MCB Comtac3 Arc (I)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -20684,36 +20684,36 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_blk.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\comtac_III_blk.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_mcb_co.paa"
+			"ASEC_Headgear\textures\mt_cover_mcb_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -20754,8 +20754,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover WHT Comtac3 Arc (I)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -20787,36 +20787,36 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_alpine_co.paa"
+			"ASEC_Headgear\textures\mt_cover_alpine_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -20857,8 +20857,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover UT Comtac3 Arc (I)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -20890,36 +20890,36 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_od_co.paa"
+			"ASEC_Headgear\textures\mt_cover_od_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -20960,8 +20960,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover AOR1 Comtac3 Arc (J)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -20993,36 +20993,36 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor1_co.paa",
-			"tfl_headgear\textures\rails_tan.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor1_co.paa",
+			"ASEC_Headgear\textures\rails_tan.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"",
-			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_aor1_co.paa"
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\mt_cover_aor1_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -21063,8 +21063,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover AOR2 Comtac3 Arc (J)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -21096,36 +21096,36 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"",
-			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_aor2_co.paa"
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\mt_cover_aor2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -21166,8 +21166,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover MC Comtac3 Arc (J)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -21199,36 +21199,36 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_mc_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_mc_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"",
-			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_mc_co.paa"
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\mt_cover_mc_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -21269,8 +21269,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover BLK Comtac3 Arc (J)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -21302,36 +21302,36 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_blk.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\comtac_III_blk.paa",
 			"",
 			"",
-			"",
-			"",
-			"tfl_headgear\textures\m300c_blk_co.paa",
-			"tfl_headgear\textures\accessories_h1m_blk_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_blk_co.paa"
+			"ASEC_Headgear\textures\m300c_blk_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_blk_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\mt_cover_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -21372,8 +21372,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover MCB Comtac3 Arc (J)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -21405,36 +21405,36 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_blk.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\comtac_III_blk.paa",
 			"",
 			"",
-			"",
-			"",
-			"tfl_headgear\textures\m300c_blk_co.paa",
-			"tfl_headgear\textures\accessories_h1m_blk_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_mcb_co.paa"
+			"ASEC_Headgear\textures\m300c_blk_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_blk_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\mt_cover_mcb_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -21475,8 +21475,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover WHT Comtac3 Arc (J)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -21508,36 +21508,36 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"",
-			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_alpine_co.paa"
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\mt_cover_alpine_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -21578,8 +21578,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover UT Comtac3 Arc (J)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -21611,36 +21611,36 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"",
-			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_od_co.paa"
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\mt_cover_od_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -21681,8 +21681,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover AOR1 Comtac3 Arc (K)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -21714,17 +21714,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor1_co.paa",
-			"tfl_headgear\textures\rails_tan.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor1_co.paa",
+			"ASEC_Headgear\textures\rails_tan.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -21732,19 +21730,21 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_aor1_co.paa",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"ASEC_Headgear\textures\mt_cover_aor1_co.paa",
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -21785,8 +21785,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover AOR2 Comtac3 Arc (K)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -21818,17 +21818,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
@@ -21836,19 +21834,21 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_aor2_co.paa",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"ASEC_Headgear\textures\mt_cover_aor2_co.paa",
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -21889,8 +21889,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover MC Comtac3 Arc (K)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -21922,17 +21922,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_mc_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_mc_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
@@ -21940,19 +21938,21 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_mc_co.paa",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"ASEC_Headgear\textures\mt_cover_mc_co.paa",
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -21993,8 +21993,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover BLK Comtac3 Arc (K)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -22026,17 +22026,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_blk.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\comtac_III_blk.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
@@ -22044,19 +22042,21 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_blk_co.paa",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"ASEC_Headgear\textures\mt_cover_blk_co.paa",
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -22097,8 +22097,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover MCB Comtac3 Arc (K)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -22130,17 +22130,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_blk.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\comtac_III_blk.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
@@ -22148,19 +22146,21 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_mcb_co.paa",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"ASEC_Headgear\textures\mt_cover_mcb_co.paa",
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -22201,8 +22201,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover WHT Comtac3 Arc (K)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -22234,17 +22234,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
@@ -22252,19 +22250,21 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_alpine_co.paa",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"ASEC_Headgear\textures\mt_cover_alpine_co.paa",
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -22305,8 +22305,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover UT Comtac3 Arc (K)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -22338,17 +22338,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
@@ -22356,19 +22354,21 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_od_co.paa",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"ASEC_Headgear\textures\mt_cover_od_co.paa",
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -22409,8 +22409,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover AOR1 Comtac3 Arc (L)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -22442,37 +22442,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor1_co.paa",
-			"tfl_headgear\textures\rails_tan.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor1_co.paa",
+			"ASEC_Headgear\textures\rails_tan.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"",
-			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"",
-			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_aor1_co.paa",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\mt_cover_aor1_co.paa",
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -22513,8 +22513,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover AOR2 Comtac3 Arc (L)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -22546,37 +22546,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"",
-			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"",
-			"",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_aor2_co.paa",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\mt_cover_aor2_co.paa",
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -22617,8 +22617,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover MC Comtac3 Arc (L)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -22650,37 +22650,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_mc_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_mc_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"",
-			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"",
-			"",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_mc_co.paa",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\mt_cover_mc_co.paa",
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -22721,8 +22721,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover BLK Comtac3 Arc (L)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -22754,37 +22754,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_blk.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\comtac_III_blk.paa",
 			"",
 			"",
-			"",
-			"",
-			"tfl_headgear\textures\m300c_blk_co.paa",
-			"tfl_headgear\textures\accessories_h1m_blk_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"",
-			"",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_blk_co.paa",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"ASEC_Headgear\textures\m300c_blk_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_blk_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\mt_cover_blk_co.paa",
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -22825,8 +22825,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover MCB Comtac3 Arc (L)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -22858,37 +22858,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_blk.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\comtac_III_blk.paa",
 			"",
 			"",
-			"",
-			"",
-			"tfl_headgear\textures\m300c_blk_co.paa",
-			"tfl_headgear\textures\accessories_h1m_blk_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"",
-			"",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_mcb_co.paa",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"ASEC_Headgear\textures\m300c_blk_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_blk_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\mt_cover_mcb_co.paa",
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -22929,8 +22929,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover WHT Comtac3 Arc (L)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -22962,37 +22962,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"",
-			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"",
-			"",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_alpine_co.paa",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\mt_cover_alpine_co.paa",
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -23033,8 +23033,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover UT Comtac3 Arc (L)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -23066,37 +23066,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"",
-			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"",
-			"",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_od_co.paa",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\mt_cover_od_co.paa",
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -23137,8 +23137,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover AOR1 AMP (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -23170,21 +23170,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor1_co.paa",
-			"tfl_headgear\textures\rails_tan.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor1_co.paa",
+			"ASEC_Headgear\textures\rails_tan.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -23192,16 +23186,22 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
-			"tfl_headgear\textures\mt_cover_aor1_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\mt_cover_aor1_co.paa",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -23242,8 +23242,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover AOR2 AMP (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -23275,21 +23275,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
@@ -23297,16 +23291,22 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
-			"tfl_headgear\textures\mt_cover_aor2_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\mt_cover_aor2_co.paa",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -23347,8 +23347,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover MC AMP (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -23380,21 +23380,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_mc_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_mc_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
@@ -23402,16 +23396,22 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
-			"tfl_headgear\textures\mt_cover_mc_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\mt_cover_mc_co.paa",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -23452,8 +23452,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover BLK AMP (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -23485,21 +23485,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_blk_co.paa",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
@@ -23507,16 +23501,22 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_blk_co.paa",
-			"tfl_headgear\textures\mt_cover_blk_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_blk_co.paa"
+			"",
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_blk_co.paa",
+			"ASEC_Headgear\textures\mt_cover_blk_co.paa",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -23557,8 +23557,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover MCB AMP (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -23590,21 +23590,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_blk_co.paa",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
@@ -23612,16 +23606,22 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_blk_co.paa",
-			"tfl_headgear\textures\mt_cover_mcb_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_blk_co.paa"
+			"",
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_blk_co.paa",
+			"ASEC_Headgear\textures\mt_cover_mcb_co.paa",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -23662,8 +23662,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover WHT AMP (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -23695,21 +23695,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_white_co.paa",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
@@ -23717,16 +23711,22 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
-			"tfl_headgear\textures\mt_cover_alpine_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\mt_cover_alpine_co.paa",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -23767,8 +23767,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover UT AMP (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -23800,21 +23800,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
@@ -23822,16 +23816,22 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
-			"tfl_headgear\textures\mt_cover_od_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\mt_cover_od_co.paa",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -23872,8 +23872,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover AOR1 AMP (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -23905,17 +23905,17 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor1_co.paa",
-			"tfl_headgear\textures\rails_tan.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor1_co.paa",
+			"ASEC_Headgear\textures\rails_tan.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -23927,16 +23927,16 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
-			"tfl_headgear\textures\mt_cover_aor1_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\mt_cover_aor1_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -23977,8 +23977,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover AOR2 AMP (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -24010,17 +24010,17 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
@@ -24032,16 +24032,16 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
-			"tfl_headgear\textures\mt_cover_aor2_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\mt_cover_aor2_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -24082,8 +24082,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover MC AMP (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -24115,17 +24115,17 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_mc_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_mc_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
@@ -24137,16 +24137,16 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
-			"tfl_headgear\textures\mt_cover_mc_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\mt_cover_mc_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -24187,8 +24187,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover BLK AMP (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -24220,17 +24220,17 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_blk_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
@@ -24242,16 +24242,16 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_blk_co.paa",
-			"tfl_headgear\textures\mt_cover_blk_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_blk_co.paa",
+			"ASEC_Headgear\textures\mt_cover_blk_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_blk_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -24292,8 +24292,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover MCB AMP (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -24325,17 +24325,17 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_blk_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
@@ -24347,16 +24347,16 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_blk_co.paa",
-			"tfl_headgear\textures\mt_cover_mcb_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_blk_co.paa",
+			"ASEC_Headgear\textures\mt_cover_mcb_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_blk_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -24397,8 +24397,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover WHT AMP (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -24430,17 +24430,17 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_white_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
@@ -24452,16 +24452,16 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
-			"tfl_headgear\textures\mt_cover_alpine_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\mt_cover_alpine_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -24502,8 +24502,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover UT AMP (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -24535,17 +24535,17 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
@@ -24557,16 +24557,16 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
-			"tfl_headgear\textures\mt_cover_od_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\mt_cover_od_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -24607,8 +24607,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover AOR1 AMP (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -24640,38 +24640,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor1_co.paa",
-			"tfl_headgear\textures\rails_tan.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor1_co.paa",
+			"ASEC_Headgear\textures\rails_tan.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
-			"tfl_headgear\textures\mt_cover_aor1_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\mt_cover_aor1_co.paa",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -24712,8 +24712,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover AOR2 AMP (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -24745,38 +24745,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
-			"tfl_headgear\textures\mt_cover_aor2_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\mt_cover_aor2_co.paa",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -24817,8 +24817,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover MC AMP (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -24850,38 +24850,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_mc_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_mc_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
-			"tfl_headgear\textures\mt_cover_mc_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\mt_cover_mc_co.paa",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -24922,8 +24922,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover BLK AMP (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -24955,38 +24955,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_blk_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_blk_co.paa",
-			"tfl_headgear\textures\accessories_h1m_blk_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\m300c_blk_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_blk_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_blk_co.paa",
-			"tfl_headgear\textures\mt_cover_blk_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_blk_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_blk_co.paa",
+			"ASEC_Headgear\textures\mt_cover_blk_co.paa",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -25027,8 +25027,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover MCB AMP (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -25060,38 +25060,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_blk_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_blk_co.paa",
-			"tfl_headgear\textures\accessories_h1m_blk_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\m300c_blk_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_blk_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_blk_co.paa",
-			"tfl_headgear\textures\mt_cover_mcb_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_blk_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_blk_co.paa",
+			"ASEC_Headgear\textures\mt_cover_mcb_co.paa",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -25132,8 +25132,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover WHT AMP (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -25165,38 +25165,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_white_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
-			"tfl_headgear\textures\mt_cover_alpine_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\mt_cover_alpine_co.paa",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -25237,8 +25237,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover UT AMP (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -25270,38 +25270,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
-			"tfl_headgear\textures\mt_cover_od_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\mt_cover_od_co.paa",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -25342,8 +25342,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover AOR1 AMP (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -25375,38 +25375,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor1_co.paa",
-			"tfl_headgear\textures\rails_tan.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor1_co.paa",
+			"ASEC_Headgear\textures\rails_tan.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
-			"tfl_headgear\textures\mt_cover_aor1_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\mt_cover_aor1_co.paa",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -25447,8 +25447,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover AOR2 AMP (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -25480,38 +25480,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_co.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
-			"tfl_headgear\textures\mt_cover_aor2_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\mt_cover_aor2_co.paa",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -25552,8 +25552,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover MC AMP (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -25585,38 +25585,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_mc_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_mc_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_co.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
-			"tfl_headgear\textures\mt_cover_mc_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\mt_cover_mc_co.paa",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -25657,8 +25657,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover BLK AMP (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -25690,38 +25690,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_blk_co.paa",
-			"tfl_headgear\textures\mt_cover_blk_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_blk_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_blk_co.paa",
+			"ASEC_Headgear\textures\mt_cover_blk_co.paa",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -25762,8 +25762,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover MCB AMP (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -25795,38 +25795,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_blk_co.paa",
-			"tfl_headgear\textures\mt_cover_mcb_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_blk_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_blk_co.paa",
+			"ASEC_Headgear\textures\mt_cover_mcb_co.paa",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -25867,8 +25867,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover WHT AMP (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -25900,38 +25900,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
-			"tfl_headgear\textures\mt_cover_alpine_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\mt_cover_alpine_co.paa",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -25972,8 +25972,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover UT AMP (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -26005,38 +26005,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_co.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
-			"tfl_headgear\textures\mt_cover_od_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\mt_cover_od_co.paa",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -26077,8 +26077,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover AOR1 AMP (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -26110,38 +26110,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor1_co.paa",
-			"tfl_headgear\textures\rails_tan.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor1_co.paa",
+			"ASEC_Headgear\textures\rails_tan.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
-			"tfl_headgear\textures\mt_cover_aor1_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\mt_cover_aor1_co.paa",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -26182,8 +26182,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover AOR2 AMP (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -26215,38 +26215,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
-			"tfl_headgear\textures\mt_cover_aor2_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\mt_cover_aor2_co.paa",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -26287,8 +26287,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover MC AMP (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -26320,38 +26320,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_mc_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_mc_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
-			"tfl_headgear\textures\mt_cover_mc_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\mt_cover_mc_co.paa",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -26392,8 +26392,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover BLK AMP (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -26425,38 +26425,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
-			"tfl_headgear\textures\m300c_blk_co.paa",
-			"tfl_headgear\textures\accessories_h1m_blk_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\m300c_blk_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_blk_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_blk_co.paa",
-			"tfl_headgear\textures\mt_cover_blk_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_blk_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_blk_co.paa",
+			"ASEC_Headgear\textures\mt_cover_blk_co.paa",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -26497,8 +26497,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover MCB AMP (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -26530,38 +26530,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
-			"tfl_headgear\textures\m300c_blk_co.paa",
-			"tfl_headgear\textures\accessories_h1m_blk_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\m300c_blk_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_blk_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_blk_co.paa",
-			"tfl_headgear\textures\mt_cover_mcb_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_blk_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_blk_co.paa",
+			"ASEC_Headgear\textures\mt_cover_mcb_co.paa",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -26602,8 +26602,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover WHT AMP (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -26635,38 +26635,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
-			"tfl_headgear\textures\mt_cover_alpine_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\mt_cover_alpine_co.paa",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -26707,8 +26707,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover UT AMP (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -26740,38 +26740,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
-			"tfl_headgear\textures\mt_cover_od_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\mt_cover_od_co.paa",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -26812,8 +26812,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover AOR1 AMP (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -26845,15 +26845,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor1_co.paa",
-			"tfl_headgear\textures\rails_tan.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor1_co.paa",
+			"ASEC_Headgear\textures\rails_tan.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -26864,19 +26864,19 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_aor1.paa",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
-			"tfl_headgear\textures\mt_cover_aor1_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_aor1.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\mt_cover_aor1_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -26917,8 +26917,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover AOR2 AMP (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -26950,15 +26950,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
@@ -26969,19 +26969,19 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_aor2.paa",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
-			"tfl_headgear\textures\mt_cover_aor2_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_aor2.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\mt_cover_aor2_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -27022,8 +27022,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover MC AMP (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -27055,15 +27055,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_mc_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_mc_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
@@ -27074,19 +27074,19 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
-			"tfl_headgear\textures\mt_cover_mc_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\mt_cover_mc_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -27127,8 +27127,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover BLK AMP (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -27160,15 +27160,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
@@ -27179,19 +27179,19 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_blk_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_blk.paa",
-			"tfl_headgear\textures\opscore_amp1_blk_co.paa",
-			"tfl_headgear\textures\mt_cover_blk_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_blk.paa",
+			"ASEC_Headgear\textures\opscore_amp1_blk_co.paa",
+			"ASEC_Headgear\textures\mt_cover_blk_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_blk_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -27232,8 +27232,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover MCB AMP (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -27265,15 +27265,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
@@ -27284,19 +27284,19 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_blk_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mcb.paa",
-			"tfl_headgear\textures\opscore_amp1_blk_co.paa",
-			"tfl_headgear\textures\mt_cover_mcb_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mcb.paa",
+			"ASEC_Headgear\textures\opscore_amp1_blk_co.paa",
+			"ASEC_Headgear\textures\mt_cover_mcb_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_blk_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -27337,8 +27337,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover WHT AMP (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -27370,15 +27370,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
@@ -27389,19 +27389,19 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_white_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_wht.paa",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
-			"tfl_headgear\textures\mt_cover_alpine_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_wht.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\mt_cover_alpine_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -27442,8 +27442,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover UT AMP (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -27475,15 +27475,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
@@ -27494,19 +27494,19 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_tan.paa",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
-			"tfl_headgear\textures\mt_cover_od_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_tan.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\mt_cover_od_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -27547,8 +27547,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover AOR1 AMP (H)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -27580,38 +27580,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor1_co.paa",
-			"tfl_headgear\textures\rails_tan.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor1_co.paa",
+			"ASEC_Headgear\textures\rails_tan.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_aor1.paa",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
-			"tfl_headgear\textures\mt_cover_aor1_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_aor1.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\mt_cover_aor1_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -27652,8 +27652,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover AOR2 AMP (H)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -27685,38 +27685,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_aor2.paa",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
-			"tfl_headgear\textures\mt_cover_aor2_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_aor2.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\mt_cover_aor2_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -27757,8 +27757,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover MC AMP (H)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -27790,38 +27790,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_mc_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_mc_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
-			"tfl_headgear\textures\mt_cover_mc_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\mt_cover_mc_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -27862,8 +27862,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover BLK AMP (H)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -27895,38 +27895,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_blk_co.paa",
-			"tfl_headgear\textures\accessories_h1m_blk_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_blk_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_blk_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_blk_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_blk.paa",
-			"tfl_headgear\textures\opscore_amp1_blk_co.paa",
-			"tfl_headgear\textures\mt_cover_blk_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_blk.paa",
+			"ASEC_Headgear\textures\opscore_amp1_blk_co.paa",
+			"ASEC_Headgear\textures\mt_cover_blk_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_blk_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -27967,8 +27967,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover MCB AMP (H)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -28000,38 +28000,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_blk_co.paa",
-			"tfl_headgear\textures\accessories_h1m_blk_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_blk_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_blk_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_blk_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mcb.paa",
-			"tfl_headgear\textures\opscore_amp1_blk_co.paa",
-			"tfl_headgear\textures\mt_cover_mcb_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mcb.paa",
+			"ASEC_Headgear\textures\opscore_amp1_blk_co.paa",
+			"ASEC_Headgear\textures\mt_cover_mcb_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_blk_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -28072,8 +28072,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover WHT AMP (H)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -28105,38 +28105,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_white_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_wht.paa",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
-			"tfl_headgear\textures\mt_cover_alpine_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_wht.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\mt_cover_alpine_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -28177,8 +28177,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover UT AMP (H)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -28210,38 +28210,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_tan.paa",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
-			"tfl_headgear\textures\mt_cover_od_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_tan.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\mt_cover_od_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -28282,8 +28282,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover AOR1 AMP (I)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -28315,15 +28315,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor1_co.paa",
-			"tfl_headgear\textures\rails_tan.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor1_co.paa",
+			"ASEC_Headgear\textures\rails_tan.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -28332,21 +28332,21 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
-			"tfl_headgear\textures\mt_cover_aor1_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\mt_cover_aor1_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -28387,8 +28387,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover AOR2 AMP (I)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -28420,15 +28420,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
@@ -28437,21 +28437,21 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
-			"tfl_headgear\textures\mt_cover_aor2_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\mt_cover_aor2_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -28492,8 +28492,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover MC AMP (I)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -28525,15 +28525,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_mc_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_mc_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
@@ -28542,21 +28542,21 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
-			"tfl_headgear\textures\mt_cover_mc_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\mt_cover_mc_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -28597,8 +28597,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover BLK AMP (I)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -28630,15 +28630,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
@@ -28647,21 +28647,21 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_blk_co.paa",
-			"tfl_headgear\textures\mt_cover_blk_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_blk_co.paa",
+			"ASEC_Headgear\textures\mt_cover_blk_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_blk_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -28702,8 +28702,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover MCB AMP (I)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -28735,15 +28735,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
@@ -28752,21 +28752,21 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_blk_co.paa",
-			"tfl_headgear\textures\mt_cover_mcb_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_blk_co.paa",
+			"ASEC_Headgear\textures\mt_cover_mcb_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_blk_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -28807,8 +28807,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover WHT AMP (I)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -28840,15 +28840,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
@@ -28857,21 +28857,21 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
-			"tfl_headgear\textures\mt_cover_alpine_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\mt_cover_alpine_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -28912,8 +28912,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover UT AMP (I)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -28945,15 +28945,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
@@ -28962,21 +28962,21 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
-			"tfl_headgear\textures\mt_cover_od_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\mt_cover_od_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -29017,8 +29017,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover AOR1 AMP (J)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -29050,38 +29050,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor1_co.paa",
-			"tfl_headgear\textures\rails_tan.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor1_co.paa",
+			"ASEC_Headgear\textures\rails_tan.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
-			"tfl_headgear\textures\mt_cover_aor1_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\mt_cover_aor1_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -29122,8 +29122,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover AOR2 AMP (J)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -29155,38 +29155,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
-			"tfl_headgear\textures\mt_cover_aor2_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\mt_cover_aor2_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -29227,8 +29227,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover MC AMP (J)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -29260,38 +29260,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_mc_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_mc_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
-			"tfl_headgear\textures\mt_cover_mc_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\mt_cover_mc_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -29332,8 +29332,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover BLK AMP (J)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -29365,38 +29365,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_blk_co.paa",
-			"tfl_headgear\textures\accessories_h1m_blk_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_blk_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_blk_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_blk_co.paa",
-			"tfl_headgear\textures\mt_cover_blk_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_blk_co.paa",
+			"ASEC_Headgear\textures\mt_cover_blk_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_blk_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -29437,8 +29437,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover MCB AMP (J)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -29470,38 +29470,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_blk_co.paa",
-			"tfl_headgear\textures\accessories_h1m_blk_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_blk_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_blk_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_blk_co.paa",
-			"tfl_headgear\textures\mt_cover_mcb_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_blk_co.paa",
+			"ASEC_Headgear\textures\mt_cover_mcb_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_blk_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -29542,8 +29542,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover WHT AMP (J)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -29575,38 +29575,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
-			"tfl_headgear\textures\mt_cover_alpine_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\mt_cover_alpine_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -29647,8 +29647,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover UT AMP (J)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -29680,38 +29680,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
-			"tfl_headgear\textures\mt_cover_od_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\mt_cover_od_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -29752,8 +29752,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover AOR1 AMP (K)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -29785,15 +29785,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor1_co.paa",
-			"tfl_headgear\textures\rails_tan.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor1_co.paa",
+			"ASEC_Headgear\textures\rails_tan.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -29803,20 +29803,20 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
-			"tfl_headgear\textures\mt_cover_aor1_co.paa",
-			"tfl_headgear\textures\acc_soc_manta.paa",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\mt_cover_aor1_co.paa",
+			"ASEC_Headgear\textures\acc_soc_manta.paa",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -29857,8 +29857,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover AOR2 AMP (K)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -29890,15 +29890,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
@@ -29908,20 +29908,20 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
-			"tfl_headgear\textures\mt_cover_aor2_co.paa",
-			"tfl_headgear\textures\acc_soc_manta.paa",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\mt_cover_aor2_co.paa",
+			"ASEC_Headgear\textures\acc_soc_manta.paa",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -29962,8 +29962,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover MC AMP (K)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -29995,15 +29995,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_mc_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_mc_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
@@ -30013,20 +30013,20 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
-			"tfl_headgear\textures\mt_cover_mc_co.paa",
-			"tfl_headgear\textures\acc_soc_manta.paa",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\mt_cover_mc_co.paa",
+			"ASEC_Headgear\textures\acc_soc_manta.paa",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -30067,8 +30067,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover BLK AMP (K)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -30100,15 +30100,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
@@ -30118,20 +30118,20 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_blk_co.paa",
-			"tfl_headgear\textures\mt_cover_blk_co.paa",
-			"tfl_headgear\textures\acc_soc_manta.paa",
-			"tfl_headgear\textures\opscore_amp2_blk_co.paa"
+			"ASEC_Headgear\textures\opscore_amp1_blk_co.paa",
+			"ASEC_Headgear\textures\mt_cover_blk_co.paa",
+			"ASEC_Headgear\textures\acc_soc_manta.paa",
+			"ASEC_Headgear\textures\opscore_amp2_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -30172,8 +30172,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover MCB AMP (K)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -30205,15 +30205,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
@@ -30223,20 +30223,20 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_blk_co.paa",
-			"tfl_headgear\textures\mt_cover_mcb_co.paa",
-			"tfl_headgear\textures\acc_soc_manta.paa",
-			"tfl_headgear\textures\opscore_amp2_blk_co.paa"
+			"ASEC_Headgear\textures\opscore_amp1_blk_co.paa",
+			"ASEC_Headgear\textures\mt_cover_mcb_co.paa",
+			"ASEC_Headgear\textures\acc_soc_manta.paa",
+			"ASEC_Headgear\textures\opscore_amp2_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -30277,8 +30277,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover WHT AMP (K)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -30310,15 +30310,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
@@ -30328,20 +30328,20 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
-			"tfl_headgear\textures\mt_cover_alpine_co.paa",
-			"tfl_headgear\textures\acc_soc_manta.paa",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\mt_cover_alpine_co.paa",
+			"ASEC_Headgear\textures\acc_soc_manta.paa",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -30382,8 +30382,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover UT AMP (K)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -30415,15 +30415,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
@@ -30433,20 +30433,20 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
-			"tfl_headgear\textures\mt_cover_od_co.paa",
-			"tfl_headgear\textures\acc_soc_manta.paa",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\mt_cover_od_co.paa",
+			"ASEC_Headgear\textures\acc_soc_manta.paa",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -30487,8 +30487,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover AOR1 AMP (L)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -30520,38 +30520,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_aor1_co.paa",
-			"tfl_headgear\textures\rails_tan.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_aor1_co.paa",
+			"ASEC_Headgear\textures\rails_tan.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
-			"tfl_headgear\textures\mt_cover_aor1_co.paa",
-			"tfl_headgear\textures\acc_soc_manta.paa",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\mt_cover_aor1_co.paa",
+			"ASEC_Headgear\textures\acc_soc_manta.paa",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -30592,8 +30592,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover AOR2 AMP (L)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -30625,38 +30625,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
-			"tfl_headgear\textures\mt_cover_aor2_co.paa",
-			"tfl_headgear\textures\acc_soc_manta.paa",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\mt_cover_aor2_co.paa",
+			"ASEC_Headgear\textures\acc_soc_manta.paa",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -30697,8 +30697,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover MC AMP (L)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -30730,38 +30730,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_mc_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_mc_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
-			"tfl_headgear\textures\mt_cover_mc_co.paa",
-			"tfl_headgear\textures\acc_soc_manta.paa",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\mt_cover_mc_co.paa",
+			"ASEC_Headgear\textures\acc_soc_manta.paa",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -30802,8 +30802,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover BLK AMP (L)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -30835,38 +30835,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_blk_co.paa",
-			"tfl_headgear\textures\accessories_h1m_blk_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_blk_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_blk_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_blk_co.paa",
-			"tfl_headgear\textures\mt_cover_blk_co.paa",
-			"tfl_headgear\textures\acc_soc_manta.paa",
-			"tfl_headgear\textures\opscore_amp2_blk_co.paa"
+			"ASEC_Headgear\textures\opscore_amp1_blk_co.paa",
+			"ASEC_Headgear\textures\mt_cover_blk_co.paa",
+			"ASEC_Headgear\textures\acc_soc_manta.paa",
+			"ASEC_Headgear\textures\opscore_amp2_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -30907,8 +30907,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover MCB AMP (L)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -30940,38 +30940,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_blk_co.paa",
-			"tfl_headgear\textures\rails_blk.paa",
-			"tfl_headgear\textures\tfa_opscore_blk_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_blk_co.paa",
+			"ASEC_Headgear\textures\rails_blk.paa",
+			"ASEC_Headgear\textures\tfa_opscore_blk_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_blk_co.paa",
-			"tfl_headgear\textures\accessories_h1m_blk_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_blk_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_blk_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_blk_co.paa",
+			"ASEC_Headgear\textures\velcro_blk_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_blk_co.paa",
-			"tfl_headgear\textures\mt_cover_mcb_co.paa",
-			"tfl_headgear\textures\acc_soc_manta.paa",
-			"tfl_headgear\textures\opscore_amp2_blk_co.paa"
+			"ASEC_Headgear\textures\opscore_amp1_blk_co.paa",
+			"ASEC_Headgear\textures\mt_cover_mcb_co.paa",
+			"ASEC_Headgear\textures\acc_soc_manta.paa",
+			"ASEC_Headgear\textures\opscore_amp2_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -31012,8 +31012,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover WHT AMP (L)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -31045,38 +31045,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
-			"tfl_headgear\textures\mt_cover_alpine_co.paa",
-			"tfl_headgear\textures\acc_soc_manta.paa",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\mt_cover_alpine_co.paa",
+			"ASEC_Headgear\textures\acc_soc_manta.paa",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -31117,8 +31117,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover UT AMP (L)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -31150,38 +31150,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_ut_co.paa",
-			"tfl_headgear\textures\rails_od.paa",
-			"tfl_headgear\textures\tfa_opscore_od_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_ut_co.paa",
+			"ASEC_Headgear\textures\rails_od.paa",
+			"ASEC_Headgear\textures\tfa_opscore_od_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_co.paa",
+			"ASEC_Headgear\textures\velcro_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
-			"tfl_headgear\textures\mt_cover_od_co.paa",
-			"tfl_headgear\textures\acc_soc_manta.paa",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\mt_cover_od_co.paa",
+			"ASEC_Headgear\textures\acc_soc_manta.paa",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -31222,8 +31222,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover WHT2 Comtac3 Arc (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -31255,17 +31255,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_white_co.paa",
-			"tfl_headgear\textures\rails_white.paa",
-			"tfl_headgear\textures\tfa_opscore_white_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_white_co.paa",
+			"ASEC_Headgear\textures\rails_white.paa",
+			"ASEC_Headgear\textures\tfa_opscore_white_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_blk.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\comtac_III_blk.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
@@ -31278,13 +31276,15 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_alpine_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\mt_cover_alpine_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -31325,8 +31325,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover WHT2 Comtac3 Arc (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -31358,19 +31358,17 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_white_co.paa",
-			"tfl_headgear\textures\rails_white.paa",
-			"tfl_headgear\textures\tfa_opscore_white_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_white_co.paa",
+			"ASEC_Headgear\textures\rails_white.paa",
+			"ASEC_Headgear\textures\tfa_opscore_white_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_blk.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\comtac_III_blk.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
@@ -31381,13 +31379,15 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_alpine_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\mt_cover_alpine_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -31428,8 +31428,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover WHT2 Comtac3 Arc (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -31461,36 +31461,36 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_white_co.paa",
-			"tfl_headgear\textures\rails_white.paa",
-			"tfl_headgear\textures\tfa_opscore_white_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_white_co.paa",
+			"ASEC_Headgear\textures\rails_white.paa",
+			"ASEC_Headgear\textures\tfa_opscore_white_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_blk.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\comtac_III_blk.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_blk_co.paa",
-			"tfl_headgear\textures\accessories_h1m_blk_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\m300c_blk_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_blk_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_alpine_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\mt_cover_alpine_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -31531,8 +31531,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover WHT2 Comtac3 Arc (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -31564,21 +31564,19 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_white_co.paa",
-			"tfl_headgear\textures\rails_white.paa",
-			"tfl_headgear\textures\tfa_opscore_white_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_white_co.paa",
+			"ASEC_Headgear\textures\rails_white.paa",
+			"ASEC_Headgear\textures\tfa_opscore_white_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_blk.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\comtac_III_blk.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
@@ -31587,13 +31585,15 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_alpine_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\mt_cover_alpine_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -31634,8 +31634,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover WHT2 Comtac3 Arc (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -31667,36 +31667,36 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_white_co.paa",
-			"tfl_headgear\textures\rails_white.paa",
-			"tfl_headgear\textures\tfa_opscore_white_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_white_co.paa",
+			"ASEC_Headgear\textures\rails_white.paa",
+			"ASEC_Headgear\textures\tfa_opscore_white_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_blk.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\comtac_III_blk.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
-			"tfl_headgear\textures\m300c_blk_co.paa",
-			"tfl_headgear\textures\accessories_h1m_blk_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\m300c_blk_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_blk_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_alpine_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\mt_cover_alpine_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -31737,8 +31737,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover WHT2 Comtac3 Arc (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -31770,17 +31770,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_white_co.paa",
-			"tfl_headgear\textures\rails_white.paa",
-			"tfl_headgear\textures\tfa_opscore_white_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_white_co.paa",
+			"ASEC_Headgear\textures\rails_white.paa",
+			"ASEC_Headgear\textures\tfa_opscore_white_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_blk.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\comtac_III_blk.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
@@ -31789,17 +31787,19 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_white_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_wht.paa",
 			"",
-			"tfl_headgear\textures\mt_cover_alpine_co.paa"
+			"",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_wht.paa",
+			"",
+			"ASEC_Headgear\textures\mt_cover_alpine_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -31840,8 +31840,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover WHT2 Comtac3 Arc (H)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -31873,36 +31873,36 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_white_co.paa",
-			"tfl_headgear\textures\rails_white.paa",
-			"tfl_headgear\textures\tfa_opscore_white_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_white_co.paa",
+			"ASEC_Headgear\textures\rails_white.paa",
+			"ASEC_Headgear\textures\tfa_opscore_white_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_blk.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\comtac_III_blk.paa",
 			"",
 			"",
-			"",
-			"",
-			"tfl_headgear\textures\m300c_blk_co.paa",
-			"tfl_headgear\textures\accessories_h1m_blk_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_white_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_wht.paa",
 			"",
-			"tfl_headgear\textures\mt_cover_alpine_co.paa"
+			"ASEC_Headgear\textures\m300c_blk_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_blk_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_wht.paa",
+			"",
+			"ASEC_Headgear\textures\mt_cover_alpine_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -31943,8 +31943,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover WHT2 Comtac3 Arc (I)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -31976,36 +31976,36 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_white_co.paa",
-			"tfl_headgear\textures\rails_white.paa",
-			"tfl_headgear\textures\tfa_opscore_white_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_white_co.paa",
+			"ASEC_Headgear\textures\rails_white.paa",
+			"ASEC_Headgear\textures\tfa_opscore_white_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_blk.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\comtac_III_blk.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_alpine_co.paa"
+			"ASEC_Headgear\textures\mt_cover_alpine_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -32046,8 +32046,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover WHT2 Comtac3 Arc (J)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -32079,36 +32079,36 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_white_co.paa",
-			"tfl_headgear\textures\rails_white.paa",
-			"tfl_headgear\textures\tfa_opscore_white_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_white_co.paa",
+			"ASEC_Headgear\textures\rails_white.paa",
+			"ASEC_Headgear\textures\tfa_opscore_white_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_blk.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\comtac_III_blk.paa",
 			"",
 			"",
-			"",
-			"",
-			"tfl_headgear\textures\m300c_blk_co.paa",
-			"tfl_headgear\textures\accessories_h1m_blk_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_alpine_co.paa"
+			"ASEC_Headgear\textures\m300c_blk_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_blk_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\mt_cover_alpine_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -32149,8 +32149,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover WHT2 Comtac3 Arc (K)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -32182,17 +32182,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_white_co.paa",
-			"tfl_headgear\textures\rails_white.paa",
-			"tfl_headgear\textures\tfa_opscore_white_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_white_co.paa",
+			"ASEC_Headgear\textures\rails_white.paa",
+			"ASEC_Headgear\textures\tfa_opscore_white_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_blk.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\comtac_III_blk.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
@@ -32200,19 +32198,21 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_alpine_co.paa",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"ASEC_Headgear\textures\mt_cover_alpine_co.paa",
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -32253,8 +32253,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover WHT2 Comtac3 Arc (L)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -32286,37 +32286,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_white_co.paa",
-			"tfl_headgear\textures\rails_white.paa",
-			"tfl_headgear\textures\tfa_opscore_white_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_white_co.paa",
+			"ASEC_Headgear\textures\rails_white.paa",
+			"ASEC_Headgear\textures\tfa_opscore_white_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_blk.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\comtac_III_blk.paa",
 			"",
 			"",
-			"",
-			"",
-			"tfl_headgear\textures\m300c_blk_co.paa",
-			"tfl_headgear\textures\accessories_h1m_blk_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"",
-			"",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\mt_cover_alpine_co.paa",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"ASEC_Headgear\textures\m300c_blk_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_blk_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\mt_cover_alpine_co.paa",
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -32357,8 +32357,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover WHT2 AMP (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -32390,21 +32390,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_white_co.paa",
-			"tfl_headgear\textures\rails_white.paa",
-			"tfl_headgear\textures\tfa_opscore_white_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_white_co.paa",
+			"ASEC_Headgear\textures\rails_white.paa",
+			"ASEC_Headgear\textures\tfa_opscore_white_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_white_co.paa",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
@@ -32412,16 +32406,22 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_blk_co.paa",
-			"tfl_headgear\textures\mt_cover_alpine_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_blk_co.paa"
+			"",
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_blk_co.paa",
+			"ASEC_Headgear\textures\mt_cover_alpine_co.paa",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -32462,8 +32462,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover WHT2 AMP (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -32495,17 +32495,17 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_white_co.paa",
-			"tfl_headgear\textures\rails_white.paa",
-			"tfl_headgear\textures\tfa_opscore_white_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_white_co.paa",
+			"ASEC_Headgear\textures\rails_white.paa",
+			"ASEC_Headgear\textures\tfa_opscore_white_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_white_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
@@ -32517,16 +32517,16 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_blk_co.paa",
-			"tfl_headgear\textures\mt_cover_alpine_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_blk_co.paa",
+			"ASEC_Headgear\textures\mt_cover_alpine_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_blk_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -32567,8 +32567,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover WHT2 AMP (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -32600,38 +32600,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_white_co.paa",
-			"tfl_headgear\textures\rails_white.paa",
-			"tfl_headgear\textures\tfa_opscore_white_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_white_co.paa",
+			"ASEC_Headgear\textures\rails_white.paa",
+			"ASEC_Headgear\textures\tfa_opscore_white_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_white_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_blk_co.paa",
-			"tfl_headgear\textures\accessories_h1m_blk_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\m300c_blk_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_blk_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_blk_co.paa",
-			"tfl_headgear\textures\mt_cover_alpine_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_blk_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_blk_co.paa",
+			"ASEC_Headgear\textures\mt_cover_alpine_co.paa",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -32672,8 +32672,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover WHT2 AMP (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -32705,38 +32705,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_white_co.paa",
-			"tfl_headgear\textures\rails_white.paa",
-			"tfl_headgear\textures\tfa_opscore_white_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_white_co.paa",
+			"ASEC_Headgear\textures\rails_white.paa",
+			"ASEC_Headgear\textures\tfa_opscore_white_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_blk_co.paa",
-			"tfl_headgear\textures\mt_cover_alpine_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_blk_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_blk_co.paa",
+			"ASEC_Headgear\textures\mt_cover_alpine_co.paa",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -32777,8 +32777,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover WHT2 AMP (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -32810,38 +32810,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_white_co.paa",
-			"tfl_headgear\textures\rails_white.paa",
-			"tfl_headgear\textures\tfa_opscore_white_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_white_co.paa",
+			"ASEC_Headgear\textures\rails_white.paa",
+			"ASEC_Headgear\textures\tfa_opscore_white_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
-			"tfl_headgear\textures\m300c_blk_co.paa",
-			"tfl_headgear\textures\accessories_h1m_blk_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\m300c_blk_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_blk_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_blk_co.paa",
-			"tfl_headgear\textures\mt_cover_alpine_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_blk_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_blk_co.paa",
+			"ASEC_Headgear\textures\mt_cover_alpine_co.paa",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -32882,8 +32882,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover WHT2 AMP (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -32915,15 +32915,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_white_co.paa",
-			"tfl_headgear\textures\rails_white.paa",
-			"tfl_headgear\textures\tfa_opscore_white_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_white_co.paa",
+			"ASEC_Headgear\textures\rails_white.paa",
+			"ASEC_Headgear\textures\tfa_opscore_white_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
@@ -32934,19 +32934,19 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_white_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_wht.paa",
-			"tfl_headgear\textures\opscore_amp1_blk_co.paa",
-			"tfl_headgear\textures\mt_cover_alpine_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_wht.paa",
+			"ASEC_Headgear\textures\opscore_amp1_blk_co.paa",
+			"ASEC_Headgear\textures\mt_cover_alpine_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_blk_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -32987,8 +32987,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover WHT2 AMP (H)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -33020,38 +33020,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_white_co.paa",
-			"tfl_headgear\textures\rails_white.paa",
-			"tfl_headgear\textures\tfa_opscore_white_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_white_co.paa",
+			"ASEC_Headgear\textures\rails_white.paa",
+			"ASEC_Headgear\textures\tfa_opscore_white_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_blk_co.paa",
-			"tfl_headgear\textures\accessories_h1m_blk_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_blk_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_blk_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_white_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_wht.paa",
-			"tfl_headgear\textures\opscore_amp1_blk_co.paa",
-			"tfl_headgear\textures\mt_cover_alpine_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_wht.paa",
+			"ASEC_Headgear\textures\opscore_amp1_blk_co.paa",
+			"ASEC_Headgear\textures\mt_cover_alpine_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_blk_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -33092,8 +33092,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover WHT2 AMP (I)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -33125,15 +33125,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_white_co.paa",
-			"tfl_headgear\textures\rails_white.paa",
-			"tfl_headgear\textures\tfa_opscore_white_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_white_co.paa",
+			"ASEC_Headgear\textures\rails_white.paa",
+			"ASEC_Headgear\textures\tfa_opscore_white_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
@@ -33142,21 +33142,21 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_blk_co.paa",
-			"tfl_headgear\textures\mt_cover_alpine_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_blk_co.paa",
+			"ASEC_Headgear\textures\mt_cover_alpine_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_blk_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -33197,8 +33197,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover WHT2 AMP (J)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -33230,38 +33230,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_white_co.paa",
-			"tfl_headgear\textures\rails_white.paa",
-			"tfl_headgear\textures\tfa_opscore_white_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_white_co.paa",
+			"ASEC_Headgear\textures\rails_white.paa",
+			"ASEC_Headgear\textures\tfa_opscore_white_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_blk_co.paa",
-			"tfl_headgear\textures\accessories_h1m_blk_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_blk_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_blk_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_blk_co.paa",
-			"tfl_headgear\textures\mt_cover_alpine_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_blk_co.paa",
+			"ASEC_Headgear\textures\mt_cover_alpine_co.paa",
 			"",
-			"tfl_headgear\textures\opscore_amp2_blk_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -33302,8 +33302,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover WHT2 AMP (K)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -33335,15 +33335,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_white_co.paa",
-			"tfl_headgear\textures\rails_white.paa",
-			"tfl_headgear\textures\tfa_opscore_white_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_white_co.paa",
+			"ASEC_Headgear\textures\rails_white.paa",
+			"ASEC_Headgear\textures\tfa_opscore_white_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
@@ -33353,20 +33353,20 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_blk_co.paa",
-			"tfl_headgear\textures\mt_cover_alpine_co.paa",
-			"tfl_headgear\textures\acc_soc_manta.paa",
-			"tfl_headgear\textures\opscore_amp2_blk_co.paa"
+			"ASEC_Headgear\textures\opscore_amp1_blk_co.paa",
+			"ASEC_Headgear\textures\mt_cover_alpine_co.paa",
+			"ASEC_Headgear\textures\acc_soc_manta.paa",
+			"ASEC_Headgear\textures\opscore_amp2_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -33407,8 +33407,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore MT Cover WHT2 AMP (L)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -33440,38 +33440,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\highcut_ops_core_fast_white_co.paa",
-			"tfl_headgear\textures\rails_white.paa",
-			"tfl_headgear\textures\tfa_opscore_white_co.paa",
+			"ASEC_Headgear\textures\highcut_ops_core_fast_white_co.paa",
+			"ASEC_Headgear\textures\rails_white.paa",
+			"ASEC_Headgear\textures\tfa_opscore_white_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_blk_co.paa",
-			"tfl_headgear\textures\accessories_h1m_blk_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_blk_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_blk_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_white_co.paa",
+			"ASEC_Headgear\textures\velcro_white_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_blk_co.paa",
-			"tfl_headgear\textures\mt_cover_alpine_co.paa",
-			"tfl_headgear\textures\acc_soc_manta.paa",
-			"tfl_headgear\textures\opscore_amp2_blk_co.paa"
+			"ASEC_Headgear\textures\opscore_amp1_blk_co.paa",
+			"ASEC_Headgear\textures\mt_cover_alpine_co.paa",
+			"ASEC_Headgear\textures\acc_soc_manta.paa",
+			"ASEC_Headgear\textures\opscore_amp2_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_Maritime_Cover_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -33512,8 +33512,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe CB Comtac3 Arc (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -33536,29 +33536,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_cb.paa",
+			"ASEC_Headgear\Textures\airframe_cb.paa",
 			"",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_cb.paa",
+			"ASEC_Headgear\Textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\velcro_co.paa",
-			"TFL_Headgear\Textures\af_velcro_CO.paa",
+			"ASEC_Headgear\Textures\velcro_co.paa",
+			"ASEC_Headgear\Textures\af_velcro_CO.paa",
 			"",
 			"",
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -33590,8 +33590,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe OD Comtac3 Arc (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -33614,29 +33614,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_od.paa",
+			"ASEC_Headgear\Textures\airframe_od.paa",
 			"",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_cb.paa",
+			"ASEC_Headgear\Textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\velcro_co.paa",
-			"TFL_Headgear\Textures\af_velcro_CO.paa",
+			"ASEC_Headgear\Textures\velcro_co.paa",
+			"ASEC_Headgear\Textures\af_velcro_CO.paa",
 			"",
 			"",
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -33668,8 +33668,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe TAN Comtac3 Arc (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -33692,29 +33692,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_tan.paa",
+			"ASEC_Headgear\Textures\airframe_tan.paa",
 			"",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_cb.paa",
+			"ASEC_Headgear\Textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\velcro_co.paa",
-			"TFL_Headgear\Textures\af_velcro_CO.paa",
+			"ASEC_Headgear\Textures\velcro_co.paa",
+			"ASEC_Headgear\Textures\af_velcro_CO.paa",
 			"",
 			"",
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -33746,8 +33746,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe BLK Comtac3 Arc (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -33770,29 +33770,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_blk.paa",
+			"ASEC_Headgear\Textures\airframe_blk.paa",
 			"",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_blk.paa",
+			"ASEC_Headgear\Textures\comtac_III_blk.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\velcro_blk_co.paa",
-			"TFL_Headgear\Textures\af_velcro_blk_CO.paa",
+			"ASEC_Headgear\Textures\velcro_blk_co.paa",
+			"ASEC_Headgear\Textures\af_velcro_blk_CO.paa",
 			"",
 			"",
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -33824,8 +33824,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe WHT Comtac3 Arc (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -33848,29 +33848,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_white.paa",
+			"ASEC_Headgear\Textures\airframe_white.paa",
 			"",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_blk.paa",
+			"ASEC_Headgear\Textures\comtac_III_blk.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\velcro_white_co.paa",
-			"TFL_Headgear\Textures\af_velcro_white_CO.paa",
+			"ASEC_Headgear\Textures\velcro_white_co.paa",
+			"ASEC_Headgear\Textures\af_velcro_white_CO.paa",
 			"",
 			"",
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -33902,8 +33902,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe CB Comtac3 Arc (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -33926,29 +33926,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_cb.paa",
+			"ASEC_Headgear\Textures\airframe_cb.paa",
 			"",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_cb.paa",
+			"ASEC_Headgear\Textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\velcro_co.paa",
-			"TFL_Headgear\Textures\af_velcro_CO.paa",
-			"TFL_Headgear\Textures\helstar_co.paa",
+			"ASEC_Headgear\Textures\velcro_co.paa",
+			"ASEC_Headgear\Textures\af_velcro_CO.paa",
+			"ASEC_Headgear\Textures\helstar_co.paa",
 			"",
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -33980,8 +33980,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe OD Comtac3 Arc (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -34004,29 +34004,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_od.paa",
+			"ASEC_Headgear\Textures\airframe_od.paa",
 			"",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_cb.paa",
+			"ASEC_Headgear\Textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\velcro_co.paa",
-			"TFL_Headgear\Textures\af_velcro_CO.paa",
-			"TFL_Headgear\Textures\helstar_co.paa",
+			"ASEC_Headgear\Textures\velcro_co.paa",
+			"ASEC_Headgear\Textures\af_velcro_CO.paa",
+			"ASEC_Headgear\Textures\helstar_co.paa",
 			"",
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -34058,8 +34058,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe TAN Comtac3 Arc (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -34082,29 +34082,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_tan.paa",
+			"ASEC_Headgear\Textures\airframe_tan.paa",
 			"",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_cb.paa",
+			"ASEC_Headgear\Textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\velcro_co.paa",
-			"TFL_Headgear\Textures\af_velcro_CO.paa",
-			"TFL_Headgear\Textures\helstar_co.paa",
+			"ASEC_Headgear\Textures\velcro_co.paa",
+			"ASEC_Headgear\Textures\af_velcro_CO.paa",
+			"ASEC_Headgear\Textures\helstar_co.paa",
 			"",
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -34136,8 +34136,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe BLK Comtac3 Arc (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -34160,29 +34160,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_blk.paa",
+			"ASEC_Headgear\Textures\airframe_blk.paa",
 			"",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_blk.paa",
+			"ASEC_Headgear\Textures\comtac_III_blk.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\velcro_blk_co.paa",
-			"TFL_Headgear\Textures\af_velcro_blk_CO.paa",
-			"TFL_Headgear\Textures\helstar_co.paa",
+			"ASEC_Headgear\Textures\velcro_blk_co.paa",
+			"ASEC_Headgear\Textures\af_velcro_blk_CO.paa",
+			"ASEC_Headgear\Textures\helstar_co.paa",
 			"",
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -34214,8 +34214,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe WHT Comtac3 Arc (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -34238,29 +34238,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_white.paa",
+			"ASEC_Headgear\Textures\airframe_white.paa",
 			"",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_blk.paa",
+			"ASEC_Headgear\Textures\comtac_III_blk.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\velcro_white_co.paa",
-			"TFL_Headgear\Textures\af_velcro_white_CO.paa",
-			"TFL_Headgear\Textures\helstar_co.paa",
+			"ASEC_Headgear\Textures\velcro_white_co.paa",
+			"ASEC_Headgear\Textures\af_velcro_white_CO.paa",
+			"ASEC_Headgear\Textures\helstar_co.paa",
 			"",
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -34292,8 +34292,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe CB Comtac3 Arc (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -34316,29 +34316,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_cb.paa",
+			"ASEC_Headgear\Textures\airframe_cb.paa",
 			"",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_cb.paa",
+			"ASEC_Headgear\Textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\velcro_co.paa",
-			"TFL_Headgear\Textures\af_velcro_CO.paa",
-			"TFL_Headgear\Textures\helstar_co.paa",
+			"ASEC_Headgear\Textures\velcro_co.paa",
+			"ASEC_Headgear\Textures\af_velcro_CO.paa",
+			"ASEC_Headgear\Textures\helstar_co.paa",
 			"",
-			"TFL_Headgear\Textures\m300c_tan_co.paa",
+			"ASEC_Headgear\Textures\m300c_tan_co.paa",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -34370,8 +34370,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe OD Comtac3 Arc (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -34394,29 +34394,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_od.paa",
+			"ASEC_Headgear\Textures\airframe_od.paa",
 			"",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_cb.paa",
+			"ASEC_Headgear\Textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\velcro_co.paa",
-			"TFL_Headgear\Textures\af_velcro_CO.paa",
-			"TFL_Headgear\Textures\helstar_co.paa",
+			"ASEC_Headgear\Textures\velcro_co.paa",
+			"ASEC_Headgear\Textures\af_velcro_CO.paa",
+			"ASEC_Headgear\Textures\helstar_co.paa",
 			"",
-			"TFL_Headgear\Textures\m300c_od_co.paa",
+			"ASEC_Headgear\Textures\m300c_od_co.paa",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -34448,8 +34448,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe TAN Comtac3 Arc (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -34472,29 +34472,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_tan.paa",
+			"ASEC_Headgear\Textures\airframe_tan.paa",
 			"",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_cb.paa",
+			"ASEC_Headgear\Textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\velcro_co.paa",
-			"TFL_Headgear\Textures\af_velcro_CO.paa",
-			"TFL_Headgear\Textures\helstar_co.paa",
+			"ASEC_Headgear\Textures\velcro_co.paa",
+			"ASEC_Headgear\Textures\af_velcro_CO.paa",
+			"ASEC_Headgear\Textures\helstar_co.paa",
 			"",
-			"TFL_Headgear\Textures\m300c_tan_co.paa",
+			"ASEC_Headgear\Textures\m300c_tan_co.paa",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -34526,8 +34526,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe BLK Comtac3 Arc (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -34550,29 +34550,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_blk.paa",
+			"ASEC_Headgear\Textures\airframe_blk.paa",
 			"",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_blk.paa",
+			"ASEC_Headgear\Textures\comtac_III_blk.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\velcro_blk_co.paa",
-			"TFL_Headgear\Textures\af_velcro_blk_CO.paa",
-			"TFL_Headgear\Textures\helstar_co.paa",
+			"ASEC_Headgear\Textures\velcro_blk_co.paa",
+			"ASEC_Headgear\Textures\af_velcro_blk_CO.paa",
+			"ASEC_Headgear\Textures\helstar_co.paa",
 			"",
-			"TFL_Headgear\Textures\m300c_blk_co.paa",
+			"ASEC_Headgear\Textures\m300c_blk_co.paa",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -34604,8 +34604,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe WHT Comtac3 Arc (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -34628,29 +34628,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_white.paa",
+			"ASEC_Headgear\Textures\airframe_white.paa",
 			"",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_blk.paa",
+			"ASEC_Headgear\Textures\comtac_III_blk.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\velcro_white_co.paa",
-			"TFL_Headgear\Textures\af_velcro_white_CO.paa",
-			"TFL_Headgear\Textures\helstar_co.paa",
+			"ASEC_Headgear\Textures\velcro_white_co.paa",
+			"ASEC_Headgear\Textures\af_velcro_white_CO.paa",
+			"ASEC_Headgear\Textures\helstar_co.paa",
 			"",
-			"TFL_Headgear\Textures\m300c_blk_co.paa",
+			"ASEC_Headgear\Textures\m300c_blk_co.paa",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -34682,8 +34682,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe CB Comtac3 Arc (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -34706,29 +34706,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_cb.paa",
+			"ASEC_Headgear\Textures\airframe_cb.paa",
 			"",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_cb.paa",
+			"ASEC_Headgear\Textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\velcro_co.paa",
-			"TFL_Headgear\Textures\af_velcro_CO.paa",
+			"ASEC_Headgear\Textures\velcro_co.paa",
+			"ASEC_Headgear\Textures\af_velcro_CO.paa",
 			"",
-			"TFL_Headgear\Textures\helstar2_CO.paa",
+			"ASEC_Headgear\Textures\helstar2_CO.paa",
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -34760,8 +34760,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe OD Comtac3 Arc (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -34784,29 +34784,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_od.paa",
+			"ASEC_Headgear\Textures\airframe_od.paa",
 			"",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_cb.paa",
+			"ASEC_Headgear\Textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\velcro_co.paa",
-			"TFL_Headgear\Textures\af_velcro_CO.paa",
+			"ASEC_Headgear\Textures\velcro_co.paa",
+			"ASEC_Headgear\Textures\af_velcro_CO.paa",
 			"",
-			"TFL_Headgear\Textures\helstar2_CO.paa",
+			"ASEC_Headgear\Textures\helstar2_CO.paa",
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -34838,8 +34838,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe TAN Comtac3 Arc (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -34862,29 +34862,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_tan.paa",
+			"ASEC_Headgear\Textures\airframe_tan.paa",
 			"",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_cb.paa",
+			"ASEC_Headgear\Textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\velcro_co.paa",
-			"TFL_Headgear\Textures\af_velcro_CO.paa",
+			"ASEC_Headgear\Textures\velcro_co.paa",
+			"ASEC_Headgear\Textures\af_velcro_CO.paa",
 			"",
-			"TFL_Headgear\Textures\helstar2_CO.paa",
+			"ASEC_Headgear\Textures\helstar2_CO.paa",
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -34916,8 +34916,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe BLK Comtac3 Arc (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -34940,29 +34940,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_blk.paa",
+			"ASEC_Headgear\Textures\airframe_blk.paa",
 			"",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_blk.paa",
+			"ASEC_Headgear\Textures\comtac_III_blk.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\velcro_blk_co.paa",
-			"TFL_Headgear\Textures\af_velcro_blk_CO.paa",
+			"ASEC_Headgear\Textures\velcro_blk_co.paa",
+			"ASEC_Headgear\Textures\af_velcro_blk_CO.paa",
 			"",
-			"TFL_Headgear\Textures\helstar2_CO.paa",
+			"ASEC_Headgear\Textures\helstar2_CO.paa",
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -34994,8 +34994,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe WHT Comtac3 Arc (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -35018,29 +35018,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_white.paa",
+			"ASEC_Headgear\Textures\airframe_white.paa",
 			"",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_blk.paa",
+			"ASEC_Headgear\Textures\comtac_III_blk.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\velcro_white_co.paa",
-			"TFL_Headgear\Textures\af_velcro_white_CO.paa",
+			"ASEC_Headgear\Textures\velcro_white_co.paa",
+			"ASEC_Headgear\Textures\af_velcro_white_CO.paa",
 			"",
-			"TFL_Headgear\Textures\helstar2_CO.paa",
+			"ASEC_Headgear\Textures\helstar2_CO.paa",
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -35072,8 +35072,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe CB Comtac3 Arc (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -35096,29 +35096,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_cb.paa",
+			"ASEC_Headgear\Textures\airframe_cb.paa",
 			"",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_cb.paa",
+			"ASEC_Headgear\Textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\velcro_co.paa",
-			"TFL_Headgear\Textures\af_velcro_CO.paa",
+			"ASEC_Headgear\Textures\velcro_co.paa",
+			"ASEC_Headgear\Textures\af_velcro_CO.paa",
 			"",
-			"TFL_Headgear\Textures\helstar2_CO.paa",
-			"TFL_Headgear\Textures\m300c_tan_co.paa",
+			"ASEC_Headgear\Textures\helstar2_CO.paa",
+			"ASEC_Headgear\Textures\m300c_tan_co.paa",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -35150,8 +35150,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe OD Comtac3 Arc (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -35174,29 +35174,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_od.paa",
+			"ASEC_Headgear\Textures\airframe_od.paa",
 			"",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_cb.paa",
+			"ASEC_Headgear\Textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\velcro_co.paa",
-			"TFL_Headgear\Textures\af_velcro_CO.paa",
+			"ASEC_Headgear\Textures\velcro_co.paa",
+			"ASEC_Headgear\Textures\af_velcro_CO.paa",
 			"",
-			"TFL_Headgear\Textures\helstar2_CO.paa",
-			"TFL_Headgear\Textures\m300c_od_co.paa",
+			"ASEC_Headgear\Textures\helstar2_CO.paa",
+			"ASEC_Headgear\Textures\m300c_od_co.paa",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -35228,8 +35228,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe TAN Comtac3 Arc (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -35252,29 +35252,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_tan.paa",
+			"ASEC_Headgear\Textures\airframe_tan.paa",
 			"",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_cb.paa",
+			"ASEC_Headgear\Textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\velcro_co.paa",
-			"TFL_Headgear\Textures\af_velcro_CO.paa",
+			"ASEC_Headgear\Textures\velcro_co.paa",
+			"ASEC_Headgear\Textures\af_velcro_CO.paa",
 			"",
-			"TFL_Headgear\Textures\helstar2_CO.paa",
-			"TFL_Headgear\Textures\m300c_tan_co.paa",
+			"ASEC_Headgear\Textures\helstar2_CO.paa",
+			"ASEC_Headgear\Textures\m300c_tan_co.paa",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -35306,8 +35306,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe BLK Comtac3 Arc (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -35330,29 +35330,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_blk.paa",
+			"ASEC_Headgear\Textures\airframe_blk.paa",
 			"",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_blk.paa",
+			"ASEC_Headgear\Textures\comtac_III_blk.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\velcro_blk_co.paa",
-			"TFL_Headgear\Textures\af_velcro_blk_CO.paa",
+			"ASEC_Headgear\Textures\velcro_blk_co.paa",
+			"ASEC_Headgear\Textures\af_velcro_blk_CO.paa",
 			"",
-			"TFL_Headgear\Textures\helstar2_CO.paa",
-			"TFL_Headgear\Textures\m300c_blk_co.paa",
+			"ASEC_Headgear\Textures\helstar2_CO.paa",
+			"ASEC_Headgear\Textures\m300c_blk_co.paa",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -35384,8 +35384,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe WHT Comtac3 Arc (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -35408,29 +35408,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_white.paa",
+			"ASEC_Headgear\Textures\airframe_white.paa",
 			"",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_blk.paa",
+			"ASEC_Headgear\Textures\comtac_III_blk.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\velcro_white_co.paa",
-			"TFL_Headgear\Textures\af_velcro_white_CO.paa",
+			"ASEC_Headgear\Textures\velcro_white_co.paa",
+			"ASEC_Headgear\Textures\af_velcro_white_CO.paa",
 			"",
-			"TFL_Headgear\Textures\helstar2_CO.paa",
-			"TFL_Headgear\Textures\m300c_blk_co.paa",
+			"ASEC_Headgear\Textures\helstar2_CO.paa",
+			"ASEC_Headgear\Textures\m300c_blk_co.paa",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -35462,8 +35462,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe CB Comtac3 Arc (F)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -35486,29 +35486,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_cb.paa",
+			"ASEC_Headgear\Textures\airframe_cb.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\acc_soc_manta.paa",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\acc_soc_manta.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_cb.paa",
+			"ASEC_Headgear\Textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\velcro_co.paa",
-			"TFL_Headgear\Textures\af_velcro_CO.paa",
+			"ASEC_Headgear\Textures\velcro_co.paa",
+			"ASEC_Headgear\Textures\af_velcro_CO.paa",
 			"",
 			"",
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -35540,8 +35540,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe OD Comtac3 Arc (F)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -35564,29 +35564,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_od.paa",
+			"ASEC_Headgear\Textures\airframe_od.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\acc_soc_manta.paa",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\acc_soc_manta.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_cb.paa",
+			"ASEC_Headgear\Textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\velcro_co.paa",
-			"TFL_Headgear\Textures\af_velcro_CO.paa",
+			"ASEC_Headgear\Textures\velcro_co.paa",
+			"ASEC_Headgear\Textures\af_velcro_CO.paa",
 			"",
 			"",
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -35618,8 +35618,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe TAN Comtac3 Arc (F)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -35642,29 +35642,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_tan.paa",
+			"ASEC_Headgear\Textures\airframe_tan.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\acc_soc_manta.paa",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\acc_soc_manta.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_cb.paa",
+			"ASEC_Headgear\Textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\velcro_co.paa",
-			"TFL_Headgear\Textures\af_velcro_CO.paa",
+			"ASEC_Headgear\Textures\velcro_co.paa",
+			"ASEC_Headgear\Textures\af_velcro_CO.paa",
 			"",
 			"",
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -35696,8 +35696,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe BLK Comtac3 Arc (F)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -35720,29 +35720,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_blk.paa",
+			"ASEC_Headgear\Textures\airframe_blk.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\acc_soc_manta.paa",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\acc_soc_manta.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_blk.paa",
+			"ASEC_Headgear\Textures\comtac_III_blk.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\velcro_blk_co.paa",
-			"TFL_Headgear\Textures\af_velcro_blk_CO.paa",
+			"ASEC_Headgear\Textures\velcro_blk_co.paa",
+			"ASEC_Headgear\Textures\af_velcro_blk_CO.paa",
 			"",
 			"",
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -35774,8 +35774,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe WHT Comtac3 Arc (F)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -35798,29 +35798,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_white.paa",
+			"ASEC_Headgear\Textures\airframe_white.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\acc_soc_manta.paa",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\acc_soc_manta.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_blk.paa",
+			"ASEC_Headgear\Textures\comtac_III_blk.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\velcro_white_co.paa",
-			"TFL_Headgear\Textures\af_velcro_white_CO.paa",
+			"ASEC_Headgear\Textures\velcro_white_co.paa",
+			"ASEC_Headgear\Textures\af_velcro_white_CO.paa",
 			"",
 			"",
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -35852,8 +35852,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe CB Comtac3 Arc (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -35876,29 +35876,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_cb.paa",
+			"ASEC_Headgear\Textures\airframe_cb.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\acc_soc_manta.paa",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\acc_soc_manta.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_cb.paa",
-			"",
-			"",
-			"",
-			"TFL_Headgear\Textures\velcro_co.paa",
-			"TFL_Headgear\Textures\af_velcro_CO.paa",
+			"ASEC_Headgear\Textures\comtac_III_cb.paa",
 			"",
 			"",
-			"TFL_Headgear\Textures\m300c_tan_co.paa",
+			"",
+			"ASEC_Headgear\Textures\velcro_co.paa",
+			"ASEC_Headgear\Textures\af_velcro_CO.paa",
+			"",
+			"",
+			"ASEC_Headgear\Textures\m300c_tan_co.paa",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -35930,8 +35930,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe OD Comtac3 Arc (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -35954,29 +35954,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_od.paa",
+			"ASEC_Headgear\Textures\airframe_od.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\acc_soc_manta.paa",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\acc_soc_manta.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_cb.paa",
-			"",
-			"",
-			"",
-			"TFL_Headgear\Textures\velcro_co.paa",
-			"TFL_Headgear\Textures\af_velcro_CO.paa",
+			"ASEC_Headgear\Textures\comtac_III_cb.paa",
 			"",
 			"",
-			"TFL_Headgear\Textures\m300c_od_co.paa",
+			"",
+			"ASEC_Headgear\Textures\velcro_co.paa",
+			"ASEC_Headgear\Textures\af_velcro_CO.paa",
+			"",
+			"",
+			"ASEC_Headgear\Textures\m300c_od_co.paa",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -36008,8 +36008,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe TAN Comtac3 Arc (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -36032,29 +36032,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_tan.paa",
+			"ASEC_Headgear\Textures\airframe_tan.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\acc_soc_manta.paa",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\acc_soc_manta.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_cb.paa",
-			"",
-			"",
-			"",
-			"TFL_Headgear\Textures\velcro_co.paa",
-			"TFL_Headgear\Textures\af_velcro_CO.paa",
+			"ASEC_Headgear\Textures\comtac_III_cb.paa",
 			"",
 			"",
-			"TFL_Headgear\Textures\m300c_tan_co.paa",
+			"",
+			"ASEC_Headgear\Textures\velcro_co.paa",
+			"ASEC_Headgear\Textures\af_velcro_CO.paa",
+			"",
+			"",
+			"ASEC_Headgear\Textures\m300c_tan_co.paa",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -36086,8 +36086,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe BLK Comtac3 Arc (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -36110,29 +36110,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_blk.paa",
+			"ASEC_Headgear\Textures\airframe_blk.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\acc_soc_manta.paa",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\acc_soc_manta.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_blk.paa",
-			"",
-			"",
-			"",
-			"TFL_Headgear\Textures\velcro_blk_co.paa",
-			"TFL_Headgear\Textures\af_velcro_blk_CO.paa",
+			"ASEC_Headgear\Textures\comtac_III_blk.paa",
 			"",
 			"",
-			"TFL_Headgear\Textures\m300c_blk_co.paa",
+			"",
+			"ASEC_Headgear\Textures\velcro_blk_co.paa",
+			"ASEC_Headgear\Textures\af_velcro_blk_CO.paa",
+			"",
+			"",
+			"ASEC_Headgear\Textures\m300c_blk_co.paa",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -36164,8 +36164,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe WHT Comtac3 Arc (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -36188,29 +36188,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_white.paa",
+			"ASEC_Headgear\Textures\airframe_white.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\acc_soc_manta.paa",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\acc_soc_manta.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_blk.paa",
-			"",
-			"",
-			"",
-			"TFL_Headgear\Textures\velcro_white_co.paa",
-			"TFL_Headgear\Textures\af_velcro_white_CO.paa",
+			"ASEC_Headgear\Textures\comtac_III_blk.paa",
 			"",
 			"",
-			"TFL_Headgear\Textures\m300c_blk_co.paa",
+			"",
+			"ASEC_Headgear\Textures\velcro_white_co.paa",
+			"ASEC_Headgear\Textures\af_velcro_white_CO.paa",
+			"",
+			"",
+			"ASEC_Headgear\Textures\m300c_blk_co.paa",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -36242,8 +36242,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe Cover MC Comtac3 Arc (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -36266,14 +36266,14 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_cb.paa",
-			"TFL_Headgear\Textures\af_cover_mc_co.paa",
+			"ASEC_Headgear\Textures\airframe_cb.paa",
+			"ASEC_Headgear\Textures\af_cover_mc_co.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_cb.paa",
+			"ASEC_Headgear\Textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
@@ -36284,11 +36284,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -36320,8 +36320,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe Cover AOR2 Comtac3 Arc (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -36344,14 +36344,14 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_od.paa",
-			"TFL_Headgear\Textures\af_cover_aor2_co.paa",
+			"ASEC_Headgear\Textures\airframe_od.paa",
+			"ASEC_Headgear\Textures\af_cover_aor2_co.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_cb.paa",
+			"ASEC_Headgear\Textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
@@ -36362,11 +36362,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -36398,8 +36398,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe Cover AOR1 Comtac3 Arc (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -36422,14 +36422,14 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_tan.paa",
-			"TFL_Headgear\Textures\af_cover_aor1_co.paa",
+			"ASEC_Headgear\Textures\airframe_tan.paa",
+			"ASEC_Headgear\Textures\af_cover_aor1_co.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_cb.paa",
+			"ASEC_Headgear\Textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
@@ -36440,11 +36440,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -36476,8 +36476,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe Cover BLK Comtac3 Arc (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -36500,14 +36500,14 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_blk.paa",
-			"TFL_Headgear\Textures\af_cover_blk_co.paa",
+			"ASEC_Headgear\Textures\airframe_blk.paa",
+			"ASEC_Headgear\Textures\af_cover_blk_co.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_blk.paa",
+			"ASEC_Headgear\Textures\comtac_III_blk.paa",
 			"",
 			"",
 			"",
@@ -36518,11 +36518,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -36554,8 +36554,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe Cover Alpine Comtac3 Arc (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -36578,14 +36578,14 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_white.paa",
-			"TFL_Headgear\Textures\af_cover_alpine_co.paa",
+			"ASEC_Headgear\Textures\airframe_white.paa",
+			"ASEC_Headgear\Textures\af_cover_alpine_co.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_blk.paa",
+			"ASEC_Headgear\Textures\comtac_III_blk.paa",
 			"",
 			"",
 			"",
@@ -36596,11 +36596,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -36632,8 +36632,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe Cover Alpine2 Comtac3 Arc (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -36656,14 +36656,14 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_blk.paa",
-			"TFL_Headgear\Textures\af_cover_alpine_co.paa",
+			"ASEC_Headgear\Textures\airframe_blk.paa",
+			"ASEC_Headgear\Textures\af_cover_alpine_co.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_blk.paa",
+			"ASEC_Headgear\Textures\comtac_III_blk.paa",
 			"",
 			"",
 			"",
@@ -36674,11 +36674,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -36710,8 +36710,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe Cover MCB Comtac3 Arc (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -36734,14 +36734,14 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_blk.paa",
-			"TFL_Headgear\Textures\af_cover_mcb_co.paa",
+			"ASEC_Headgear\Textures\airframe_blk.paa",
+			"ASEC_Headgear\Textures\af_cover_mcb_co.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_blk.paa",
+			"ASEC_Headgear\Textures\comtac_III_blk.paa",
 			"",
 			"",
 			"",
@@ -36752,11 +36752,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -36788,8 +36788,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe Cover OD Comtac3 Arc (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -36812,14 +36812,14 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_cb.paa",
-			"TFL_Headgear\Textures\af_cover_od_co.paa",
+			"ASEC_Headgear\Textures\airframe_cb.paa",
+			"ASEC_Headgear\Textures\af_cover_od_co.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_cb.paa",
+			"ASEC_Headgear\Textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
@@ -36830,11 +36830,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -36866,8 +36866,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe Cover MC Comtac3 Arc (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -36890,29 +36890,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_cb.paa",
+			"ASEC_Headgear\Textures\airframe_cb.paa",
 			"",
-			"TFL_Headgear\Textures\af_cover_mc_co.paa",
-			"",
-			"",
-			"TFL_Headgear\Textures\arc.paa",
-			"",
-			"TFL_Headgear\Textures\comtac_III_cb.paa",
+			"ASEC_Headgear\Textures\af_cover_mc_co.paa",
 			"",
 			"",
+			"ASEC_Headgear\Textures\arc.paa",
+			"",
+			"ASEC_Headgear\Textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\helstar_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\Textures\helstar_co.paa",
 			"",
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -36944,8 +36944,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe Cover AOR2 Comtac3 Arc (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -36968,29 +36968,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_od.paa",
+			"ASEC_Headgear\Textures\airframe_od.paa",
 			"",
-			"TFL_Headgear\Textures\af_cover_aor2_co.paa",
-			"",
-			"",
-			"TFL_Headgear\Textures\arc.paa",
-			"",
-			"TFL_Headgear\Textures\comtac_III_cb.paa",
+			"ASEC_Headgear\Textures\af_cover_aor2_co.paa",
 			"",
 			"",
+			"ASEC_Headgear\Textures\arc.paa",
+			"",
+			"ASEC_Headgear\Textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\helstar_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\Textures\helstar_co.paa",
 			"",
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -37022,8 +37022,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe Cover AOR1 Comtac3 Arc (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -37046,29 +37046,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_tan.paa",
+			"ASEC_Headgear\Textures\airframe_tan.paa",
 			"",
-			"TFL_Headgear\Textures\af_cover_aor1_co.paa",
-			"",
-			"",
-			"TFL_Headgear\Textures\arc.paa",
-			"",
-			"TFL_Headgear\Textures\comtac_III_cb.paa",
+			"ASEC_Headgear\Textures\af_cover_aor1_co.paa",
 			"",
 			"",
+			"ASEC_Headgear\Textures\arc.paa",
+			"",
+			"ASEC_Headgear\Textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\helstar_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\Textures\helstar_co.paa",
 			"",
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -37100,8 +37100,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe Cover BLK Comtac3 Arc (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -37124,29 +37124,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_blk.paa",
+			"ASEC_Headgear\Textures\airframe_blk.paa",
 			"",
-			"TFL_Headgear\Textures\af_cover_blk_co.paa",
-			"",
-			"",
-			"TFL_Headgear\Textures\arc.paa",
-			"",
-			"TFL_Headgear\Textures\comtac_III_blk.paa",
+			"ASEC_Headgear\Textures\af_cover_blk_co.paa",
 			"",
 			"",
+			"ASEC_Headgear\Textures\arc.paa",
+			"",
+			"ASEC_Headgear\Textures\comtac_III_blk.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\helstar_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\Textures\helstar_co.paa",
 			"",
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -37178,8 +37178,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe Cover Alpine Comtac3 Arc (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -37202,29 +37202,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_white.paa",
+			"ASEC_Headgear\Textures\airframe_white.paa",
 			"",
-			"TFL_Headgear\Textures\af_cover_alpine_co.paa",
-			"",
-			"",
-			"TFL_Headgear\Textures\arc.paa",
-			"",
-			"TFL_Headgear\Textures\comtac_III_blk.paa",
+			"ASEC_Headgear\Textures\af_cover_alpine_co.paa",
 			"",
 			"",
+			"ASEC_Headgear\Textures\arc.paa",
+			"",
+			"ASEC_Headgear\Textures\comtac_III_blk.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\helstar_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\Textures\helstar_co.paa",
 			"",
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -37256,8 +37256,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe Cover Alpine2 Comtac3 Arc (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -37280,29 +37280,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_blk.paa",
+			"ASEC_Headgear\Textures\airframe_blk.paa",
 			"",
-			"TFL_Headgear\Textures\af_cover_alpine_co.paa",
-			"",
-			"",
-			"TFL_Headgear\Textures\arc.paa",
-			"",
-			"TFL_Headgear\Textures\comtac_III_blk.paa",
+			"ASEC_Headgear\Textures\af_cover_alpine_co.paa",
 			"",
 			"",
+			"ASEC_Headgear\Textures\arc.paa",
+			"",
+			"ASEC_Headgear\Textures\comtac_III_blk.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\helstar_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\Textures\helstar_co.paa",
 			"",
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -37334,8 +37334,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe Cover MCB Comtac3 Arc (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -37358,29 +37358,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_blk.paa",
+			"ASEC_Headgear\Textures\airframe_blk.paa",
 			"",
-			"TFL_Headgear\Textures\af_cover_mcb_co.paa",
-			"",
-			"",
-			"TFL_Headgear\Textures\arc.paa",
-			"",
-			"TFL_Headgear\Textures\comtac_III_blk.paa",
+			"ASEC_Headgear\Textures\af_cover_mcb_co.paa",
 			"",
 			"",
+			"ASEC_Headgear\Textures\arc.paa",
+			"",
+			"ASEC_Headgear\Textures\comtac_III_blk.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\helstar_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\Textures\helstar_co.paa",
 			"",
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -37412,8 +37412,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe Cover OD Comtac3 Arc (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -37436,29 +37436,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_cb.paa",
+			"ASEC_Headgear\Textures\airframe_cb.paa",
 			"",
-			"TFL_Headgear\Textures\af_cover_od_co.paa",
-			"",
-			"",
-			"TFL_Headgear\Textures\arc.paa",
-			"",
-			"TFL_Headgear\Textures\comtac_III_cb.paa",
+			"ASEC_Headgear\Textures\af_cover_od_co.paa",
 			"",
 			"",
+			"ASEC_Headgear\Textures\arc.paa",
+			"",
+			"ASEC_Headgear\Textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\helstar_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\Textures\helstar_co.paa",
 			"",
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -37490,8 +37490,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe Cover MC Comtac3 Arc (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -37514,29 +37514,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_cb.paa",
+			"ASEC_Headgear\Textures\airframe_cb.paa",
 			"",
-			"TFL_Headgear\Textures\af_cover_mc_co.paa",
-			"",
-			"",
-			"TFL_Headgear\Textures\arc.paa",
-			"",
-			"TFL_Headgear\Textures\comtac_III_cb.paa",
+			"ASEC_Headgear\Textures\af_cover_mc_co.paa",
 			"",
 			"",
+			"ASEC_Headgear\Textures\arc.paa",
+			"",
+			"ASEC_Headgear\Textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\helstar_co.paa",
 			"",
-			"TFL_Headgear\Textures\m300c_tan_co.paa",
+			"",
+			"ASEC_Headgear\Textures\helstar_co.paa",
+			"",
+			"ASEC_Headgear\Textures\m300c_tan_co.paa",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -37568,8 +37568,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe Cover AOR2 Comtac3 Arc (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -37592,29 +37592,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_od.paa",
+			"ASEC_Headgear\Textures\airframe_od.paa",
 			"",
-			"TFL_Headgear\Textures\af_cover_aor2_co.paa",
-			"",
-			"",
-			"TFL_Headgear\Textures\arc.paa",
-			"",
-			"TFL_Headgear\Textures\comtac_III_cb.paa",
+			"ASEC_Headgear\Textures\af_cover_aor2_co.paa",
 			"",
 			"",
+			"ASEC_Headgear\Textures\arc.paa",
+			"",
+			"ASEC_Headgear\Textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\helstar_co.paa",
 			"",
-			"TFL_Headgear\Textures\m300c_od_co.paa",
+			"",
+			"ASEC_Headgear\Textures\helstar_co.paa",
+			"",
+			"ASEC_Headgear\Textures\m300c_od_co.paa",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -37646,8 +37646,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe Cover AOR1 Comtac3 Arc (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -37670,29 +37670,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_tan.paa",
+			"ASEC_Headgear\Textures\airframe_tan.paa",
 			"",
-			"TFL_Headgear\Textures\af_cover_aor1_co.paa",
-			"",
-			"",
-			"TFL_Headgear\Textures\arc.paa",
-			"",
-			"TFL_Headgear\Textures\comtac_III_cb.paa",
+			"ASEC_Headgear\Textures\af_cover_aor1_co.paa",
 			"",
 			"",
+			"ASEC_Headgear\Textures\arc.paa",
+			"",
+			"ASEC_Headgear\Textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\helstar_co.paa",
 			"",
-			"TFL_Headgear\Textures\m300c_tan_co.paa",
+			"",
+			"ASEC_Headgear\Textures\helstar_co.paa",
+			"",
+			"ASEC_Headgear\Textures\m300c_tan_co.paa",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -37724,8 +37724,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe Cover BLK Comtac3 Arc (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -37748,29 +37748,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_blk.paa",
+			"ASEC_Headgear\Textures\airframe_blk.paa",
 			"",
-			"TFL_Headgear\Textures\af_cover_blk_co.paa",
-			"",
-			"",
-			"TFL_Headgear\Textures\arc.paa",
-			"",
-			"TFL_Headgear\Textures\comtac_III_blk.paa",
+			"ASEC_Headgear\Textures\af_cover_blk_co.paa",
 			"",
 			"",
+			"ASEC_Headgear\Textures\arc.paa",
+			"",
+			"ASEC_Headgear\Textures\comtac_III_blk.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\helstar_co.paa",
 			"",
-			"TFL_Headgear\Textures\m300c_blk_co.paa",
+			"",
+			"ASEC_Headgear\Textures\helstar_co.paa",
+			"",
+			"ASEC_Headgear\Textures\m300c_blk_co.paa",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -37802,8 +37802,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe Cover Alpine Comtac3 Arc (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -37826,29 +37826,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_white.paa",
+			"ASEC_Headgear\Textures\airframe_white.paa",
 			"",
-			"TFL_Headgear\Textures\af_cover_alpine_co.paa",
-			"",
-			"",
-			"TFL_Headgear\Textures\arc.paa",
-			"",
-			"TFL_Headgear\Textures\comtac_III_blk.paa",
+			"ASEC_Headgear\Textures\af_cover_alpine_co.paa",
 			"",
 			"",
+			"ASEC_Headgear\Textures\arc.paa",
+			"",
+			"ASEC_Headgear\Textures\comtac_III_blk.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\helstar_co.paa",
 			"",
-			"TFL_Headgear\Textures\m300c_blk_co.paa",
+			"",
+			"ASEC_Headgear\Textures\helstar_co.paa",
+			"",
+			"ASEC_Headgear\Textures\m300c_blk_co.paa",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -37880,8 +37880,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe Cover Alpine2 Comtac3 Arc (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -37904,29 +37904,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_blk.paa",
+			"ASEC_Headgear\Textures\airframe_blk.paa",
 			"",
-			"TFL_Headgear\Textures\af_cover_alpine_co.paa",
-			"",
-			"",
-			"TFL_Headgear\Textures\arc.paa",
-			"",
-			"TFL_Headgear\Textures\comtac_III_blk.paa",
+			"ASEC_Headgear\Textures\af_cover_alpine_co.paa",
 			"",
 			"",
+			"ASEC_Headgear\Textures\arc.paa",
+			"",
+			"ASEC_Headgear\Textures\comtac_III_blk.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\helstar_co.paa",
 			"",
-			"TFL_Headgear\Textures\m300c_blk_co.paa",
+			"",
+			"ASEC_Headgear\Textures\helstar_co.paa",
+			"",
+			"ASEC_Headgear\Textures\m300c_blk_co.paa",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -37958,8 +37958,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe Cover MCB Comtac3 Arc (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -37982,29 +37982,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_blk.paa",
+			"ASEC_Headgear\Textures\airframe_blk.paa",
 			"",
-			"TFL_Headgear\Textures\af_cover_mcb_co.paa",
-			"",
-			"",
-			"TFL_Headgear\Textures\arc.paa",
-			"",
-			"TFL_Headgear\Textures\comtac_III_blk.paa",
+			"ASEC_Headgear\Textures\af_cover_mcb_co.paa",
 			"",
 			"",
+			"ASEC_Headgear\Textures\arc.paa",
+			"",
+			"ASEC_Headgear\Textures\comtac_III_blk.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\helstar_co.paa",
 			"",
-			"TFL_Headgear\Textures\m300c_blk_co.paa",
+			"",
+			"ASEC_Headgear\Textures\helstar_co.paa",
+			"",
+			"ASEC_Headgear\Textures\m300c_blk_co.paa",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -38036,8 +38036,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe Cover OD Comtac3 Arc (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -38060,29 +38060,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_cb.paa",
+			"ASEC_Headgear\Textures\airframe_cb.paa",
 			"",
-			"TFL_Headgear\Textures\af_cover_od_co.paa",
-			"",
-			"",
-			"TFL_Headgear\Textures\arc.paa",
-			"",
-			"TFL_Headgear\Textures\comtac_III_cb.paa",
+			"ASEC_Headgear\Textures\af_cover_od_co.paa",
 			"",
 			"",
+			"ASEC_Headgear\Textures\arc.paa",
+			"",
+			"ASEC_Headgear\Textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\helstar_co.paa",
 			"",
-			"TFL_Headgear\Textures\m300c_tan_co.paa",
+			"",
+			"ASEC_Headgear\Textures\helstar_co.paa",
+			"",
+			"ASEC_Headgear\Textures\m300c_tan_co.paa",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -38114,8 +38114,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe Cover MC Comtac3 Arc (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -38138,29 +38138,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_cb.paa",
+			"ASEC_Headgear\Textures\airframe_cb.paa",
 			"",
 			"",
-			"TFL_Headgear\Textures\af_cover_mc_co.paa",
+			"ASEC_Headgear\Textures\af_cover_mc_co.paa",
 			"",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_cb.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\Textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\helstar2_CO.paa",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\Textures\helstar2_CO.paa",
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -38192,8 +38192,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe Cover AOR2 Comtac3 Arc (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -38216,29 +38216,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_od.paa",
+			"ASEC_Headgear\Textures\airframe_od.paa",
 			"",
 			"",
-			"TFL_Headgear\Textures\af_cover_aor2_co.paa",
+			"ASEC_Headgear\Textures\af_cover_aor2_co.paa",
 			"",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_cb.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\Textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\helstar2_CO.paa",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\Textures\helstar2_CO.paa",
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -38270,8 +38270,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe Cover AOR1 Comtac3 Arc (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -38294,29 +38294,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_tan.paa",
+			"ASEC_Headgear\Textures\airframe_tan.paa",
 			"",
 			"",
-			"TFL_Headgear\Textures\af_cover_aor1_co.paa",
+			"ASEC_Headgear\Textures\af_cover_aor1_co.paa",
 			"",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_cb.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\Textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\helstar2_CO.paa",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\Textures\helstar2_CO.paa",
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -38348,8 +38348,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe Cover BLK Comtac3 Arc (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -38372,29 +38372,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_blk.paa",
+			"ASEC_Headgear\Textures\airframe_blk.paa",
 			"",
 			"",
-			"TFL_Headgear\Textures\af_cover_blk_co.paa",
+			"ASEC_Headgear\Textures\af_cover_blk_co.paa",
 			"",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_blk.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\Textures\comtac_III_blk.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\helstar2_CO.paa",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\Textures\helstar2_CO.paa",
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -38426,8 +38426,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe Cover Alpine Comtac3 Arc (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -38450,29 +38450,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_white.paa",
+			"ASEC_Headgear\Textures\airframe_white.paa",
 			"",
 			"",
-			"TFL_Headgear\Textures\af_cover_alpine_co.paa",
+			"ASEC_Headgear\Textures\af_cover_alpine_co.paa",
 			"",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_blk.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\Textures\comtac_III_blk.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\helstar2_CO.paa",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\Textures\helstar2_CO.paa",
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -38504,8 +38504,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe Cover Alpine2 Comtac3 Arc (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -38528,29 +38528,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_blk.paa",
+			"ASEC_Headgear\Textures\airframe_blk.paa",
 			"",
 			"",
-			"TFL_Headgear\Textures\af_cover_alpine_co.paa",
+			"ASEC_Headgear\Textures\af_cover_alpine_co.paa",
 			"",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_blk.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\Textures\comtac_III_blk.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\helstar2_CO.paa",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\Textures\helstar2_CO.paa",
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -38582,8 +38582,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe Cover MCB Comtac3 Arc (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -38606,29 +38606,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_blk.paa",
+			"ASEC_Headgear\Textures\airframe_blk.paa",
 			"",
 			"",
-			"TFL_Headgear\Textures\af_cover_mcb_co.paa",
+			"ASEC_Headgear\Textures\af_cover_mcb_co.paa",
 			"",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_blk.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\Textures\comtac_III_blk.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\helstar2_CO.paa",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\Textures\helstar2_CO.paa",
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -38660,8 +38660,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe Cover OD Comtac3 Arc (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -38684,29 +38684,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_cb.paa",
+			"ASEC_Headgear\Textures\airframe_cb.paa",
 			"",
 			"",
-			"TFL_Headgear\Textures\af_cover_od_co.paa",
+			"ASEC_Headgear\Textures\af_cover_od_co.paa",
 			"",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_cb.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\Textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\helstar2_CO.paa",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\Textures\helstar2_CO.paa",
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -38738,8 +38738,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe Cover MC Comtac3 Arc (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -38762,29 +38762,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_cb.paa",
+			"ASEC_Headgear\Textures\airframe_cb.paa",
 			"",
 			"",
-			"TFL_Headgear\Textures\af_cover_mc_co.paa",
+			"ASEC_Headgear\Textures\af_cover_mc_co.paa",
 			"",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_cb.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\Textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\helstar2_CO.paa",
-			"TFL_Headgear\Textures\m300c_tan_co.paa",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\Textures\helstar2_CO.paa",
+			"ASEC_Headgear\Textures\m300c_tan_co.paa",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -38816,8 +38816,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe Cover AOR2 Comtac3 Arc (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -38840,29 +38840,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_od.paa",
+			"ASEC_Headgear\Textures\airframe_od.paa",
 			"",
 			"",
-			"TFL_Headgear\Textures\af_cover_aor2_co.paa",
+			"ASEC_Headgear\Textures\af_cover_aor2_co.paa",
 			"",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_cb.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\Textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\helstar2_CO.paa",
-			"TFL_Headgear\Textures\m300c_od_co.paa",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\Textures\helstar2_CO.paa",
+			"ASEC_Headgear\Textures\m300c_od_co.paa",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -38894,8 +38894,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe Cover AOR1 Comtac3 Arc (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -38918,29 +38918,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_tan.paa",
+			"ASEC_Headgear\Textures\airframe_tan.paa",
 			"",
 			"",
-			"TFL_Headgear\Textures\af_cover_aor1_co.paa",
+			"ASEC_Headgear\Textures\af_cover_aor1_co.paa",
 			"",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_cb.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\Textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\helstar2_CO.paa",
-			"TFL_Headgear\Textures\m300c_tan_co.paa",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\Textures\helstar2_CO.paa",
+			"ASEC_Headgear\Textures\m300c_tan_co.paa",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -38972,8 +38972,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe Cover BLK Comtac3 Arc (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -38996,29 +38996,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_blk.paa",
+			"ASEC_Headgear\Textures\airframe_blk.paa",
 			"",
 			"",
-			"TFL_Headgear\Textures\af_cover_blk_co.paa",
+			"ASEC_Headgear\Textures\af_cover_blk_co.paa",
 			"",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_blk.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\Textures\comtac_III_blk.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\helstar2_CO.paa",
-			"TFL_Headgear\Textures\m300c_blk_co.paa",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\Textures\helstar2_CO.paa",
+			"ASEC_Headgear\Textures\m300c_blk_co.paa",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -39050,8 +39050,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe Cover Alpine Comtac3 Arc (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -39074,29 +39074,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_white.paa",
+			"ASEC_Headgear\Textures\airframe_white.paa",
 			"",
 			"",
-			"TFL_Headgear\Textures\af_cover_alpine_co.paa",
+			"ASEC_Headgear\Textures\af_cover_alpine_co.paa",
 			"",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_blk.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\Textures\comtac_III_blk.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\helstar2_CO.paa",
-			"TFL_Headgear\Textures\m300c_blk_co.paa",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\Textures\helstar2_CO.paa",
+			"ASEC_Headgear\Textures\m300c_blk_co.paa",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -39128,8 +39128,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe Cover Alpine2 Comtac3 Arc (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -39152,29 +39152,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_blk.paa",
+			"ASEC_Headgear\Textures\airframe_blk.paa",
 			"",
 			"",
-			"TFL_Headgear\Textures\af_cover_alpine_co.paa",
+			"ASEC_Headgear\Textures\af_cover_alpine_co.paa",
 			"",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_blk.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\Textures\comtac_III_blk.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\helstar2_CO.paa",
-			"TFL_Headgear\Textures\m300c_blk_co.paa",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\Textures\helstar2_CO.paa",
+			"ASEC_Headgear\Textures\m300c_blk_co.paa",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -39206,8 +39206,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe Cover MCB Comtac3 Arc (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -39230,29 +39230,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_blk.paa",
+			"ASEC_Headgear\Textures\airframe_blk.paa",
 			"",
 			"",
-			"TFL_Headgear\Textures\af_cover_mcb_co.paa",
+			"ASEC_Headgear\Textures\af_cover_mcb_co.paa",
 			"",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_blk.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\Textures\comtac_III_blk.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\helstar2_CO.paa",
-			"TFL_Headgear\Textures\m300c_blk_co.paa",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\Textures\helstar2_CO.paa",
+			"ASEC_Headgear\Textures\m300c_blk_co.paa",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -39284,8 +39284,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe Cover OD Comtac3 Arc (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -39308,29 +39308,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_cb.paa",
+			"ASEC_Headgear\Textures\airframe_cb.paa",
 			"",
 			"",
-			"TFL_Headgear\Textures\af_cover_od_co.paa",
+			"ASEC_Headgear\Textures\af_cover_od_co.paa",
 			"",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_cb.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\Textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\helstar2_CO.paa",
-			"TFL_Headgear\Textures\m300c_tan_co.paa",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\Textures\helstar2_CO.paa",
+			"ASEC_Headgear\Textures\m300c_tan_co.paa",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -39362,8 +39362,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe Cover MC Comtac3 Arc (F)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -39386,29 +39386,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_cb.paa",
+			"ASEC_Headgear\Textures\airframe_cb.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\acc_soc_manta.paa",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\acc_soc_manta.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_cb.paa",
-			"",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\Textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\af_cover_mc_co.paa"
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\Textures\af_cover_mc_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -39440,8 +39440,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe Cover AOR2 Comtac3 Arc (F)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -39464,29 +39464,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_od.paa",
+			"ASEC_Headgear\Textures\airframe_od.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\acc_soc_manta.paa",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\acc_soc_manta.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_cb.paa",
-			"",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\Textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\af_cover_aor2_co.paa"
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\Textures\af_cover_aor2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -39518,8 +39518,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe Cover AOR1 Comtac3 Arc (F)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -39542,29 +39542,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_tan.paa",
+			"ASEC_Headgear\Textures\airframe_tan.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\acc_soc_manta.paa",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\acc_soc_manta.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_cb.paa",
-			"",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\Textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\af_cover_aor1_co.paa"
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\Textures\af_cover_aor1_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -39596,8 +39596,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe Cover BLK Comtac3 Arc (F)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -39620,29 +39620,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_blk.paa",
+			"ASEC_Headgear\Textures\airframe_blk.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\acc_soc_manta.paa",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\acc_soc_manta.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_blk.paa",
-			"",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\Textures\comtac_III_blk.paa",
 			"",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\af_cover_blk_co.paa"
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\Textures\af_cover_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -39674,8 +39674,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe Cover Alpine Comtac3 Arc (F)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -39698,29 +39698,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_white.paa",
+			"ASEC_Headgear\Textures\airframe_white.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\acc_soc_manta.paa",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\acc_soc_manta.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_blk.paa",
-			"",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\Textures\comtac_III_blk.paa",
 			"",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\af_cover_alpine_co.paa"
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\Textures\af_cover_alpine_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -39752,8 +39752,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe Cover Alpine2 Comtac3 Arc (F)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -39776,29 +39776,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_blk.paa",
+			"ASEC_Headgear\Textures\airframe_blk.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\acc_soc_manta.paa",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\acc_soc_manta.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_blk.paa",
-			"",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\Textures\comtac_III_blk.paa",
 			"",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\af_cover_alpine_co.paa"
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\Textures\af_cover_alpine_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -39830,8 +39830,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe Cover MCB Comtac3 Arc (F)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -39854,29 +39854,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_blk.paa",
+			"ASEC_Headgear\Textures\airframe_blk.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\acc_soc_manta.paa",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\acc_soc_manta.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_blk.paa",
-			"",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\Textures\comtac_III_blk.paa",
 			"",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\af_cover_mcb_co.paa"
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\Textures\af_cover_mcb_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -39908,8 +39908,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe Cover OD Comtac3 Arc (F)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -39932,29 +39932,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_cb.paa",
+			"ASEC_Headgear\Textures\airframe_cb.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\acc_soc_manta.paa",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\acc_soc_manta.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_cb.paa",
-			"",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\Textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\af_cover_od_co.paa"
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\Textures\af_cover_od_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -39986,8 +39986,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe Cover MC Comtac3 Arc (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -40010,29 +40010,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_cb.paa",
+			"ASEC_Headgear\Textures\airframe_cb.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\acc_soc_manta.paa",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\acc_soc_manta.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_cb.paa",
-			"",
-			"",
+			"ASEC_Headgear\Textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\m300c_tan_co.paa",
-			"TFL_Headgear\Textures\af_cover_mc_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\Textures\m300c_tan_co.paa",
+			"ASEC_Headgear\Textures\af_cover_mc_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -40064,8 +40064,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe Cover AOR2 Comtac3 Arc (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -40088,29 +40088,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_od.paa",
+			"ASEC_Headgear\Textures\airframe_od.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\acc_soc_manta.paa",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\acc_soc_manta.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_cb.paa",
-			"",
-			"",
+			"ASEC_Headgear\Textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\m300c_od_co.paa",
-			"TFL_Headgear\Textures\af_cover_aor2_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\Textures\m300c_od_co.paa",
+			"ASEC_Headgear\Textures\af_cover_aor2_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -40142,8 +40142,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe Cover AOR1 Comtac3 Arc (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -40166,29 +40166,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_tan.paa",
+			"ASEC_Headgear\Textures\airframe_tan.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\acc_soc_manta.paa",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\acc_soc_manta.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_cb.paa",
-			"",
-			"",
+			"ASEC_Headgear\Textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\m300c_tan_co.paa",
-			"TFL_Headgear\Textures\af_cover_aor1_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\Textures\m300c_tan_co.paa",
+			"ASEC_Headgear\Textures\af_cover_aor1_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -40220,8 +40220,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe Cover BLK Comtac3 Arc (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -40244,29 +40244,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_blk.paa",
+			"ASEC_Headgear\Textures\airframe_blk.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\acc_soc_manta.paa",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\acc_soc_manta.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_blk.paa",
-			"",
-			"",
+			"ASEC_Headgear\Textures\comtac_III_blk.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\m300c_blk_co.paa",
-			"TFL_Headgear\Textures\af_cover_blk_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\Textures\m300c_blk_co.paa",
+			"ASEC_Headgear\Textures\af_cover_blk_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -40298,8 +40298,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe Cover Alpine Comtac3 Arc (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -40322,29 +40322,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_white.paa",
+			"ASEC_Headgear\Textures\airframe_white.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\acc_soc_manta.paa",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\acc_soc_manta.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_blk.paa",
-			"",
-			"",
+			"ASEC_Headgear\Textures\comtac_III_blk.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\m300c_blk_co.paa",
-			"TFL_Headgear\Textures\af_cover_alpine_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\Textures\m300c_blk_co.paa",
+			"ASEC_Headgear\Textures\af_cover_alpine_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -40376,8 +40376,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe Cover Alpine2 Comtac3 Arc (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -40400,29 +40400,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_blk.paa",
+			"ASEC_Headgear\Textures\airframe_blk.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\acc_soc_manta.paa",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\acc_soc_manta.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_blk.paa",
-			"",
-			"",
+			"ASEC_Headgear\Textures\comtac_III_blk.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\m300c_blk_co.paa",
-			"TFL_Headgear\Textures\af_cover_alpine_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\Textures\m300c_blk_co.paa",
+			"ASEC_Headgear\Textures\af_cover_alpine_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -40454,8 +40454,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe Cover MCB Comtac3 Arc (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -40478,29 +40478,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_blk.paa",
+			"ASEC_Headgear\Textures\airframe_blk.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\acc_soc_manta.paa",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\acc_soc_manta.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_blk.paa",
-			"",
-			"",
+			"ASEC_Headgear\Textures\comtac_III_blk.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\m300c_blk_co.paa",
-			"TFL_Headgear\Textures\af_cover_mcb_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\Textures\m300c_blk_co.paa",
+			"ASEC_Headgear\Textures\af_cover_mcb_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -40532,8 +40532,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Crye Airframe Cover OD Comtac3 Arc (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 		hiddenSelections[]=
 		{
 			"airframe",
@@ -40556,29 +40556,29 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_Headgear\Textures\airframe_cb.paa",
+			"ASEC_Headgear\Textures\airframe_cb.paa",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\acc_soc_manta.paa",
-			"TFL_Headgear\Textures\arc.paa",
+			"ASEC_Headgear\Textures\acc_soc_manta.paa",
+			"ASEC_Headgear\Textures\arc.paa",
 			"",
-			"TFL_Headgear\Textures\comtac_III_cb.paa",
-			"",
-			"",
+			"ASEC_Headgear\Textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"TFL_Headgear\Textures\m300c_tan_co.paa",
-			"TFL_Headgear\Textures\af_cover_od_co.paa"
+			"",
+			"",
+			"ASEC_Headgear\Textures\m300c_tan_co.paa",
+			"ASEC_Headgear\Textures\af_cover_od_co.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Crye_Airframe_Cover.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -40610,8 +40610,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore XP MC Comtac3 Arc (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_XP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_XP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -40643,15 +40643,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\price_helmet_mc_co.paa",
-			"tfl_headgear\textures\rails_tan.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\price_helmet_mc_co.paa",
+			"ASEC_Headgear\textures\rails_tan.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -40668,11 +40668,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_XP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_XP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -40713,8 +40713,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore XP MC Comtac3 Arc (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_XP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_XP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -40746,17 +40746,17 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\price_helmet_mc_co.paa",
-			"tfl_headgear\textures\rails_tan.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\price_helmet_mc_co.paa",
+			"ASEC_Headgear\textures\rails_tan.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -40771,11 +40771,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_XP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_XP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -40816,8 +40816,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore XP MC Comtac3 Arc (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_XP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_XP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -40849,22 +40849,22 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\price_helmet_mc_co.paa",
-			"tfl_headgear\textures\rails_tan.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\price_helmet_mc_co.paa",
+			"ASEC_Headgear\textures\rails_tan.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
@@ -40874,11 +40874,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_XP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_XP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -40919,8 +40919,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore XP MC Comtac3 Arc (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_XP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_XP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -40952,19 +40952,19 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\price_helmet_mc_co.paa",
-			"tfl_headgear\textures\rails_tan.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\price_helmet_mc_co.paa",
+			"ASEC_Headgear\textures\rails_tan.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -40977,11 +40977,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_XP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_XP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -41022,8 +41022,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore XP MC Comtac3 Arc (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_XP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_XP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -41055,22 +41055,22 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\price_helmet_mc_co.paa",
-			"tfl_headgear\textures\rails_tan.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\price_helmet_mc_co.paa",
+			"ASEC_Headgear\textures\rails_tan.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
@@ -41080,11 +41080,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_XP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_XP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -41125,8 +41125,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore XP MC Comtac3 Arc (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_XP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_XP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -41158,17 +41158,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\price_helmet_mc_co.paa",
-			"tfl_headgear\textures\rails_tan.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\price_helmet_mc_co.paa",
+			"ASEC_Headgear\textures\rails_tan.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -41177,17 +41175,19 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_XP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_XP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -41228,8 +41228,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore XP MC Comtac3 Arc (H)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_XP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_XP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -41261,36 +41261,36 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\price_helmet_mc_co.paa",
-			"tfl_headgear\textures\rails_tan.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\price_helmet_mc_co.paa",
+			"ASEC_Headgear\textures\rails_tan.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"",
-			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
+			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_XP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_XP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -41331,8 +41331,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore XP MC Comtac3 Arc (I)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_XP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_XP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -41364,36 +41364,36 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\price_helmet_mc_co.paa",
-			"tfl_headgear\textures\rails_tan.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\price_helmet_mc_co.paa",
+			"ASEC_Headgear\textures\rails_tan.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_XP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_XP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -41434,8 +41434,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore XP MC Comtac3 Arc (J)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_XP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_XP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -41467,36 +41467,36 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\price_helmet_mc_co.paa",
-			"tfl_headgear\textures\rails_tan.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\price_helmet_mc_co.paa",
+			"ASEC_Headgear\textures\rails_tan.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			""
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_XP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_XP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -41537,8 +41537,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore XP MC Comtac3 Arc (K)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_XP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_XP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -41570,17 +41570,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\price_helmet_mc_co.paa",
-			"tfl_headgear\textures\rails_tan.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\price_helmet_mc_co.paa",
+			"ASEC_Headgear\textures\rails_tan.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -41594,13 +41592,15 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_XP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_XP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -41641,8 +41641,8 @@ class CfgWeapons
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		displayName="[ASEC] Opscore XP MC Comtac3 Arc (L)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Opscore_XP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Opscore_XP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -41674,37 +41674,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_headgear\textures\price_helmet_mc_co.paa",
-			"tfl_headgear\textures\rails_tan.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\price_helmet_mc_co.paa",
+			"ASEC_Headgear\textures\rails_tan.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Opscore_XP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Opscore_XP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -41747,8 +41747,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Comtac3 Arc (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -41781,16 +41781,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -41807,11 +41807,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -41855,8 +41855,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Comtac3 Arc (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -41889,18 +41889,18 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -41915,11 +41915,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -41963,8 +41963,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Comtac3 Arc (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -41997,23 +41997,23 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
@@ -42023,11 +42023,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -42071,8 +42071,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Comtac3 Arc (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -42105,20 +42105,20 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -42131,11 +42131,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -42179,8 +42179,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Comtac3 Arc (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -42213,23 +42213,23 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
@@ -42239,11 +42239,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -42287,8 +42287,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Comtac3 Arc (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -42321,18 +42321,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -42341,17 +42339,19 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -42395,8 +42395,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Comtac3 Arc (H)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -42429,37 +42429,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"",
-			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
+			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -42503,8 +42503,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Comtac3 Arc (I)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -42537,37 +42537,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -42611,8 +42611,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Comtac3 Arc (J)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -42645,37 +42645,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -42719,8 +42719,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Comtac3 Arc (K)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -42753,18 +42753,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -42778,13 +42776,15 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -42828,8 +42828,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Comtac3 Arc (L)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -42862,38 +42862,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -42937,8 +42937,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF AMP (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -42971,22 +42971,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -42994,16 +42988,22 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -43047,8 +43047,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF AMP (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -43081,18 +43081,18 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -43104,16 +43104,16 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -43157,8 +43157,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF AMP (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -43191,39 +43191,39 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -43267,8 +43267,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF AMP (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -43301,39 +43301,39 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -43377,8 +43377,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF AMP (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -43411,39 +43411,39 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -43487,8 +43487,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF AMP (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -43521,16 +43521,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -43541,19 +43541,19 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -43597,8 +43597,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF AMP (H)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -43631,39 +43631,39 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -43707,8 +43707,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF AMP (I)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -43741,16 +43741,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -43759,21 +43759,21 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -43817,8 +43817,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF AMP (J)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -43851,39 +43851,39 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -43927,8 +43927,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF AMP (K)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -43961,22 +43961,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -43984,16 +43978,22 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"",
+			"ASEC_Headgear\textures\acc_soc_manta.paa",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -44037,8 +44037,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF AMP (L)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -44071,39 +44071,39 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\acc_soc_manta.paa",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -44147,8 +44147,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF AMP MC (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -44181,22 +44181,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -44204,16 +44198,22 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp1_mc_co.paa",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp2_mc_co.paa"
+			"",
+			"",
+			"",
+			"",
+			"ASEC_SF\textures\opscore_amp1_mc_co.paa",
+			"",
+			"",
+			"ASEC_SF\textures\opscore_amp2_mc_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -44257,8 +44257,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF AMP MC (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -44291,18 +44291,18 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -44314,16 +44314,16 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp1_mc_co.paa",
+			"ASEC_SF\textures\opscore_amp1_mc_co.paa",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp2_mc_co.paa"
+			"ASEC_SF\textures\opscore_amp2_mc_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -44367,8 +44367,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF AMP MC (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -44401,39 +44401,39 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp1_mc_co.paa",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp2_mc_co.paa"
+			"",
+			"ASEC_SF\textures\opscore_amp1_mc_co.paa",
+			"",
+			"",
+			"ASEC_SF\textures\opscore_amp2_mc_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -44477,8 +44477,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF AMP MC (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -44511,39 +44511,39 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp1_mc_co.paa",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp2_mc_co.paa"
+			"",
+			"ASEC_SF\textures\opscore_amp1_mc_co.paa",
+			"",
+			"",
+			"ASEC_SF\textures\opscore_amp2_mc_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -44587,8 +44587,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF AMP MC (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -44621,39 +44621,39 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp1_mc_co.paa",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp2_mc_co.paa"
+			"",
+			"ASEC_SF\textures\opscore_amp1_mc_co.paa",
+			"",
+			"",
+			"ASEC_SF\textures\opscore_amp2_mc_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -44697,8 +44697,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF AMP MC (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -44731,16 +44731,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -44751,19 +44751,19 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
-			"tfl_sf\textures\opscore_amp1_mc_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
+			"ASEC_SF\textures\opscore_amp1_mc_co.paa",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp2_mc_co.paa"
+			"ASEC_SF\textures\opscore_amp2_mc_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -44807,8 +44807,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF AMP MC (H)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -44841,39 +44841,39 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
-			"tfl_sf\textures\opscore_amp1_mc_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
+			"ASEC_SF\textures\opscore_amp1_mc_co.paa",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp2_mc_co.paa"
+			"ASEC_SF\textures\opscore_amp2_mc_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -44917,8 +44917,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF AMP MC (I)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -44951,16 +44951,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -44969,21 +44969,21 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp1_mc_co.paa",
+			"ASEC_SF\textures\opscore_amp1_mc_co.paa",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp2_mc_co.paa"
+			"ASEC_SF\textures\opscore_amp2_mc_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -45027,8 +45027,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF AMP MC (J)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -45061,39 +45061,39 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
-			"tfl_sf\textures\opscore_amp1_mc_co.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp2_mc_co.paa"
+			"",
+			"ASEC_SF\textures\opscore_amp1_mc_co.paa",
+			"",
+			"",
+			"ASEC_SF\textures\opscore_amp2_mc_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -45137,8 +45137,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF AMP MC (K)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -45171,22 +45171,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -45194,16 +45188,22 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp1_mc_co.paa",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa",
-			"tfl_sf\textures\opscore_amp2_mc_co.paa"
+			"",
+			"",
+			"",
+			"",
+			"",
+			"ASEC_SF\textures\opscore_amp1_mc_co.paa",
+			"",
+			"ASEC_Headgear\textures\acc_soc_manta.paa",
+			"ASEC_SF\textures\opscore_amp2_mc_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -45247,8 +45247,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF AMP MC (L)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -45281,39 +45281,39 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp1_mc_co.paa",
+			"ASEC_SF\textures\opscore_amp1_mc_co.paa",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa",
-			"tfl_sf\textures\opscore_amp2_mc_co.paa"
+			"ASEC_Headgear\textures\acc_soc_manta.paa",
+			"ASEC_SF\textures\opscore_amp2_mc_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -45357,8 +45357,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray Comtac3 Arc (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -45391,16 +45391,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -45417,11 +45417,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -45465,8 +45465,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray Comtac3 Arc (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -45499,18 +45499,18 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -45525,11 +45525,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -45573,8 +45573,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray Comtac3 Arc (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -45607,23 +45607,23 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
@@ -45633,11 +45633,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -45681,8 +45681,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray Comtac3 Arc (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -45715,20 +45715,20 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -45741,11 +45741,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -45789,8 +45789,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray Comtac3 Arc (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -45823,23 +45823,23 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
@@ -45849,11 +45849,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -45897,8 +45897,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray Comtac3 Arc (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -45931,18 +45931,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -45951,17 +45949,19 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -46005,8 +46005,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray Comtac3 Arc (H)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -46039,37 +46039,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"",
-			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
+			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -46113,8 +46113,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray Comtac3 Arc (I)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -46147,37 +46147,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -46221,8 +46221,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray Comtac3 Arc (J)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -46255,37 +46255,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -46329,8 +46329,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray Comtac3 Arc (K)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -46363,18 +46363,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -46388,13 +46386,15 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -46438,8 +46438,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray Comtac3 Arc (L)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -46472,38 +46472,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -46547,8 +46547,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray AMP (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -46581,22 +46581,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -46604,16 +46598,22 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -46657,8 +46657,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray AMP (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -46691,18 +46691,18 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -46714,16 +46714,16 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -46767,8 +46767,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray AMP (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -46801,39 +46801,39 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -46877,8 +46877,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray AMP (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -46911,39 +46911,39 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -46987,8 +46987,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray AMP (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -47021,39 +47021,39 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -47097,8 +47097,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray AMP (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -47131,16 +47131,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -47151,19 +47151,19 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -47207,8 +47207,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray AMP (H)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -47241,39 +47241,39 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -47317,8 +47317,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray AMP (I)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -47351,16 +47351,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -47369,21 +47369,21 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -47427,8 +47427,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray AMP (J)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -47461,39 +47461,39 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -47537,8 +47537,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray AMP (K)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -47571,22 +47571,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -47594,16 +47588,22 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"",
+			"ASEC_Headgear\textures\acc_soc_manta.paa",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -47647,8 +47647,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray AMP (L)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -47681,39 +47681,39 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\acc_soc_manta.paa",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -47757,8 +47757,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC Comtac3 Arc (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -47791,16 +47791,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -47817,11 +47817,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -47865,8 +47865,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC Comtac3 Arc (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -47899,18 +47899,18 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -47925,11 +47925,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -47973,8 +47973,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC Comtac3 Arc (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -48007,23 +48007,23 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
@@ -48033,11 +48033,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -48081,8 +48081,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC Comtac3 Arc (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -48115,20 +48115,20 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -48141,11 +48141,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -48189,8 +48189,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC Comtac3 Arc (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -48223,23 +48223,23 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
@@ -48249,11 +48249,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -48297,8 +48297,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC Comtac3 Arc (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -48331,18 +48331,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -48351,17 +48349,19 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -48405,8 +48405,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC Comtac3 Arc (H)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -48439,37 +48439,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"",
-			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
+			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -48513,8 +48513,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC Comtac3 Arc (I)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -48547,37 +48547,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -48621,8 +48621,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC Comtac3 Arc (J)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -48655,37 +48655,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -48729,8 +48729,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC Comtac3 Arc (K)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -48763,18 +48763,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -48788,13 +48786,15 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -48838,8 +48838,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC Comtac3 Arc (L)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -48872,38 +48872,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -48947,8 +48947,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC AMP (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -48981,22 +48981,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -49004,16 +48998,22 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -49057,8 +49057,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC AMP (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -49091,18 +49091,18 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -49114,16 +49114,16 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -49167,8 +49167,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC AMP (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -49201,39 +49201,39 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -49277,8 +49277,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC AMP (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -49311,39 +49311,39 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -49387,8 +49387,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC AMP (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -49421,39 +49421,39 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -49497,8 +49497,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC AMP (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -49531,16 +49531,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -49551,19 +49551,19 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -49607,8 +49607,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC AMP (H)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -49641,39 +49641,39 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -49717,8 +49717,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC AMP (I)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -49751,16 +49751,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -49769,21 +49769,21 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -49827,8 +49827,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC AMP (J)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -49861,39 +49861,39 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -49937,8 +49937,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC AMP (K)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -49971,22 +49971,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -49994,16 +49988,22 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"",
+			"ASEC_Headgear\textures\acc_soc_manta.paa",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -50047,8 +50047,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC AMP (L)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -50081,39 +50081,39 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\acc_soc_manta.paa",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -50157,8 +50157,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC AMP MC (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -50191,22 +50191,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -50214,16 +50208,22 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp1_mc_co.paa",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp2_mc_co.paa"
+			"",
+			"",
+			"",
+			"",
+			"ASEC_SF\textures\opscore_amp1_mc_co.paa",
+			"",
+			"",
+			"ASEC_SF\textures\opscore_amp2_mc_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -50267,8 +50267,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC AMP MC (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -50301,18 +50301,18 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -50324,16 +50324,16 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp1_mc_co.paa",
+			"ASEC_SF\textures\opscore_amp1_mc_co.paa",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp2_mc_co.paa"
+			"ASEC_SF\textures\opscore_amp2_mc_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -50377,8 +50377,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC AMP MC (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -50411,39 +50411,39 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp1_mc_co.paa",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp2_mc_co.paa"
+			"",
+			"ASEC_SF\textures\opscore_amp1_mc_co.paa",
+			"",
+			"",
+			"ASEC_SF\textures\opscore_amp2_mc_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -50487,8 +50487,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC AMP MC (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -50521,39 +50521,39 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp1_mc_co.paa",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp2_mc_co.paa"
+			"",
+			"ASEC_SF\textures\opscore_amp1_mc_co.paa",
+			"",
+			"",
+			"ASEC_SF\textures\opscore_amp2_mc_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -50597,8 +50597,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC AMP MC (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -50631,39 +50631,39 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp1_mc_co.paa",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp2_mc_co.paa"
+			"",
+			"ASEC_SF\textures\opscore_amp1_mc_co.paa",
+			"",
+			"",
+			"ASEC_SF\textures\opscore_amp2_mc_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -50707,8 +50707,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC AMP MC (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -50741,16 +50741,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -50761,19 +50761,19 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
-			"tfl_sf\textures\opscore_amp1_mc_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
+			"ASEC_SF\textures\opscore_amp1_mc_co.paa",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp2_mc_co.paa"
+			"ASEC_SF\textures\opscore_amp2_mc_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -50817,8 +50817,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC AMP MC (H)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -50851,39 +50851,39 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
-			"tfl_sf\textures\opscore_amp1_mc_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
+			"ASEC_SF\textures\opscore_amp1_mc_co.paa",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp2_mc_co.paa"
+			"ASEC_SF\textures\opscore_amp2_mc_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -50927,8 +50927,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC AMP MC (I)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -50961,16 +50961,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -50979,21 +50979,21 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp1_mc_co.paa",
+			"ASEC_SF\textures\opscore_amp1_mc_co.paa",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp2_mc_co.paa"
+			"ASEC_SF\textures\opscore_amp2_mc_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -51037,8 +51037,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC AMP MC (J)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -51071,39 +51071,39 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
-			"tfl_sf\textures\opscore_amp1_mc_co.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp2_mc_co.paa"
+			"",
+			"ASEC_SF\textures\opscore_amp1_mc_co.paa",
+			"",
+			"",
+			"ASEC_SF\textures\opscore_amp2_mc_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -51147,8 +51147,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC AMP MC (K)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -51181,22 +51181,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -51204,16 +51198,22 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp1_mc_co.paa",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa",
-			"tfl_sf\textures\opscore_amp2_mc_co.paa"
+			"",
+			"",
+			"",
+			"",
+			"",
+			"ASEC_SF\textures\opscore_amp1_mc_co.paa",
+			"",
+			"ASEC_Headgear\textures\acc_soc_manta.paa",
+			"ASEC_SF\textures\opscore_amp2_mc_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -51257,8 +51257,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC AMP MC (L)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -51291,39 +51291,39 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp1_mc_co.paa",
+			"ASEC_SF\textures\opscore_amp1_mc_co.paa",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa",
-			"tfl_sf\textures\opscore_amp2_mc_co.paa"
+			"ASEC_Headgear\textures\acc_soc_manta.paa",
+			"ASEC_SF\textures\opscore_amp2_mc_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Thunder, Lip";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_Headgear_Functions\Models\Fast_SF_AMP.p3d";
+			uniformModel="\ASEC_Headgear_Functions\Models\Fast_SF_AMP.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -51359,9 +51359,4 @@ class CfgWeapons
 			};
 		};
 	};
-};
-class cfgMods
-{
-	author="MattyIce";
-	timepacked="1618538455";
 };

@@ -1,11 +1,11 @@
 class CfgPatches
 {
-	class mgsr_headbag
+	class ASEC_headbag
 	{
 		units[]={};
 		weapons[]=
 		{
-			"mgsr_headbag"
+			"ASEC_headbag"
 		};
 		requiredVersion=1;
 		requiredAddons[]=
@@ -873,18 +873,18 @@ class CfgWeapons
 {
 	class HelmetBase;
 	class HeadgearItem;
-	class mgsr_headbag: HelmetBase
+	class ASEC_headbag: HelmetBase
 	{
-		author="Rebel / Facel";
+		author="Jup, Lip, Thunder";
 		scope=2;
 		displayName="Headbag";
-		model="\mgsr_headbag\mgsr_headbag.p3d";
-		picture="\mgsr_headbag\UI\gear_mgsr_headbag_x_ca";
+		model="\ASEC_headgear\ASEC_headgear.p3d";
+		picture="\ASEC_headgear\UI\gear_mgsr_headbag_x_ca";
 		class ItemInfo: HeadgearItem
 		{
 			allowedSlots[]={801,901,701,605};
 			mass=5;
-			uniformModel="\mgsr_headbag\mgsr_headbag.p3d";
+			uniformModel="\ASEC_headgear\ASEC_headgear.p3d";
 			modelSides[]={6};
 		};
 	};
@@ -894,25 +894,25 @@ class CfgGlasses
 	class None;
 	class mgsr_headbag_goggles: None
 	{
-		author="Rebel / Facel";
+		author="Jup, Lip, Thunder";
 		mass=5;
 		displayName="Headbag";
-		model="\mgsr_headbag\mgsr_headbag.p3d";
-		picture="\mgsr_headbag\UI\gear_mgsr_headbag_x_ca";
+		model="\ASEC_headgear\ASEC_headgear.p3d";
+		picture="\ASEC_headgear\UI\gear_mgsr_headbag_x_ca";
 		identityTypes[]={};
-		ACE_Overlay="\mgsr_headbag\headbag_overlay.paa";
-		ACE_OverlayCracked="\mgsr_headbag\headbag_overlayCracked.paa";
+		ACE_Overlay="\ASEC_headgear\headbag_overlay.paa";
+		ACE_OverlayCracked="\ASEC_headgear\headbag_overlayCracked.paa";
 		ACE_Resistance=1;
 		ACE_Protection=1;
 	};
 };
 class CfgFunctions
 {
-	class mgsr_headbag
+	class ASEC_headgear
 	{
 		class functions
 		{
-			file="mgsr_headbag\functions";
+			file="ASEC_headgear\functions";
 			class init
 			{
 				postInit=1;

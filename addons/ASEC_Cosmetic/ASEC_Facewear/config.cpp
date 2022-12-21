@@ -1266,7 +1266,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Black Shaded Beard 1";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -1344,7 +1344,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Tan Shaded Beard 1";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -1421,7 +1421,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Black Red Beard 1";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -1499,7 +1499,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Tan Red Beard 1";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -1577,7 +1577,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Black Purple Beard 1";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -1655,7 +1655,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Tan Purple Beard 1";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -1733,7 +1733,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Black Clear Beard 1";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -1811,7 +1811,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Tan Clear Beard 1";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -1889,7 +1889,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Black Shaded Beard 2";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -1967,7 +1967,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Tan Shaded Beard 2";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -2044,7 +2044,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Black Red Beard 2";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -2122,7 +2122,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Tan Red Beard 2";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -2200,7 +2200,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Black Purple Beard 2";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -2278,7 +2278,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Tan Purple Beard 2";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -2356,7 +2356,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Black Clear Beard 2";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -2434,7 +2434,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Tan Clear Beard 2";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -2512,7 +2512,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Black Shaded Beard 3";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -2590,7 +2590,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Tan Shaded Beard 3";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -2667,7 +2667,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Black Red Beard 3";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -2745,7 +2745,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Tan Red Beard 3";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -2823,7 +2823,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Black Purple Beard 3";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -2901,7 +2901,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Tan Purple Beard 3";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -2979,7 +2979,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Black Clear Beard 3";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -3057,7 +3057,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Tan Clear Beard 3";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -3135,7 +3135,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Black Shaded Beard 4";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -3213,7 +3213,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Tan Shaded Beard 4";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -3290,7 +3290,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Black Red Beard 4";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -3368,7 +3368,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Tan Red Beard 4";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -3446,7 +3446,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Black Purple Beard 4";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -3524,7 +3524,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Tan Purple Beard 4";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -3602,7 +3602,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Black Clear Beard 4";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -3680,7 +3680,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Tan Clear Beard 4";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -3758,7 +3758,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Black Shaded Beard 5";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -3836,7 +3836,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Tan Shaded Beard 5";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -3913,7 +3913,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Black Red Beard 5";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -3991,7 +3991,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Tan Red Beard 5";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -4069,7 +4069,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Black Purple Beard 5";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -4147,7 +4147,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Tan Purple Beard 5";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -4225,7 +4225,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Black Clear Beard 5";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -4303,7 +4303,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Tan Clear Beard 5";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -11245,7 +11245,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Black Shaded Beard 1 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -11323,7 +11323,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Tan Shaded Beard 1 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -11400,7 +11400,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Black Red Beard 1 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -11478,7 +11478,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Tan Red Beard 1 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -11556,7 +11556,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Black Purple Beard 1 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -11634,7 +11634,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Tan Purple Beard 1 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -11712,7 +11712,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Black Clear Beard 1 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -11790,7 +11790,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Tan Clear Beard 1 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -11868,7 +11868,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Black Shaded Beard 2 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -11946,7 +11946,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Tan Shaded Beard 2 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -12023,7 +12023,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Black Red Beard 2 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -12101,7 +12101,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Tan Red Beard 2 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -12179,7 +12179,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Black Purple Beard 2 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -12257,7 +12257,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Tan Purple Beard 2 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -12335,7 +12335,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Black Clear Beard 2 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -12413,7 +12413,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Tan Clear Beard 2 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -12491,7 +12491,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Black Shaded Beard 3 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -12569,7 +12569,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Tan Shaded Beard 3 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -12647,7 +12647,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Black Red Beard 3 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -12725,7 +12725,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Tan Red Beard 3 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -12803,7 +12803,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Black Purple Beard 3 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -12881,7 +12881,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Tan Purple Beard 3 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -12959,7 +12959,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Black Clear Beard 3 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -13037,7 +13037,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Tan Clear Beard 3 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -13115,7 +13115,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Black Shaded Beard 4 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -13193,7 +13193,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Tan Shaded Beard 4 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -13271,7 +13271,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Black Red Beard 4 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -13349,7 +13349,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Tan Red Beard 4 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -13427,7 +13427,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Black Purple Beard 4 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -13505,7 +13505,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Tan Purple Beard 4 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -13583,7 +13583,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Black Clear Beard 4 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -13661,7 +13661,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Tan Clear Beard 4 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -13739,7 +13739,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Black Shaded Beard 5 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -13817,7 +13817,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Tan Shaded Beard 5 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -13895,7 +13895,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Black Red Beard 5 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -13973,7 +13973,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Tan Red Beard 5 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -14051,7 +14051,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Black Purple Beard 5 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -14129,7 +14129,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Tan Purple Beard 5 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -14207,7 +14207,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Black Clear Beard 5 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -14285,7 +14285,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] M Frame Tan Clear Beard 5 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -20911,7 +20911,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Duduma Shaded Beard 1";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -20988,7 +20988,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Duduma Red Beard 1";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -21065,7 +21065,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Duduma Purple Beard 1";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -21142,7 +21142,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Duduma Clear Beard 1";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -21219,7 +21219,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Duduma Shaded Beard 2";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -21296,7 +21296,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Duduma Red Beard 2";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -21373,7 +21373,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Duduma Purple Beard 2";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -21450,7 +21450,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Duduma Clear Beard 2";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -21527,7 +21527,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Duduma Shaded Beard 3";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -21604,7 +21604,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Duduma Red Beard 3";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -21681,7 +21681,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Duduma Purple Beard 3";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -21758,7 +21758,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Duduma Clear Beard 3";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -21835,7 +21835,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Duduma Shaded Beard 4";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -21912,7 +21912,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Duduma Red Beard 4";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -21989,7 +21989,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Duduma Purple Beard 4";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -22066,7 +22066,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Duduma Clear Beard 4";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -22143,7 +22143,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Duduma Shaded Beard 5";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -22220,7 +22220,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Duduma Red Beard 5";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -22297,7 +22297,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Duduma Purple Beard 5";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -22374,7 +22374,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Duduma Clear Beard 5";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -26147,7 +26147,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Duduma Shaded Beard 1 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -26224,7 +26224,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Duduma Red Beard 1 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -26301,7 +26301,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Duduma Purple Beard 1 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -26378,7 +26378,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Duduma Clear Beard 1 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -26455,7 +26455,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Duduma Shaded Beard 2 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -26532,7 +26532,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Duduma Red Beard 2 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -26609,7 +26609,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Duduma Purple Beard 2 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -26686,7 +26686,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Duduma Clear Beard 2 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -26763,7 +26763,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Duduma Shaded Beard 3 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -26840,7 +26840,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Duduma Red Beard 3 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -26917,7 +26917,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Duduma Purple Beard 3 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -26994,7 +26994,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Duduma Clear Beard 3 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -27071,7 +27071,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Duduma Shaded Beard 4 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -27148,7 +27148,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Duduma Red Beard 4 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -27225,7 +27225,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Duduma Purple Beard 4 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -27302,7 +27302,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Duduma Clear Beard 4 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -27379,7 +27379,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Duduma Shaded Beard 5 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -27456,7 +27456,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Duduma Red Beard 5 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -27533,7 +27533,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Duduma Purple Beard 5 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -27610,7 +27610,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Duduma Clear Beard 5 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -30767,7 +30767,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Rayban Shaded Beard 1";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -30844,7 +30844,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Rayban Orange Faded Beard 1";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -30921,7 +30921,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Rayban Blue Beard 1";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -30998,7 +30998,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Rayban Blue Faded Beard 1";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -31075,7 +31075,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Rayban Shaded Beard 2";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -31152,7 +31152,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Rayban Orange Faded Beard 2";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -31229,7 +31229,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Rayban Blue Beard 2";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -31306,7 +31306,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Rayban Blue Faded Beard 2";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -31383,7 +31383,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Rayban Shaded Beard 3";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -31460,7 +31460,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Rayban Orange Faded Beard 3";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -31537,7 +31537,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Rayban Blue Beard 3";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -31614,7 +31614,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Rayban Blue Faded Beard 3";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -31691,7 +31691,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Rayban Shaded Beard 4";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -31768,7 +31768,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Rayban Orange Faded Beard 4";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -31845,7 +31845,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Rayban Blue Beard 4";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -31922,7 +31922,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Rayban Blue Faded Beard 4";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -31999,7 +31999,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Rayban Shaded Beard 5";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -32076,7 +32076,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Rayban Orange Faded Beard 5";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -32153,7 +32153,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Rayban Blue Beard 5";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -32230,7 +32230,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Rayban Blue Faded Beard 5";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -36003,7 +36003,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Rayban Shaded Beard 1 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -36080,7 +36080,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Rayban Orange Faded Beard 1 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -36157,7 +36157,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Rayban Blue Beard 1 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -36234,7 +36234,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Rayban Blue Faded Beard 1 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -36311,7 +36311,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Rayban Shaded Beard 2 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -36388,7 +36388,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Rayban Orange Faded Beard 2 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -36465,7 +36465,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Rayban Blue Beard 2 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -36542,7 +36542,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Rayban Blue Faded Beard 2 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -36619,7 +36619,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Rayban Shaded Beard 3 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -36696,7 +36696,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Rayban Orange Faded Beard 3 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -36773,7 +36773,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Rayban Blue Beard 3 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -36850,7 +36850,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Rayban Blue Faded Beard 3 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -36927,7 +36927,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Rayban Shaded Beard 4 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -37004,7 +37004,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Rayban Orange Faded Beard 4 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -37081,7 +37081,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Rayban Blue Beard 4 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -37158,7 +37158,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Rayban Blue Faded Beard 4 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -37235,7 +37235,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Rayban Shaded Beard 5 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -37312,7 +37312,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Rayban Orange Faded Beard 5 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -37389,7 +37389,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Rayban Blue Beard 5 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;
@@ -37466,7 +37466,7 @@ class CfgGlasses
 	{
 		displayname="[ASEC] Rayban Blue Faded Beard 5 Petzl";
 		scope=2;
-		author="MARKO X CITIZEN ANT";
+		author="Lip, Jup, Thunder";
 		model="ASEC_Facewear\ASEC_Facewear.p3d";
 		picture="ASEC_facewear\tex\logo.paa";
 		ACE_Resistance=2;

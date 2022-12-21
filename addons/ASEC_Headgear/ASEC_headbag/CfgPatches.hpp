@@ -1,5 +1,5 @@
 class CfgPatches {
-	class mgsr_headbag {
+	class ASEC_headbag {
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 1;

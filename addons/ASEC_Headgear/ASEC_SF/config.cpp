@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class TFL_SF
+	class ASEC_SF
 	{
 		units[]={};
 		weapons[]={};
@@ -9,7 +9,7 @@ class CfgPatches
 		{
 			"A3_Characters_F_BLUFOR",
 			"A3_Weapons_F_Ammoboxes",
-			"TFL_Headgear"
+			"ASEC_Headgear"
 		};
 	};
 };
@@ -36,8 +36,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -70,16 +70,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -96,11 +96,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -143,8 +143,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -177,18 +177,18 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -203,11 +203,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -250,8 +250,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -284,23 +284,23 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
@@ -310,11 +310,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -357,8 +357,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -391,20 +391,20 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -417,11 +417,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -464,8 +464,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -498,23 +498,23 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
@@ -524,11 +524,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -571,8 +571,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -605,16 +605,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -625,17 +625,17 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -678,8 +678,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF (H)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -712,37 +712,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -785,8 +785,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF (I)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -819,16 +819,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -837,19 +837,19 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -892,8 +892,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF (J)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -926,37 +926,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -999,8 +999,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF (K)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -1033,22 +1033,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -1058,13 +1052,19 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -1107,8 +1107,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF (L)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -1141,23 +1141,23 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
@@ -1166,13 +1166,13 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -1215,8 +1215,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Comtac3 (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -1249,16 +1249,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
-			"tfl_headgear\textures\comtac_III_cb.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -1275,11 +1275,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -1322,8 +1322,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Comtac3 (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -1356,18 +1356,18 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
-			"tfl_headgear\textures\comtac_III_cb.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -1382,11 +1382,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -1429,8 +1429,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Comtac3 (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -1463,23 +1463,23 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
-			"tfl_headgear\textures\comtac_III_cb.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
@@ -1489,11 +1489,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -1536,8 +1536,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Comtac3 (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -1570,20 +1570,20 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
-			"tfl_headgear\textures\comtac_III_cb.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -1596,11 +1596,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -1643,8 +1643,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Comtac3 (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -1677,23 +1677,23 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
-			"tfl_headgear\textures\comtac_III_cb.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
@@ -1703,11 +1703,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -1750,8 +1750,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Comtac3 (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -1784,37 +1784,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
-			"tfl_headgear\textures\comtac_III_cb.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -1857,8 +1857,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Comtac3 (H)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -1891,37 +1891,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
-			"tfl_headgear\textures\comtac_III_cb.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -1964,8 +1964,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Comtac3 (I)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -1998,16 +1998,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
-			"tfl_headgear\textures\comtac_III_cb.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -2016,19 +2016,19 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -2071,8 +2071,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Comtac3 (J)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -2105,37 +2105,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
-			"tfl_headgear\textures\comtac_III_cb.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -2178,8 +2178,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Comtac3 (K)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -2212,21 +2212,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
-			"tfl_headgear\textures\comtac_III_cb.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -2237,13 +2232,18 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"",
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -2286,8 +2286,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Comtac3 (L)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -2320,23 +2320,23 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
-			"tfl_headgear\textures\comtac_III_cb.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
@@ -2345,13 +2345,13 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -2394,8 +2394,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Comtac3 Arc (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -2428,16 +2428,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -2454,11 +2454,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -2501,8 +2501,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Comtac3 Arc (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -2535,18 +2535,18 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -2561,11 +2561,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -2608,8 +2608,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Comtac3 Arc (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -2642,23 +2642,23 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
@@ -2668,11 +2668,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -2715,8 +2715,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Comtac3 Arc (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -2749,20 +2749,20 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -2775,11 +2775,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -2822,8 +2822,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Comtac3 Arc (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -2856,23 +2856,23 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
@@ -2882,11 +2882,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -2929,8 +2929,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Comtac3 Arc (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -2963,18 +2963,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -2983,17 +2981,19 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -3036,8 +3036,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Comtac3 Arc (H)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -3070,37 +3070,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"",
-			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
+			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -3143,8 +3143,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Comtac3 Arc (I)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -3177,37 +3177,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -3250,8 +3250,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Comtac3 Arc (J)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -3284,37 +3284,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -3357,8 +3357,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Comtac3 Arc (K)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -3391,18 +3391,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -3416,13 +3414,15 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -3465,8 +3465,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Comtac3 Arc (L)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -3499,38 +3499,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -3573,8 +3573,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Comtac4 (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -3607,16 +3607,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -3633,11 +3633,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -3680,8 +3680,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Comtac4 (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -3714,18 +3714,18 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -3740,11 +3740,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -3787,8 +3787,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Comtac4 (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -3821,23 +3821,23 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
@@ -3847,11 +3847,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -3894,8 +3894,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Comtac4 (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -3928,20 +3928,20 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -3954,11 +3954,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -4001,8 +4001,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Comtac4 (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -4035,23 +4035,23 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
@@ -4061,11 +4061,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -4108,8 +4108,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Comtac4 (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -4142,19 +4142,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -4162,17 +4159,20 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -4215,8 +4215,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Comtac4 (H)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -4249,37 +4249,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
-			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
+			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -4322,8 +4322,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Comtac4 (I)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -4356,37 +4356,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -4429,8 +4429,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Comtac4 (J)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -4463,37 +4463,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -4536,8 +4536,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Comtac4 (K)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -4570,19 +4570,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -4595,13 +4592,16 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -4644,8 +4644,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Comtac4 (L)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -4678,38 +4678,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
-			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
+			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -4752,8 +4752,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Comtac4 Arc (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -4786,24 +4786,24 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\arc.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\arc.paa",
 			"",
 			"",
 			"",
@@ -4812,11 +4812,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -4859,8 +4859,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Comtac4 Arc (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -4893,24 +4893,24 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\arc.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\arc.paa",
 			"",
 			"",
 			"",
@@ -4919,11 +4919,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -4966,8 +4966,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Comtac4 Arc (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -5000,24 +5000,24 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"tfl_headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
 			"",
 			"",
 			"",
@@ -5026,11 +5026,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -5073,8 +5073,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Comtac4 Arc (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -5107,24 +5107,24 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
-			"tfl_headgear\textures\arc.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\arc.paa",
 			"",
 			"",
 			"",
@@ -5133,11 +5133,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -5180,8 +5180,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Comtac4 Arc (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -5214,24 +5214,24 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"tfl_headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
 			"",
 			"",
 			"",
@@ -5240,11 +5240,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -5287,8 +5287,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Comtac4 Arc (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -5321,37 +5321,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\arc.paa",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -5394,8 +5394,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Comtac4 Arc (H)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -5428,37 +5428,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"tfl_headgear\textures\arc.paa",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -5501,8 +5501,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Comtac4 Arc (I)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -5535,37 +5535,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -5608,8 +5608,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Comtac4 Arc (J)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -5642,37 +5642,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -5715,8 +5715,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Comtac4 Arc (K)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -5749,24 +5749,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -5774,13 +5766,21 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"ASEC_Headgear\textures\arc.paa",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -5823,8 +5823,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Comtac4 Arc (L)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -5857,38 +5857,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
-			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"tfl_headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -5931,8 +5931,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF AMP (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -5965,22 +5965,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -5988,16 +5982,22 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -6040,8 +6040,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF AMP (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -6074,18 +6074,18 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -6097,16 +6097,16 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -6149,8 +6149,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF AMP (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -6183,39 +6183,39 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -6258,8 +6258,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF AMP (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -6292,39 +6292,39 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -6367,8 +6367,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF AMP (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -6401,39 +6401,39 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -6476,8 +6476,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF AMP (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -6510,16 +6510,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -6530,19 +6530,19 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -6585,8 +6585,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF AMP (H)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -6619,39 +6619,39 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -6694,8 +6694,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF AMP (I)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -6728,16 +6728,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -6746,21 +6746,21 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -6803,8 +6803,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF AMP (J)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -6837,39 +6837,39 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -6912,8 +6912,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF AMP (K)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -6946,22 +6946,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -6969,16 +6963,22 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"",
+			"ASEC_Headgear\textures\acc_soc_manta.paa",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -7021,8 +7021,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF AMP (L)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -7055,39 +7055,39 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\acc_soc_manta.paa",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -7130,8 +7130,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF AMP MC (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -7164,22 +7164,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -7187,16 +7181,22 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp1_mc_co.paa",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp2_mc_co.paa"
+			"",
+			"",
+			"",
+			"",
+			"ASEC_SF\textures\opscore_amp1_mc_co.paa",
+			"",
+			"",
+			"ASEC_SF\textures\opscore_amp2_mc_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -7239,8 +7239,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF AMP MC (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -7273,18 +7273,18 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -7296,16 +7296,16 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp1_mc_co.paa",
+			"ASEC_SF\textures\opscore_amp1_mc_co.paa",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp2_mc_co.paa"
+			"ASEC_SF\textures\opscore_amp2_mc_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -7348,8 +7348,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF AMP MC (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -7382,39 +7382,39 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp1_mc_co.paa",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp2_mc_co.paa"
+			"",
+			"ASEC_SF\textures\opscore_amp1_mc_co.paa",
+			"",
+			"",
+			"ASEC_SF\textures\opscore_amp2_mc_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -7457,8 +7457,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF AMP MC (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -7491,39 +7491,39 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp1_mc_co.paa",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp2_mc_co.paa"
+			"",
+			"ASEC_SF\textures\opscore_amp1_mc_co.paa",
+			"",
+			"",
+			"ASEC_SF\textures\opscore_amp2_mc_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -7566,8 +7566,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF AMP MC (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -7600,39 +7600,39 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp1_mc_co.paa",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp2_mc_co.paa"
+			"",
+			"ASEC_SF\textures\opscore_amp1_mc_co.paa",
+			"",
+			"",
+			"ASEC_SF\textures\opscore_amp2_mc_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -7675,8 +7675,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF AMP MC (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -7709,16 +7709,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -7729,19 +7729,19 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
-			"tfl_sf\textures\opscore_amp1_mc_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
+			"ASEC_SF\textures\opscore_amp1_mc_co.paa",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp2_mc_co.paa"
+			"ASEC_SF\textures\opscore_amp2_mc_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -7784,8 +7784,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF AMP MC (H)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -7818,39 +7818,39 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
-			"tfl_sf\textures\opscore_amp1_mc_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
+			"ASEC_SF\textures\opscore_amp1_mc_co.paa",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp2_mc_co.paa"
+			"ASEC_SF\textures\opscore_amp2_mc_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -7893,8 +7893,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF AMP MC (I)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -7927,16 +7927,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -7945,21 +7945,21 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp1_mc_co.paa",
+			"ASEC_SF\textures\opscore_amp1_mc_co.paa",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp2_mc_co.paa"
+			"ASEC_SF\textures\opscore_amp2_mc_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -8002,8 +8002,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF AMP MC (J)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -8036,39 +8036,39 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
-			"tfl_sf\textures\opscore_amp1_mc_co.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp2_mc_co.paa"
+			"",
+			"ASEC_SF\textures\opscore_amp1_mc_co.paa",
+			"",
+			"",
+			"ASEC_SF\textures\opscore_amp2_mc_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -8111,8 +8111,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF AMP MC (K)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -8145,22 +8145,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -8168,16 +8162,22 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp1_mc_co.paa",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa",
-			"tfl_sf\textures\opscore_amp2_mc_co.paa"
+			"",
+			"",
+			"",
+			"",
+			"",
+			"ASEC_SF\textures\opscore_amp1_mc_co.paa",
+			"",
+			"ASEC_Headgear\textures\acc_soc_manta.paa",
+			"ASEC_SF\textures\opscore_amp2_mc_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -8220,8 +8220,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF AMP MC (L)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -8254,39 +8254,39 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp1_mc_co.paa",
+			"ASEC_SF\textures\opscore_amp1_mc_co.paa",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa",
-			"tfl_sf\textures\opscore_amp2_mc_co.paa"
+			"ASEC_Headgear\textures\acc_soc_manta.paa",
+			"ASEC_SF\textures\opscore_amp2_mc_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -8329,8 +8329,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -8363,16 +8363,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -8389,11 +8389,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -8436,8 +8436,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -8470,18 +8470,18 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -8496,11 +8496,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -8543,8 +8543,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -8577,23 +8577,23 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
@@ -8603,11 +8603,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -8650,8 +8650,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -8684,20 +8684,20 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -8710,11 +8710,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -8757,8 +8757,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -8791,23 +8791,23 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
@@ -8817,11 +8817,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -8864,8 +8864,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -8898,16 +8898,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -8918,17 +8918,17 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -8971,8 +8971,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray (H)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -9005,37 +9005,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -9078,8 +9078,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray (I)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -9112,16 +9112,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -9130,19 +9130,19 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -9185,8 +9185,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray (J)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -9219,37 +9219,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -9292,8 +9292,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray (K)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -9326,22 +9326,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -9351,13 +9345,19 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -9400,8 +9400,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray (L)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -9434,23 +9434,23 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
@@ -9459,13 +9459,13 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -9508,8 +9508,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray Comtac3 (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -9542,16 +9542,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
-			"tfl_headgear\textures\comtac_III_cb.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -9568,11 +9568,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -9615,8 +9615,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray Comtac3 (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -9649,18 +9649,18 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
-			"tfl_headgear\textures\comtac_III_cb.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -9675,11 +9675,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -9722,8 +9722,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray Comtac3 (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -9756,23 +9756,23 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
-			"tfl_headgear\textures\comtac_III_cb.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
@@ -9782,11 +9782,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -9829,8 +9829,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray Comtac3 (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -9863,20 +9863,20 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
-			"tfl_headgear\textures\comtac_III_cb.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -9889,11 +9889,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -9936,8 +9936,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray Comtac3 (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -9970,23 +9970,23 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
-			"tfl_headgear\textures\comtac_III_cb.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
@@ -9996,11 +9996,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -10043,8 +10043,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray Comtac3 (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -10077,37 +10077,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
-			"tfl_headgear\textures\comtac_III_cb.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -10150,8 +10150,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray Comtac3 (H)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -10184,37 +10184,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
-			"tfl_headgear\textures\comtac_III_cb.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -10257,8 +10257,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray Comtac3 (I)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -10291,16 +10291,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
-			"tfl_headgear\textures\comtac_III_cb.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -10309,19 +10309,19 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -10364,8 +10364,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray Comtac3 (J)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -10398,37 +10398,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
-			"tfl_headgear\textures\comtac_III_cb.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -10471,8 +10471,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray Comtac3 (K)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -10505,21 +10505,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
-			"tfl_headgear\textures\comtac_III_cb.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -10530,13 +10525,18 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"",
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -10579,8 +10579,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray Comtac3 (L)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -10613,23 +10613,23 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
-			"tfl_headgear\textures\comtac_III_cb.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
@@ -10638,13 +10638,13 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -10687,8 +10687,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray Comtac3 Arc (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -10721,16 +10721,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -10747,11 +10747,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -10794,8 +10794,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray Comtac3 Arc (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -10828,18 +10828,18 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -10854,11 +10854,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -10901,8 +10901,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray Comtac3 Arc (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -10935,23 +10935,23 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
@@ -10961,11 +10961,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -11008,8 +11008,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray Comtac3 Arc (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -11042,20 +11042,20 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -11068,11 +11068,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -11115,8 +11115,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray Comtac3 Arc (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -11149,23 +11149,23 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
@@ -11175,11 +11175,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -11222,8 +11222,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray Comtac3 Arc (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -11256,18 +11256,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -11276,17 +11274,19 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -11329,8 +11329,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray Comtac3 Arc (H)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -11363,37 +11363,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"",
-			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
+			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -11436,8 +11436,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray Comtac3 Arc (I)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -11470,37 +11470,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -11543,8 +11543,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray Comtac3 Arc (J)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -11577,37 +11577,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -11650,8 +11650,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray Comtac3 Arc (K)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -11684,18 +11684,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -11709,13 +11707,15 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -11758,8 +11758,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray Comtac3 Arc (L)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -11792,38 +11792,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -11866,8 +11866,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray Comtac4 (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -11900,16 +11900,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -11926,11 +11926,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -11973,8 +11973,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray Comtac4 (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -12007,18 +12007,18 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -12033,11 +12033,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -12080,8 +12080,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray Comtac4 (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -12114,23 +12114,23 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
@@ -12140,11 +12140,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -12187,8 +12187,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray Comtac4 (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -12221,20 +12221,20 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -12247,11 +12247,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -12294,8 +12294,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray Comtac4 (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -12328,23 +12328,23 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
@@ -12354,11 +12354,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -12401,8 +12401,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray Comtac4 (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -12435,19 +12435,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -12455,17 +12452,20 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -12508,8 +12508,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray Comtac4 (H)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -12542,37 +12542,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
-			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
+			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -12615,8 +12615,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray Comtac4 (I)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -12649,37 +12649,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -12722,8 +12722,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray Comtac4 (J)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -12756,37 +12756,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -12829,8 +12829,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray Comtac4 (K)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -12863,19 +12863,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -12888,13 +12885,16 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -12937,8 +12937,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray Comtac4 (L)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -12971,38 +12971,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
-			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
+			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -13045,8 +13045,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray Comtac4 Arc (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -13079,24 +13079,24 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\arc.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\arc.paa",
 			"",
 			"",
 			"",
@@ -13105,11 +13105,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -13152,8 +13152,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray Comtac4 Arc (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -13186,24 +13186,24 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\arc.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\arc.paa",
 			"",
 			"",
 			"",
@@ -13212,11 +13212,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -13259,8 +13259,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray Comtac4 Arc (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -13293,24 +13293,24 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"tfl_headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
 			"",
 			"",
 			"",
@@ -13319,11 +13319,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -13366,8 +13366,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray Comtac4 Arc (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -13400,24 +13400,24 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
-			"tfl_headgear\textures\arc.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\arc.paa",
 			"",
 			"",
 			"",
@@ -13426,11 +13426,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -13473,8 +13473,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray Comtac4 Arc (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -13507,24 +13507,24 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"tfl_headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
 			"",
 			"",
 			"",
@@ -13533,11 +13533,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -13580,8 +13580,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray Comtac4 Arc (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -13614,37 +13614,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\arc.paa",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -13687,8 +13687,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray Comtac4 Arc (H)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -13721,37 +13721,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"tfl_headgear\textures\arc.paa",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -13794,8 +13794,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray Comtac4 Arc (I)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -13828,37 +13828,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -13901,8 +13901,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray Comtac4 Arc (J)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -13935,37 +13935,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -14008,8 +14008,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray Comtac4 Arc (K)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -14042,24 +14042,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -14067,13 +14059,21 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"ASEC_Headgear\textures\arc.paa",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -14116,8 +14116,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray Comtac4 Arc (L)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -14150,38 +14150,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
-			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"tfl_headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -14224,8 +14224,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray AMP (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -14258,22 +14258,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -14281,16 +14275,22 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -14333,8 +14333,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray AMP (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -14367,18 +14367,18 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -14390,16 +14390,16 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -14442,8 +14442,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray AMP (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -14476,39 +14476,39 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -14551,8 +14551,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray AMP (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -14585,39 +14585,39 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -14660,8 +14660,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray AMP (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -14694,39 +14694,39 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -14769,8 +14769,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray AMP (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -14803,16 +14803,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -14823,19 +14823,19 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -14878,8 +14878,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray AMP (H)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -14912,39 +14912,39 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -14987,8 +14987,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray AMP (I)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -15021,16 +15021,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -15039,21 +15039,21 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -15096,8 +15096,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray AMP (J)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -15130,39 +15130,39 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -15205,8 +15205,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray AMP (K)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -15239,22 +15239,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -15262,16 +15256,22 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"",
+			"ASEC_Headgear\textures\acc_soc_manta.paa",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -15314,8 +15314,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF Gray AMP (L)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -15348,39 +15348,39 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\SF_gray_co.paa",
-			"TFL_SF\Textures\SF_rails_gray_co.paa",
-			"TFL_SF\Textures\SF_shroud_gray_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\SF_gray_co.paa",
+			"ASEC_SF\Textures\SF_rails_gray_co.paa",
+			"ASEC_SF\Textures\SF_shroud_gray_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\acc_soc_manta.paa",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -15423,8 +15423,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -15457,16 +15457,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -15483,11 +15483,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -15530,8 +15530,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -15564,18 +15564,18 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -15590,11 +15590,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -15637,8 +15637,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -15671,23 +15671,23 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
@@ -15697,11 +15697,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -15744,8 +15744,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -15778,20 +15778,20 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -15804,11 +15804,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -15851,8 +15851,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -15885,23 +15885,23 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
@@ -15911,11 +15911,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -15958,8 +15958,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -15992,16 +15992,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -16012,17 +16012,17 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -16065,8 +16065,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC (H)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -16099,37 +16099,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -16172,8 +16172,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC (I)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -16206,16 +16206,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -16224,19 +16224,19 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -16279,8 +16279,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC (J)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -16313,37 +16313,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -16386,8 +16386,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC (K)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -16420,22 +16420,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -16445,13 +16439,19 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -16494,8 +16494,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC (L)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -16528,23 +16528,23 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
@@ -16553,13 +16553,13 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -16602,8 +16602,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC Comtac3 (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -16636,16 +16636,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
-			"tfl_headgear\textures\comtac_III_cb.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -16662,11 +16662,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -16709,8 +16709,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC Comtac3 (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -16743,18 +16743,18 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
-			"tfl_headgear\textures\comtac_III_cb.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -16769,11 +16769,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -16816,8 +16816,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC Comtac3 (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -16850,23 +16850,23 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
-			"tfl_headgear\textures\comtac_III_cb.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
@@ -16876,11 +16876,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -16923,8 +16923,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC Comtac3 (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -16957,20 +16957,20 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
-			"tfl_headgear\textures\comtac_III_cb.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -16983,11 +16983,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -17030,8 +17030,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC Comtac3 (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -17064,23 +17064,23 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
-			"tfl_headgear\textures\comtac_III_cb.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
@@ -17090,11 +17090,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -17137,8 +17137,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC Comtac3 (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -17171,37 +17171,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
-			"tfl_headgear\textures\comtac_III_cb.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -17244,8 +17244,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC Comtac3 (H)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -17278,37 +17278,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
-			"tfl_headgear\textures\comtac_III_cb.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -17351,8 +17351,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC Comtac3 (I)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -17385,16 +17385,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
-			"tfl_headgear\textures\comtac_III_cb.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -17403,19 +17403,19 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -17458,8 +17458,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC Comtac3 (J)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -17492,37 +17492,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
-			"tfl_headgear\textures\comtac_III_cb.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -17565,8 +17565,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC Comtac3 (K)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -17599,21 +17599,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
-			"tfl_headgear\textures\comtac_III_cb.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -17624,13 +17619,18 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"",
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -17673,8 +17673,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC Comtac3 (L)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -17707,23 +17707,23 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
-			"tfl_headgear\textures\comtac_III_cb.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
@@ -17732,13 +17732,13 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -17781,8 +17781,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC Comtac3 Arc (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -17815,16 +17815,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -17841,11 +17841,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -17888,8 +17888,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC Comtac3 Arc (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -17922,18 +17922,18 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -17948,11 +17948,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -17995,8 +17995,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC Comtac3 Arc (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -18029,23 +18029,23 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
@@ -18055,11 +18055,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -18102,8 +18102,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC Comtac3 Arc (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -18136,20 +18136,20 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -18162,11 +18162,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -18209,8 +18209,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC Comtac3 Arc (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -18243,23 +18243,23 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
@@ -18269,11 +18269,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -18316,8 +18316,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC Comtac3 Arc (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -18350,18 +18350,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -18370,17 +18368,19 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -18423,8 +18423,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC Comtac3 Arc (H)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -18457,37 +18457,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
-			"",
-			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
+			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -18530,8 +18530,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC Comtac3 Arc (I)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -18564,37 +18564,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -18637,8 +18637,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC Comtac3 Arc (J)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -18671,37 +18671,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -18744,8 +18744,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC Comtac3 Arc (K)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -18778,18 +18778,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -18803,13 +18801,15 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -18852,8 +18852,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC Comtac3 Arc (L)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -18886,38 +18886,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
-			"tfl_headgear\textures\comtac_III_cb.paa",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\comtac_III_cb.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"",
+			"",
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -18960,8 +18960,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC Comtac4 (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -18994,16 +18994,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -19020,11 +19020,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -19067,8 +19067,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC Comtac4 (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -19101,18 +19101,18 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -19127,11 +19127,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -19174,8 +19174,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC Comtac4 (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -19208,23 +19208,23 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
@@ -19234,11 +19234,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -19281,8 +19281,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC Comtac4 (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -19315,20 +19315,20 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -19341,11 +19341,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -19388,8 +19388,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC Comtac4 (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -19422,23 +19422,23 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
@@ -19448,11 +19448,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -19495,8 +19495,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC Comtac4 (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -19529,19 +19529,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -19549,17 +19546,20 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -19602,8 +19602,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC Comtac4 (H)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -19636,37 +19636,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
-			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
+			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -19709,8 +19709,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC Comtac4 (I)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -19743,37 +19743,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -19816,8 +19816,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC Comtac4 (J)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -19850,37 +19850,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -19923,8 +19923,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC Comtac4 (K)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -19957,19 +19957,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -19982,13 +19979,16 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -20031,8 +20031,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC Comtac4 (L)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -20065,38 +20065,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
-			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
+			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -20139,8 +20139,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC Comtac4 Arc (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -20173,24 +20173,24 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\arc.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\arc.paa",
 			"",
 			"",
 			"",
@@ -20199,11 +20199,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -20246,8 +20246,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC Comtac4 Arc (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -20280,24 +20280,24 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\arc.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\arc.paa",
 			"",
 			"",
 			"",
@@ -20306,11 +20306,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -20353,8 +20353,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC Comtac4 Arc (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -20387,24 +20387,24 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"tfl_headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
 			"",
 			"",
 			"",
@@ -20413,11 +20413,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -20460,8 +20460,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC Comtac4 Arc (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -20494,24 +20494,24 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
-			"tfl_headgear\textures\arc.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\arc.paa",
 			"",
 			"",
 			"",
@@ -20520,11 +20520,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -20567,8 +20567,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC Comtac4 Arc (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -20601,24 +20601,24 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"tfl_headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
 			"",
 			"",
 			"",
@@ -20627,11 +20627,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -20674,8 +20674,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC Comtac4 Arc (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -20708,37 +20708,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\arc.paa",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -20781,8 +20781,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC Comtac4 Arc (H)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -20815,37 +20815,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"tfl_headgear\textures\arc.paa",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -20888,8 +20888,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC Comtac4 Arc (I)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -20922,37 +20922,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -20995,8 +20995,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC Comtac4 Arc (J)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -21029,37 +21029,37 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"tfl_headgear\textures\arc.paa",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			""
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -21102,8 +21102,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC Comtac4 Arc (K)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -21136,24 +21136,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"tfl_headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -21161,13 +21153,21 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"ASEC_Headgear\textures\arc.paa",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -21210,8 +21210,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC Comtac4 Arc (L)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -21244,38 +21244,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\comtac4_cb.paa",
+			"ASEC_Headgear\textures\comtac4_cb.paa",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
-			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"tfl_headgear\textures\arc.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\arc.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa"
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\acc_soc_manta.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -21318,8 +21318,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC AMP (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -21352,22 +21352,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -21375,16 +21369,22 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -21427,8 +21427,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC AMP (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -21461,18 +21461,18 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -21484,16 +21484,16 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -21536,8 +21536,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC AMP (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -21570,39 +21570,39 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -21645,8 +21645,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC AMP (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -21679,39 +21679,39 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -21754,8 +21754,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC AMP (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -21788,39 +21788,39 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -21863,8 +21863,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC AMP (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -21897,16 +21897,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -21917,19 +21917,19 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -21972,8 +21972,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC AMP (H)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -22006,39 +22006,39 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -22081,8 +22081,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC AMP (I)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -22115,16 +22115,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -22133,21 +22133,21 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -22190,8 +22190,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC AMP (J)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -22224,39 +22224,39 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -22299,8 +22299,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC AMP (K)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -22333,22 +22333,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -22356,16 +22350,22 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"",
+			"",
+			"",
+			"",
+			"",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
+			"",
+			"ASEC_Headgear\textures\acc_soc_manta.paa",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -22408,8 +22408,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC AMP (L)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -22442,39 +22442,39 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\opscore_amp1_co.paa",
+			"ASEC_Headgear\textures\opscore_amp1_co.paa",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa",
-			"tfl_headgear\textures\opscore_amp2_co.paa"
+			"ASEC_Headgear\textures\acc_soc_manta.paa",
+			"ASEC_Headgear\textures\opscore_amp2_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -22517,8 +22517,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC AMP MC (A)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -22551,22 +22551,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -22574,16 +22568,22 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp1_mc_co.paa",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp2_mc_co.paa"
+			"",
+			"",
+			"",
+			"",
+			"ASEC_SF\textures\opscore_amp1_mc_co.paa",
+			"",
+			"",
+			"ASEC_SF\textures\opscore_amp2_mc_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -22626,8 +22626,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC AMP MC (B)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -22660,18 +22660,18 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -22683,16 +22683,16 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp1_mc_co.paa",
+			"ASEC_SF\textures\opscore_amp1_mc_co.paa",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp2_mc_co.paa"
+			"ASEC_SF\textures\opscore_amp2_mc_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -22735,8 +22735,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC AMP MC (C)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -22769,39 +22769,39 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp1_mc_co.paa",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp2_mc_co.paa"
+			"",
+			"ASEC_SF\textures\opscore_amp1_mc_co.paa",
+			"",
+			"",
+			"ASEC_SF\textures\opscore_amp2_mc_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -22844,8 +22844,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC AMP MC (D)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -22878,39 +22878,39 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp1_mc_co.paa",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp2_mc_co.paa"
+			"",
+			"ASEC_SF\textures\opscore_amp1_mc_co.paa",
+			"",
+			"",
+			"ASEC_SF\textures\opscore_amp2_mc_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -22953,8 +22953,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC AMP MC (E)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -22987,39 +22987,39 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_headgear\textures\mohoc_camera_co.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\mohoc_camera_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp1_mc_co.paa",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp2_mc_co.paa"
+			"",
+			"ASEC_SF\textures\opscore_amp1_mc_co.paa",
+			"",
+			"",
+			"ASEC_SF\textures\opscore_amp2_mc_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -23062,8 +23062,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC AMP MC (G)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -23096,16 +23096,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -23116,19 +23116,19 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
-			"tfl_sf\textures\opscore_amp1_mc_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
+			"ASEC_SF\textures\opscore_amp1_mc_co.paa",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp2_mc_co.paa"
+			"ASEC_SF\textures\opscore_amp2_mc_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -23171,8 +23171,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC AMP MC (H)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -23205,39 +23205,39 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"tfl_headgear\textures\helstar_co.paa",
-			"tfl_headgear\textures\battery_pack_mc.paa",
-			"tfl_sf\textures\opscore_amp1_mc_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar_co.paa",
+			"ASEC_Headgear\textures\battery_pack_mc.paa",
+			"ASEC_SF\textures\opscore_amp1_mc_co.paa",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp2_mc_co.paa"
+			"ASEC_SF\textures\opscore_amp2_mc_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -23280,8 +23280,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC AMP MC (I)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -23314,16 +23314,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -23332,21 +23332,21 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp1_mc_co.paa",
+			"ASEC_SF\textures\opscore_amp1_mc_co.paa",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp2_mc_co.paa"
+			"ASEC_SF\textures\opscore_amp2_mc_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -23389,8 +23389,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC AMP MC (J)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -23423,39 +23423,39 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
-			"tfl_headgear\textures\helstar2_CO.paa",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
-			"tfl_sf\textures\opscore_amp1_mc_co.paa",
+			"ASEC_Headgear\textures\helstar2_CO.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp2_mc_co.paa"
+			"",
+			"ASEC_SF\textures\opscore_amp1_mc_co.paa",
+			"",
+			"",
+			"ASEC_SF\textures\opscore_amp2_mc_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -23498,8 +23498,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC AMP MC (K)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -23532,22 +23532,16 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
@@ -23555,16 +23549,22 @@ class CfgWeapons
 			"",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp1_mc_co.paa",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa",
-			"tfl_sf\textures\opscore_amp2_mc_co.paa"
+			"",
+			"",
+			"",
+			"",
+			"",
+			"ASEC_SF\textures\opscore_amp1_mc_co.paa",
+			"",
+			"ASEC_Headgear\textures\acc_soc_manta.paa",
+			"ASEC_SF\textures\opscore_amp2_mc_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -23607,8 +23607,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
 		displayName="[ASEC] Opscore Fast SF MC AMP MC (L)";
-		picture="tfl_headgear\textures\logo.paa";
-		model="\TFL_SF\Models\Fast_SF.p3d";
+		picture="ASEC_Headgear\textures\logo.paa";
+		model="\ASEC_SF\Models\Fast_SF.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -23641,39 +23641,39 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TFL_SF\Textures\sf_mc_co.paa",
-			"TFL_SF\Textures\SF_rails_co.paa",
-			"TFL_SF\Textures\SF_shroud_co.paa",
-			"tfl_headgear\textures\tfa_opscore_tan_co.paa",
+			"ASEC_SF\Textures\sf_mc_co.paa",
+			"ASEC_SF\Textures\SF_rails_co.paa",
+			"ASEC_SF\Textures\SF_shroud_co.paa",
+			"ASEC_Headgear\textures\tfa_opscore_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\velcro_tan_co.paa",
+			"ASEC_Headgear\textures\velcro_tan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"tfl_headgear\textures\m300c_tan_co.paa",
-			"tfl_headgear\textures\accessories_h1m_co.paa",
-			"tfl_headgear\textures\lights_CA.paa",
+			"ASEC_Headgear\textures\m300c_tan_co.paa",
+			"ASEC_Headgear\textures\accessories_h1m_co.paa",
+			"ASEC_Headgear\textures\lights_CA.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"tfl_sf\textures\opscore_amp1_mc_co.paa",
+			"ASEC_SF\textures\opscore_amp1_mc_co.paa",
 			"",
-			"tfl_headgear\textures\acc_soc_manta.paa",
-			"tfl_sf\textures\opscore_amp2_mc_co.paa"
+			"ASEC_Headgear\textures\acc_soc_manta.paa",
+			"ASEC_SF\textures\opscore_amp2_mc_co.paa"
 		};
-		author="Louetta, Not Mal";
+		author="Jup, Lip, Thunder";
 		class ItemInfo: HeadgearItem
 		{
 			mass=60;
-			uniformModel="\TFL_SF\Models\Fast_SF.p3d";
+			uniformModel="\ASEC_SF\Models\Fast_SF.p3d";
 			modelSides[]={3,1};
 			armor="3*0.6";
 			passThrough=0.60000002;
@@ -23709,9 +23709,4 @@ class CfgWeapons
 			};
 		};
 	};
-};
-class cfgMods
-{
-	author="MattyIce";
-	timepacked="1613149304";
 };

@@ -15,7 +15,7 @@ class cfgGlasses
 	{
 		displayname = "[ASEC] Pit Vipers [Test]";
 		scope = 2;
-		author = "Jup, Lip, Thunder";
+		author = "Lip, Jup, Thunder";
 		model = "\ASEC_Pitvipers\ASEC_Pitvipers.p3d";
 		picture = "";
 		mass = 5;
@@ -25,7 +25,7 @@ class cfgGlasses
 	{
 		displayname = "[ASEC] Pit Vipers [1993]";
 		scope = 2;
-		author = "Jup, Lip, Thunder";
+		author = "Lip, Jup, Thunder";
 		model = "\ASEC_Pitvipers\ASEC_Pitvipers.p3d";
 		picture = "";
 		mass = 5;
@@ -37,7 +37,7 @@ class cfgGlasses
 	{
 		displayname = "[ASEC] Pit Vipers [Cosmos]";
 		scope = 2;
-		author = "Jup, Lip, Thunder";
+		author = "Lip, Jup, Thunder";
 		model = "\ASEC_Pitvipers\ASEC_Pitvipers.p3d";
 		picture = "";
 		mass = 5;
@@ -49,7 +49,7 @@ class cfgGlasses
 	{
 		displayname = "[ASEC] Pit Vipers [Gold Standard]";
 		scope = 2;
-		author = "Jup, Lip, Thunder";
+		author = "Lip, Jup, Thunder";
 		model = "\ASEC_Pitvipers\ASEC_Pitvipers.p3d";
 		picture = "";
 		mass = 5;
@@ -61,7 +61,7 @@ class cfgGlasses
 	{
 		displayname = "[ASEC] Pit Vipers [Merika]";
 		scope = 2;
-		author = "Jup, Lip, Thunder";
+		author = "Lip, Jup, Thunder";
 		model = "\ASEC_Pitvipers\ASEC_Pitvipers.p3d";
 		picture = "";
 		mass = 5;
@@ -73,7 +73,7 @@ class cfgGlasses
 	{
 		displayname = "[ASEC] Pit Vipers [Merika Clear]";
 		scope = 2;
-		author = "Jup, Lip, Thunder";
+		author = "Lip, Jup, Thunder";
 		model = "\ASEC_Pitvipers\ASEC_Pitvipers.p3d";
 		picture = "";
 		mass = 5;
@@ -85,7 +85,7 @@ class cfgGlasses
 	{
 		displayname = "[ASEC] Pit Vipers [Hot Tropics]";
 		scope = 2;
-		author = "Jup, Lip, Thunder";
+		author = "Lip, Jup, Thunder";
 		model = "\ASEC_Pitvipers\ASEC_Pitvipers.p3d";
 		picture = "";
 		mass = 5;
@@ -97,7 +97,7 @@ class cfgGlasses
 	{
 		displayname = "[ASEC] Pit Vipers [LA Brights]";
 		scope = 2;
-		author = "Jup, Lip, Thunder";
+		author = "Lip, Jup, Thunder";
 		model = "\ASEC_Pitvipers\ASEC_Pitvipers.p3d";
 		picture = "";
 		mass = 5;
@@ -109,7 +109,7 @@ class cfgGlasses
 	{
 		displayname = "[ASEC] Pit Vipers [LA Brights Clear]";
 		scope = 2;
-		author = "Jup, Lip, Thunder";
+		author = "Lip, Jup, Thunder";
 		model = "\ASEC_Pitvipers\ASEC_Pitvipers.p3d";
 		picture = "";
 		mass = 5;
@@ -121,7 +121,7 @@ class cfgGlasses
 	{
 		displayname = "[ASEC] Pit Vipers [Blacking Out]";
 		scope = 2;
-		author = "Jup, Lip, Thunder";
+		author = "Lip, Jup, Thunder";
 		model = "\ASEC_Pitvipers\ASEC_Pitvipers.p3d";
 		picture = "";
 		mass = 5;
@@ -134,7 +134,7 @@ class cfgGlasses
 	{
 		displayname = "[ASEC] Pit Vipers Alt [Cosmos]";
 		scope = 2;
-		author = "Jup, Lip, Thunder";
+		author = "Lip, Jup, Thunder";
 		model = "\ASEC_Pitvipers\ASEC_Pitvipers_alt.p3d";
 		picture = "";
 		mass = 5;
@@ -146,7 +146,7 @@ class cfgGlasses
 	{
 		displayname = "[ASEC] Pit Vipers Alt [Gold Standard]";
 		scope = 2;
-		author = "Jup, Lip, Thunder";
+		author = "Lip, Jup, Thunder";
 		model = "\ASEC_Pitvipers\ASEC_Pitvipers_alt.p3d";
 		picture = "";
 		mass = 5;
@@ -158,7 +158,7 @@ class cfgGlasses
 	{
 		displayname = "[ASEC] Pit Vipers Alt [Merika]";
 		scope = 2;
-		author = "Jup, Lip, Thunder";
+		author = "Lip, Jup, Thunder";
 		model = "\ASEC_Pitvipers\ASEC_Pitvipers_alt.p3d";
 		picture = "";
 		mass = 5;
@@ -170,7 +170,7 @@ class cfgGlasses
 	{
 		displayname = "[ASEC] Pit Vipers Alt [Hot Tropics]";
 		scope = 2;
-		author = "Jup, Lip, Thunder";
+		author = "Lip, Jup, Thunder";
 		model = "\ASEC_Pitvipers\ASEC_Pitvipers_alt.p3d";
 		picture = "";
 		mass = 5;
@@ -182,7 +182,7 @@ class cfgGlasses
 	{
 		displayname = "[ASEC] Pit Vipers Alt [LA Brights]";
 		scope = 2;
-		author = "Jup, Lip, Thunder";
+		author = "Lip, Jup, Thunder";
 		model = "\ASEC_Pitvipers\ASEC_Pitvipers_alt.p3d";
 		picture = "";
 		mass = 5;
@@ -194,7 +194,7 @@ class cfgGlasses
 	{
 		displayname = "[ASEC] Pit Vipers Alt [Blacking Out]";
 		scope = 2;
-		author = "Jup, Lip, Thunder";
+		author = "Lip, Jup, Thunder";
 		model = "\ASEC_Pitvipers\ASEC_Pitvipers_alt.p3d";
 		picture = "";
 		mass = 5;

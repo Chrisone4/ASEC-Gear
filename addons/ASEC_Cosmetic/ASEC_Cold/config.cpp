@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class tfl_cold
+	class ASEC_Cold
 	{
 		magazines[]={};
 		ammo[]={};
@@ -28,8 +28,8 @@ class CfgVehicles
 		displayName="Rangers";
 		scopeArsenal=0;
 		faction="sof_rangers";
-		author="TFL";
-		model="tfl_cold\tfl_northface_g.p3d";
+		author="Jup, Lip, Thunder";
+		model="ASEC_Cold\tfl_northface_g.p3d";
 		uniformClass="tfl_puff_mc_g_uniform";
 		identityTypes[]=
 		{
@@ -45,11 +45,11 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_g3\g3\pants_mc.paa",
-			"tfl_g3\g3\pants_mc.paa",
-			"tfl_g3\g3\pants_mc.paa",
-			"tfl_cold\data\northface_blk_co.paa",
-			"TFL_cold\data\gunglove_grey_co.paa"
+			"ASEC_g3\g3\pants_mc.paa",
+			"ASEC_g3\g3\pants_mc.paa",
+			"ASEC_g3\g3\pants_mc.paa",
+			"ASEC_Cold\data\northface_blk_co.paa",
+			"ASEC_Cold\data\gunglove_grey_co.paa"
 		};
 	};
 	class tfl_puff_aor1_g: B_Soldier_F
@@ -59,8 +59,8 @@ class CfgVehicles
 		displayName="Rangers";
 		scopeArsenal=0;
 		faction="sof_rangers";
-		author="TFL";
-		model="tfl_cold\tfl_northface_g.p3d";
+		author="Jup, Lip, Thunder";
+		model="ASEC_Cold\tfl_northface_g.p3d";
 		uniformClass="tfl_puff_aor1_g_uniform";
 		identityTypes[]=
 		{
@@ -76,11 +76,11 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_g3\g3\pants_aor1.paa",
-			"tfl_g3\g3\pants_aor1.paa",
-			"tfl_g3\g3\pants_aor1.paa",
-			"tfl_cold\data\northface_blk_co.paa",
-			"TFL_cold\data\gunglove_grey_co.paa"
+			"ASEC_g3\g3\pants_aor1.paa",
+			"ASEC_g3\g3\pants_aor1.paa",
+			"ASEC_g3\g3\pants_aor1.paa",
+			"ASEC_Cold\data\northface_blk_co.paa",
+			"ASEC_Cold\data\gunglove_grey_co.paa"
 		};
 	};
 	class tfl_puff_aor2_g: B_Soldier_F
@@ -90,8 +90,8 @@ class CfgVehicles
 		displayName="Rangers";
 		scopeArsenal=0;
 		faction="sof_rangers";
-		author="TFL";
-		model="tfl_cold\tfl_northface_g.p3d";
+		author="Jup, Lip, Thunder";
+		model="ASEC_Cold\tfl_northface_g.p3d";
 		uniformClass="tfl_puff_aor2_g_uniform";
 		identityTypes[]=
 		{
@@ -107,11 +107,11 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_g3\g3\pants_aor2.paa",
-			"tfl_g3\g3\pants_aor2.paa",
-			"tfl_g3\g3\pants_aor2.paa",
-			"tfl_cold\data\northface_blk_co.paa",
-			"TFL_cold\data\gunglove_grey_co.paa"
+			"ASEC_g3\g3\pants_aor2.paa",
+			"ASEC_g3\g3\pants_aor2.paa",
+			"ASEC_g3\g3\pants_aor2.paa",
+			"ASEC_Cold\data\northface_blk_co.paa",
+			"ASEC_Cold\data\gunglove_grey_co.paa"
 		};
 	};
 	class tfl_puff_mca_g: B_Soldier_F
@@ -121,8 +121,8 @@ class CfgVehicles
 		displayName="Rangers";
 		scopeArsenal=0;
 		faction="sof_rangers";
-		author="TFL";
-		model="tfl_cold\tfl_northface_g.p3d";
+		author="Jup, Lip, Thunder";
+		model="ASEC_Cold\tfl_northface_g.p3d";
 		uniformClass="tfl_puff_mca_g_uniform";
 		identityTypes[]=
 		{
@@ -138,11 +138,11 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_g3\g3\pants_mca.paa",
-			"tfl_g3\g3\pants_mca.paa",
-			"tfl_g3\g3\pants_mca.paa",
-			"tfl_cold\data\northface_blk_co.paa",
-			"TFL_cold\data\gunglove_grey_co.paa"
+			"ASEC_g3\g3\pants_mca.paa",
+			"ASEC_g3\g3\pants_mca.paa",
+			"ASEC_g3\g3\pants_mca.paa",
+			"ASEC_Cold\data\northface_blk_co.paa",
+			"ASEC_Cold\data\gunglove_grey_co.paa"
 		};
 	};
 	class tfl_puff_m81_g: B_Soldier_F
@@ -152,8 +152,8 @@ class CfgVehicles
 		displayName="Rangers";
 		scopeArsenal=0;
 		faction="sof_rangers";
-		author="TFL";
-		model="tfl_cold\tfl_northface_g.p3d";
+		author="Jup, Lip, Thunder";
+		model="ASEC_Cold\tfl_northface_g.p3d";
 		uniformClass="tfl_puff_m81_g_uniform";
 		identityTypes[]=
 		{
@@ -169,11 +169,11 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_g3\g3\pants_m81.paa",
-			"tfl_g3\g3\pants_m81.paa",
-			"tfl_g3\g3\pants_m81.paa",
-			"tfl_cold\data\northface_blk_co.paa",
-			"TFL_cold\data\gunglove_grey_co.paa"
+			"ASEC_g3\g3\pants_m81.paa",
+			"ASEC_g3\g3\pants_m81.paa",
+			"ASEC_g3\g3\pants_m81.paa",
+			"ASEC_Cold\data\northface_blk_co.paa",
+			"ASEC_Cold\data\gunglove_grey_co.paa"
 		};
 	};
 	class tfl_puff_mcal_g: B_Soldier_F
@@ -183,8 +183,8 @@ class CfgVehicles
 		displayName="Rangers";
 		scopeArsenal=0;
 		faction="sof_rangers";
-		author="TFL";
-		model="tfl_cold\tfl_northface_g.p3d";
+		author="Jup, Lip, Thunder";
+		model="ASEC_Cold\tfl_northface_g.p3d";
 		uniformClass="tfl_puff_mcal_g_uniform";
 		identityTypes[]=
 		{
@@ -200,11 +200,11 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_g3\g3\pants_mcal.paa",
-			"tfl_g3\g3\pants_mcal.paa",
-			"tfl_g3\g3\pants_mcal.paa",
-			"tfl_cold\data\northface_blk_co.paa",
-			"TFL_cold\data\gunglove_grey_co.paa"
+			"ASEC_g3\g3\pants_mcal.paa",
+			"ASEC_g3\g3\pants_mcal.paa",
+			"ASEC_g3\g3\pants_mcal.paa",
+			"ASEC_Cold\data\northface_blk_co.paa",
+			"ASEC_Cold\data\gunglove_grey_co.paa"
 		};
 	};
 	class tfl_puff_s_mc_g: B_Soldier_F
@@ -214,8 +214,8 @@ class CfgVehicles
 		displayName="Rangers";
 		scopeArsenal=0;
 		faction="sof_rangers";
-		author="TFL";
-		model="tfl_cold\tfl_northface_g.p3d";
+		author="Jup, Lip, Thunder";
+		model="ASEC_Cold\tfl_northface_g.p3d";
 		uniformClass="tfl_puff_s_mc_g_uniform";
 		identityTypes[]=
 		{
@@ -231,11 +231,11 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_g3\g3\pants_mc.paa",
-			"tfl_g3\g3\pants_mc.paa",
-			"tfl_g3\g3\pants_mc.paa",
-			"tfl_cold\data\northface_sand_co.paa",
-			"TFL_cold\data\gunglove_co.paa"
+			"ASEC_g3\g3\pants_mc.paa",
+			"ASEC_g3\g3\pants_mc.paa",
+			"ASEC_g3\g3\pants_mc.paa",
+			"ASEC_Cold\data\northface_sand_co.paa",
+			"ASEC_Cold\data\gunglove_co.paa"
 		};
 	};
 	class tfl_puff_s_aor1_g: B_Soldier_F
@@ -245,8 +245,8 @@ class CfgVehicles
 		displayName="Rangers";
 		scopeArsenal=0;
 		faction="sof_rangers";
-		author="TFL";
-		model="tfl_cold\tfl_northface_g.p3d";
+		author="Jup, Lip, Thunder";
+		model="ASEC_Cold\tfl_northface_g.p3d";
 		uniformClass="tfl_puff_s_aor1_g_uniform";
 		identityTypes[]=
 		{
@@ -262,11 +262,11 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_g3\g3\pants_aor1.paa",
-			"tfl_g3\g3\pants_aor1.paa",
-			"tfl_g3\g3\pants_aor1.paa",
-			"tfl_cold\data\northface_sand_co.paa",
-			"TFL_cold\data\gunglove_co.paa"
+			"ASEC_g3\g3\pants_aor1.paa",
+			"ASEC_g3\g3\pants_aor1.paa",
+			"ASEC_g3\g3\pants_aor1.paa",
+			"ASEC_Cold\data\northface_sand_co.paa",
+			"ASEC_Cold\data\gunglove_co.paa"
 		};
 	};
 	class tfl_puff_s_aor2_g: B_Soldier_F
@@ -276,8 +276,8 @@ class CfgVehicles
 		displayName="Rangers";
 		scopeArsenal=0;
 		faction="sof_rangers";
-		author="TFL";
-		model="tfl_cold\tfl_northface_g.p3d";
+		author="Jup, Lip, Thunder";
+		model="ASEC_Cold\tfl_northface_g.p3d";
 		uniformClass="tfl_puff_s_aor2_g_uniform";
 		identityTypes[]=
 		{
@@ -293,11 +293,11 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_g3\g3\pants_aor2.paa",
-			"tfl_g3\g3\pants_aor2.paa",
-			"tfl_g3\g3\pants_aor2.paa",
-			"tfl_cold\data\northface_sand_co.paa",
-			"TFL_cold\data\gunglove_co.paa"
+			"ASEC_g3\g3\pants_aor2.paa",
+			"ASEC_g3\g3\pants_aor2.paa",
+			"ASEC_g3\g3\pants_aor2.paa",
+			"ASEC_Cold\data\northface_sand_co.paa",
+			"ASEC_Cold\data\gunglove_co.paa"
 		};
 	};
 	class tfl_puff_s_mca_g: B_Soldier_F
@@ -307,8 +307,8 @@ class CfgVehicles
 		displayName="Rangers";
 		scopeArsenal=0;
 		faction="sof_rangers";
-		author="TFL";
-		model="tfl_cold\tfl_northface_g.p3d";
+		author="Jup, Lip, Thunder";
+		model="ASEC_Cold\tfl_northface_g.p3d";
 		uniformClass="tfl_puff_s_mca_g_uniform";
 		identityTypes[]=
 		{
@@ -324,11 +324,11 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_g3\g3\pants_mca.paa",
-			"tfl_g3\g3\pants_mca.paa",
-			"tfl_g3\g3\pants_mca.paa",
-			"tfl_cold\data\northface_sand_co.paa",
-			"TFL_cold\data\gunglove_co.paa"
+			"ASEC_g3\g3\pants_mca.paa",
+			"ASEC_g3\g3\pants_mca.paa",
+			"ASEC_g3\g3\pants_mca.paa",
+			"ASEC_Cold\data\northface_sand_co.paa",
+			"ASEC_Cold\data\gunglove_co.paa"
 		};
 	};
 	class tfl_puff_s_m81_g: B_Soldier_F
@@ -338,8 +338,8 @@ class CfgVehicles
 		displayName="Rangers";
 		scopeArsenal=0;
 		faction="sof_rangers";
-		author="TFL";
-		model="tfl_cold\tfl_northface_g.p3d";
+		author="Jup, Lip, Thunder";
+		model="ASEC_Cold\tfl_northface_g.p3d";
 		uniformClass="tfl_puff_s_m81_g_uniform";
 		identityTypes[]=
 		{
@@ -355,11 +355,11 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_g3\g3\pants_m81.paa",
-			"tfl_g3\g3\pants_m81.paa",
-			"tfl_g3\g3\pants_m81.paa",
-			"tfl_cold\data\northface_sand_co.paa",
-			"TFL_cold\data\gunglove_co.paa"
+			"ASEC_g3\g3\pants_m81.paa",
+			"ASEC_g3\g3\pants_m81.paa",
+			"ASEC_g3\g3\pants_m81.paa",
+			"ASEC_Cold\data\northface_sand_co.paa",
+			"ASEC_Cold\data\gunglove_co.paa"
 		};
 	};
 	class tfl_puff_s_mcal_g: B_Soldier_F
@@ -369,8 +369,8 @@ class CfgVehicles
 		displayName="Rangers";
 		scopeArsenal=0;
 		faction="sof_rangers";
-		author="TFL";
-		model="tfl_cold\tfl_northface_g.p3d";
+		author="Jup, Lip, Thunder";
+		model="ASEC_Cold\tfl_northface_g.p3d";
 		uniformClass="tfl_puff_s_mcal_g_uniform";
 		identityTypes[]=
 		{
@@ -386,11 +386,11 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_g3\g3\pants_mcal.paa",
-			"tfl_g3\g3\pants_mcal.paa",
-			"tfl_g3\g3\pants_mcal.paa",
-			"tfl_cold\data\northface_sand_co.paa",
-			"TFL_cold\data\gunglove_co.paa"
+			"ASEC_g3\g3\pants_mcal.paa",
+			"ASEC_g3\g3\pants_mcal.paa",
+			"ASEC_g3\g3\pants_mcal.paa",
+			"ASEC_Cold\data\northface_sand_co.paa",
+			"ASEC_Cold\data\gunglove_co.paa"
 		};
 	};
 	class tfl_pcu_mc_g: B_Soldier_F
@@ -400,8 +400,8 @@ class CfgVehicles
 		displayName="Rangers";
 		scopeArsenal=0;
 		faction="sof_rangers";
-		author="TFL";
-		model="tfl_cold\tfl_pcu_g.p3d";
+		author="Jup, Lip, Thunder";
+		model="ASEC_Cold\tfl_pcu_g.p3d";
 		uniformClass="tfl_pcu_mc_g_uniform";
 		identityTypes[]=
 		{
@@ -417,11 +417,11 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_g3\g3\pants_mc.paa",
-			"tfl_g3\g3\pants_mc.paa",
-			"tfl_g3\g3\pants_mc.paa",
-			"tfl_cold\data\pcu_grey_co.paa",
-			"TFL_cold\data\gunglove_co.paa"
+			"ASEC_g3\g3\pants_mc.paa",
+			"ASEC_g3\g3\pants_mc.paa",
+			"ASEC_g3\g3\pants_mc.paa",
+			"ASEC_Cold\data\pcu_grey_co.paa",
+			"ASEC_Cold\data\gunglove_co.paa"
 		};
 	};
 	class tfl_pcu_aor1_g: B_Soldier_F
@@ -431,8 +431,8 @@ class CfgVehicles
 		displayName="Rangers";
 		scopeArsenal=0;
 		faction="sof_rangers";
-		author="TFL";
-		model="tfl_cold\tfl_pcu_g.p3d";
+		author="Jup, Lip, Thunder";
+		model="ASEC_Cold\tfl_pcu_g.p3d";
 		uniformClass="tfl_pcu_aor1_g_uniform";
 		identityTypes[]=
 		{
@@ -448,11 +448,11 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_g3\g3\pants_aor1.paa",
-			"tfl_g3\g3\pants_aor1.paa",
-			"tfl_g3\g3\pants_aor1.paa",
-			"tfl_cold\data\pcu_grey_co.paa",
-			"TFL_cold\data\gunglove_co.paa"
+			"ASEC_g3\g3\pants_aor1.paa",
+			"ASEC_g3\g3\pants_aor1.paa",
+			"ASEC_g3\g3\pants_aor1.paa",
+			"ASEC_Cold\data\pcu_grey_co.paa",
+			"ASEC_Cold\data\gunglove_co.paa"
 		};
 	};
 	class tfl_pcu_aor2_g: B_Soldier_F
@@ -462,8 +462,8 @@ class CfgVehicles
 		displayName="Rangers";
 		scopeArsenal=0;
 		faction="sof_rangers";
-		author="TFL";
-		model="tfl_cold\tfl_pcu_g.p3d";
+		author="Jup, Lip, Thunder";
+		model="ASEC_Cold\tfl_pcu_g.p3d";
 		uniformClass="tfl_pcu_aor2_g_uniform";
 		identityTypes[]=
 		{
@@ -479,11 +479,11 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_g3\g3\pants_aor2.paa",
-			"tfl_g3\g3\pants_aor2.paa",
-			"tfl_g3\g3\pants_aor2.paa",
-			"tfl_cold\data\pcu_grey_co.paa",
-			"TFL_cold\data\gunglove_co.paa"
+			"ASEC_g3\g3\pants_aor2.paa",
+			"ASEC_g3\g3\pants_aor2.paa",
+			"ASEC_g3\g3\pants_aor2.paa",
+			"ASEC_Cold\data\pcu_grey_co.paa",
+			"ASEC_Cold\data\gunglove_co.paa"
 		};
 	};
 	class tfl_pcu_mca_g: B_Soldier_F
@@ -493,8 +493,8 @@ class CfgVehicles
 		displayName="Rangers";
 		scopeArsenal=0;
 		faction="sof_rangers";
-		author="TFL";
-		model="tfl_cold\tfl_pcu_g.p3d";
+		author="Jup, Lip, Thunder";
+		model="ASEC_Cold\tfl_pcu_g.p3d";
 		uniformClass="tfl_pcu_mca_g_uniform";
 		identityTypes[]=
 		{
@@ -510,11 +510,11 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_g3\g3\pants_mca.paa",
-			"tfl_g3\g3\pants_mca.paa",
-			"tfl_g3\g3\pants_mca.paa",
-			"tfl_cold\data\pcu_grey_co.paa",
-			"TFL_cold\data\gunglove_co.paa"
+			"ASEC_g3\g3\pants_mca.paa",
+			"ASEC_g3\g3\pants_mca.paa",
+			"ASEC_g3\g3\pants_mca.paa",
+			"ASEC_Cold\data\pcu_grey_co.paa",
+			"ASEC_Cold\data\gunglove_co.paa"
 		};
 	};
 	class tfl_pcu_m81_g: B_Soldier_F
@@ -524,8 +524,8 @@ class CfgVehicles
 		displayName="Rangers";
 		scopeArsenal=0;
 		faction="sof_rangers";
-		author="TFL";
-		model="tfl_cold\tfl_pcu_g.p3d";
+		author="Jup, Lip, Thunder";
+		model="ASEC_Cold\tfl_pcu_g.p3d";
 		uniformClass="tfl_pcu_m81_g_uniform";
 		identityTypes[]=
 		{
@@ -541,11 +541,11 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_g3\g3\pants_m81.paa",
-			"tfl_g3\g3\pants_m81.paa",
-			"tfl_g3\g3\pants_m81.paa",
-			"tfl_cold\data\pcu_grey_co.paa",
-			"TFL_cold\data\gunglove_co.paa"
+			"ASEC_g3\g3\pants_m81.paa",
+			"ASEC_g3\g3\pants_m81.paa",
+			"ASEC_g3\g3\pants_m81.paa",
+			"ASEC_Cold\data\pcu_grey_co.paa",
+			"ASEC_Cold\data\gunglove_co.paa"
 		};
 	};
 	class tfl_pcu_mcal_g: B_Soldier_F
@@ -555,8 +555,8 @@ class CfgVehicles
 		displayName="Rangers";
 		scopeArsenal=0;
 		faction="sof_rangers";
-		author="TFL";
-		model="tfl_cold\tfl_pcu_g.p3d";
+		author="Jup, Lip, Thunder";
+		model="ASEC_Cold\tfl_pcu_g.p3d";
 		uniformClass="tfl_pcu_mcal_g_uniform";
 		identityTypes[]=
 		{
@@ -572,11 +572,11 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_g3\g3\pants_mcal.paa",
-			"tfl_g3\g3\pants_mcal.paa",
-			"tfl_g3\g3\pants_mcal.paa",
-			"tfl_cold\data\pcu_grey_co.paa",
-			"TFL_cold\data\gunglove_co.paa"
+			"ASEC_g3\g3\pants_mcal.paa",
+			"ASEC_g3\g3\pants_mcal.paa",
+			"ASEC_g3\g3\pants_mcal.paa",
+			"ASEC_Cold\data\pcu_grey_co.paa",
+			"ASEC_Cold\data\gunglove_co.paa"
 		};
 	};
 	class tfl_pcu_b_mc_g: B_Soldier_F
@@ -586,8 +586,8 @@ class CfgVehicles
 		displayName="Rangers";
 		scopeArsenal=0;
 		faction="sof_rangers";
-		author="TFL";
-		model="tfl_cold\tfl_pcu_g.p3d";
+		author="Jup, Lip, Thunder";
+		model="ASEC_Cold\tfl_pcu_g.p3d";
 		uniformClass="tfl_pcu_b_mc_g_uniform";
 		identityTypes[]=
 		{
@@ -603,11 +603,11 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_g3\g3\pants_mc.paa",
-			"tfl_g3\g3\pants_mc.paa",
-			"tfl_g3\g3\pants_mc.paa",
-			"tfl_cold\data\pcu_black_co.paa",
-			"TFL_cold\data\gunglove_grey_co.paa"
+			"ASEC_g3\g3\pants_mc.paa",
+			"ASEC_g3\g3\pants_mc.paa",
+			"ASEC_g3\g3\pants_mc.paa",
+			"ASEC_Cold\data\pcu_black_co.paa",
+			"ASEC_Cold\data\gunglove_grey_co.paa"
 		};
 	};
 	class tfl_pcu_b_aor1_g: B_Soldier_F
@@ -617,8 +617,8 @@ class CfgVehicles
 		displayName="Rangers";
 		scopeArsenal=0;
 		faction="sof_rangers";
-		author="TFL";
-		model="tfl_cold\tfl_pcu_g.p3d";
+		author="Jup, Lip, Thunder";
+		model="ASEC_Cold\tfl_pcu_g.p3d";
 		uniformClass="tfl_pcu_b_aor1_g_uniform";
 		identityTypes[]=
 		{
@@ -634,11 +634,11 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_g3\g3\pants_aor1.paa",
-			"tfl_g3\g3\pants_aor1.paa",
-			"tfl_g3\g3\pants_aor1.paa",
-			"tfl_cold\data\pcu_black_co.paa",
-			"TFL_cold\data\gunglove_grey_co.paa"
+			"ASEC_g3\g3\pants_aor1.paa",
+			"ASEC_g3\g3\pants_aor1.paa",
+			"ASEC_g3\g3\pants_aor1.paa",
+			"ASEC_Cold\data\pcu_black_co.paa",
+			"ASEC_Cold\data\gunglove_grey_co.paa"
 		};
 	};
 	class tfl_pcu_b_aor2_g: B_Soldier_F
@@ -648,8 +648,8 @@ class CfgVehicles
 		displayName="Rangers";
 		scopeArsenal=0;
 		faction="sof_rangers";
-		author="TFL";
-		model="tfl_cold\tfl_pcu_g.p3d";
+		author="Jup, Lip, Thunder";
+		model="ASEC_Cold\tfl_pcu_g.p3d";
 		uniformClass="tfl_pcu_b_aor2_g_uniform";
 		identityTypes[]=
 		{
@@ -665,11 +665,11 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_g3\g3\pants_aor2.paa",
-			"tfl_g3\g3\pants_aor2.paa",
-			"tfl_g3\g3\pants_aor2.paa",
-			"tfl_cold\data\pcu_black_co.paa",
-			"TFL_cold\data\gunglove_grey_co.paa"
+			"ASEC_g3\g3\pants_aor2.paa",
+			"ASEC_g3\g3\pants_aor2.paa",
+			"ASEC_g3\g3\pants_aor2.paa",
+			"ASEC_Cold\data\pcu_black_co.paa",
+			"ASEC_Cold\data\gunglove_grey_co.paa"
 		};
 	};
 	class tfl_pcu_b_mca_g: B_Soldier_F
@@ -679,8 +679,8 @@ class CfgVehicles
 		displayName="Rangers";
 		scopeArsenal=0;
 		faction="sof_rangers";
-		author="TFL";
-		model="tfl_cold\tfl_pcu_g.p3d";
+		author="Jup, Lip, Thunder";
+		model="ASEC_Cold\tfl_pcu_g.p3d";
 		uniformClass="tfl_pcu_b_mca_g_uniform";
 		identityTypes[]=
 		{
@@ -696,11 +696,11 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_g3\g3\pants_mca.paa",
-			"tfl_g3\g3\pants_mca.paa",
-			"tfl_g3\g3\pants_mca.paa",
-			"tfl_cold\data\pcu_black_co.paa",
-			"TFL_cold\data\gunglove_grey_co.paa"
+			"ASEC_g3\g3\pants_mca.paa",
+			"ASEC_g3\g3\pants_mca.paa",
+			"ASEC_g3\g3\pants_mca.paa",
+			"ASEC_Cold\data\pcu_black_co.paa",
+			"ASEC_Cold\data\gunglove_grey_co.paa"
 		};
 	};
 	class tfl_pcu_b_m81_g: B_Soldier_F
@@ -710,8 +710,8 @@ class CfgVehicles
 		displayName="Rangers";
 		scopeArsenal=0;
 		faction="sof_rangers";
-		author="TFL";
-		model="tfl_cold\tfl_pcu_g.p3d";
+		author="Jup, Lip, Thunder";
+		model="ASEC_Cold\tfl_pcu_g.p3d";
 		uniformClass="tfl_pcu_b_m81_g_uniform";
 		identityTypes[]=
 		{
@@ -727,11 +727,11 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_g3\g3\pants_m81.paa",
-			"tfl_g3\g3\pants_m81.paa",
-			"tfl_g3\g3\pants_m81.paa",
-			"tfl_cold\data\pcu_black_co.paa",
-			"TFL_cold\data\gunglove_grey_co.paa"
+			"ASEC_g3\g3\pants_m81.paa",
+			"ASEC_g3\g3\pants_m81.paa",
+			"ASEC_g3\g3\pants_m81.paa",
+			"ASEC_Cold\data\pcu_black_co.paa",
+			"ASEC_Cold\data\gunglove_grey_co.paa"
 		};
 	};
 	class tfl_pcu_b_mcal_g: B_Soldier_F
@@ -741,8 +741,8 @@ class CfgVehicles
 		displayName="Rangers";
 		scopeArsenal=0;
 		faction="sof_rangers";
-		author="TFL";
-		model="tfl_cold\tfl_pcu_g.p3d";
+		author="Jup, Lip, Thunder";
+		model="ASEC_Cold\tfl_pcu_g.p3d";
 		uniformClass="tfl_pcu_b_mcal_g_uniform";
 		identityTypes[]=
 		{
@@ -758,11 +758,11 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_g3\g3\pants_mcal.paa",
-			"tfl_g3\g3\pants_mcal.paa",
-			"tfl_g3\g3\pants_mcal.paa",
-			"tfl_cold\data\pcu_black_co.paa",
-			"TFL_cold\data\gunglove_grey_co.paa"
+			"ASEC_g3\g3\pants_mcal.paa",
+			"ASEC_g3\g3\pants_mcal.paa",
+			"ASEC_g3\g3\pants_mcal.paa",
+			"ASEC_Cold\data\pcu_black_co.paa",
+			"ASEC_Cold\data\gunglove_grey_co.paa"
 		};
 	};
 	class tfl_pcu_mca_mc_g: B_Soldier_F
@@ -772,8 +772,8 @@ class CfgVehicles
 		displayName="Rangers";
 		scopeArsenal=0;
 		faction="sof_rangers";
-		author="TFL";
-		model="tfl_cold\tfl_pcu_g.p3d";
+		author="Jup, Lip, Thunder";
+		model="ASEC_Cold\tfl_pcu_g.p3d";
 		uniformClass="tfl_pcu_mca_mc_g_uniform";
 		identityTypes[]=
 		{
@@ -789,11 +789,11 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_g3\g3\pants_mc.paa",
-			"tfl_g3\g3\pants_mc.paa",
-			"tfl_g3\g3\pants_mc.paa",
-			"tfl_cold\data\pcu_mca_co.paa",
-			"TFL_cold\data\gunglove_co.paa"
+			"ASEC_g3\g3\pants_mc.paa",
+			"ASEC_g3\g3\pants_mc.paa",
+			"ASEC_g3\g3\pants_mc.paa",
+			"ASEC_Cold\data\pcu_mca_co.paa",
+			"ASEC_Cold\data\gunglove_co.paa"
 		};
 	};
 	class tfl_pcu_mca_aor1_g: B_Soldier_F
@@ -803,8 +803,8 @@ class CfgVehicles
 		displayName="Rangers";
 		scopeArsenal=0;
 		faction="sof_rangers";
-		author="TFL";
-		model="tfl_cold\tfl_pcu_g.p3d";
+		author="Jup, Lip, Thunder";
+		model="ASEC_Cold\tfl_pcu_g.p3d";
 		uniformClass="tfl_pcu_mca_aor1_g_uniform";
 		identityTypes[]=
 		{
@@ -820,11 +820,11 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_g3\g3\pants_aor1.paa",
-			"tfl_g3\g3\pants_aor1.paa",
-			"tfl_g3\g3\pants_aor1.paa",
-			"tfl_cold\data\pcu_mca_co.paa",
-			"TFL_cold\data\gunglove_co.paa"
+			"ASEC_g3\g3\pants_aor1.paa",
+			"ASEC_g3\g3\pants_aor1.paa",
+			"ASEC_g3\g3\pants_aor1.paa",
+			"ASEC_Cold\data\pcu_mca_co.paa",
+			"ASEC_Cold\data\gunglove_co.paa"
 		};
 	};
 	class tfl_pcu_mca_aor2_g: B_Soldier_F
@@ -834,8 +834,8 @@ class CfgVehicles
 		displayName="Rangers";
 		scopeArsenal=0;
 		faction="sof_rangers";
-		author="TFL";
-		model="tfl_cold\tfl_pcu_g.p3d";
+		author="Jup, Lip, Thunder";
+		model="ASEC_Cold\tfl_pcu_g.p3d";
 		uniformClass="tfl_pcu_mca_aor2_g_uniform";
 		identityTypes[]=
 		{
@@ -851,11 +851,11 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_g3\g3\pants_aor2.paa",
-			"tfl_g3\g3\pants_aor2.paa",
-			"tfl_g3\g3\pants_aor2.paa",
-			"tfl_cold\data\pcu_mca_co.paa",
-			"TFL_cold\data\gunglove_co.paa"
+			"ASEC_g3\g3\pants_aor2.paa",
+			"ASEC_g3\g3\pants_aor2.paa",
+			"ASEC_g3\g3\pants_aor2.paa",
+			"ASEC_Cold\data\pcu_mca_co.paa",
+			"ASEC_Cold\data\gunglove_co.paa"
 		};
 	};
 	class tfl_pcu_mca_mca_g: B_Soldier_F
@@ -865,8 +865,8 @@ class CfgVehicles
 		displayName="Rangers";
 		scopeArsenal=0;
 		faction="sof_rangers";
-		author="TFL";
-		model="tfl_cold\tfl_pcu_g.p3d";
+		author="Jup, Lip, Thunder";
+		model="ASEC_Cold\tfl_pcu_g.p3d";
 		uniformClass="tfl_pcu_mca_mca_g_uniform";
 		identityTypes[]=
 		{
@@ -882,11 +882,11 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_g3\g3\pants_mca.paa",
-			"tfl_g3\g3\pants_mca.paa",
-			"tfl_g3\g3\pants_mca.paa",
-			"tfl_cold\data\pcu_mca_co.paa",
-			"TFL_cold\data\gunglove_co.paa"
+			"ASEC_g3\g3\pants_mca.paa",
+			"ASEC_g3\g3\pants_mca.paa",
+			"ASEC_g3\g3\pants_mca.paa",
+			"ASEC_Cold\data\pcu_mca_co.paa",
+			"ASEC_Cold\data\gunglove_co.paa"
 		};
 	};
 	class tfl_pcu_mca_m81_g: B_Soldier_F
@@ -896,8 +896,8 @@ class CfgVehicles
 		displayName="Rangers";
 		scopeArsenal=0;
 		faction="sof_rangers";
-		author="TFL";
-		model="tfl_cold\tfl_pcu_g.p3d";
+		author="Jup, Lip, Thunder";
+		model="ASEC_Cold\tfl_pcu_g.p3d";
 		uniformClass="tfl_pcu_mca_m81_g_uniform";
 		identityTypes[]=
 		{
@@ -913,11 +913,11 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_g3\g3\pants_m81.paa",
-			"tfl_g3\g3\pants_m81.paa",
-			"tfl_g3\g3\pants_m81.paa",
-			"tfl_cold\data\pcu_mca_co.paa",
-			"TFL_cold\data\gunglove_co.paa"
+			"ASEC_g3\g3\pants_m81.paa",
+			"ASEC_g3\g3\pants_m81.paa",
+			"ASEC_g3\g3\pants_m81.paa",
+			"ASEC_Cold\data\pcu_mca_co.paa",
+			"ASEC_Cold\data\gunglove_co.paa"
 		};
 	};
 	class tfl_pcu_mca_mcal_g: B_Soldier_F
@@ -927,8 +927,8 @@ class CfgVehicles
 		displayName="Rangers";
 		scopeArsenal=0;
 		faction="sof_rangers";
-		author="TFL";
-		model="tfl_cold\tfl_pcu_g.p3d";
+		author="Jup, Lip, Thunder";
+		model="ASEC_Cold\tfl_pcu_g.p3d";
 		uniformClass="tfl_pcu_mca_mcal_g_uniform";
 		identityTypes[]=
 		{
@@ -944,11 +944,11 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_g3\g3\pants_mcal.paa",
-			"tfl_g3\g3\pants_mcal.paa",
-			"tfl_g3\g3\pants_mcal.paa",
-			"tfl_cold\data\pcu_mca_co.paa",
-			"TFL_cold\data\gunglove_co.paa"
+			"ASEC_g3\g3\pants_mcal.paa",
+			"ASEC_g3\g3\pants_mcal.paa",
+			"ASEC_g3\g3\pants_mcal.paa",
+			"ASEC_Cold\data\pcu_mca_co.paa",
+			"ASEC_Cold\data\gunglove_co.paa"
 		};
 	};
 	class tfl_pcu_mc_mc_g: B_Soldier_F
@@ -958,8 +958,8 @@ class CfgVehicles
 		displayName="Rangers";
 		scopeArsenal=0;
 		faction="sof_rangers";
-		author="TFL";
-		model="tfl_cold\tfl_pcu_g.p3d";
+		author="Jup, Lip, Thunder";
+		model="ASEC_Cold\tfl_pcu_g.p3d";
 		uniformClass="tfl_pcu_mc_mc_g_uniform";
 		identityTypes[]=
 		{
@@ -975,11 +975,11 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_g3\g3\pants_mc.paa",
-			"tfl_g3\g3\pants_mc.paa",
-			"tfl_g3\g3\pants_mc.paa",
-			"tfl_cold\data\pcu_multicam_co.paa",
-			"TFL_cold\data\gunglove_grey_co.paa"
+			"ASEC_g3\g3\pants_mc.paa",
+			"ASEC_g3\g3\pants_mc.paa",
+			"ASEC_g3\g3\pants_mc.paa",
+			"ASEC_Cold\data\pcu_multicam_co.paa",
+			"ASEC_Cold\data\gunglove_grey_co.paa"
 		};
 	};
 	class tfl_pcu_mc_aor1_g: B_Soldier_F
@@ -989,8 +989,8 @@ class CfgVehicles
 		displayName="Rangers";
 		scopeArsenal=0;
 		faction="sof_rangers";
-		author="TFL";
-		model="tfl_cold\tfl_pcu_g.p3d";
+		author="Jup, Lip, Thunder";
+		model="ASEC_Cold\tfl_pcu_g.p3d";
 		uniformClass="tfl_pcu_mc_aor1_g_uniform";
 		identityTypes[]=
 		{
@@ -1006,11 +1006,11 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_g3\g3\pants_aor1.paa",
-			"tfl_g3\g3\pants_aor1.paa",
-			"tfl_g3\g3\pants_aor1.paa",
-			"tfl_cold\data\pcu_multicam_co.paa",
-			"TFL_cold\data\gunglove_grey_co.paa"
+			"ASEC_g3\g3\pants_aor1.paa",
+			"ASEC_g3\g3\pants_aor1.paa",
+			"ASEC_g3\g3\pants_aor1.paa",
+			"ASEC_Cold\data\pcu_multicam_co.paa",
+			"ASEC_Cold\data\gunglove_grey_co.paa"
 		};
 	};
 	class tfl_pcu_mc_aor2_g: B_Soldier_F
@@ -1020,8 +1020,8 @@ class CfgVehicles
 		displayName="Rangers";
 		scopeArsenal=0;
 		faction="sof_rangers";
-		author="TFL";
-		model="tfl_cold\tfl_pcu_g.p3d";
+		author="Jup, Lip, Thunder";
+		model="ASEC_Cold\tfl_pcu_g.p3d";
 		uniformClass="tfl_pcu_mc_aor2_g_uniform";
 		identityTypes[]=
 		{
@@ -1037,11 +1037,11 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_g3\g3\pants_aor2.paa",
-			"tfl_g3\g3\pants_aor2.paa",
-			"tfl_g3\g3\pants_aor2.paa",
-			"tfl_cold\data\pcu_multicam_co.paa",
-			"TFL_cold\data\gunglove_grey_co.paa"
+			"ASEC_g3\g3\pants_aor2.paa",
+			"ASEC_g3\g3\pants_aor2.paa",
+			"ASEC_g3\g3\pants_aor2.paa",
+			"ASEC_Cold\data\pcu_multicam_co.paa",
+			"ASEC_Cold\data\gunglove_grey_co.paa"
 		};
 	};
 	class tfl_pcu_mc_mca_g: B_Soldier_F
@@ -1051,8 +1051,8 @@ class CfgVehicles
 		displayName="Rangers";
 		scopeArsenal=0;
 		faction="sof_rangers";
-		author="TFL";
-		model="tfl_cold\tfl_pcu_g.p3d";
+		author="Jup, Lip, Thunder";
+		model="ASEC_Cold\tfl_pcu_g.p3d";
 		uniformClass="tfl_pcu_mc_mca_g_uniform";
 		identityTypes[]=
 		{
@@ -1068,11 +1068,11 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_g3\g3\pants_mca.paa",
-			"tfl_g3\g3\pants_mca.paa",
-			"tfl_g3\g3\pants_mca.paa",
-			"tfl_cold\data\pcu_multicam_co.paa",
-			"TFL_cold\data\gunglove_grey_co.paa"
+			"ASEC_g3\g3\pants_mca.paa",
+			"ASEC_g3\g3\pants_mca.paa",
+			"ASEC_g3\g3\pants_mca.paa",
+			"ASEC_Cold\data\pcu_multicam_co.paa",
+			"ASEC_Cold\data\gunglove_grey_co.paa"
 		};
 	};
 	class tfl_pcu_mc_m81_g: B_Soldier_F
@@ -1082,8 +1082,8 @@ class CfgVehicles
 		displayName="Rangers";
 		scopeArsenal=0;
 		faction="sof_rangers";
-		author="TFL";
-		model="tfl_cold\tfl_pcu_g.p3d";
+		author="Jup, Lip, Thunder";
+		model="ASEC_Cold\tfl_pcu_g.p3d";
 		uniformClass="tfl_pcu_mc_m81_g_uniform";
 		identityTypes[]=
 		{
@@ -1099,11 +1099,11 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_g3\g3\pants_m81.paa",
-			"tfl_g3\g3\pants_m81.paa",
-			"tfl_g3\g3\pants_m81.paa",
-			"tfl_cold\data\pcu_multicam_co.paa",
-			"TFL_cold\data\gunglove_grey_co.paa"
+			"ASEC_g3\g3\pants_m81.paa",
+			"ASEC_g3\g3\pants_m81.paa",
+			"ASEC_g3\g3\pants_m81.paa",
+			"ASEC_Cold\data\pcu_multicam_co.paa",
+			"ASEC_Cold\data\gunglove_grey_co.paa"
 		};
 	};
 	class tfl_pcu_mc_mcal_g: B_Soldier_F
@@ -1113,8 +1113,8 @@ class CfgVehicles
 		displayName="Rangers";
 		scopeArsenal=0;
 		faction="sof_rangers";
-		author="TFL";
-		model="tfl_cold\tfl_pcu_g.p3d";
+		author="Jup, Lip, Thunder";
+		model="ASEC_Cold\tfl_pcu_g.p3d";
 		uniformClass="tfl_pcu_mc_mcal_g_uniform";
 		identityTypes[]=
 		{
@@ -1130,11 +1130,11 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_g3\g3\pants_mcal.paa",
-			"tfl_g3\g3\pants_mcal.paa",
-			"tfl_g3\g3\pants_mcal.paa",
-			"tfl_cold\data\pcu_multicam_co.paa",
-			"TFL_cold\data\gunglove_grey_co.paa"
+			"ASEC_g3\g3\pants_mcal.paa",
+			"ASEC_g3\g3\pants_mcal.paa",
+			"ASEC_g3\g3\pants_mcal.paa",
+			"ASEC_Cold\data\pcu_multicam_co.paa",
+			"ASEC_Cold\data\gunglove_grey_co.paa"
 		};
 	};
 	class tfl_pcu_brown_mc_g: B_Soldier_F
@@ -1144,8 +1144,8 @@ class CfgVehicles
 		displayName="Rangers";
 		scopeArsenal=0;
 		faction="sof_rangers";
-		author="TFL";
-		model="tfl_cold\tfl_pcu_g.p3d";
+		author="Jup, Lip, Thunder";
+		model="ASEC_Cold\tfl_pcu_g.p3d";
 		uniformClass="tfl_pcu_brown_mc_g_uniform";
 		identityTypes[]=
 		{
@@ -1161,11 +1161,11 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_g3\g3\pants_mc.paa",
-			"tfl_g3\g3\pants_mc.paa",
-			"tfl_g3\g3\pants_mc.paa",
-			"tfl_cold\data\pcu_brown_co.paa",
-			"TFL_cold\data\gunglove_co.paa"
+			"ASEC_g3\g3\pants_mc.paa",
+			"ASEC_g3\g3\pants_mc.paa",
+			"ASEC_g3\g3\pants_mc.paa",
+			"ASEC_Cold\data\pcu_brown_co.paa",
+			"ASEC_Cold\data\gunglove_co.paa"
 		};
 	};
 	class tfl_pcu_brown_aor1_g: B_Soldier_F
@@ -1175,8 +1175,8 @@ class CfgVehicles
 		displayName="Rangers";
 		scopeArsenal=0;
 		faction="sof_rangers";
-		author="TFL";
-		model="tfl_cold\tfl_pcu_g.p3d";
+		author="Jup, Lip, Thunder";
+		model="ASEC_Cold\tfl_pcu_g.p3d";
 		uniformClass="tfl_pcu_brown_aor1_g_uniform";
 		identityTypes[]=
 		{
@@ -1192,11 +1192,11 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_g3\g3\pants_aor1.paa",
-			"tfl_g3\g3\pants_aor1.paa",
-			"tfl_g3\g3\pants_aor1.paa",
-			"tfl_cold\data\pcu_brown_co.paa",
-			"TFL_cold\data\gunglove_co.paa"
+			"ASEC_g3\g3\pants_aor1.paa",
+			"ASEC_g3\g3\pants_aor1.paa",
+			"ASEC_g3\g3\pants_aor1.paa",
+			"ASEC_Cold\data\pcu_brown_co.paa",
+			"ASEC_Cold\data\gunglove_co.paa"
 		};
 	};
 	class tfl_pcu_brown_aor2_g: B_Soldier_F
@@ -1206,8 +1206,8 @@ class CfgVehicles
 		displayName="Rangers";
 		scopeArsenal=0;
 		faction="sof_rangers";
-		author="TFL";
-		model="tfl_cold\tfl_pcu_g.p3d";
+		author="Jup, Lip, Thunder";
+		model="ASEC_Cold\tfl_pcu_g.p3d";
 		uniformClass="tfl_pcu_brown_aor2_g_uniform";
 		identityTypes[]=
 		{
@@ -1223,11 +1223,11 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_g3\g3\pants_aor2.paa",
-			"tfl_g3\g3\pants_aor2.paa",
-			"tfl_g3\g3\pants_aor2.paa",
-			"tfl_cold\data\pcu_brown_co.paa",
-			"TFL_cold\data\gunglove_co.paa"
+			"ASEC_g3\g3\pants_aor2.paa",
+			"ASEC_g3\g3\pants_aor2.paa",
+			"ASEC_g3\g3\pants_aor2.paa",
+			"ASEC_Cold\data\pcu_brown_co.paa",
+			"ASEC_Cold\data\gunglove_co.paa"
 		};
 	};
 	class tfl_pcu_brown_mca_g: B_Soldier_F
@@ -1237,8 +1237,8 @@ class CfgVehicles
 		displayName="Rangers";
 		scopeArsenal=0;
 		faction="sof_rangers";
-		author="TFL";
-		model="tfl_cold\tfl_pcu_g.p3d";
+		author="Jup, Lip, Thunder";
+		model="ASEC_Cold\tfl_pcu_g.p3d";
 		uniformClass="tfl_pcu_brown_mca_g_uniform";
 		identityTypes[]=
 		{
@@ -1254,11 +1254,11 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_g3\g3\pants_mca.paa",
-			"tfl_g3\g3\pants_mca.paa",
-			"tfl_g3\g3\pants_mca.paa",
-			"tfl_cold\data\pcu_brown_co.paa",
-			"TFL_cold\data\gunglove_co.paa"
+			"ASEC_g3\g3\pants_mca.paa",
+			"ASEC_g3\g3\pants_mca.paa",
+			"ASEC_g3\g3\pants_mca.paa",
+			"ASEC_Cold\data\pcu_brown_co.paa",
+			"ASEC_Cold\data\gunglove_co.paa"
 		};
 	};
 	class tfl_pcu_brown_m81_g: B_Soldier_F
@@ -1268,8 +1268,8 @@ class CfgVehicles
 		displayName="Rangers";
 		scopeArsenal=0;
 		faction="sof_rangers";
-		author="TFL";
-		model="tfl_cold\tfl_pcu_g.p3d";
+		author="Jup, Lip, Thunder";
+		model="ASEC_Cold\tfl_pcu_g.p3d";
 		uniformClass="tfl_pcu_brown_m81_g_uniform";
 		identityTypes[]=
 		{
@@ -1285,11 +1285,11 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_g3\g3\pants_m81.paa",
-			"tfl_g3\g3\pants_m81.paa",
-			"tfl_g3\g3\pants_m81.paa",
-			"tfl_cold\data\pcu_brown_co.paa",
-			"TFL_cold\data\gunglove_co.paa"
+			"ASEC_g3\g3\pants_m81.paa",
+			"ASEC_g3\g3\pants_m81.paa",
+			"ASEC_g3\g3\pants_m81.paa",
+			"ASEC_Cold\data\pcu_brown_co.paa",
+			"ASEC_Cold\data\gunglove_co.paa"
 		};
 	};
 	class tfl_pcu_brown_mcal_g: B_Soldier_F
@@ -1299,8 +1299,8 @@ class CfgVehicles
 		displayName="Rangers";
 		scopeArsenal=0;
 		faction="sof_rangers";
-		author="TFL";
-		model="tfl_cold\tfl_pcu_g.p3d";
+		author="Jup, Lip, Thunder";
+		model="ASEC_Cold\tfl_pcu_g.p3d";
 		uniformClass="tfl_pcu_brown_mcal_g_uniform";
 		identityTypes[]=
 		{
@@ -1316,11 +1316,11 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_g3\g3\pants_mcal.paa",
-			"tfl_g3\g3\pants_mcal.paa",
-			"tfl_g3\g3\pants_mcal.paa",
-			"tfl_cold\data\pcu_brown_co.paa",
-			"TFL_cold\data\gunglove_co.paa"
+			"ASEC_g3\g3\pants_mcal.paa",
+			"ASEC_g3\g3\pants_mcal.paa",
+			"ASEC_g3\g3\pants_mcal.paa",
+			"ASEC_Cold\data\pcu_brown_co.paa",
+			"ASEC_Cold\data\gunglove_co.paa"
 		};
 	};
 };
@@ -1337,13 +1337,13 @@ class CfgWeapons
 	};
 	class tfl_fleece_hat: ItemCore
 	{
-		author="TFL";
+		author="Jup, Lip, Thunder";
 		scope=0;
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0;
-		displayName="[TFL] Fleece Hat Green";
+		displayName="[ASEC] Fleece Hat Green";
 		picture="";
 		hiddenSelections[]=
 		{
@@ -1351,21 +1351,21 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_cold\data\fleece_rg_co.paa"
+			"ASEC_Cold\data\fleece_rg_co.paa"
 		};
-		model="tfl_cold\fleece.p3d";
+		model="ASEC_Cold\fleece.p3d";
 		class ItemInfo: HeadgearItem
 		{
 			mass=5;
 			eden=2;
-			uniformModel="tfl_cold\fleece.p3d";
+			uniformModel="ASEC_Cold\fleece.p3d";
 			hiddenSelections[]=
 			{
 				"Camo"
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"tfl_cold\data\fleece_rg_co.paa"
+				"ASEC_Cold\data\fleece_rg_co.paa"
 			};
 			modelSides[]={3,1};
 			class HitpointsProtectionInfo
@@ -1381,13 +1381,13 @@ class CfgWeapons
 	};
 	class tfl_fleece_tan_hat: ItemCore
 	{
-		author="TFL";
+		author="Jup, Lip, Thunder";
 		scope=0;
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0;
-		displayName="[TFL] Fleece Hat Tan";
+		displayName="[ASEC] Fleece Hat Tan";
 		picture="";
 		hiddenSelections[]=
 		{
@@ -1395,21 +1395,21 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_cold\data\fleece_cb_co.paa"
+			"ASEC_Cold\data\fleece_cb_co.paa"
 		};
-		model="tfl_cold\fleece.p3d";
+		model="ASEC_Cold\fleece.p3d";
 		class ItemInfo: HeadgearItem
 		{
 			mass=5;
 			eden=2;
-			uniformModel="tfl_cold\fleece.p3d";
+			uniformModel="ASEC_Cold\fleece.p3d";
 			hiddenSelections[]=
 			{
 				"Camo"
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"tfl_cold\data\fleece_cb_co.paa"
+				"ASEC_Cold\data\fleece_cb_co.paa"
 			};
 			modelSides[]={3,1};
 			class HitpointsProtectionInfo
@@ -1425,13 +1425,13 @@ class CfgWeapons
 	};
 	class tfl_fleece_hat_peltors: ItemCore
 	{
-		author="TFL";
+		author="Jup, Lip, Thunder";
 		scope=0;
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
-		displayName="[TFL] Fleece Hat Peltors Green";
+		displayName="[ASEC] Fleece Hat Peltors Green";
 		picture="";
 		hiddenSelections[]=
 		{
@@ -1439,21 +1439,21 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_cold\data\fleece_rg_co.paa"
+			"ASEC_Cold\data\fleece_rg_co.paa"
 		};
-		model="tfl_cold\fleece_peltors.p3d";
+		model="ASEC_Cold\fleece_peltors.p3d";
 		class ItemInfo: HeadgearItem
 		{
 			mass=5;
 			eden=2;
-			uniformModel="tfl_cold\fleece_peltors.p3d";
+			uniformModel="ASEC_Cold\fleece_peltors.p3d";
 			hiddenSelections[]=
 			{
 				"Camo"
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"tfl_cold\data\fleece_rg_co.paa"
+				"ASEC_Cold\data\fleece_rg_co.paa"
 			};
 			modelSides[]={3,1};
 			class HitpointsProtectionInfo
@@ -1469,13 +1469,13 @@ class CfgWeapons
 	};
 	class tfl_fleece_tan_hat_peltors: ItemCore
 	{
-		author="TFL";
+		author="Jup, Lip, Thunder";
 		scope=0;
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
-		displayName="[TFL] Fleece Hat Peltors Tan";
+		displayName="[ASEC] Fleece Hat Peltors Tan";
 		picture="";
 		hiddenSelections[]=
 		{
@@ -1483,21 +1483,21 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_cold\data\fleece_cb_co.paa"
+			"ASEC_Cold\data\fleece_cb_co.paa"
 		};
-		model="tfl_cold\fleece_peltors.p3d";
+		model="ASEC_Cold\fleece_peltors.p3d";
 		class ItemInfo: HeadgearItem
 		{
 			mass=5;
 			eden=2;
-			uniformModel="tfl_cold\fleece_peltors.p3d";
+			uniformModel="ASEC_Cold\fleece_peltors.p3d";
 			hiddenSelections[]=
 			{
 				"Camo"
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"tfl_cold\data\fleece_cb_co.paa"
+				"ASEC_Cold\data\fleece_cb_co.paa"
 			};
 			modelSides[]={3,1};
 			class HitpointsProtectionInfo
@@ -1513,13 +1513,13 @@ class CfgWeapons
 	};
 	class tfl_beanie_hat: ItemCore
 	{
-		author="TFL";
+		author="Jup, Lip, Thunder";
 		scope=0;
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0;
-		displayName="[TFL] Beanie";
+		displayName="[ASEC] Beanie";
 		picture="";
 		hiddenSelections[]=
 		{
@@ -1527,21 +1527,21 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_cold\data\beanie_co.paa"
+			"ASEC_Cold\data\beanie_co.paa"
 		};
-		model="tfl_cold\beanie.p3d";
+		model="ASEC_Cold\beanie.p3d";
 		class ItemInfo: HeadgearItem
 		{
 			mass=5;
 			eden=2;
-			uniformModel="tfl_cold\beanie.p3d";
+			uniformModel="ASEC_Cold\beanie.p3d";
 			hiddenSelections[]=
 			{
 				"Camo"
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"tfl_cold\data\beanie_co.paa"
+				"ASEC_Cold\data\beanie_co.paa"
 			};
 			modelSides[]={3,1};
 			class HitpointsProtectionInfo
@@ -1557,13 +1557,13 @@ class CfgWeapons
 	};
 	class tfl_beanie_hat_green: ItemCore
 	{
-		author="TFL";
+		author="Jup, Lip, Thunder";
 		scope=0;
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0;
-		displayName="[TFL] Beanie Green";
+		displayName="[ASEC] Beanie Green";
 		picture="";
 		hiddenSelections[]=
 		{
@@ -1571,21 +1571,21 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_cold\data\beanie_rg_co.paa"
+			"ASEC_Cold\data\beanie_rg_co.paa"
 		};
-		model="tfl_cold\beanie.p3d";
+		model="ASEC_Cold\beanie.p3d";
 		class ItemInfo: HeadgearItem
 		{
 			mass=5;
 			eden=2;
-			uniformModel="tfl_cold\beanie.p3d";
+			uniformModel="ASEC_Cold\beanie.p3d";
 			hiddenSelections[]=
 			{
 				"Camo"
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"tfl_cold\data\beanie_rg_co.paa"
+				"ASEC_Cold\data\beanie_rg_co.paa"
 			};
 			modelSides[]={3,1};
 			class HitpointsProtectionInfo
@@ -1601,13 +1601,13 @@ class CfgWeapons
 	};
 	class tfl_beanie_tan_hat: ItemCore
 	{
-		author="TFL";
+		author="Jup, Lip, Thunder";
 		scope=0;
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0;
-		displayName="[TFL] Beanie Tan";
+		displayName="[ASEC] Beanie Tan";
 		picture="";
 		hiddenSelections[]=
 		{
@@ -1615,21 +1615,21 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_cold\data\beanie_cb_co.paa"
+			"ASEC_Cold\data\beanie_cb_co.paa"
 		};
-		model="tfl_cold\beanie.p3d";
+		model="ASEC_Cold\beanie.p3d";
 		class ItemInfo: HeadgearItem
 		{
 			mass=5;
 			eden=2;
-			uniformModel="tfl_cold\beanie.p3d";
+			uniformModel="ASEC_Cold\beanie.p3d";
 			hiddenSelections[]=
 			{
 				"Camo"
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"tfl_cold\data\beanie_cb_co.paa"
+				"ASEC_Cold\data\beanie_cb_co.paa"
 			};
 			modelSides[]={3,1};
 			class HitpointsProtectionInfo
@@ -1645,13 +1645,13 @@ class CfgWeapons
 	};
 	class tfl_beanie_hat_peltors: ItemCore
 	{
-		author="TFL";
+		author="Jup, Lip, Thunder";
 		scope=0;
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
-		displayName="[TFL] Beanie Peltors";
+		displayName="[ASEC] Beanie Peltors";
 		picture="";
 		hiddenSelections[]=
 		{
@@ -1659,21 +1659,21 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_cold\data\beanie_co.paa"
+			"ASEC_Cold\data\beanie_co.paa"
 		};
-		model="tfl_cold\beanie_peltors.p3d";
+		model="ASEC_Cold\beanie_peltors.p3d";
 		class ItemInfo: HeadgearItem
 		{
 			mass=5;
 			eden=2;
-			uniformModel="tfl_cold\beanie_peltors.p3d";
+			uniformModel="ASEC_Cold\beanie_peltors.p3d";
 			hiddenSelections[]=
 			{
 				"Camo"
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"tfl_cold\data\beanie_co.paa"
+				"ASEC_Cold\data\beanie_co.paa"
 			};
 			modelSides[]={3,1};
 			class HitpointsProtectionInfo
@@ -1689,13 +1689,13 @@ class CfgWeapons
 	};
 	class tfl_beanie_hat_green_peltors: ItemCore
 	{
-		author="TFL";
+		author="Jup, Lip, Thunder";
 		scope=0;
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
-		displayName="[TFL] Beanie Peltors Green";
+		displayName="[ASEC] Beanie Peltors Green";
 		picture="";
 		hiddenSelections[]=
 		{
@@ -1703,21 +1703,21 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_cold\data\beanie_rg_co.paa"
+			"ASEC_Cold\data\beanie_rg_co.paa"
 		};
-		model="tfl_cold\beanie_peltors.p3d";
+		model="ASEC_Cold\beanie_peltors.p3d";
 		class ItemInfo: HeadgearItem
 		{
 			mass=5;
 			eden=2;
-			uniformModel="tfl_cold\beanie_peltors.p3d";
+			uniformModel="ASEC_Cold\beanie_peltors.p3d";
 			hiddenSelections[]=
 			{
 				"Camo"
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"tfl_cold\data\beanie_rg_co.paa"
+				"ASEC_Cold\data\beanie_rg_co.paa"
 			};
 			modelSides[]={3,1};
 			class HitpointsProtectionInfo
@@ -1733,13 +1733,13 @@ class CfgWeapons
 	};
 	class tfl_beanie_tan_hat_peltors: ItemCore
 	{
-		author="TFL";
+		author="Jup, Lip, Thunder";
 		scope=0;
 		scopeArsenal=0;
 		weaponPoolAvailable=1;
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.30000001;
-		displayName="[TFL] Beanie Peltors Tan";
+		displayName="[ASEC] Beanie Peltors Tan";
 		picture="";
 		hiddenSelections[]=
 		{
@@ -1747,21 +1747,21 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tfl_cold\data\beanie_cb_co.paa"
+			"ASEC_Cold\data\beanie_cb_co.paa"
 		};
-		model="tfl_cold\beanie_peltors.p3d";
+		model="ASEC_Cold\beanie_peltors.p3d";
 		class ItemInfo: HeadgearItem
 		{
 			mass=5;
 			eden=2;
-			uniformModel="tfl_cold\beanie_peltors.p3d";
+			uniformModel="ASEC_Cold\beanie_peltors.p3d";
 			hiddenSelections[]=
 			{
 				"Camo"
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"tfl_cold\data\beanie_cb_co.paa"
+				"ASEC_Cold\data\beanie_cb_co.paa"
 			};
 			modelSides[]={3,1};
 			class HitpointsProtectionInfo
@@ -1779,8 +1779,8 @@ class CfgWeapons
 	{
 		scope=0;
 		scopeArsenal=0;
-		author="TFL";
-		displayName="[TFL] G3 Puff (BLACK/MC)";
+		author="Jup, Lip, Thunder";
+		displayName="[ASEC] G3 Puff (BLACK/MC)";
 		picture="";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
@@ -1796,8 +1796,8 @@ class CfgWeapons
 	{
 		scope=0;
 		scopeArsenal=0;
-		author="TFL";
-		displayName="[TFL] G3 Puff (BLACK/AOR1)";
+		author="Jup, Lip, Thunder";
+		displayName="[ASEC] G3 Puff (BLACK/AOR1)";
 		picture="";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
@@ -1813,8 +1813,8 @@ class CfgWeapons
 	{
 		scope=0;
 		scopeArsenal=0;
-		author="TFL";
-		displayName="[TFL] G3 Puff (BLACK/AOR2)";
+		author="Jup, Lip, Thunder";
+		displayName="[ASEC] G3 Puff (BLACK/AOR2)";
 		picture="";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
@@ -1830,8 +1830,8 @@ class CfgWeapons
 	{
 		scope=0;
 		scopeArsenal=0;
-		author="TFL";
-		displayName="[TFL] G3 Puff (BLACK/MCA)";
+		author="Jup, Lip, Thunder";
+		displayName="[ASEC] G3 Puff (BLACK/MCA)";
 		picture="";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
@@ -1847,8 +1847,8 @@ class CfgWeapons
 	{
 		scope=0;
 		scopeArsenal=0;
-		author="TFL";
-		displayName="[TFL] G3 Puff (BLACK/M81)";
+		author="Jup, Lip, Thunder";
+		displayName="[ASEC] G3 Puff (BLACK/M81)";
 		picture="";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
@@ -1864,8 +1864,8 @@ class CfgWeapons
 	{
 		scope=0;
 		scopeArsenal=0;
-		author="TFL";
-		displayName="[TFL] G3 Puff (BLACK/MCAL)";
+		author="Jup, Lip, Thunder";
+		displayName="[ASEC] G3 Puff (BLACK/MCAL)";
 		picture="";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
@@ -1881,8 +1881,8 @@ class CfgWeapons
 	{
 		scope=0;
 		scopeArsenal=0;
-		author="TFL";
-		displayName="[TFL] G3 Puff (SAND/MC)";
+		author="Jup, Lip, Thunder";
+		displayName="[ASEC] G3 Puff (SAND/MC)";
 		picture="";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
@@ -1898,8 +1898,8 @@ class CfgWeapons
 	{
 		scope=0;
 		scopeArsenal=0;
-		author="TFL";
-		displayName="[TFL] G3 Puff (SAND/AOR1)";
+		author="Jup, Lip, Thunder";
+		displayName="[ASEC] G3 Puff (SAND/AOR1)";
 		picture="";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
@@ -1915,8 +1915,8 @@ class CfgWeapons
 	{
 		scope=0;
 		scopeArsenal=0;
-		author="TFL";
-		displayName="[TFL] G3 Puff (SAND/AOR2)";
+		author="Jup, Lip, Thunder";
+		displayName="[ASEC] G3 Puff (SAND/AOR2)";
 		picture="";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
@@ -1932,8 +1932,8 @@ class CfgWeapons
 	{
 		scope=0;
 		scopeArsenal=0;
-		author="TFL";
-		displayName="[TFL] G3 Puff (SAND/MCA)";
+		author="Jup, Lip, Thunder";
+		displayName="[ASEC] G3 Puff (SAND/MCA)";
 		picture="";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
@@ -1949,8 +1949,8 @@ class CfgWeapons
 	{
 		scope=0;
 		scopeArsenal=0;
-		author="TFL";
-		displayName="[TFL] G3 Puff (SAND/M81)";
+		author="Jup, Lip, Thunder";
+		displayName="[ASEC] G3 Puff (SAND/M81)";
 		picture="";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
@@ -1966,8 +1966,8 @@ class CfgWeapons
 	{
 		scope=0;
 		scopeArsenal=0;
-		author="TFL";
-		displayName="[TFL] G3 Puff (SAND/MCAL)";
+		author="Jup, Lip, Thunder";
+		displayName="[ASEC] G3 Puff (SAND/MCAL)";
 		picture="";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
@@ -1983,8 +1983,8 @@ class CfgWeapons
 	{
 		scope=0;
 		scopeArsenal=0;
-		author="TFL";
-		displayName="[TFL] G3 PCU (GREY/MC)";
+		author="Jup, Lip, Thunder";
+		displayName="[ASEC] G3 PCU (GREY/MC)";
 		picture="";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
@@ -2000,8 +2000,8 @@ class CfgWeapons
 	{
 		scope=0;
 		scopeArsenal=0;
-		author="TFL";
-		displayName="[TFL] G3 PCU (GREY/AOR1)";
+		author="Jup, Lip, Thunder";
+		displayName="[ASEC] G3 PCU (GREY/AOR1)";
 		picture="";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
@@ -2017,8 +2017,8 @@ class CfgWeapons
 	{
 		scope=0;
 		scopeArsenal=0;
-		author="TFL";
-		displayName="[TFL] G3 PCU (GREY/AOR2)";
+		author="Jup, Lip, Thunder";
+		displayName="[ASEC] G3 PCU (GREY/AOR2)";
 		picture="";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
@@ -2034,8 +2034,8 @@ class CfgWeapons
 	{
 		scope=0;
 		scopeArsenal=0;
-		author="TFL";
-		displayName="[TFL] G3 PCU (GREY/MCA)";
+		author="Jup, Lip, Thunder";
+		displayName="[ASEC] G3 PCU (GREY/MCA)";
 		picture="";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
@@ -2051,8 +2051,8 @@ class CfgWeapons
 	{
 		scope=0;
 		scopeArsenal=0;
-		author="TFL";
-		displayName="[TFL] G3 PCU (GREY/M81)";
+		author="Jup, Lip, Thunder";
+		displayName="[ASEC] G3 PCU (GREY/M81)";
 		picture="";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
@@ -2068,8 +2068,8 @@ class CfgWeapons
 	{
 		scope=0;
 		scopeArsenal=0;
-		author="TFL";
-		displayName="[TFL] G3 PCU (GREY/MCAL)";
+		author="Jup, Lip, Thunder";
+		displayName="[ASEC] G3 PCU (GREY/MCAL)";
 		picture="";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
@@ -2085,8 +2085,8 @@ class CfgWeapons
 	{
 		scope=0;
 		scopeArsenal=0;
-		author="TFL";
-		displayName="[TFL] G3 PCU (BLACK/MC)";
+		author="Jup, Lip, Thunder";
+		displayName="[ASEC] G3 PCU (BLACK/MC)";
 		picture="";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
@@ -2102,8 +2102,8 @@ class CfgWeapons
 	{
 		scope=0;
 		scopeArsenal=0;
-		author="TFL";
-		displayName="[TFL] G3 PCU (BLACK/AOR1)";
+		author="Jup, Lip, Thunder";
+		displayName="[ASEC] G3 PCU (BLACK/AOR1)";
 		picture="";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
@@ -2119,8 +2119,8 @@ class CfgWeapons
 	{
 		scope=0;
 		scopeArsenal=0;
-		author="TFL";
-		displayName="[TFL] G3 PCU (BLACK/AOR2)";
+		author="Jup, Lip, Thunder";
+		displayName="[ASEC] G3 PCU (BLACK/AOR2)";
 		picture="";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
@@ -2136,8 +2136,8 @@ class CfgWeapons
 	{
 		scope=0;
 		scopeArsenal=0;
-		author="TFL";
-		displayName="[TFL] G3 PCU (BLACK/MCA)";
+		author="Jup, Lip, Thunder";
+		displayName="[ASEC] G3 PCU (BLACK/MCA)";
 		picture="";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
@@ -2153,8 +2153,8 @@ class CfgWeapons
 	{
 		scope=0;
 		scopeArsenal=0;
-		author="TFL";
-		displayName="[TFL] G3 PCU (BLACK/M81)";
+		author="Jup, Lip, Thunder";
+		displayName="[ASEC] G3 PCU (BLACK/M81)";
 		picture="";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
@@ -2170,8 +2170,8 @@ class CfgWeapons
 	{
 		scope=0;
 		scopeArsenal=0;
-		author="TFL";
-		displayName="[TFL] G3 PCU (BLACK/MCAL)";
+		author="Jup, Lip, Thunder";
+		displayName="[ASEC] G3 PCU (BLACK/MCAL)";
 		picture="";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
@@ -2187,8 +2187,8 @@ class CfgWeapons
 	{
 		scope=0;
 		scopeArsenal=0;
-		author="TFL";
-		displayName="[TFL] G3 PCU (MCAL/MC)";
+		author="Jup, Lip, Thunder";
+		displayName="[ASEC] G3 PCU (MCAL/MC)";
 		picture="";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
@@ -2204,8 +2204,8 @@ class CfgWeapons
 	{
 		scope=0;
 		scopeArsenal=0;
-		author="TFL";
-		displayName="[TFL] G3 PCU (MCAL/AOR1)";
+		author="Jup, Lip, Thunder";
+		displayName="[ASEC] G3 PCU (MCAL/AOR1)";
 		picture="";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
@@ -2221,8 +2221,8 @@ class CfgWeapons
 	{
 		scope=0;
 		scopeArsenal=0;
-		author="TFL";
-		displayName="[TFL] G3 PCU (MCAL/AOR2)";
+		author="Jup, Lip, Thunder";
+		displayName="[ASEC] G3 PCU (MCAL/AOR2)";
 		picture="";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
@@ -2238,8 +2238,8 @@ class CfgWeapons
 	{
 		scope=0;
 		scopeArsenal=0;
-		author="TFL";
-		displayName="[TFL] G3 PCU (MCAL/MCA)";
+		author="Jup, Lip, Thunder";
+		displayName="[ASEC] G3 PCU (MCAL/MCA)";
 		picture="";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
@@ -2255,8 +2255,8 @@ class CfgWeapons
 	{
 		scope=0;
 		scopeArsenal=0;
-		author="TFL";
-		displayName="[TFL] G3 PCU (MCAL/M81)";
+		author="Jup, Lip, Thunder";
+		displayName="[ASEC] G3 PCU (MCAL/M81)";
 		picture="";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
@@ -2272,8 +2272,8 @@ class CfgWeapons
 	{
 		scope=0;
 		scopeArsenal=0;
-		author="TFL";
-		displayName="[TFL] G3 PCU (MCAL/MCAL)";
+		author="Jup, Lip, Thunder";
+		displayName="[ASEC] G3 PCU (MCAL/MCAL)";
 		picture="";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
@@ -2289,8 +2289,8 @@ class CfgWeapons
 	{
 		scope=0;
 		scopeArsenal=0;
-		author="TFL";
-		displayName="[TFL] G3 PCU (MC/MC)";
+		author="Jup, Lip, Thunder";
+		displayName="[ASEC] G3 PCU (MC/MC)";
 		picture="";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
@@ -2306,8 +2306,8 @@ class CfgWeapons
 	{
 		scope=0;
 		scopeArsenal=0;
-		author="TFL";
-		displayName="[TFL] G3 PCU (MC/AOR1)";
+		author="Jup, Lip, Thunder";
+		displayName="[ASEC] G3 PCU (MC/AOR1)";
 		picture="";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
@@ -2323,8 +2323,8 @@ class CfgWeapons
 	{
 		scope=0;
 		scopeArsenal=0;
-		author="TFL";
-		displayName="[TFL] G3 PCU (MC/AOR2)";
+		author="Jup, Lip, Thunder";
+		displayName="[ASEC] G3 PCU (MC/AOR2)";
 		picture="";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
@@ -2340,8 +2340,8 @@ class CfgWeapons
 	{
 		scope=0;
 		scopeArsenal=0;
-		author="TFL";
-		displayName="[TFL] G3 PCU (MC/MCA)";
+		author="Jup, Lip, Thunder";
+		displayName="[ASEC] G3 PCU (MC/MCA)";
 		picture="";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
@@ -2357,8 +2357,8 @@ class CfgWeapons
 	{
 		scope=0;
 		scopeArsenal=0;
-		author="TFL";
-		displayName="[TFL] G3 PCU (MC/M81)";
+		author="Jup, Lip, Thunder";
+		displayName="[ASEC] G3 PCU (MC/M81)";
 		picture="";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
@@ -2374,8 +2374,8 @@ class CfgWeapons
 	{
 		scope=0;
 		scopeArsenal=0;
-		author="TFL";
-		displayName="[TFL] G3 PCU (MC/MCAL)";
+		author="Jup, Lip, Thunder";
+		displayName="[ASEC] G3 PCU (MC/MCAL)";
 		picture="";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
@@ -2391,8 +2391,8 @@ class CfgWeapons
 	{
 		scope=0;
 		scopeArsenal=0;
-		author="TFL";
-		displayName="[TFL] G3 PCU (TAN/MC)";
+		author="Jup, Lip, Thunder";
+		displayName="[ASEC] G3 PCU (TAN/MC)";
 		picture="";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
@@ -2408,8 +2408,8 @@ class CfgWeapons
 	{
 		scope=0;
 		scopeArsenal=0;
-		author="TFL";
-		displayName="[TFL] G3 PCU (TAN/AOR1)";
+		author="Jup, Lip, Thunder";
+		displayName="[ASEC] G3 PCU (TAN/AOR1)";
 		picture="";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
@@ -2425,8 +2425,8 @@ class CfgWeapons
 	{
 		scope=0;
 		scopeArsenal=0;
-		author="TFL";
-		displayName="[TFL] G3 PCU (TAN/AOR2)";
+		author="Jup, Lip, Thunder";
+		displayName="[ASEC] G3 PCU (TAN/AOR2)";
 		picture="";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
@@ -2442,8 +2442,8 @@ class CfgWeapons
 	{
 		scope=0;
 		scopeArsenal=0;
-		author="TFL";
-		displayName="[TFL] G3 PCU (TAN/MCA)";
+		author="Jup, Lip, Thunder";
+		displayName="[ASEC] G3 PCU (TAN/MCA)";
 		picture="";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
@@ -2459,8 +2459,8 @@ class CfgWeapons
 	{
 		scope=0;
 		scopeArsenal=0;
-		author="TFL";
-		displayName="[TFL] G3 PCU (TAN/M81)";
+		author="Jup, Lip, Thunder";
+		displayName="[ASEC] G3 PCU (TAN/M81)";
 		picture="";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
@@ -2476,8 +2476,8 @@ class CfgWeapons
 	{
 		scope=0;
 		scopeArsenal=0;
-		author="TFL";
-		displayName="[TFL] G3 PCU (TAN/MCAL)";
+		author="Jup, Lip, Thunder";
+		displayName="[ASEC] G3 PCU (TAN/MCAL)";
 		picture="";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
@@ -2489,9 +2489,4 @@ class CfgWeapons
 			uniformType="Neopren";
 		};
 	};
-};
-class cfgMods
-{
-	author="MattyIce";
-	timepacked="1618999746";
 };
