@@ -1,20 +1,19 @@
-class CfgPatches
-{
-	class ASEC_Backpack1
-	{
+class CfgPatches {
+	class ASEC_Backpacks {
 		units[]={};
-		weapons[]={};
 		requiredVersion=0.1;
 		requiredAddons[]={};
+		version="";
+		author="Jup, Lip, Thunder";
 	};
 };
-class UniformSlotInfo
-{
+
+class UniformSlotInfo {
 	slotType=0;
 	linkProxy="-";
 };
-class XtdGearModels
-{
+
+class XtdGearModels {
 	class cfgvehicles
 	{
 		class ASEC_Ranger
@@ -549,17 +548,2343 @@ class XtdGearModels
 		};
 	};
 };
-class CfgVehicles
-{
+
+class CfgVehicles {
+	class ReammoBox;
+	class Item_Base_F;
+	class Bag_Base: ReammoBox
+	{
+		tf_hasLRradio=0;
+		tf_encryptionCode="";
+		tf_range=25000;
+	};
+	class TFAR_Bag_Base: Bag_Base
+	{
+		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
+		tf_hasLRradio=1;
+		scope=1;
+		scopeCurator=1;
+	};	
+	class Steerable_Parachute_F;
+	class B_Parachute;
 	class B_Kitbag_Base;
 	class B_AssaultPack_mcamo;
+	class ASEC_511std_A_rgr: B_AssaultPack_mcamo
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="511_RUSH";
+		displayName="[ASEC] 5.11 RUSH (RangerGreen)";
+		picture="\ASEC_Backpacks\data\ui\backpack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_511_standard.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\kitbag_od_co.paa"
+		};
+		hiddenSelectionsMaterials[]={};
+		maximumLoad=500;
+		mass=40;
+	};
+	class ASEC_511std_A_blk: B_AssaultPack_mcamo
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="511_RUSH";
+		displayName="[ASEC] 5.11 RUSH (Black)";
+		picture="\ASEC_Backpacks\data\ui\backpack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_511_standard.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\kitbag_blk_co.paa"
+		};
+		maximumLoad=500;
+		mass=40;
+	};
+	class ASEC_511std_A_tan: B_AssaultPack_mcamo
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="511_RUSH";
+		displayName="[ASEC] 5.11 RUSH (Tan)";
+		picture="\ASEC_Backpacks\data\ui\backpack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_511_standard.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\kitbag_tan_co.paa"
+		};
+		maximumLoad=500;
+		mass=40;
+	};
+	class ASEC_511std_A_mcm: B_AssaultPack_mcamo
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="511_RUSH";
+		displayName="[ASEC] 5.11 RUSH (Multicam)";
+		picture="\ASEC_Backpacks\data\ui\backpack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_511_standard.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\kitbag_mc_co.paa"
+		};
+		maximumLoad=500;
+		mass=40;
+	};
+	class ASEC_511breach_A_rgr: B_AssaultPack_mcamo
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="511_RUSH";
+		displayName="[ASEC] 5.11 RUSH - Breacher (RangerGreen)";
+		picture="\ASEC_Backpacks\data\ui\backpack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_511_breacher.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\kitbag_od_co.paa"
+		};
+		hiddenSelectionsMaterials[]={};
+		maximumLoad=500;
+		mass=40;
+	};
+	class ASEC_511breach_A_blk: B_AssaultPack_mcamo
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="511_RUSH";
+		displayName="[ASEC] 5.11 RUSH - Breacher (Black)";
+		picture="\ASEC_Backpacks\data\ui\backpack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_511_breacher.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\kitbag_blk_co.paa"
+		};
+		maximumLoad=500;
+		mass=40;
+	};
+	class ASEC_511breach_A_tan: B_AssaultPack_mcamo
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="511_RUSH";
+		displayName="[ASEC] 5.11 RUSH - Breacher (Tan)";
+		picture="\ASEC_Backpacks\data\ui\backpack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_511_breacher.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\kitbag_tan_co.paa"
+		};
+		maximumLoad=500;
+		mass=40;
+	};
+	class ASEC_511breach_A_mcm: B_AssaultPack_mcamo
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="511_RUSH";
+		displayName="[ASEC] 5.11 RUSH - Breacher (Multicam)";
+		picture="\ASEC_Backpacks\data\ui\backpack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_511_breacher.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\kitbag_mc_co.paa"
+		};
+		maximumLoad=500;
+		mass=40;
+	};
+	class ASEC_511alpine_A_rgr: B_AssaultPack_mcamo
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="511_RUSH";
+		displayName="[ASEC] 5.11 RUSH - Alpine (RangerGreen)";
+		picture="\ASEC_Backpacks\data\ui\backpack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_511_alpine.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\kitbag_od_co.paa"
+		};
+		hiddenSelectionsMaterials[]={};
+		maximumLoad=500;
+		mass=40;
+	};
+	class ASEC_511alpine_A_blk: B_AssaultPack_mcamo
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="511_RUSH";
+		displayName="[ASEC] 5.11 RUSH - Alpine (Black)";
+		picture="\ASEC_Backpacks\data\ui\backpack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_511_alpine.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\kitbag_blk_co.paa"
+		};
+		maximumLoad=500;
+		mass=40;
+	};
+	class ASEC_511alpine_A_tan: B_AssaultPack_mcamo
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="511_RUSH";
+		displayName="[ASEC] 5.11 RUSH - Alpine (Tan)";
+		picture="\ASEC_Backpacks\data\ui\backpack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_511_alpine.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\kitbag_tan_co.paa"
+		};
+		maximumLoad=500;
+		mass=40;
+	};
+	class ASEC_511alpine_A_mcm: B_AssaultPack_mcamo
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="511_RUSH";
+		displayName="[ASEC] 5.11 RUSH - Alpine (Multicam)";
+		picture="\ASEC_Backpacks\data\ui\backpack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_511_alpine.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\kitbag_mc_co.paa"
+		};
+		maximumLoad=500;
+		mass=40;
+	};
+	class ASEC_511radio_A_rgr: TFAR_Bag_Base
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="511_RUSH";
+		displayName="[ASEC] 5.11 RUSH - LRR (RangerGreen)";
+		picture="\ASEC_Backpacks\data\ui\backpack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_511_radio.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\kitbag_od_co.paa"
+		};
+		hiddenSelectionsMaterials[]={};
+		maximumLoad=500;
+		mass=40;
+	    tf_hasLRradio=1;
+		tf_encryptionCode="tf_west_radio_code";
+		tf_dialog="rt1523g_radio_dialog";
+		tf_subtype="digital_lr";
+		tf_range=25000;
+	};
+	class ASEC_511radio_A_blk: TFAR_Bag_Base
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="511_RUSH";
+		displayName="[ASEC] 5.11 RUSH - LRR (Black)";
+		picture="\ASEC_Backpacks\data\ui\backpack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_511_radio.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\kitbag_blk_co.paa"
+		};
+		maximumLoad=500;
+		mass=40;
+		tf_hasLRradio=1;
+		tf_encryptionCode="tf_west_radio_code";
+		tf_dialog="rt1523g_radio_dialog";
+		tf_subtype="digital_lr";
+		tf_range=25000;
+	};
+	class ASEC_511radio_A_tan: TFAR_Bag_Base
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="511_RUSH";
+		displayName="[ASEC] 5.11 RUSH - LRR (Tan)";
+		picture="\ASEC_Backpacks\data\ui\backpack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_511_radio.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\kitbag_tan_co.paa"
+		};
+		maximumLoad=500;
+		mass=40;
+		tf_hasLRradio=1;
+		tf_encryptionCode="tf_west_radio_code";
+		tf_dialog="rt1523g_radio_dialog";
+		tf_subtype="digital_lr";
+		tf_range=25000;
+	};
+	class ASEC_511radio_A_mcm: TFAR_Bag_Base
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="511_RUSH";
+		displayName="[ASEC] 5.11 RUSH - LRR (Multicam)";
+		picture="\ASEC_Backpacks\data\ui\backpack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_511_radio.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\kitbag_mc_co.paa"
+		};
+		maximumLoad=500;
+		mass=40;
+		tf_hasLRradio=1;
+		tf_encryptionCode="tf_west_radio_code";
+		tf_dialog="rt1523g_radio_dialog";
+		tf_subtype="digital_lr";
+		tf_range=25000;
+	};
+	class ASEC_assaultpack_Breach_od: B_AssaultPack_mcamo
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="AssaultPack_Breach";
+		displayName="[ASEC] Assault Pack - Breacher (OD)";
+		picture="\ASEC_Backpacks\data\ui\assaultpack_od_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_assaultpack_V1.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\backpack_od_co.paa"
+		};
+		maximumLoad=500;
+		mass=40;
+	};
+	class ASEC_assaultpack_Breach_BLK: B_AssaultPack_mcamo
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="AssaultPack_Breach";
+		displayName="[ASEC] Assault Pack - Breacher (Black)";
+		picture="\ASEC_Backpacks\data\ui\assaultpack_blk_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_assaultpack_V1.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\backpack_BLK_co.paa"
+		};
+		maximumLoad=500;
+		mass=40;
+	};
+	class ASEC_assaultpack_Breach_tan: B_AssaultPack_mcamo
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="AssaultPack_Breach";
+		displayName="[ASEC] Assault Pack - Breacher (TAN)";
+		picture="\ASEC_Backpacks\data\ui\assaultpack_tan_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_assaultpack_V1.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\backpack_tan_co.paa"
+		};
+		maximumLoad=500;
+		mass=40;
+	};
+	class ASEC_assaultpack_Standard_od: B_AssaultPack_mcamo
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="AssaultPack_Standard";
+		displayName="[ASEC] Assault Pack (OD)";
+		picture="\ASEC_Backpacks\data\ui\assaultpack_od_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_assaultpack_V2.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\backpack_od_co.paa"
+		};
+		maximumLoad=500;
+		mass=40;
+	};
+	class ASEC_assaultpack_Standard_BLK: B_AssaultPack_mcamo
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="AssaultPack_Standard";
+		displayName="[ASEC] Assault Pack (Black)";
+		picture="\ASEC_Backpacks\data\ui\assaultpack_blk_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_assaultpack_V2.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\backpack_BLK_co.paa"
+		};
+		maximumLoad=500;
+		mass=40;
+	};
+	class ASEC_assaultpack_Standard_tan: B_AssaultPack_mcamo
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="AssaultPack_Standard";
+		displayName="[ASEC] Assault Pack (TAN)";
+		picture="\ASEC_Backpacks\data\ui\assaultpack_tan_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_assaultpack_V2.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\backpack_tan_co.paa"
+		};
+		maximumLoad=500;
+		mass=40;
+	};
+	class ASEC_mappack_breach_od: B_AssaultPack_mcamo
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="MapPack_Breacher";
+		displayName="[ASEC] Modular Assault Pack - Breacher 01 (OD)";
+		picture="\ASEC_Backpacks\data\ui\mappack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_map_breacher.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\SOG_BAG_OD_co.paa"
+		};
+		maximumLoad=500;
+		mass=40;
+	};
+	class ASEC_mappack_breach_tan: B_AssaultPack_mcamo
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="MapPack_Breacher";
+		displayName="[ASEC] Modular Assault Pack - Breacher 01 (Tan)";
+		picture="\ASEC_Backpacks\data\ui\mappack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_map_breacher.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\SOG_BAG_tan_co.paa"
+		};
+		maximumLoad=500;
+		mass=40;
+	};
+	class ASEC_mappack_breach_mc: B_AssaultPack_mcamo
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="MapPack_Breacher";
+		displayName="[ASEC] Modular Assault Pack - Breacher 01 (Multicam)";
+		picture="\ASEC_Backpacks\data\ui\mappack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_map_breacher.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\SOG_BAG_mc_co.paa"
+		};
+		maximumLoad=500;
+		mass=40;
+	};
+	class ASEC_mappack_breach_BLK: B_AssaultPack_mcamo
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="MapPack_Breacher";
+		displayName="[ASEC] Modular Assault Pack - Breacher 01 (BLK)";
+		picture="\ASEC_Backpacks\data\ui\mappack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_map_breacher.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\SOG_BAG_blk_co.paa"
+		};
+		maximumLoad=500;
+		mass=40;
+	};
+	class ASEC_mappack_Alpine_od: B_AssaultPack_mcamo
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="MapPack_Alpine";
+		displayName="[ASEC] Modular Assault Pack - Alpine 01 (OD)";
+		picture="\ASEC_Backpacks\data\ui\mappack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_map_alpine.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\SOG_BAG_OD_co.paa"
+		};
+		maximumLoad=500;
+		mass=40;
+	};
+	class ASEC_mappack_Alpine_tan: B_AssaultPack_mcamo
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="MapPack_Alpine";
+		displayName="[ASEC] Modular Assault Pack - Alpine 01 (Tan)";
+		picture="\ASEC_Backpacks\data\ui\mappack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_map_alpine.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\SOG_BAG_tan_co.paa"
+		};
+		maximumLoad=500;
+		mass=40;
+	};
+	class ASEC_mappack_Alpine_mc: B_AssaultPack_mcamo
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="MapPack_Alpine";
+		displayName="[ASEC] Modular Assault Pack - Alpine 01 (Multicam)";
+		picture="\ASEC_Backpacks\data\ui\mappack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_map_alpine.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\SOG_BAG_mc_co.paa"
+		};
+		maximumLoad=500;
+		mass=40;
+	};
+	class ASEC_mappack_Alpine_BLK: B_AssaultPack_mcamo
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="MapPack_Alpine";
+		displayName="[ASEC] Modular Assault Pack - Alpine 01 (BLK)";
+		picture="\ASEC_Backpacks\data\ui\mappack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_map_alpine.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\SOG_BAG_blk_co.paa"
+		};
+		maximumLoad=500;
+		mass=40;
+	};
+	class ASEC_mappack_Medical_od: B_AssaultPack_mcamo
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="MapPack_Medical";
+		displayName="[ASEC] Modular Assault Pack - Medical 01 (OD)";
+		picture="\ASEC_Backpacks\data\ui\mappack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_map_medical.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\SOG_BAG_OD_co.paa"
+		};
+		maximumLoad=500;
+		mass=40;
+	};
+	class ASEC_mappack_Medical_tan: B_AssaultPack_mcamo
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="MapPack_Medical";
+		displayName="[ASEC] Modular Assault Pack - Medical 01 (Tan)";
+		picture="\ASEC_Backpacks\data\ui\mappack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_map_medical.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\SOG_BAG_tan_co.paa"
+		};
+		maximumLoad=500;
+		mass=40;
+	};
+	class ASEC_mappack_Medical_mc: B_AssaultPack_mcamo
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="MapPack_Medical";
+		displayName="[ASEC] Modular Assault Pack - Medical 01 (Multicam)";
+		picture="\ASEC_Backpacks\data\ui\mappack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_map_medical.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\SOG_BAG_mc_co.paa"
+		};
+		maximumLoad=500;
+		mass=40;
+	};
+	class ASEC_mappack_Medical_BLK: B_AssaultPack_mcamo
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="MapPack_Medical";
+		displayName="[ASEC] Modular Assault Pack - Medical 01 (BLK)";
+		picture="\ASEC_Backpacks\data\ui\mappack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_map_medical.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\SOG_BAG_blk_co.paa"
+		};
+		maximumLoad=500;
+		mass=40;
+	};
+	class ASEC_mappack_Radio_od: TFAR_Bag_Base
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="MapPack_Radio";
+		displayName="[ASEC] Modular Assault Pack - Comms 01 (OD)";
+		picture="\ASEC_Backpacks\data\ui\mappack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_map_radio.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\SOG_BAG_OD_co.paa"
+		};
+		maximumLoad=500;
+		mass=40;
+		tf_hasLRradio=1;
+		tf_encryptionCode="tf_west_radio_code";
+		tf_dialog="rt1523g_radio_dialog";
+		tf_subtype="digital_lr";
+		tf_range=25000;
+	};
+	class ASEC_mappack_Radio_tan: TFAR_Bag_Base
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="MapPack_Radio";
+		displayName="[ASEC] Modular Assault Pack - Comms 01 (Tan)";
+		picture="\ASEC_Backpacks\data\ui\mappack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_map_radio.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\SOG_BAG_tan_co.paa"
+		};
+		maximumLoad=500;
+		mass=40;
+		tf_hasLRradio=1;
+		tf_encryptionCode="tf_west_radio_code";
+		tf_dialog="rt1523g_radio_dialog";
+		tf_subtype="digital_lr";
+		tf_range=25000;
+	};
+	class ASEC_mappack_Radio_mc: TFAR_Bag_Base
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="MapPack_Radio";
+		displayName="[ASEC] Modular Assault Pack - Comms 01 (Multicam)";
+		picture="\ASEC_Backpacks\data\ui\mappack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_map_radio.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\SOG_BAG_mc_co.paa"
+		};
+		maximumLoad=500;
+		mass=40;
+		tf_hasLRradio=1;
+		tf_encryptionCode="tf_west_radio_code";
+		tf_dialog="rt1523g_radio_dialog";
+		tf_subtype="digital_lr";
+		tf_range=25000;
+	};
+	class ASEC_mappack_Radio_BLK: TFAR_Bag_Base
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="MapPack_Radio";
+		displayName="[ASEC] Modular Assault Pack - Comms 01 (BLK)";
+		picture="\ASEC_Backpacks\data\ui\mappack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_map_radio.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\SOG_BAG_blk_co.paa"
+		};
+		maximumLoad=500;
+		mass=40;
+		tf_hasLRradio=1;
+		tf_encryptionCode="tf_west_radio_code";
+		tf_dialog="rt1523g_radio_dialog";
+		tf_subtype="digital_lr";
+		tf_range=25000;
+	};
+	class ASEC_mappack_Standard_od: TFAR_Bag_Base
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="MapPack_Standard";
+		displayName="[ASEC] Modular Assault Pack (OD)";
+		picture="\ASEC_Backpacks\data\ui\mappack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_map_standard.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\SOG_BAG_OD_co.paa"
+		};
+		maximumLoad=500;
+		mass=40;
+	};
+	class ASEC_mappack_Standard_tan: B_AssaultPack_mcamo
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="MapPack_Standard";
+		displayName="[ASEC] Modular Assault Pack (Tan)";
+		picture="\ASEC_Backpacks\data\ui\mappack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_map_standard.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\SOG_BAG_tan_co.paa"
+		};
+		maximumLoad=500;
+		mass=40;
+	};
+	class ASEC_mappack_Standard_mc: B_AssaultPack_mcamo
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="MapPack_Standard";
+		displayName="[ASEC] Modular Assault Pack (Multicam)";
+		picture="\ASEC_Backpacks\data\ui\mappack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_map_standard.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\SOG_BAG_mc_co.paa"
+		};
+		maximumLoad=500;
+		mass=40;
+	};
+	class ASEC_mappack_Standard_BLK: B_AssaultPack_mcamo
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="MapPack_Standard";
+		displayName="[ASEC] Modular Assault Pack (BLK)";
+		picture="\ASEC_Backpacks\data\ui\mappack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_map_standard.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\SOG_BAG_blk_co.paa"
+		};
+		maximumLoad=500;
+		mass=40;
+	};
+	class ASEC_mappack_breach_v2_od: B_AssaultPack_mcamo
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="MapPack_Breacher";
+		displayName="[ASEC] Modular Assault Pack - Breacher 02 (OD)";
+		picture="\ASEC_Backpacks\data\ui\mappack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_map_breacher_v2.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\SOG_BAG_OD_co.paa"
+		};
+		maximumLoad=500;
+		mass=40;
+	};
+	class ASEC_mappack_breach_v2_tan: B_AssaultPack_mcamo
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="MapPack_Breacher";
+		displayName="[ASEC] Modular Assault Pack - Breacher 02 (Tan)";
+		picture="\ASEC_Backpacks\data\ui\mappack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_map_breacher_v2.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\SOG_BAG_tan_co.paa"
+		};
+		maximumLoad=500;
+		mass=40;
+	};
+	class ASEC_mappack_breach_v2_mc: B_AssaultPack_mcamo
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="MapPack_Breacher";
+		displayName="[ASEC] Modular Assault Pack - Breacher 02 (Multicam)";
+		picture="\ASEC_Backpacks\data\ui\mappack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_map_breacher_v2.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\SOG_BAG_mc_co.paa"
+		};
+		maximumLoad=500;
+		mass=40;
+	};
+	class ASEC_mappack_breach_v2_BLK: B_AssaultPack_mcamo
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="MapPack_Breacher";
+		displayName="[ASEC] Modular Assault Pack - Breacher 02 (BLK)";
+		picture="\ASEC_Backpacks\data\ui\mappack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_map_breacher_v2.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\SOG_BAG_blk_co.paa"
+		};
+		maximumLoad=500;
+		mass=40;
+	};
+	class ASEC_mappack_Alpine_v2_od: B_AssaultPack_mcamo
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="MapPack_Alpine";
+		displayName="[ASEC] Modular Assault Pack - Alpine 02 (OD)";
+		picture="\ASEC_Backpacks\data\ui\mappack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_map_alpine_v2.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\SOG_BAG_OD_co.paa"
+		};
+		maximumLoad=500;
+		mass=40;
+	};
+	class ASEC_mappack_Alpine_v2_tan: B_AssaultPack_mcamo
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="MapPack_Alpine";
+		displayName="[ASEC] Modular Assault Pack - Alpine 02 (Tan)";
+		picture="\ASEC_Backpacks\data\ui\mappack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_map_alpine_v2.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\SOG_BAG_tan_co.paa"
+		};
+		maximumLoad=500;
+		mass=40;
+	};
+	class ASEC_mappack_Alpine_v2_mc: B_AssaultPack_mcamo
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="MapPack_Alpine";
+		displayName="[ASEC] Modular Assault Pack - Alpine 02 (Multicam)";
+		picture="\ASEC_Backpacks\data\ui\mappack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_map_alpine_v2.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\SOG_BAG_mc_co.paa"
+		};
+		maximumLoad=500;
+		mass=40;
+	};
+	class ASEC_mappack_Alpine_v2_BLK: B_AssaultPack_mcamo
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="MapPack_Alpine";
+		displayName="[ASEC] Modular Assault Pack - Alpine 02 (BLK)";
+		picture="\ASEC_Backpacks\data\ui\mappack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_map_alpine_v2.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\SOG_BAG_blk_co.paa"
+		};
+		maximumLoad=500;
+		mass=40;
+	};
+	class ASEC_mappack_Medical_v2_od: B_AssaultPack_mcamo
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="MapPack_Medical";
+		displayName="[ASEC] Modular Assault Pack - Medical 02 (OD)";
+		picture="\ASEC_Backpacks\data\ui\mappack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_map_medical_v2.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\SOG_BAG_OD_co.paa"
+		};
+		maximumLoad=500;
+		mass=40;
+	};
+	class ASEC_mappack_Medical_v2_tan: B_AssaultPack_mcamo
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="MapPack_Medical";
+		displayName="[ASEC] Modular Assault Pack - Medical 02 (Tan)";
+		picture="\ASEC_Backpacks\data\ui\mappack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_map_medical_v2.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\SOG_BAG_tan_co.paa"
+		};
+		maximumLoad=500;
+		mass=40;
+	};
+	class ASEC_mappack_Medical_v2_mc: B_AssaultPack_mcamo
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="MapPack_Medical";
+		displayName="[ASEC] Modular Assault Pack - Medical 02 (Multicam)";
+		picture="\ASEC_Backpacks\data\ui\mappack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_map_medical_v2.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\SOG_BAG_mc_co.paa"
+		};
+		maximumLoad=500;
+		mass=40;
+	};
+	class ASEC_mappack_Medical_v2_BLK: B_AssaultPack_mcamo
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="MapPack_Medical";
+		displayName="[ASEC] Modular Assault Pack - Medical 02 (BLK)";
+		picture="\ASEC_Backpacks\data\ui\mappack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_map_medical_v2.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\SOG_BAG_blk_co.paa"
+		};
+		maximumLoad=500;
+		mass=40;
+	};
+	class ASEC_mappack_Radio_v2_od: TFAR_Bag_Base
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="MapPack_Radio";
+		displayName="[ASEC] Modular Assault Pack - Comms 02 (OD)";
+		picture="\ASEC_Backpacks\data\ui\mappack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_map_radio_v2.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\SOG_BAG_OD_co.paa"
+		};
+		maximumLoad=500;
+		mass=40;
+		tf_hasLRradio=1;
+		tf_encryptionCode="tf_west_radio_code";
+		tf_dialog="rt1523g_radio_dialog";
+		tf_subtype="digital_lr";
+		tf_range=25000;
+	};
+	class ASEC_mappack_Radio_v2_tan: TFAR_Bag_Base
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="MapPack_Radio";
+		displayName="[ASEC] Modular Assault Pack - Comms 02 (Tan)";
+		picture="\ASEC_Backpacks\data\ui\mappack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_map_radio_v2.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\SOG_BAG_tan_co.paa"
+		};
+		maximumLoad=500;
+		mass=40;
+		tf_hasLRradio=1;
+		tf_encryptionCode="tf_west_radio_code";
+		tf_dialog="rt1523g_radio_dialog";
+		tf_subtype="digital_lr";
+		tf_range=25000;
+	};
+	class ASEC_mappack_Radio_v2_mc: TFAR_Bag_Base
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="MapPack_Radio";
+		displayName="[ASEC] Modular Assault Pack - Comms 02 (Multicam)";
+		picture="\ASEC_Backpacks\data\ui\mappack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_map_radio_v2.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\SOG_BAG_mc_co.paa"
+		};
+		maximumLoad=500;
+		mass=40;
+		tf_hasLRradio=1;
+		tf_encryptionCode="tf_west_radio_code";
+		tf_dialog="rt1523g_radio_dialog";
+		tf_subtype="digital_lr";
+		tf_range=25000;
+	};
+	class ASEC_mappack_Radio_v2_BLK: TFAR_Bag_Base
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="MapPack_Radio";
+		displayName="[ASEC] Modular Assault Pack - Comms 02 (BLK)";
+		picture="\ASEC_Backpacks\data\ui\mappack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_map_radio_v2.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\SOG_BAG_blk_co.paa"
+		};
+		maximumLoad=500;
+		mass=40;
+		tf_hasLRradio=1;
+		tf_encryptionCode="tf_west_radio_code";
+		tf_dialog="rt1523g_radio_dialog";
+		tf_subtype="digital_lr";
+		tf_range=25000;
+	};
+	class ASEC_tacmed_BP_01: B_AssaultPack_mcamo
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="TacMed_BackPack";
+		displayName="[ASEC] Tactical Medicine Pack - Standard";
+		picture="\ASEC_Backpacks\data\ui\mappack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_medtac_pack.p3d";
+		hiddenSelections[]={};
+		hiddenSelectionsTextures[]={};
+		maximumLoad=500;
+		mass=40;
+	};
+	class ASEC_talon22_A_rgr: B_AssaultPack_mcamo
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="TALON_22";
+		displayName="[ASEC] Osprey TALON 22 - SOP (RangerGreen)";
+		picture="\ASEC_Backpacks\data\ui\backpack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_talon22.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\taloon_od.paa"
+		};
+		maximumLoad=500;
+		mass=40;
+		tf_hasLRradio=1;
+		tf_encryptionCode="tf_west_radio_code";
+		tf_dialog="rt1523g_radio_dialog";
+		tf_subtype="digital_lr";
+		tf_range=25000;
+	};
+	class ASEC_talon22_A_blk: B_AssaultPack_mcamo
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="TALON_22";
+		displayName="[ASEC] Osprey TALON 22 - SOP (Black)";
+		picture="\ASEC_Backpacks\data\ui\backpack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_talon22.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\taloon_blk.paa"
+		};
+		maximumLoad=500;
+		mass=40;
+		tf_hasLRradio=1;
+		tf_encryptionCode="tf_west_radio_code";
+		tf_dialog="rt1523g_radio_dialog";
+		tf_subtype="digital_lr";
+		tf_range=25000;
+	};
+	class ASEC_talon22_A_mcm: B_AssaultPack_mcamo
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="TALON_22";
+		displayName="[ASEC] Osprey TALON 22 - SOP (Multicam)";
+		picture="\ASEC_Backpacks\data\ui\backpack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_talon22.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\taloon_mc.paa"
+		};
+		maximumLoad=500;
+		mass=40;
+		tf_hasLRradio=1;
+		tf_encryptionCode="tf_west_radio_code";
+		tf_dialog="rt1523g_radio_dialog";
+		tf_subtype="digital_lr";
+		tf_range=25000;
+	};
+	class ASEC_talon22_A_tan: B_AssaultPack_mcamo
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="TALON_22";
+		displayName="[ASEC] Osprey TALON 22 - SOP (Tan)";
+		picture="\ASEC_Backpacks\data\ui\backpack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_talon22.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\taloon_tan.paa"
+		};
+		maximumLoad=500;
+		mass=40;
+		tf_hasLRradio=1;
+		tf_encryptionCode="tf_west_radio_code";
+		tf_dialog="rt1523g_radio_dialog";
+		tf_subtype="digital_lr";
+		tf_range=25000;
+	};
+	class FLB_Halo_Deployed: Steerable_Parachute_F
+	{
+		author="Jup, Lip, Thunder";
+		_generalMacro="FLB_Halo_Deployed";
+		scope=1;
+		displayname="[ASEC] HALO Operations Rig";
+		model="ASEC_Backpacks\data\model\ASEC_halo_gear_V2.p3d";
+		hiddenSelections[]={};
+		hiddenSelectionsTextures[]={};
+	};
+	class FLB_Halo_Rig_01: B_Parachute
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		_generalMacro="COS_PARACHUTE";
+		displayname="[ASEC] HALO Operations Rig";
+		model="ASEC_Backpacks\data\model\ASEC_halo_gear_V1.p3d";
+		ParachuteClass="FLB_Halo_Deployed";
+		descriptionShort="HALO Operations Rig";
+		hiddenSelections[]={};
+		hiddenSelectionsTextures[]={};
+		picture="\A3\Air_F_Beta\Parachute_01\Data\UI\Portrait_Parachute_01_CA.paa";
+	};
+	class ASEC_flatpack_base_rgr: B_AssaultPack_mcamo
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="Flat_Pack";
+		displayName="[ASEC] Flat Pack (RangerGreen)";
+		picture="\ASEC_Backpacks\data\ui\backpack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_flatpack.p3d";
+		hiddenSelections[]={};
+		hiddenSelectionsTextures[]={};
+		hiddenSelectionsMaterials[]={};
+		maximumLoad=350;
+		mass=40;
+	};
+	class ASEC_flatpack_base_mcm: B_AssaultPack_mcamo
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="Flat_Pack";
+		displayName="[ASEC] Flat Pack (Multicam)";
+		picture="\ASEC_Backpacks\data\ui\backpack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_flatpack.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\ASEC_flatpack_mc_co.paa"
+		};
+		maximumLoad=350;
+		mass=40;
+	};
+	class ASEC_flatpack_base_khk: B_AssaultPack_mcamo
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="Flat_Pack";
+		displayName="[ASEC] Flat Pack (Khaki)";
+		picture="\ASEC_Backpacks\data\ui\backpack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_flatpack.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\ASEC_flatpack_khk_co.paa"
+		};
+		maximumLoad=350;
+		mass=40;
+	};
+	class ASEC_flatpack_breacher_rgr: B_AssaultPack_mcamo
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="Flat_Pack";
+		displayName="[ASEC] Flat Pack - Breacher (RangerGreen)";
+		picture="\ASEC_Backpacks\data\ui\backpack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_flatpack_breacher.p3d";
+		hiddenSelections[]={};
+		hiddenSelectionsTextures[]={};
+		hiddenSelectionsMaterials[]={};
+		maximumLoad=350;
+		mass=40;
+	};
+	class ASEC_flatpack_breacher_mcm: B_AssaultPack_mcamo
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="Flat_Pack";
+		displayName="[ASEC] Flat Pack - Breacher (Multicam)";
+		picture="\ASEC_Backpacks\data\ui\backpack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_flatpack_breacher.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\ASEC_flatpack_mc_co.paa"
+		};
+		maximumLoad=350;
+		mass=40;
+	};
+	class ASEC_flatpack_breacher_khk: B_AssaultPack_mcamo
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="Flat_Pack";
+		displayName="[ASEC] Flat Pack - Breacher (Khaki)";
+		picture="\ASEC_Backpacks\data\ui\backpack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_flatpack_breacher.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\ASEC_flatpack_khk_co.paa"
+		};
+		maximumLoad=350;
+		mass=40;
+	};
+	class ASEC_flatpack_radio_rgr: TFAR_Bag_Base
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="Flat_Pack";
+		displayName="[ASEC] Flat Pack - Radio (RangerGreen)";
+		picture="\ASEC_Backpacks\data\ui\backpack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_flatpack_radio.p3d";
+		hiddenSelections[]={};
+		hiddenSelectionsTextures[]={};
+		hiddenSelectionsMaterials[]={};
+		maximumLoad=350;
+		mass=40;
+		tf_hasLRradio=1;
+		tf_encryptionCode="tf_west_radio_code";
+		tf_dialog="rt1523g_radio_dialog";
+		tf_subtype="digital_lr";
+		tf_range=25000;
+	};
+	class ASEC_flatpack_radio_mcm: TFAR_Bag_Base
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="Flat_Pack";
+		displayName="[ASEC] Flat Pack - Radio (Multicam)";
+		picture="\ASEC_Backpacks\data\ui\backpack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_flatpack_radio.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\ASEC_flatpack_mc_co.paa"
+		};
+		maximumLoad=350;
+		mass=40;
+		tf_hasLRradio=1;
+		tf_encryptionCode="tf_west_radio_code";
+		tf_dialog="rt1523g_radio_dialog";
+		tf_subtype="digital_lr";
+		tf_range=25000;
+	};
+	class ASEC_flatpack_radio_khk: TFAR_Bag_Base
+	{
+		author="Jup, Lip, Thunder";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="Flat_Pack";
+		displayName="[ASEC] Flat Pack - Radio (Khaki)";
+		picture="\ASEC_Backpacks\data\ui\backpack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_flatpack_radio.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\ASEC_flatpack_khk_co.paa"
+		};
+		maximumLoad=350;
+		mass=40;
+		tf_hasLRradio=1;
+		tf_encryptionCode="tf_west_radio_code";
+		tf_dialog="rt1523g_radio_dialog";
+		tf_subtype="digital_lr";
+		tf_range=25000;
+	};
+	class ASEC_mountainpack_tan: B_AssaultPack_mcamo
+	{
+		author="Jup, Lip, Thunder";
+		scope=0;
+		scopeCurator=0;
+		scopeArsenal=0;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="511_RUSH";
+		displayName="[ASEC] Arcteryx - 30L Assault Pack (Tan)";
+		picture="\ASEC_Backpacks\data\ui\backpack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_mountainpack.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\mountain_tan.paa"
+		};
+		maximumLoad=400;
+		mass=40;
+	};
+	class ASEC_mountainpack_od: B_AssaultPack_mcamo
+	{
+		author="Jup, Lip, Thunder";
+		scope=0;
+		scopeCurator=0;
+		scopeArsenal=0;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="511_RUSH";
+		displayName="[ASEC] Arcteryx - 30L Assault Pack (RangerGreen)";
+		picture="\ASEC_Backpacks\data\ui\backpack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_mountainpack.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\mountain_od.paa"
+		};
+		maximumLoad=400;
+		mass=40;
+	};
+	class ASEC_mountainpack_mc: B_AssaultPack_mcamo
+	{
+		author="Jup, Lip, Thunder";
+		scope=0;
+		scopeCurator=0;
+		scopeArsenal=0;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="511_RUSH";
+		displayName="[ASEC] Arcteryx - 30L Assault Pack (Multicam)";
+		picture="\ASEC_Backpacks\data\ui\backpack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_mountainpack.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\mountain_mc.paa"
+		};
+		maximumLoad=400;
+		mass=40;
+	};
+	class ASEC_mountainpack_training: B_AssaultPack_mcamo
+	{
+		author="Jup, Lip, Thunder";
+		scope=0;
+		scopeCurator=0;
+		scopeArsenal=0;
+		icon="iconBackpack";
+		transportMaxWeapons=1;
+		transportMaxMagazines=20;
+		isbackpack=1;
+		reversed=1;
+		mapSize=2;
+		vehicleClass="Backpacks";
+		allowedSlots[]={901};
+		_generalMacro="511_RUSH";
+		displayName="[ASEC] Arcteryx - 30L Assault Pack (HI-VIS)";
+		picture="\ASEC_Backpacks\data\ui\backpack_ca.paa";
+		model="ASEC_Backpacks\data\model\ASEC_mountainpack.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ASEC_Backpacks\data\tex\mountain_hivis.paa"
+		};
+		maximumLoad=400;
+		mass=40;
+	};
+	
+	//Backpack2
 	class ASEC_Ranger_BLK_AVS: B_AssaultPack_mcamo
 	{
 		author="Jup, Lip, Thunder";
 		scope=2;
 		displayName="[ASEC] Ranger Backpack AVS (BLK)";
-		model="ASEC_Backpack1\ranger_backpack_avs.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\data\model\ranger_backpack_avs.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -573,7 +2898,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"ASEC_Backpack1\tex\backpack_blk.paa"
+			"ASEC_Backpacks\data\tex\backpack_blk.paa"
 		};
 		class XtdGearInfo
 		{
@@ -587,8 +2912,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=2;
 		displayName="[ASEC] Ranger Backpack AVS (CB)";
-		model="ASEC_Backpack1\ranger_backpack_avs.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\data\model\ranger_backpack_avs.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -602,7 +2927,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"ASEC_Backpack1\tex\backpack_cb.paa"
+			"ASEC_Backpacks\data\tex\backpack_cb.paa"
 		};
 		class XtdGearInfo
 		{
@@ -616,8 +2941,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=2;
 		displayName="[ASEC] Ranger Backpack AVS (MC)";
-		model="ASEC_Backpack1\ranger_backpack_avs.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\data\model\ranger_backpack_avs.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -631,7 +2956,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"ASEC_Backpack1\tex\backpack_mc.paa"
+			"ASEC_Backpacks\data\tex\backpack_mc.paa"
 		};
 		class XtdGearInfo
 		{
@@ -645,8 +2970,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=2;
 		displayName="[ASEC] Ranger Backpack AVS (RG)";
-		model="ASEC_Backpack1\ranger_backpack_avs.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\data\model\ranger_backpack_avs.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -660,7 +2985,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"ASEC_Backpack1\tex\backpack_rg.paa"
+			"ASEC_Backpacks\data\tex\backpack_rg.paa"
 		};
 		class XtdGearInfo
 		{
@@ -674,8 +2999,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=2;
 		displayName="[ASEC] Ranger Backpack JPC (BLK)";
-		model="ASEC_Backpack1\ranger_backpack_jpc.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\data\model\ranger_backpack_jpc.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -689,7 +3014,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"ASEC_Backpack1\tex\backpack_blk.paa"
+			"ASEC_Backpacks\data\tex\backpack_blk.paa"
 		};
 		class XtdGearInfo
 		{
@@ -703,8 +3028,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=2;
 		displayName="[ASEC] Ranger Backpack JPC (CB)";
-		model="ASEC_Backpack1\ranger_backpack_jpc.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\data\model\ranger_backpack_jpc.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -718,7 +3043,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"ASEC_Backpack1\tex\backpack_cb.paa"
+			"ASEC_Backpacks\data\tex\backpack_cb.paa"
 		};
 		class XtdGearInfo
 		{
@@ -732,8 +3057,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=2;
 		displayName="[ASEC] Ranger Backpack JPC (MC)";
-		model="ASEC_Backpack1\ranger_backpack_jpc.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\data\model\ranger_backpack_jpc.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -747,7 +3072,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"ASEC_Backpack1\tex\backpack_mc.paa"
+			"ASEC_Backpacks\data\tex\backpack_mc.paa"
 		};
 		class XtdGearInfo
 		{
@@ -761,8 +3086,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=2;
 		displayName="[ASEC] Ranger Backpack JPC (RG)";
-		model="ASEC_Backpack1\ranger_backpack_jpc.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\data\model\ranger_backpack_jpc.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -776,7 +3101,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"ASEC_Backpack1\tex\backpack_rg.paa"
+			"ASEC_Backpacks\data\tex\backpack_rg.paa"
 		};
 		class XtdGearInfo
 		{
@@ -790,8 +3115,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Eagle Pack (MC)";
-		model="ASEC_Backpack1\eaglepack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\eaglepack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -823,8 +3148,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Eagle Backpack (MC)";
-		model="ASEC_Backpack1\eaglepack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\eaglepack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -842,7 +3167,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\strap_co.paa"
+			"ASEC_Backpacks\data\tex\strap_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -856,8 +3181,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Comms Eagle Pack (MC)";
-		model="ASEC_Backpack1\eaglepack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\eaglepack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -889,8 +3214,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Comms Eagle Backpack (MC)";
-		model="ASEC_Backpack1\eaglepack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\eaglepack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -908,7 +3233,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\antenna\slingshot_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\re\radio_co.paa",
-			"ASEC_Backpack1\tex\strap_co.paa"
+			"ASEC_Backpacks\data\tex\strap_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -922,8 +3247,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=2;
 		displayName="[ASEC] Mystery Ranch 3DA CL (CB)";
-		model="ASEC_Backpack1\MysteryCL.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\data\model\MysteryCL.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -937,7 +3262,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"ASEC_Backpack1\tex\mysteryCL_co.paa"
+			"ASEC_Backpacks\data\tex\mysteryCL_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -950,8 +3275,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=2;
 		displayName="[ASEC] Mystery Ranch 3DA CL (MC)";
-		model="ASEC_Backpack1\MysteryCL.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\data\model\MysteryCL.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -965,7 +3290,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"ASEC_Backpack1\tex\mysteryCL_mc_co.paa"
+			"ASEC_Backpacks\data\tex\mysteryCL_mc_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -978,8 +3303,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=2;
 		displayName="[ASEC] Mystery Ranch ASAP (BLK)";
-		model="ASEC_Backpack1\MysteryASAP.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\data\model\MysteryASAP.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -993,7 +3318,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"ASEC_Backpack1\tex\mysteryASAP_blk_co.paa"
+			"ASEC_Backpacks\data\tex\mysteryASAP_blk_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -1006,8 +3331,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=2;
 		displayName="[ASEC] Mystery Ranch ASAP (CB)";
-		model="ASEC_Backpack1\MysteryASAP.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\data\model\MysteryASAP.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -1021,7 +3346,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"ASEC_Backpack1\tex\mysteryASAP_co.paa"
+			"ASEC_Backpacks\data\tex\mysteryASAP_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -1034,8 +3359,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=2;
 		displayName="[ASEC] Mystery Ranch ASAP (GRY)";
-		model="ASEC_Backpack1\MysteryASAP.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\data\model\MysteryASAP.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -1049,7 +3374,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"ASEC_Backpack1\tex\mysteryASAP_gry_co.paa"
+			"ASEC_Backpacks\data\tex\mysteryASAP_gry_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -1062,8 +3387,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=2;
 		displayName="[ASEC] Mystery Ranch ASAP (MC)";
-		model="ASEC_Backpack1\MysteryASAP.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\data\model\MysteryASAP.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -1077,7 +3402,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"ASEC_Backpack1\tex\mysteryASAP_mc_co.paa"
+			"ASEC_Backpacks\data\tex\mysteryASAP_mc_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -1090,8 +3415,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=2;
 		displayName="[ASEC] 30L - Arcteryx (HIVIS)";
-		model="ASEC_Backpack1\arcteryxbackpack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\arcteryxbackpack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -1105,7 +3430,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"ASEC_Backpack1\tex\mountain_hivis.paa"
+			"ASEC_Backpacks\data\tex\mountain_hivis.paa"
 		};
 		class XtdGearInfo
 		{
@@ -1118,8 +3443,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=2;
 		displayName="[ASEC] 30L - Arcteryx (MC)";
-		model="ASEC_Backpack1\arcteryxbackpack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\arcteryxbackpack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -1133,7 +3458,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"ASEC_Backpack1\tex\mountain_mc.paa"
+			"ASEC_Backpacks\data\tex\mountain_mc.paa"
 		};
 		class XtdGearInfo
 		{
@@ -1146,8 +3471,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=2;
 		displayName="[ASEC] 30L - Arcteryx (MCT)";
-		model="ASEC_Backpack1\arcteryxbackpack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\arcteryxbackpack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -1161,7 +3486,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"ASEC_Backpack1\tex\mountain_mct.paa"
+			"ASEC_Backpacks\data\tex\mountain_mct.paa"
 		};
 		class XtdGearInfo
 		{
@@ -1174,8 +3499,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=2;
 		displayName="[ASEC] 30L - Arcteryx (OD)";
-		model="ASEC_Backpack1\arcteryxbackpack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\arcteryxbackpack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -1189,7 +3514,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"ASEC_Backpack1\tex\mountain_od.paa"
+			"ASEC_Backpacks\data\tex\mountain_od.paa"
 		};
 		class XtdGearInfo
 		{
@@ -1202,8 +3527,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=2;
 		displayName="[ASEC] 30L - Arcteryx (TAN)";
-		model="ASEC_Backpack1\arcteryxbackpack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\arcteryxbackpack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -1217,7 +3542,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"ASEC_Backpack1\tex\mountain_tan.paa"
+			"ASEC_Backpacks\data\tex\mountain_tan.paa"
 		};
 		class XtdGearInfo
 		{
@@ -1230,8 +3555,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS (AOR1)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -1255,7 +3580,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"",
 			"",
@@ -1280,8 +3605,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bangerpouch (AOR1)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -1305,7 +3630,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"",
 			"",
@@ -1330,8 +3655,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bangerpouch Bolt (AOR1)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -1355,7 +3680,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"",
 			"",
@@ -1380,8 +3705,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bangerpouch Bolt Halligan (AOR1)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -1405,7 +3730,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
@@ -1430,8 +3755,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bangerpouch Bolt Halligan 2 (AOR1)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -1455,7 +3780,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
@@ -1480,8 +3805,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bangerpouch Bolt Halligan Mags (AOR1)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -1505,7 +3830,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -1530,8 +3855,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bangerpouch Bolt Halligan 2 Mags (AOR1)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -1555,7 +3880,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -1580,8 +3905,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bangerpouch Halligan (AOR1)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -1605,7 +3930,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
@@ -1630,8 +3955,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bangerpouch Halligan 2 (AOR1)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -1655,7 +3980,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
@@ -1680,8 +4005,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bangerpouch Halligan Mags (AOR1)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -1705,7 +4030,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -1730,8 +4055,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bangerpouch Halligan 2 Mags (AOR1)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -1755,7 +4080,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -1780,8 +4105,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bangerpouch Bolt Mags (AOR1)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -1805,7 +4130,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -1830,8 +4155,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bangerpouch Mags (AOR1)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -1855,7 +4180,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -1880,8 +4205,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bolt (AOR1)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -1905,7 +4230,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"",
 			"",
@@ -1930,8 +4255,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bolt Halligan (AOR1)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -1955,7 +4280,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
@@ -1980,8 +4305,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bolt Halligan 2 (AOR1)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -2005,7 +4330,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
@@ -2030,8 +4355,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bolt Halligan Mags (AOR1)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -2055,7 +4380,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -2080,8 +4405,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bolt Halligan 2 Mags (AOR1)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -2105,7 +4430,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -2130,8 +4455,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bolt Mags (AOR1)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -2155,7 +4480,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -2180,8 +4505,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bolt (AOR1)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -2205,13 +4530,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\data\tex\ack_avs_aor1_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -2230,8 +4555,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bolt Halligan (AOR1)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -2255,13 +4580,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -2280,8 +4605,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bolt Halligan 2 (AOR1)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -2305,13 +4630,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -2330,8 +4655,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bolt Halligan Mags (AOR1)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -2355,13 +4680,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -2380,8 +4705,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bolt Halligan 2 Mags (AOR1)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -2405,13 +4730,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -2430,8 +4755,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bolt Mags (AOR1)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -2455,13 +4780,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -2480,8 +4805,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Halligan (AOR1)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -2505,7 +4830,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
@@ -2530,8 +4855,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Halligan Mags (AOR1)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -2555,7 +4880,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -2580,8 +4905,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Halligan (AOR1)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -2605,7 +4930,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
@@ -2630,8 +4955,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Halligan 2 Mags (AOR1)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -2655,7 +4980,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -2680,8 +5005,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Halligan (AOR1)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -2705,13 +5030,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -2730,8 +5055,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Halligan 2 (AOR1)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -2755,13 +5080,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -2780,8 +5105,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Halligan Mags (AOR1)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -2805,13 +5130,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -2830,8 +5155,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Halligan 2 Mags (AOR1)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -2855,13 +5180,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -2880,8 +5205,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Mags (AOR1)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -2905,7 +5230,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -2930,8 +5255,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS (AOR1)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -2955,13 +5280,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -2980,8 +5305,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Mags (AOR1)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -3005,13 +5330,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -3030,8 +5355,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS (AOR2)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -3055,7 +5380,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"",
 			"",
@@ -3080,8 +5405,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bangerpouch (AOR2)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -3105,7 +5430,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"",
 			"",
@@ -3130,8 +5455,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bangerpouch Bolt (AOR2)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -3155,7 +5480,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"",
 			"",
@@ -3180,8 +5505,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bangerpouch Bolt Halligan (AOR2)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -3205,7 +5530,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
@@ -3230,8 +5555,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bangerpouch Bolt Halligan 2 (AOR2)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -3255,7 +5580,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
@@ -3280,8 +5605,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bangerpouch Bolt Halligan Mags (AOR2)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -3305,7 +5630,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -3330,8 +5655,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bangerpouch Bolt Halligan 2 Mags (AOR2)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -3355,7 +5680,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -3380,8 +5705,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bangerpouch Halligan (AOR2)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -3405,7 +5730,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
@@ -3430,8 +5755,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bangerpouch Halligan 2 (AOR2)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -3455,7 +5780,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
@@ -3480,8 +5805,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bangerpouch Halligan Mags (AOR2)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -3505,7 +5830,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -3530,8 +5855,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bangerpouch Halligan 2 Mags (AOR2)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -3555,7 +5880,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -3580,8 +5905,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bangerpouch Bolt Mags (AOR2)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -3605,7 +5930,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -3630,8 +5955,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bangerpouch Mags (AOR2)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -3655,7 +5980,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -3680,8 +6005,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bolt (AOR2)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -3705,7 +6030,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"",
 			"",
@@ -3730,8 +6055,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bolt Halligan (AOR2)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -3755,7 +6080,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
@@ -3780,8 +6105,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bolt Halligan 2 (AOR2)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -3805,7 +6130,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
@@ -3830,8 +6155,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bolt Halligan Mags (AOR2)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -3855,7 +6180,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -3880,8 +6205,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bolt Halligan 2 Mags (AOR2)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -3905,7 +6230,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -3930,8 +6255,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bolt Mags (AOR2)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -3955,7 +6280,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -3980,8 +6305,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bolt (AOR2)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -4005,13 +6330,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -4030,8 +6355,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bolt Halligan (AOR2)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -4055,13 +6380,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -4080,8 +6405,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bolt Halligan 2 (AOR2)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -4105,13 +6430,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -4130,8 +6455,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bolt Halligan Mags (AOR2)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -4155,13 +6480,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -4180,8 +6505,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bolt Halligan 2 Mags (AOR2)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -4205,13 +6530,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -4230,8 +6555,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bolt Mags (AOR2)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -4255,13 +6580,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -4280,8 +6605,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Halligan (AOR2)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -4305,7 +6630,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
@@ -4330,8 +6655,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Halligan Mags (AOR2)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -4355,7 +6680,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -4380,8 +6705,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Halligan (AOR2)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -4405,7 +6730,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
@@ -4430,8 +6755,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Halligan 2 Mags (AOR2)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -4455,7 +6780,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -4480,8 +6805,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Halligan (AOR2)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -4505,13 +6830,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -4530,8 +6855,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Halligan 2 (AOR2)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -4555,13 +6880,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -4580,8 +6905,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Halligan Mags (AOR2)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -4605,13 +6930,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -4630,8 +6955,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Halligan 2 Mags (AOR2)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -4655,13 +6980,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -4680,8 +7005,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Mags (AOR2)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -4705,7 +7030,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -4730,8 +7055,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS (AOR2)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -4755,13 +7080,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -4780,8 +7105,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Mags (AOR2)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -4805,13 +7130,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -4830,8 +7155,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS (MC)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -4855,7 +7180,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"",
 			"",
@@ -4880,8 +7205,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bangerpouch (MC)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -4905,7 +7230,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"",
 			"",
@@ -4930,8 +7255,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bangerpouch Bolt (MC)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -4955,7 +7280,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"",
 			"",
@@ -4980,8 +7305,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bangerpouch Bolt Halligan (MC)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -5005,7 +7330,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
@@ -5030,8 +7355,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bangerpouch Bolt Halligan 2 (MC)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -5055,7 +7380,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
@@ -5080,8 +7405,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bangerpouch Bolt Halligan Mags (MC)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -5105,7 +7430,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -5130,8 +7455,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bangerpouch Bolt Halligan 2 Mags (MC)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -5155,7 +7480,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -5180,8 +7505,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bangerpouch Halligan (MC)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -5205,7 +7530,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
@@ -5230,8 +7555,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bangerpouch Halligan 2 (MC)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -5255,7 +7580,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
@@ -5280,8 +7605,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bangerpouch Halligan Mags (MC)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -5305,7 +7630,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -5330,8 +7655,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bangerpouch Halligan 2 Mags (MC)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -5355,7 +7680,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -5380,8 +7705,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bangerpouch Bolt Mags (MC)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -5405,7 +7730,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -5430,8 +7755,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bangerpouch Mags (MC)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -5455,7 +7780,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -5480,8 +7805,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bolt (MC)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -5505,7 +7830,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"",
 			"",
@@ -5530,8 +7855,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bolt Halligan (MC)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -5555,7 +7880,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
@@ -5580,8 +7905,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bolt Halligan 2 (MC)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -5605,7 +7930,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
@@ -5630,8 +7955,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bolt Halligan Mags (MC)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -5655,7 +7980,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -5680,8 +8005,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bolt Halligan 2 Mags (MC)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -5705,7 +8030,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -5730,8 +8055,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bolt Mags (MC)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -5755,7 +8080,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -5780,8 +8105,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bolt (MC)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -5805,13 +8130,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -5830,8 +8155,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bolt Halligan (MC)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -5855,13 +8180,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -5880,8 +8205,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bolt Halligan 2 (MC)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -5905,13 +8230,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -5930,8 +8255,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bolt Halligan Mags (MC)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -5955,13 +8280,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -5980,8 +8305,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bolt Halligan 2 Mags (MC)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -6005,13 +8330,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -6030,8 +8355,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bolt Mags (MC)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -6055,13 +8380,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -6080,8 +8405,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Halligan (MC)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -6105,7 +8430,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
@@ -6130,8 +8455,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Halligan Mags (MC)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -6155,7 +8480,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -6180,8 +8505,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Halligan (MC)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -6205,7 +8530,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
@@ -6230,8 +8555,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Halligan 2 Mags (MC)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -6255,7 +8580,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -6280,8 +8605,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Halligan (MC)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -6305,13 +8630,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -6330,8 +8655,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Halligan 2 (MC)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -6355,13 +8680,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -6380,8 +8705,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Halligan Mags (MC)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -6405,13 +8730,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -6430,8 +8755,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Halligan 2 Mags (MC)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -6455,13 +8780,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -6480,8 +8805,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Mags (MC)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -6505,7 +8830,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -6530,8 +8855,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS (MC)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -6555,13 +8880,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -6580,8 +8905,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Mags (MC)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -6605,13 +8930,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -6630,8 +8955,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS (RG)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -6655,7 +8980,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"",
 			"",
@@ -6680,8 +9005,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bangerpouch (RG)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -6705,7 +9030,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"",
 			"",
@@ -6730,8 +9055,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bangerpouch Bolt (RG)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -6755,7 +9080,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"",
 			"",
@@ -6780,8 +9105,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bangerpouch Bolt Halligan (RG)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -6805,7 +9130,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
@@ -6830,8 +9155,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bangerpouch Bolt Halligan 2 (RG)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -6855,7 +9180,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
@@ -6880,8 +9205,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bangerpouch Bolt Halligan Mags (RG)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -6905,7 +9230,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -6930,8 +9255,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bangerpouch Bolt Halligan 2 Mags (RG)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -6955,7 +9280,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -6980,8 +9305,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bangerpouch Halligan (RG)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -7005,7 +9330,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
@@ -7030,8 +9355,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bangerpouch Halligan 2 (RG)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -7055,7 +9380,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
@@ -7080,8 +9405,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bangerpouch Halligan Mags (RG)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -7105,7 +9430,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -7130,8 +9455,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bangerpouch Halligan 2 Mags (RG)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -7155,7 +9480,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -7180,8 +9505,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bangerpouch Bolt Mags (RG)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -7205,7 +9530,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -7230,8 +9555,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bangerpouch Mags (RG)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -7255,7 +9580,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -7280,8 +9605,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bolt (RG)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -7305,7 +9630,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"",
 			"",
@@ -7330,8 +9655,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bolt Halligan (RG)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -7355,7 +9680,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
@@ -7380,8 +9705,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bolt Halligan 2 (RG)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -7405,7 +9730,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
@@ -7430,8 +9755,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bolt Halligan Mags (RG)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -7455,7 +9780,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -7480,8 +9805,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bolt Halligan 2 Mags (RG)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -7505,7 +9830,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -7530,8 +9855,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bolt Mags (RG)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -7555,7 +9880,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -7580,8 +9905,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bolt (RG)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -7605,13 +9930,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -7630,8 +9955,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bolt Halligan (RG)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -7655,13 +9980,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -7680,8 +10005,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bolt Halligan 2 (RG)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -7705,13 +10030,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -7730,8 +10055,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bolt Halligan Mags (RG)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -7755,13 +10080,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -7780,8 +10105,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bolt Halligan 2 Mags (RG)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -7805,13 +10130,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -7830,8 +10155,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Bolt Mags (RG)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -7855,13 +10180,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -7880,8 +10205,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Halligan (RG)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -7905,7 +10230,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
@@ -7930,8 +10255,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Halligan Mags (RG)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -7955,7 +10280,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -7980,8 +10305,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Halligan (RG)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -8005,7 +10330,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
@@ -8030,8 +10355,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Halligan 2 Mags (RG)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -8055,7 +10380,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -8080,8 +10405,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Halligan (RG)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -8105,13 +10430,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -8130,8 +10455,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Halligan 2 (RG)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -8155,13 +10480,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -8180,8 +10505,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Halligan Mags (RG)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -8205,13 +10530,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -8230,8 +10555,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Halligan 2 Mags (RG)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -8255,13 +10580,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -8280,8 +10605,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Mags (RG)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -8305,7 +10630,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -8330,8 +10655,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS (RG)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -8355,13 +10680,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -8380,8 +10705,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack AVS Mags (RG)";
-		model="ASEC_Backpack1\AVSPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -8405,13 +10730,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -8430,8 +10755,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC (AOR1)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -8455,7 +10780,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"",
 			"",
@@ -8480,8 +10805,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bangerpouch (AOR1)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -8505,7 +10830,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"",
 			"",
@@ -8530,8 +10855,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bangerpouch Bolt (AOR1)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -8555,7 +10880,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"",
 			"",
@@ -8580,8 +10905,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bangerpouch Bolt Halligan (AOR1)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -8605,7 +10930,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
@@ -8630,8 +10955,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bangerpouch Bolt Halligan 2 (AOR1)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -8655,7 +10980,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
@@ -8680,8 +11005,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bangerpouch Bolt Halligan Mags (AOR1)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -8705,7 +11030,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -8730,8 +11055,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bangerpouch Bolt Halligan 2 Mags (AOR1)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -8755,7 +11080,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -8780,8 +11105,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bangerpouch Halligan (AOR1)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -8805,7 +11130,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
@@ -8830,8 +11155,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bangerpouch Halligan 2 (AOR1)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -8855,7 +11180,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
@@ -8880,8 +11205,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bangerpouch Halligan Mags (AOR1)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -8905,7 +11230,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -8930,8 +11255,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bangerpouch Halligan 2 Mags (AOR1)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -8955,7 +11280,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -8980,8 +11305,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bangerpouch Bolt Mags (AOR1)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -9005,7 +11330,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -9030,8 +11355,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bangerpouch Mags (AOR1)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -9055,7 +11380,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -9080,8 +11405,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bolt (AOR1)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -9105,7 +11430,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"",
 			"",
@@ -9130,8 +11455,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bolt Halligan (AOR1)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -9155,7 +11480,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
@@ -9180,8 +11505,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bolt Halligan 2 (AOR1)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -9205,7 +11530,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
@@ -9230,8 +11555,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bolt Halligan Mags (AOR1)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -9255,7 +11580,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -9280,8 +11605,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bolt Halligan 2 Mags (AOR1)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -9305,7 +11630,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -9330,8 +11655,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bolt Mags (AOR1)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -9355,7 +11680,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -9380,8 +11705,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bolt (AOR1)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -9405,13 +11730,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -9430,8 +11755,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bolt Halligan (AOR1)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -9455,13 +11780,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -9480,8 +11805,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bolt Halligan 2 (AOR1)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -9505,13 +11830,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -9530,8 +11855,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bolt Halligan Mags (AOR1)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -9555,13 +11880,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -9580,8 +11905,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bolt Halligan 2 Mags (AOR1)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -9605,13 +11930,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -9630,8 +11955,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bolt Mags (AOR1)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -9655,13 +11980,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -9680,8 +12005,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Halligan (AOR1)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -9705,7 +12030,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
@@ -9730,8 +12055,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Halligan Mags (AOR1)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -9755,7 +12080,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -9780,8 +12105,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Halligan (AOR1)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -9805,7 +12130,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
@@ -9830,8 +12155,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Halligan 2 Mags (AOR1)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -9855,7 +12180,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -9880,8 +12205,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Halligan (AOR1)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -9905,13 +12230,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -9930,8 +12255,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Halligan 2 (AOR1)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -9955,13 +12280,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -9980,8 +12305,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Halligan Mags (AOR1)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -10005,13 +12330,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -10030,8 +12355,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Halligan 2 Mags (AOR1)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -10055,13 +12380,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -10080,8 +12405,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Mags (AOR1)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -10105,7 +12430,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -10130,8 +12455,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC (AOR1)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -10155,13 +12480,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -10180,8 +12505,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Mags (AOR1)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -10205,13 +12530,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -10230,8 +12555,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC (AOR2)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -10255,7 +12580,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"",
 			"",
@@ -10280,8 +12605,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bangerpouch (AOR2)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -10305,7 +12630,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"",
 			"",
@@ -10330,8 +12655,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bangerpouch Bolt (AOR2)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -10355,7 +12680,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"",
 			"",
@@ -10380,8 +12705,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bangerpouch Bolt Halligan (AOR2)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -10405,7 +12730,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
@@ -10430,8 +12755,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bangerpouch Bolt Halligan 2 (AOR2)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -10455,7 +12780,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
@@ -10480,8 +12805,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bangerpouch Bolt Halligan Mags (AOR2)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -10505,7 +12830,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -10530,8 +12855,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bangerpouch Bolt Halligan 2 Mags (AOR2)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -10555,7 +12880,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -10580,8 +12905,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bangerpouch Halligan (AOR2)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -10605,7 +12930,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
@@ -10630,8 +12955,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bangerpouch Halligan 2 (AOR2)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -10655,7 +12980,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
@@ -10680,8 +13005,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bangerpouch Halligan Mags (AOR2)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -10705,7 +13030,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -10730,8 +13055,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bangerpouch Halligan 2 Mags (AOR2)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -10755,7 +13080,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -10780,8 +13105,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bangerpouch Bolt Mags (AOR2)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -10805,7 +13130,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -10830,8 +13155,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bangerpouch Mags (AOR2)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -10855,7 +13180,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -10880,8 +13205,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bolt (AOR2)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -10905,7 +13230,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"",
 			"",
@@ -10930,8 +13255,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bolt Halligan (AOR2)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -10955,7 +13280,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
@@ -10980,8 +13305,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bolt Halligan 2 (AOR2)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -11005,7 +13330,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
@@ -11030,8 +13355,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bolt Halligan Mags (AOR2)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -11055,7 +13380,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -11080,8 +13405,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bolt Halligan 2 Mags (AOR2)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -11105,7 +13430,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -11130,8 +13455,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bolt Mags (AOR2)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -11155,7 +13480,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -11180,8 +13505,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bolt (AOR2)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -11205,13 +13530,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -11230,8 +13555,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bolt Halligan (AOR2)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -11255,13 +13580,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -11280,8 +13605,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bolt Halligan 2 (AOR2)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -11305,13 +13630,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -11330,8 +13655,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bolt Halligan Mags (AOR2)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -11355,13 +13680,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -11380,8 +13705,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bolt Halligan 2 Mags (AOR2)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -11405,13 +13730,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -11430,8 +13755,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bolt Mags (AOR2)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -11455,13 +13780,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -11480,8 +13805,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Halligan (AOR2)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -11505,7 +13830,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
@@ -11530,8 +13855,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Halligan Mags (AOR2)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -11555,7 +13880,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -11580,8 +13905,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Halligan (AOR2)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -11605,7 +13930,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
@@ -11630,8 +13955,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Halligan 2 Mags (AOR2)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -11655,7 +13980,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -11680,8 +14005,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Halligan (AOR2)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -11705,13 +14030,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -11730,8 +14055,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Halligan 2 (AOR2)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -11755,13 +14080,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -11780,8 +14105,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Halligan Mags (AOR2)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -11805,13 +14130,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -11830,8 +14155,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Halligan 2 Mags (AOR2)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -11855,13 +14180,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -11880,8 +14205,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Mags (AOR2)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -11905,7 +14230,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -11930,8 +14255,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC (AOR2)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -11955,13 +14280,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -11980,8 +14305,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Mags (AOR2)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -12005,13 +14330,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -12030,8 +14355,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC (MC)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -12055,7 +14380,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"",
 			"",
@@ -12080,8 +14405,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bangerpouch (MC)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -12105,7 +14430,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"",
 			"",
@@ -12130,8 +14455,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bangerpouch Bolt (MC)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -12155,7 +14480,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"",
 			"",
@@ -12180,8 +14505,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bangerpouch Bolt Halligan (MC)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -12205,7 +14530,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
@@ -12230,8 +14555,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bangerpouch Bolt Halligan 2 (MC)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -12255,7 +14580,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
@@ -12280,8 +14605,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bangerpouch Bolt Halligan Mags (MC)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -12305,7 +14630,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -12330,8 +14655,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bangerpouch Bolt Halligan 2 Mags (MC)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -12355,7 +14680,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -12380,8 +14705,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bangerpouch Halligan (MC)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -12405,7 +14730,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
@@ -12430,8 +14755,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bangerpouch Halligan 2 (MC)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -12455,7 +14780,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
@@ -12480,8 +14805,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bangerpouch Halligan Mags (MC)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -12505,7 +14830,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -12530,8 +14855,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bangerpouch Halligan 2 Mags (MC)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -12555,7 +14880,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -12580,8 +14905,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bangerpouch Bolt Mags (MC)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -12605,7 +14930,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -12630,8 +14955,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bangerpouch Mags (MC)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -12655,7 +14980,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -12680,8 +15005,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bolt (MC)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -12705,7 +15030,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"",
 			"",
@@ -12730,8 +15055,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bolt Halligan (MC)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -12755,7 +15080,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
@@ -12780,8 +15105,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bolt Halligan 2 (MC)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -12805,7 +15130,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
@@ -12830,8 +15155,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bolt Halligan Mags (MC)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -12855,7 +15180,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -12880,8 +15205,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bolt Halligan 2 Mags (MC)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -12905,7 +15230,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -12930,8 +15255,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bolt Mags (MC)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -12955,7 +15280,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -12980,8 +15305,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bolt (MC)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -13005,13 +15330,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -13030,8 +15355,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bolt Halligan (MC)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -13055,13 +15380,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -13080,8 +15405,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bolt Halligan 2 (MC)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -13105,13 +15430,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -13130,8 +15455,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bolt Halligan Mags (MC)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -13155,13 +15480,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -13180,8 +15505,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bolt Halligan 2 Mags (MC)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -13205,13 +15530,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -13230,8 +15555,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bolt Mags (MC)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -13255,13 +15580,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -13280,8 +15605,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Halligan (MC)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -13305,7 +15630,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
@@ -13330,8 +15655,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Halligan Mags (MC)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -13355,7 +15680,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -13380,8 +15705,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Halligan (MC)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -13405,7 +15730,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
@@ -13430,8 +15755,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Halligan 2 Mags (MC)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -13455,7 +15780,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -13480,8 +15805,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Halligan (MC)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -13505,13 +15830,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -13530,8 +15855,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Halligan 2 (MC)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -13555,13 +15880,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -13580,8 +15905,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Halligan Mags (MC)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -13605,13 +15930,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -13630,8 +15955,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Halligan 2 Mags (MC)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -13655,13 +15980,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -13680,8 +16005,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Mags (MC)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -13705,7 +16030,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -13730,8 +16055,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC (MC)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -13755,13 +16080,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -13780,8 +16105,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Mags (MC)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -13805,13 +16130,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -13830,8 +16155,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC (RG)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -13855,7 +16180,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"",
 			"",
@@ -13880,8 +16205,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bangerpouch (RG)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -13905,7 +16230,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"",
 			"",
@@ -13930,8 +16255,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bangerpouch Bolt (RG)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -13955,7 +16280,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"",
 			"",
@@ -13980,8 +16305,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bangerpouch Bolt Halligan (RG)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -14005,7 +16330,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
@@ -14030,8 +16355,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bangerpouch Bolt Halligan 2 (RG)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -14055,7 +16380,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
@@ -14080,8 +16405,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bangerpouch Bolt Halligan Mags (RG)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -14105,7 +16430,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -14130,8 +16455,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bangerpouch Bolt Halligan 2 Mags (RG)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -14155,7 +16480,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -14180,8 +16505,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bangerpouch Halligan (RG)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -14205,7 +16530,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
@@ -14230,8 +16555,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bangerpouch Halligan 2 (RG)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -14255,7 +16580,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
@@ -14280,8 +16605,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bangerpouch Halligan Mags (RG)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -14305,7 +16630,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -14330,8 +16655,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bangerpouch Halligan 2 Mags (RG)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -14355,7 +16680,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -14380,8 +16705,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bangerpouch Bolt Mags (RG)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -14405,7 +16730,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -14430,8 +16755,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bangerpouch Mags (RG)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -14455,7 +16780,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -14480,8 +16805,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bolt (RG)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -14505,7 +16830,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"",
 			"",
@@ -14530,8 +16855,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bolt Halligan (RG)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -14555,7 +16880,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
@@ -14580,8 +16905,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bolt Halligan 2 (RG)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -14605,7 +16930,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
@@ -14630,8 +16955,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bolt Halligan Mags (RG)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -14655,7 +16980,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -14680,8 +17005,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bolt Halligan 2 Mags (RG)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -14705,7 +17030,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -14730,8 +17055,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bolt Mags (RG)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -14755,7 +17080,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -14780,8 +17105,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bolt (RG)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -14805,13 +17130,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -14830,8 +17155,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bolt Halligan (RG)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -14855,13 +17180,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -14880,8 +17205,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bolt Halligan 2 (RG)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -14905,13 +17230,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -14930,8 +17255,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bolt Halligan Mags (RG)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -14955,13 +17280,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -14980,8 +17305,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bolt Halligan 2 Mags (RG)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -15005,13 +17330,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -15030,8 +17355,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Bolt Mags (RG)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -15055,13 +17380,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -15080,8 +17405,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Halligan (RG)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -15105,7 +17430,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
@@ -15130,8 +17455,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Halligan Mags (RG)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -15155,7 +17480,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -15180,8 +17505,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Halligan (RG)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -15205,7 +17530,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
@@ -15230,8 +17555,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Halligan 2 Mags (RG)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -15255,7 +17580,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -15280,8 +17605,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Halligan (RG)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -15305,13 +17630,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -15330,8 +17655,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Halligan 2 (RG)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -15355,13 +17680,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -15380,8 +17705,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Halligan Mags (RG)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -15405,13 +17730,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -15430,8 +17755,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Halligan 2 Mags (RG)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -15455,13 +17780,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -15480,8 +17805,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Mags (RG)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -15505,7 +17830,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -15530,8 +17855,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC (RG)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -15555,13 +17880,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -15580,8 +17905,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack JPC Mags (RG)";
-		model="ASEC_Backpack1\JPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -15605,13 +17930,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -15630,8 +17955,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC (AOR1)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -15655,7 +17980,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"",
 			"",
@@ -15680,8 +18005,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bangerpouch (AOR1)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -15705,7 +18030,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"",
 			"",
@@ -15730,8 +18055,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bangerpouch Bolt (AOR1)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -15755,7 +18080,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"",
 			"",
@@ -15780,8 +18105,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bangerpouch Bolt Halligan (AOR1)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -15805,7 +18130,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
@@ -15830,8 +18155,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bangerpouch Bolt Halligan 2 (AOR1)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -15855,7 +18180,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
@@ -15880,8 +18205,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bangerpouch Bolt Halligan Mags (AOR1)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -15905,7 +18230,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -15930,8 +18255,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bangerpouch Bolt Halligan 2 Mags (AOR1)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -15955,7 +18280,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -15980,8 +18305,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bangerpouch Halligan (AOR1)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -16005,7 +18330,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
@@ -16030,8 +18355,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bangerpouch Halligan 2 (AOR1)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -16055,7 +18380,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
@@ -16080,8 +18405,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bangerpouch Halligan Mags (AOR1)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -16105,7 +18430,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -16130,8 +18455,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bangerpouch Halligan 2 Mags (AOR1)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -16155,7 +18480,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -16180,8 +18505,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bangerpouch Bolt Mags (AOR1)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -16205,7 +18530,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -16230,8 +18555,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bangerpouch Mags (AOR1)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -16255,7 +18580,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -16280,8 +18605,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bolt (AOR1)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -16305,7 +18630,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"",
 			"",
@@ -16330,8 +18655,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bolt Halligan (AOR1)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -16355,7 +18680,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
@@ -16380,8 +18705,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bolt Halligan 2 (AOR1)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -16405,7 +18730,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
@@ -16430,8 +18755,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bolt Halligan Mags (AOR1)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -16455,7 +18780,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -16480,8 +18805,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bolt Halligan 2 Mags (AOR1)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -16505,7 +18830,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -16530,8 +18855,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bolt Mags (AOR1)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -16555,7 +18880,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -16580,8 +18905,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bolt (AOR1)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -16605,13 +18930,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -16630,8 +18955,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bolt Halligan (AOR1)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -16655,13 +18980,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -16680,8 +19005,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bolt Halligan 2 (AOR1)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -16705,13 +19030,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -16730,8 +19055,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bolt Halligan Mags (AOR1)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -16755,13 +19080,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -16780,8 +19105,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bolt Halligan 2 Mags (AOR1)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -16805,13 +19130,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -16830,8 +19155,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bolt Mags (AOR1)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -16855,13 +19180,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -16880,8 +19205,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Halligan (AOR1)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -16905,7 +19230,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
@@ -16930,8 +19255,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Halligan Mags (AOR1)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -16955,7 +19280,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -16980,8 +19305,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Halligan (AOR1)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -17005,7 +19330,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
@@ -17030,8 +19355,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Halligan 2 Mags (AOR1)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -17055,7 +19380,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -17080,8 +19405,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Halligan (AOR1)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -17105,13 +19430,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -17130,8 +19455,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Halligan 2 (AOR1)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -17155,13 +19480,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -17180,8 +19505,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Halligan Mags (AOR1)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -17205,13 +19530,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -17230,8 +19555,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Halligan 2 Mags (AOR1)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -17255,13 +19580,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -17280,8 +19605,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Mags (AOR1)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -17305,7 +19630,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -17330,8 +19655,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC (AOR1)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -17355,13 +19680,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -17380,8 +19705,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Mags (AOR1)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -17405,13 +19730,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor1_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor1_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -17430,8 +19755,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC (AOR2)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -17455,7 +19780,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"",
 			"",
@@ -17480,8 +19805,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bangerpouch (AOR2)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -17505,7 +19830,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"",
 			"",
@@ -17530,8 +19855,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bangerpouch Bolt (AOR2)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -17555,7 +19880,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"",
 			"",
@@ -17580,8 +19905,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bangerpouch Bolt Halligan (AOR2)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -17605,7 +19930,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
@@ -17630,8 +19955,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bangerpouch Bolt Halligan 2 (AOR2)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -17655,7 +19980,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
@@ -17680,8 +20005,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bangerpouch Bolt Halligan Mags (AOR2)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -17705,7 +20030,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -17730,8 +20055,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bangerpouch Bolt Halligan 2 Mags (AOR2)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -17755,7 +20080,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -17780,8 +20105,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bangerpouch Halligan (AOR2)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -17805,7 +20130,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
@@ -17830,8 +20155,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bangerpouch Halligan 2 (AOR2)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -17855,7 +20180,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
@@ -17880,8 +20205,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bangerpouch Halligan Mags (AOR2)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -17905,7 +20230,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -17930,8 +20255,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bangerpouch Halligan 2 Mags (AOR2)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -17955,7 +20280,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -17980,8 +20305,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bangerpouch Bolt Mags (AOR2)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -18005,7 +20330,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -18030,8 +20355,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bangerpouch Mags (AOR2)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -18055,7 +20380,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -18080,8 +20405,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bolt (AOR2)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -18105,7 +20430,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"",
 			"",
@@ -18130,8 +20455,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bolt Halligan (AOR2)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -18155,7 +20480,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
@@ -18180,8 +20505,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bolt Halligan 2 (AOR2)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -18205,7 +20530,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
@@ -18230,8 +20555,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bolt Halligan Mags (AOR2)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -18255,7 +20580,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -18280,8 +20605,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bolt Halligan 2 Mags (AOR2)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -18305,7 +20630,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -18330,8 +20655,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bolt Mags (AOR2)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -18355,7 +20680,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -18380,8 +20705,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bolt (AOR2)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -18405,13 +20730,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -18430,8 +20755,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bolt Halligan (AOR2)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -18455,13 +20780,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -18480,8 +20805,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bolt Halligan 2 (AOR2)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -18505,13 +20830,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -18530,8 +20855,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bolt Halligan Mags (AOR2)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -18555,13 +20880,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -18580,8 +20905,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bolt Halligan 2 Mags (AOR2)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -18605,13 +20930,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -18630,8 +20955,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bolt Mags (AOR2)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -18655,13 +20980,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -18680,8 +21005,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Halligan (AOR2)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -18705,7 +21030,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
@@ -18730,8 +21055,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Halligan Mags (AOR2)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -18755,7 +21080,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -18780,8 +21105,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Halligan (AOR2)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -18805,7 +21130,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
@@ -18830,8 +21155,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Halligan 2 Mags (AOR2)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -18855,7 +21180,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -18880,8 +21205,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Halligan (AOR2)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -18905,13 +21230,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -18930,8 +21255,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Halligan 2 (AOR2)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -18955,13 +21280,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -18980,8 +21305,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Halligan Mags (AOR2)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -19005,13 +21330,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -19030,8 +21355,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Halligan 2 Mags (AOR2)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -19055,13 +21380,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -19080,8 +21405,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Mags (AOR2)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -19105,7 +21430,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -19130,8 +21455,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC (AOR2)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -19155,13 +21480,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -19180,8 +21505,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Mags (AOR2)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -19205,13 +21530,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_aor2_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_aor2_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -19230,8 +21555,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC (MC)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -19255,7 +21580,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"",
 			"",
@@ -19280,8 +21605,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bangerpouch (MC)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -19305,7 +21630,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"",
 			"",
@@ -19330,8 +21655,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bangerpouch Bolt (MC)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -19355,7 +21680,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"",
 			"",
@@ -19380,8 +21705,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bangerpouch Bolt Halligan (MC)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -19405,7 +21730,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
@@ -19430,8 +21755,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bangerpouch Bolt Halligan 2 (MC)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -19455,7 +21780,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
@@ -19480,8 +21805,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bangerpouch Bolt Halligan Mags (MC)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -19505,7 +21830,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -19530,8 +21855,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bangerpouch Bolt Halligan 2 Mags (MC)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -19555,7 +21880,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -19580,8 +21905,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bangerpouch Halligan (MC)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -19605,7 +21930,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
@@ -19630,8 +21955,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bangerpouch Halligan 2 (MC)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -19655,7 +21980,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
@@ -19680,8 +22005,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bangerpouch Halligan Mags (MC)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -19705,7 +22030,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -19730,8 +22055,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bangerpouch Halligan 2 Mags (MC)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -19755,7 +22080,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -19780,8 +22105,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bangerpouch Bolt Mags (MC)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -19805,7 +22130,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -19830,8 +22155,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bangerpouch Mags (MC)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -19855,7 +22180,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -19880,8 +22205,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bolt (MC)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -19905,7 +22230,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"",
 			"",
@@ -19930,8 +22255,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bolt Halligan (MC)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -19955,7 +22280,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
@@ -19980,8 +22305,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bolt Halligan 2 (MC)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -20005,7 +22330,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
@@ -20030,8 +22355,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bolt Halligan Mags (MC)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -20055,7 +22380,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -20080,8 +22405,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bolt Halligan 2 Mags (MC)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -20105,7 +22430,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -20130,8 +22455,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bolt Mags (MC)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -20155,7 +22480,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -20180,8 +22505,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bolt (MC)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -20205,13 +22530,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -20230,8 +22555,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bolt Halligan (MC)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -20255,13 +22580,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -20280,8 +22605,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bolt Halligan 2 (MC)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -20305,13 +22630,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -20330,8 +22655,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bolt Halligan Mags (MC)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -20355,13 +22680,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -20380,8 +22705,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bolt Halligan 2 Mags (MC)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -20405,13 +22730,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -20430,8 +22755,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bolt Mags (MC)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -20455,13 +22780,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -20480,8 +22805,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Halligan (MC)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -20505,7 +22830,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
@@ -20530,8 +22855,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Halligan Mags (MC)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -20555,7 +22880,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -20580,8 +22905,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Halligan (MC)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -20605,7 +22930,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
@@ -20630,8 +22955,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Halligan 2 Mags (MC)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -20655,7 +22980,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -20680,8 +23005,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Halligan (MC)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -20705,13 +23030,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -20730,8 +23055,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Halligan 2 (MC)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -20755,13 +23080,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -20780,8 +23105,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Halligan Mags (MC)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -20805,13 +23130,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -20830,8 +23155,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Halligan 2 Mags (MC)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -20855,13 +23180,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -20880,8 +23205,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Mags (MC)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -20905,7 +23230,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -20930,8 +23255,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC (MC)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -20955,13 +23280,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -20980,8 +23305,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Mags (MC)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -21005,13 +23330,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_mc_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_mc_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -21030,8 +23355,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC (RG)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -21055,7 +23380,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"",
 			"",
@@ -21080,8 +23405,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bangerpouch (RG)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -21105,7 +23430,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"",
 			"",
@@ -21130,8 +23455,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bangerpouch Bolt (RG)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -21155,7 +23480,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"",
 			"",
@@ -21180,8 +23505,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bangerpouch Bolt Halligan (RG)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -21205,7 +23530,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
@@ -21230,8 +23555,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bangerpouch Bolt Halligan 2 (RG)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -21255,7 +23580,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
@@ -21280,8 +23605,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bangerpouch Bolt Halligan Mags (RG)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -21305,7 +23630,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -21330,8 +23655,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bangerpouch Bolt Halligan 2 Mags (RG)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -21355,7 +23680,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -21380,8 +23705,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bangerpouch Halligan (RG)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -21405,7 +23730,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
@@ -21430,8 +23755,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bangerpouch Halligan 2 (RG)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -21455,7 +23780,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
@@ -21480,8 +23805,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bangerpouch Halligan Mags (RG)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -21505,7 +23830,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -21530,8 +23855,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bangerpouch Halligan 2 Mags (RG)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -21555,7 +23880,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -21580,8 +23905,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bangerpouch Bolt Mags (RG)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -21605,7 +23930,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -21630,8 +23955,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bangerpouch Mags (RG)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -21655,7 +23980,7 @@ class CfgVehicles
 		{
 			"ASEC_Cosmetic\ASEC_Textures\data\ronin\roninhydration\parts_hydration_pack_ronin_co.paa",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -21680,8 +24005,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bolt (RG)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -21705,7 +24030,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"",
 			"",
@@ -21730,8 +24055,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bolt Halligan (RG)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -21755,7 +24080,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
@@ -21780,8 +24105,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bolt Halligan 2 (RG)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -21805,7 +24130,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
@@ -21830,8 +24155,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bolt Halligan Mags (RG)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -21855,7 +24180,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -21880,8 +24205,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bolt Halligan 2 Mags (RG)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -21905,7 +24230,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -21930,8 +24255,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bolt Mags (RG)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -21955,7 +24280,7 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -21980,8 +24305,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bolt (RG)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -22005,13 +24330,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -22030,8 +24355,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bolt Halligan (RG)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -22055,13 +24380,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -22080,8 +24405,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bolt Halligan 2 (RG)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -22105,13 +24430,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -22130,8 +24455,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bolt Halligan Mags (RG)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -22155,13 +24480,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -22180,8 +24505,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bolt Halligan 2 Mags (RG)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -22205,13 +24530,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -22230,8 +24555,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Bolt Mags (RG)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -22255,13 +24580,13 @@ class CfgVehicles
 		{
 			"",
 			"ASEC_panel\data\bolt_co.paa",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -22280,8 +24605,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Halligan (RG)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -22305,7 +24630,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
@@ -22330,8 +24655,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Halligan Mags (RG)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -22355,7 +24680,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -22380,8 +24705,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Halligan (RG)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -22405,7 +24730,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
@@ -22430,8 +24755,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Halligan 2 Mags (RG)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -22455,7 +24780,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -22480,8 +24805,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Halligan (RG)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -22505,13 +24830,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -22530,8 +24855,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Halligan 2 (RG)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -22555,13 +24880,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -22580,8 +24905,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Halligan Mags (RG)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -22605,13 +24930,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"ASEC_panel\data\halligan_co.paa",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -22630,8 +24955,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Halligan 2 Mags (RG)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -22655,13 +24980,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"ASEC_panel\data\halligan_co.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -22680,8 +25005,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Mags (RG)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -22705,7 +25030,7 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
@@ -22730,8 +25055,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC (RG)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -22755,13 +25080,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -22780,8 +25105,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Pack FCPC Mags (RG)";
-		model="ASEC_Backpack1\FCPCPack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\FCPCPack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -22805,13 +25130,13 @@ class CfgVehicles
 		{
 			"",
 			"",
-			"ASEC_Backpack1\tex\ack_avs_rg_co.paa",
+			"ASEC_Backpacks\tex\ack_avs_rg_co.paa",
 			"",
 			"",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc2_c.paa",
 			"ASEC_Cosmetic\ASEC_Textures\data\ctsfo\alice_ar_mag_sidepouch_mc1_c.paa",
 			"rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -22830,8 +25155,8 @@ class CfgVehicles
 		author="AVALON";
 		scope=2;
 		displayName="[ASEC] Gunslinger AVS (MC)";
-		model="ASEC_Backpack1\Gunslinger_AVS.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\data\model\Gunslinger_AVS.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -22858,8 +25183,8 @@ class CfgVehicles
 		author="AVALON";
 		scope=2;
 		displayName="[ASEC] Gunslinger JPC (MC)";
-		model="ASEC_Backpack1\Gunslinger_JPC.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\data\model\Gunslinger_JPC.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -22886,8 +25211,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Backpack Panel AVS (MC)";
-		model="ASEC_Backpack1\AVSPack2.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack2.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -22927,8 +25252,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Backpack Panel AVS Shotgun (MC)";
-		model="ASEC_Backpack1\AVSPack2.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack2.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -22947,9 +25272,9 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"ASEC_Backpack1\tex\shotgun_co.paa",
-			"ASEC_Backpack1\tex\shotgun_foreend_co.paa",
-			"ASEC_Backpack1\tex\c_velcrostraps_khaki_co.paa",
+			"ASEC_Backpacks\data\tex\shotgun_co.paa",
+			"ASEC_Backpacks\data\tex\shotgun_foreend_co.paa",
+			"ASEC_Backpacks\data\tex\c_velcrostraps_khaki_co.paa",
 			"",
 			"",
 			""
@@ -22968,8 +25293,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Backpack Panel AVS Shotgun Flag (MC)";
-		model="ASEC_Backpack1\AVSPack2.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack2.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -22988,12 +25313,12 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"ASEC_Backpack1\tex\shotgun_co.paa",
-			"ASEC_Backpack1\tex\shotgun_foreend_co.paa",
-			"ASEC_Backpack1\tex\c_velcrostraps_khaki_co.paa",
+			"ASEC_Backpacks\data\tex\shotgun_co.paa",
+			"ASEC_Backpacks\data\tex\shotgun_foreend_co.paa",
+			"ASEC_Backpacks\data\tex\c_velcrostraps_khaki_co.paa",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -23009,8 +25334,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Backpack Panel AVS Shotgun Monster Can (MC)";
-		model="ASEC_Backpack1\AVSPack2.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack2.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -23029,11 +25354,11 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"ASEC_Backpack1\tex\shotgun_co.paa",
-			"ASEC_Backpack1\tex\shotgun_foreend_co.paa",
-			"ASEC_Backpack1\tex\c_velcrostraps_khaki_co.paa",
-			"ASEC_Backpack1\tex\monster_white_co.paa",
-			"ASEC_Backpack1\tex\ecpv1_mc_co.paa",
+			"ASEC_Backpacks\data\tex\shotgun_co.paa",
+			"ASEC_Backpacks\data\tex\shotgun_foreend_co.paa",
+			"ASEC_Backpacks\data\tex\c_velcrostraps_khaki_co.paa",
+			"ASEC_Backpacks\data\tex\monster_white_co.paa",
+			"ASEC_Backpacks\data\tex\ecpv1_mc_co.paa",
 			""
 		};
 		class XtdGearInfo
@@ -23050,8 +25375,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Backpack Panel AVS Shotgun Red Bull Can (MC)";
-		model="ASEC_Backpack1\AVSPack2.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack2.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -23070,11 +25395,11 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"ASEC_Backpack1\tex\shotgun_co.paa",
-			"ASEC_Backpack1\tex\shotgun_foreend_co.paa",
-			"ASEC_Backpack1\tex\c_velcrostraps_khaki_co.paa",
-			"ASEC_Backpack1\tex\red_bull_can.paa",
-			"ASEC_Backpack1\tex\ecpv1_mc_co.paa",
+			"ASEC_Backpacks\data\tex\shotgun_co.paa",
+			"ASEC_Backpacks\data\tex\shotgun_foreend_co.paa",
+			"ASEC_Backpacks\data\tex\c_velcrostraps_khaki_co.paa",
+			"ASEC_Backpacks\data\tex\red_bull_can.paa",
+			"ASEC_Backpacks\data\tex\ecpv1_mc_co.paa",
 			""
 		};
 		class XtdGearInfo
@@ -23091,8 +25416,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Backpack Panel AVS Shotgun Monster Can Patch (MC)";
-		model="ASEC_Backpack1\AVSPack2.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack2.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -23111,12 +25436,12 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"ASEC_Backpack1\tex\shotgun_co.paa",
-			"ASEC_Backpack1\tex\shotgun_foreend_co.paa",
-			"ASEC_Backpack1\tex\c_velcrostraps_khaki_co.paa",
-			"ASEC_Backpack1\tex\monster_white_co.paa",
-			"ASEC_Backpack1\tex\ecpv1_mc_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\shotgun_co.paa",
+			"ASEC_Backpacks\data\tex\shotgun_foreend_co.paa",
+			"ASEC_Backpacks\data\tex\c_velcrostraps_khaki_co.paa",
+			"ASEC_Backpacks\data\tex\monster_white_co.paa",
+			"ASEC_Backpacks\data\tex\ecpv1_mc_co.paa",
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -23132,8 +25457,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Backpack Panel AVS Shotgun Red Bull Can Patch (MC)";
-		model="ASEC_Backpack1\AVSPack2.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack2.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -23152,12 +25477,12 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"ASEC_Backpack1\tex\shotgun_co.paa",
-			"ASEC_Backpack1\tex\shotgun_foreend_co.paa",
-			"ASEC_Backpack1\tex\c_velcrostraps_khaki_co.paa",
-			"ASEC_Backpack1\tex\red_bull_can.paa",
-			"ASEC_Backpack1\tex\ecpv1_mc_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\shotgun_co.paa",
+			"ASEC_Backpacks\data\tex\shotgun_foreend_co.paa",
+			"ASEC_Backpacks\data\tex\c_velcrostraps_khaki_co.paa",
+			"ASEC_Backpacks\data\tex\red_bull_can.paa",
+			"ASEC_Backpacks\data\tex\ecpv1_mc_co.paa",
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -23173,8 +25498,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Backpack Panel AVS Monster Can (MC)";
-		model="ASEC_Backpack1\AVSPack2.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack2.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -23196,8 +25521,8 @@ class CfgVehicles
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\monster_white_co.paa",
-			"ASEC_Backpack1\tex\ecpv1_mc_co.paa",
+			"ASEC_Backpacks\tex\monster_white_co.paa",
+			"ASEC_Backpacks\tex\ecpv1_mc_co.paa",
 			""
 		};
 		class XtdGearInfo
@@ -23214,8 +25539,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Backpack Panel AVS Monster Can Flag (MC)";
-		model="ASEC_Backpack1\AVSPack2.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack2.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -23237,9 +25562,9 @@ class CfgVehicles
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\monster_white_co.paa",
-			"ASEC_Backpack1\tex\ecpv1_mc_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\monster_white_co.paa",
+			"ASEC_Backpacks\data\tex\ecpv1_mc_co.paa",
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -23255,8 +25580,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Backpack Panel AVS Red Bull Can (MC)";
-		model="ASEC_Backpack1\AVSPack2.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack2.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -23278,8 +25603,8 @@ class CfgVehicles
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\red_bull_can.paa",
-			"ASEC_Backpack1\tex\ecpv1_mc_co.paa",
+			"ASEC_Backpacks\data\tex\red_bull_can.paa",
+			"ASEC_Backpacks\tex\ecpv1_mc_co.paa",
 			""
 		};
 		class XtdGearInfo
@@ -23296,8 +25621,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Backpack Panel AVS Red Bull Can Flag (MC)";
-		model="ASEC_Backpack1\AVSPack2.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack2.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -23319,9 +25644,9 @@ class CfgVehicles
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\red_bull_can.paa",
-			"ASEC_Backpack1\tex\ecpv1_mc_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\red_bull_can.paa",
+			"ASEC_Backpacks\data\tex\ecpv1_mc_co.paa",
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -23337,8 +25662,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Backpack Panel AVS Flag (MC)";
-		model="ASEC_Backpack1\AVSPack2.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPack2.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -23362,7 +25687,7 @@ class CfgVehicles
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -23378,8 +25703,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Backpack Panel JPC (MC)";
-		model="ASEC_Backpack1\JPCPack2.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack2.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -23419,8 +25744,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Backpack Panel JPC Shotgun (MC)";
-		model="ASEC_Backpack1\JPCPack2.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack2.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -23439,9 +25764,9 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"ASEC_Backpack1\tex\shotgun_co.paa",
-			"ASEC_Backpack1\tex\shotgun_foreend_co.paa",
-			"ASEC_Backpack1\tex\c_velcrostraps_khaki_co.paa",
+			"ASEC_Backpacks\data\tex\shotgun_co.paa",
+			"ASEC_Backpacks\data\tex\shotgun_foreend_co.paa",
+			"ASEC_Backpacks\data\tex\c_velcrostraps_khaki_co.paa",
 			"",
 			"",
 			""
@@ -23460,8 +25785,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Backpack Panel JPC Shotgun Flag (MC)";
-		model="ASEC_Backpack1\JPCPack2.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack2.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -23480,12 +25805,12 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"ASEC_Backpack1\tex\shotgun_co.paa",
-			"ASEC_Backpack1\tex\shotgun_foreend_co.paa",
-			"ASEC_Backpack1\tex\c_velcrostraps_khaki_co.paa",
+			"ASEC_Backpacks\data\tex\shotgun_co.paa",
+			"ASEC_Backpacks\data\tex\shotgun_foreend_co.paa",
+			"ASEC_Backpacks\data\tex\c_velcrostraps_khaki_co.paa",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -23501,8 +25826,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Backpack Panel JPC Shotgun Monster Can (MC)";
-		model="ASEC_Backpack1\JPCPack2.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack2.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -23521,11 +25846,11 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"ASEC_Backpack1\tex\shotgun_co.paa",
-			"ASEC_Backpack1\tex\shotgun_foreend_co.paa",
-			"ASEC_Backpack1\tex\c_velcrostraps_khaki_co.paa",
-			"ASEC_Backpack1\tex\monster_white_co.paa",
-			"ASEC_Backpack1\tex\ecpv1_mc_co.paa",
+			"ASEC_Backpacks\data\tex\shotgun_co.paa",
+			"ASEC_Backpacks\data\tex\shotgun_foreend_co.paa",
+			"ASEC_Backpacks\data\tex\c_velcrostraps_khaki_co.paa",
+			"ASEC_Backpacks\data\tex\monster_white_co.paa",
+			"ASEC_Backpacks\data\tex\ecpv1_mc_co.paa",
 			""
 		};
 		class XtdGearInfo
@@ -23542,8 +25867,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Backpack Panel JPC Shotgun Red Bull Can (MC)";
-		model="ASEC_Backpack1\JPCPack2.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack2.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -23562,11 +25887,11 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"ASEC_Backpack1\tex\shotgun_co.paa",
-			"ASEC_Backpack1\tex\shotgun_foreend_co.paa",
-			"ASEC_Backpack1\tex\c_velcrostraps_khaki_co.paa",
-			"ASEC_Backpack1\tex\red_bull_can.paa",
-			"ASEC_Backpack1\tex\ecpv1_mc_co.paa",
+			"ASEC_Backpacks\data\tex\shotgun_co.paa",
+			"ASEC_Backpacks\data\tex\shotgun_foreend_co.paa",
+			"ASEC_Backpacks\data\tex\c_velcrostraps_khaki_co.paa",
+			"ASEC_Backpacks\data\tex\red_bull_can.paa",
+			"ASEC_Backpacks\data\tex\ecpv1_mc_co.paa",
 			""
 		};
 		class XtdGearInfo
@@ -23583,8 +25908,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Backpack Panel JPC Shotgun Monster Can Patch (MC)";
-		model="ASEC_Backpack1\JPCPack2.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack2.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -23603,12 +25928,12 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"ASEC_Backpack1\tex\shotgun_co.paa",
-			"ASEC_Backpack1\tex\shotgun_foreend_co.paa",
-			"ASEC_Backpack1\tex\c_velcrostraps_khaki_co.paa",
-			"ASEC_Backpack1\tex\monster_white_co.paa",
-			"ASEC_Backpack1\tex\ecpv1_mc_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\shotgun_co.paa",
+			"ASEC_Backpacks\data\tex\shotgun_foreend_co.paa",
+			"ASEC_Backpacks\data\tex\c_velcrostraps_khaki_co.paa",
+			"ASEC_Backpacks\data\tex\monster_white_co.paa",
+			"ASEC_Backpacks\data\tex\ecpv1_mc_co.paa",
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -23624,8 +25949,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Backpack Panel JPC Shotgun Red Bull Can Patch (MC)";
-		model="ASEC_Backpack1\JPCPack2.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack2.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -23644,12 +25969,12 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"ASEC_Backpack1\tex\shotgun_co.paa",
-			"ASEC_Backpack1\tex\shotgun_foreend_co.paa",
-			"ASEC_Backpack1\tex\c_velcrostraps_khaki_co.paa",
-			"ASEC_Backpack1\tex\red_bull_can.paa",
-			"ASEC_Backpack1\tex\ecpv1_mc_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\shotgun_co.paa",
+			"ASEC_Backpacks\data\tex\shotgun_foreend_co.paa",
+			"ASEC_Backpacks\data\tex\c_velcrostraps_khaki_co.paa",
+			"ASEC_Backpacks\data\tex\red_bull_can.paa",
+			"ASEC_Backpacks\data\tex\ecpv1_mc_co.paa",
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -23665,8 +25990,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Backpack Panel JPC Monster Can (MC)";
-		model="ASEC_Backpack1\JPCPack2.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack2.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -23688,8 +26013,8 @@ class CfgVehicles
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\monster_white_co.paa",
-			"ASEC_Backpack1\tex\ecpv1_mc_co.paa",
+			"ASEC_Backpacks\tex\monster_white_co.paa",
+			"ASEC_Backpacks\tex\ecpv1_mc_co.paa",
 			""
 		};
 		class XtdGearInfo
@@ -23706,8 +26031,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Backpack Panel JPC Monster Can Flag (MC)";
-		model="ASEC_Backpack1\JPCPack2.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack2.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -23729,9 +26054,9 @@ class CfgVehicles
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\monster_white_co.paa",
-			"ASEC_Backpack1\tex\ecpv1_mc_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\monster_white_co.paa",
+			"ASEC_Backpacks\data\tex\ecpv1_mc_co.paa",
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -23747,8 +26072,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Backpack Panel JPC Red Bull Can (MC)";
-		model="ASEC_Backpack1\JPCPack2.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack2.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -23770,8 +26095,8 @@ class CfgVehicles
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\red_bull_can.paa",
-			"ASEC_Backpack1\tex\ecpv1_mc_co.paa",
+			"ASEC_Backpacks\data\tex\red_bull_can.paa",
+			"ASEC_Backpacks\tex\ecpv1_mc_co.paa",
 			""
 		};
 		class XtdGearInfo
@@ -23788,8 +26113,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Backpack Panel JPC Red Bull Can Flag (MC)";
-		model="ASEC_Backpack1\JPCPack2.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack2.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -23811,9 +26136,9 @@ class CfgVehicles
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\red_bull_can.paa",
-			"ASEC_Backpack1\tex\ecpv1_mc_co.paa",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\red_bull_can.paa",
+			"ASEC_Backpacks\data\tex\ecpv1_mc_co.paa",
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -23829,8 +26154,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Backpack Panel JPC Flag (MC)";
-		model="ASEC_Backpack1\JPCPack2.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPack2.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -23854,7 +26179,7 @@ class CfgVehicles
 			"",
 			"",
 			"",
-			"ASEC_Backpack1\tex\patches_01_co.paa"
+			"ASEC_Backpacks\data\tex\patches_01_co.paa"
 		};
 		class XtdGearInfo
 		{
@@ -23870,8 +26195,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Blank Panel Insert";
-		model="ASEC_Backpack1\blank.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\blank.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -23893,8 +26218,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Zip-On Swimmer Cut AVS Panel (MC)";
-		model="ASEC_Backpack1\SwimmerAVSPanel1.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\SwimmerAVSPanel1.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -23916,8 +26241,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Backpack (MC)";
-		model="ASEC_Backpack1\hyoonbackpack.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\hyoonbackpack.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -23939,8 +26264,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] M9 Medic Backpack (MC)";
-		model="ASEC_Backpack1\hyoonm9.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\hyoonm9.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -23962,8 +26287,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] RATS Pack 1 (MC)";
-		model="ASEC_Backpack1\hyoonRATS1.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\hyoonRATS1.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -23985,8 +26310,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] RATS Pack 2 (MC)";
-		model="ASEC_Backpack1\hyoonRATS2.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\hyoonRATS2.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -24008,8 +26333,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] RS2 (MC)";
-		model="ASEC_Backpack1\RS2.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\RS2.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -24031,8 +26356,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] Mystery Ranch 3DA (MC)";
-		model="ASEC_Backpack1\Mystery_ranch_3da.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\Mystery_ranch_3da.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -24054,8 +26379,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] M9 Medic Backpack 2 (MC)";
-		model="ASEC_Backpack1\m9_2.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\m9_2.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -24077,8 +26402,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] AVS Panel 1 (MC)";
-		model="ASEC_Backpack1\AVSPanel1.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPanel1.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -24106,8 +26431,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] AVS Panel 2 (MC)";
-		model="ASEC_Backpack1\AVSPanel2.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPanel2.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -24135,8 +26460,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] AVS Panel 3 (MC)";
-		model="ASEC_Backpack1\AVSPanel3.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPanel3.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -24164,8 +26489,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] AVS Panel 4 (MC)";
-		model="ASEC_Backpack1\AVSPanel4.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPanel4.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -24193,8 +26518,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] AVS Panel 5 (MC)";
-		model="ASEC_Backpack1\AVSPanel5.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPanel5.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -24222,8 +26547,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] AVS Panel 6 (MC)";
-		model="ASEC_Backpack1\AVSPanel6.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\AVSPanel6.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -24251,8 +26576,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] JPC Panel 1 (MC)";
-		model="ASEC_Backpack1\JPCPanel1.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPanel1.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -24280,8 +26605,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] JPC Panel 2 (MC)";
-		model="ASEC_Backpack1\JPCPanel2.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPanel2.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -24309,8 +26634,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] JPC Panel 3 (MC)";
-		model="ASEC_Backpack1\JPCPanel3.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPanel3.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -24338,8 +26663,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] JPC Panel 4 (MC)";
-		model="ASEC_Backpack1\JPCPanel4.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPanel4.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -24367,8 +26692,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] JPC Panel 5 (MC)";
-		model="ASEC_Backpack1\JPCPanel5.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPanel5.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;
@@ -24396,8 +26721,8 @@ class CfgVehicles
 		author="Jup, Lip, Thunder";
 		scope=0;
 		displayName="[ASEC] JPC Panel 6 (MC)";
-		model="ASEC_Backpack1\JPCPanel6.p3d";
-		picture="ASEC_Backpack1\tex\logo.paa";
+		model="ASEC_Backpacks\JPCPanel6.p3d";
+		picture="ASEC_Backpacks\data\ui\logo.paa";
 		maximumLoad=500;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=0;

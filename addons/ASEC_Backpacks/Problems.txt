@@ -1,0 +1,18 @@
+.paa Textures mentioned but not inside ASEC_Backpacks (unknown actually where)
+shotgun_co
+shutgun_foreend
+patches_o1_co
+monster_white_co
+ecpvl_mc_co
+ack_avs_aor1_co
+
+.paa Textures mentioned but not inside ASEC_Backpacks (known location, make a new universally used data folder)
+"ASEC_panel\data\bolt_co.paa",
+"ASEC_panel\data\halligan_co.paa",
+
+
+Not sure what this is
+model="ASEC_Backpacks\Mystery_ranch_3da.p3d";
+Line 26360; There is no p3d model anywhere
+
+Not sure if the required addons are needed
